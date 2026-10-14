@@ -1,0 +1,72 @@
+# ====================================================================
+# SkillCred Root .gitignore
+# ====================================================================
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+*.env
+*.secret
+*.key
+*.pem
+application-secret.properties
+application-prod-secret.properties
+
+# Database Backups & Dumps (Local only)
+backups/
+*.dump
+*.backup
+*.sql.bak
+
+# Scratch & Temporary Testing Directory
+scratch/
+.tempmediaStorage/
+.user_uploaded/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Node / Frontend Build & Dependencies
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+dist-ssr/
+frontend/dist-ssr/
+*.local
+
+# Java / Maven Build Artifacts
+target/
+backend/target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IDE & Editor Configurations
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.iws
+*.iml
+*.ipr
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini

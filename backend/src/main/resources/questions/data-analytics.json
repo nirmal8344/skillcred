@@ -1,0 +1,1102 @@
+[
+  {
+    "questionText": "What is the primary difference between Descriptive, Diagnostic, Predictive, and Prescriptive analytics?",
+    "options": [
+      "Descriptive asks 'what happened', Diagnostic asks 'why it happened', Predictive asks 'what will happen', and Prescriptive asks 'what action to take'",
+      "Descriptive analytics is only for healthcare; Predictive is only for finance",
+      "They are all synonyms for running basic SQL SELECT queries",
+      "Diagnostic analytics requires machine learning, while predictive uses only spreadsheets"
+    ],
+    "correctAnswer": "Descriptive asks 'what happened', Diagnostic asks 'why it happened', Predictive asks 'what will happen', and Prescriptive asks 'what action to take'",
+    "explanation": "This defines the standard analytics maturity spectrum: understanding past facts, investigating causes, forecasting outcomes, and prescribing optimal interventions."
+  },
+  {
+    "questionText": "In SQL, what is the key difference between the `RANK()` and `DENSE_RANK()` window functions?",
+    "options": [
+      "`RANK()` skips subsequent rank values when ties occur (e.g., 1, 2, 2, 4); `DENSE_RANK()` leaves no gaps in ranking sequence (e.g., 1, 2, 2, 3)",
+      "`RANK()` can only be used on strings; `DENSE_RANK()` works on numbers",
+      "`DENSE_RANK()` sorts in descending order; `RANK()` sorts in ascending order",
+      "`RANK()` does not require an `OVER (ORDER BY ...)` clause"
+    ],
+    "correctAnswer": "`RANK()` skips subsequent rank values when ties occur (e.g., 1, 2, 2, 4); `DENSE_RANK()` leaves no gaps in ranking sequence (e.g., 1, 2, 2, 3)",
+    "explanation": "When tied values share rank, RANK leaves numerical gaps reflecting the tied count, whereas DENSE_RANK assigns consecutive integers without gaps."
+  },
+  {
+    "questionText": "In data modeling for data warehousing, what distinguishes a 'Fact Table' from a 'Dimension Table' in a Star Schema?",
+    "options": [
+      "Fact tables contain quantitative metrics and foreign keys; dimension tables contain descriptive context attributes (who, what, where, when)",
+      "Fact tables are always smaller than dimension tables",
+      "Fact tables cannot contain numeric columns",
+      "Dimension tables only exist in NoSQL databases"
+    ],
+    "correctAnswer": "Fact tables contain quantitative metrics and foreign keys; dimension tables contain descriptive context attributes (who, what, where, when)",
+    "explanation": "Facts store transactional numeric measurements (revenue, quantity sold) surrounded by dimension tables providing categorical context (customers, products, dates)."
+  },
+  {
+    "questionText": "What is the Customer Acquisition Cost (CAC) formula in business analytics?",
+    "options": [
+      "Total Sales & Marketing Expenses / Total Number of New Customers Acquired",
+      "Total Revenue / Total Active Users",
+      "Total Customer Churn / Average Subscription Price",
+      "Gross Profit Margin * Total Orders"
+    ],
+    "correctAnswer": "Total Sales & Marketing Expenses / Total Number of New Customers Acquired",
+    "explanation": "CAC measures the financial capital invested in marketing and sales to win a single new paying customer over a given period."
+  },
+  {
+    "questionText": "In SQL, what does the window function `LAG(column, 1) OVER (PARTITION BY user_id ORDER BY order_date)` return?",
+    "options": [
+      "The value of the column from the immediately preceding row within the user's ordered partition",
+      "The value of the column from the subsequent row",
+      "The cumulative sum of the column",
+      "The total row count of the partition"
+    ],
+    "correctAnswer": "The value of the column from the immediately preceding row within the user's ordered partition",
+    "explanation": "LAG accesses historical data from an earlier row at a specified physical offset without requiring a self-join."
+  },
+  {
+    "questionText": "What does Customer Lifetime Value (CLV or LTV) represent?",
+    "options": [
+      "The total net revenue a business reasonably anticipates earning from an average customer throughout their relationship",
+      "The amount of time a customer spends on a website per visit",
+      "The age of the oldest customer in the database",
+      "The discount percentage offered to long-term subscribers"
+    ],
+    "correctAnswer": "The total net revenue a business reasonably anticipates earning from an average customer throughout their relationship",
+    "explanation": "CLV estimates total monetary value generated over the customer lifecycle, guiding sustainable CAC expenditure thresholds."
+  },
+  {
+    "questionText": "In Business Intelligence tools like Power BI, what is the difference between a 'Calculated Column' and a 'Measure' in DAX?",
+    "options": [
+      "Calculated columns are evaluated row-by-row during data refresh and stored in memory; measures are dynamic aggregations evaluated on-the-fly based on visual filter context",
+      "Measures can only calculate sum; calculated columns can calculate averages",
+      "Calculated columns do not consume RAM",
+      "Measures cannot be used in charts"
+    ],
+    "correctAnswer": "Calculated columns are evaluated row-by-row during data refresh and stored in memory; measures are dynamic aggregations evaluated on-the-fly based on visual filter context",
+    "explanation": "Measures respond dynamically to user slicers and filter contexts at query time; calculated columns consume RAM row-by-row statically."
+  },
+  {
+    "questionText": "What is 'Cohort Analysis' most commonly used for in product and customer analytics?",
+    "options": [
+      "Tracking the retention, churn, and behavioral patterns of user groups sharing a common starting date or acquisition event over time",
+      "Comparing CPU utilization across cloud regions",
+      "Sorting SQL tables by primary key",
+      "Testing if database backups are encrypted"
+    ],
+    "correctAnswer": "Tracking the retention, churn, and behavioral patterns of user groups sharing a common starting date or acquisition event over time",
+    "explanation": "Cohort grids analyze user groups bound by a shared start timeframe to measure how engagement and retention evolve across days or months."
+  },
+  {
+    "questionText": "In SQL, what is a Common Table Expression (CTE) defined with the `WITH` keyword?",
+    "options": [
+      "A named, temporary result set that exists only within the execution scope of a single query, improving readability and modularity",
+      "A permanent view saved into the database catalog",
+      "A physical table written directly to disk storage",
+      "A stored procedure that takes input parameters"
+    ],
+    "correctAnswer": "A named, temporary result set that exists only within the execution scope of a single query, improving readability and modularity",
+    "explanation": "CTEs (WITH cte_name AS (...)) structure complex queries into readable, composable modular blocks, replacing nested subqueries."
+  },
+  {
+    "questionText": "What does 'Churn Rate' measure in SaaS or subscription business models?",
+    "options": [
+      "The percentage of subscribers who cancel or fail to renew their subscription during a given time period",
+      "The rate at which servers reboot during maintenance",
+      "The percentage of visitors who purchase on their first visit",
+      "The average discount percentage on annual plans"
+    ],
+    "correctAnswer": "The percentage of subscribers who cancel or fail to renew their subscription during a given time period",
+    "explanation": "Churn rate = (Lost Customers during Period / Customers at Start of Period), a primary metric governing net recurring revenue growth."
+  },
+  {
+    "questionText": "What is the primary risk of using pie charts with more than 6-7 categories in dashboards?",
+    "options": [
+      "Human perception struggles to accurately distinguish subtle angle and area differences across numerous small slices, confusing readability",
+      "Pie charts crash Power BI dashboards",
+      "Pie charts take 10x longer to compute than bar charts",
+      "Pie charts cannot be exported to PDF"
+    ],
+    "correctAnswer": "Human perception struggles to accurately distinguish subtle angle and area differences across numerous small slices, confusing readability",
+    "explanation": "Bar charts utilize linear position along a common baseline, which human eyes perceive far more accurately than angular slices."
+  },
+  {
+    "questionText": "What is a 'Slowly Changing Dimension' (SCD) Type 2 in data warehousing?",
+    "options": [
+      "Tracking historical changes by creating a new dimension record with effective start/end dates and an active flag whenever an attribute changes",
+      "Overwriting old attribute values directly with no historical trace",
+      "Adding a new column to store the prior value alongside the current value",
+      "A database table that takes over an hour to query"
+    ],
+    "correctAnswer": "Tracking historical changes by creating a new dimension record with effective start/end dates and an active flag whenever an attribute changes",
+    "explanation": "SCD Type 2 preserves historical point-in-time accuracy by inserting new rows for changes with validity date ranges."
+  },
+  {
+    "questionText": "In statistics and analytics, what does 'Correlation does not imply Causation' mean?",
+    "options": [
+      "A statistical association between two variables does not prove that one variable causes changes in the other",
+      "Correlation values are always unreliable",
+      "Negative correlation means causation cannot exist",
+      "Causation can only be proven using pie charts"
+    ],
+    "correctAnswer": "A statistical association between two variables does not prove that one variable causes changes in the other",
+    "explanation": "Two variables may correlate due to coincidence, reverse causality, or an unmeasured third confounding variable."
+  },
+  {
+    "questionText": "Which SQL clause filters records AFTER an aggregation operation like `SUM()` or `COUNT()` has been applied?",
+    "options": [
+      "HAVING",
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY"
+    ],
+    "correctAnswer": "HAVING",
+    "explanation": "WHERE filters rows prior to aggregation; HAVING filters aggregate groupings produced by GROUP BY."
+  },
+  {
+    "questionText": "In ETL pipelines, what does 'ELT' (Extract, Load, Transform) mean compared to traditional 'ETL'?",
+    "options": [
+      "Raw data is extracted and loaded directly into modern cloud data warehouses first, leveraging distributed warehouse compute for transformations",
+      "Data is transformed on the client browser before loading",
+      "ELT skips data cleaning completely",
+      "ELT can only be used on spreadsheets"
+    ],
+    "correctAnswer": "Raw data is extracted and loaded directly into modern cloud data warehouses first, leveraging distributed warehouse compute for transformations",
+    "explanation": "Modern cloud warehouses (Snowflake, BigQuery) have massive parallel compute, making ELT faster and more flexible than external ETL servers."
+  },
+  {
+    "questionText": "What does 'Net Promoter Score' (NPS) measure, and how is it calculated?",
+    "options": [
+      "% Promoters (rating 9-10) minus % Detractors (rating 0-6) on a 0-10 loyalty likelihood question",
+      "Total 5-star reviews divided by 1-star reviews",
+      "The average star rating across customer feedback forms",
+      "Total sales revenue divided by active promoters"
+    ],
+    "correctAnswer": "% Promoters (rating 9-10) minus % Detractors (rating 0-6) on a 0-10 loyalty likelihood question",
+    "explanation": "NPS gauges customer advocacy; respondents are categorized as Promoters (9-10), Passives (7-8), or Detractors (0-6)."
+  },
+  {
+    "questionText": "What is 'Simpson's Paradox' in data analytics?",
+    "options": [
+      "A statistical trend that appears in aggregated data groups disappears or reverses when the groups are disaggregated into subgroups",
+      "When a chart uses too many bright colors",
+      "When a SQL query returns zero rows despite valid data",
+      "When data points form a perfect bell curve"
+    ],
+    "correctAnswer": "A statistical trend that appears in aggregated data groups disappears or reverses when the groups are disaggregated into subgroups",
+    "explanation": "Confounding variables and unequal group sample sizes can distort overall averages, producing misleading aggregated conclusions."
+  },
+  {
+    "questionText": "In SQL, what is the result of `COALESCE(val1, val2, val3)`?",
+    "options": [
+      "Returns the first non-null expression among its arguments",
+      "Returns the sum of all three values",
+      "Returns TRUE if all values are identical",
+      "Concatenates the three values into a single string"
+    ],
+    "correctAnswer": "Returns the first non-null expression among its arguments",
+    "explanation": "COALESCE evaluates arguments in sequence, returning the first non-NULL expression encountered, standard for default fallbacks."
+  },
+  {
+    "questionText": "What does 'Monthly Recurring Revenue' (MRR) track in business analytics?",
+    "options": [
+      "The predictable, recurring subscription revenue recognized by a business on a normalized monthly basis",
+      "Total one-time consulting setup fees received in a month",
+      "Total monthly marketing expenditures on Google ads",
+      "The monthly payroll expense of employees"
+    ],
+    "correctAnswer": "The predictable, recurring subscription revenue recognized by a business on a normalized monthly basis",
+    "explanation": "MRR standardizes recurring subscription fees into a steady monthly metric, tracking business momentum independently of billing cadence."
+  },
+  {
+    "questionText": "What is an 'Executive Dashboard' best designed to display?",
+    "options": [
+      "High-level strategic KPIs, trend lines, and health metrics providing immediate operational visibility at a glance",
+      "Every single raw row of transaction data in a massive unformatted table",
+      "The complete database schema diagram with table foreign keys",
+      "Source code commits and server CPU temperatures"
+    ],
+    "correctAnswer": "High-level strategic KPIs, trend lines, and health metrics providing immediate operational visibility at a glance",
+    "explanation": "Executive dashboards prioritize scannable high-level summaries and actionable variance indicators over granular operational logs."
+  },
+  {
+    "questionText": "What is 'Data Granularity' in analytics?",
+    "options": [
+      "The level of detail or depth represented by an individual record in a dataset (e.g. daily vs monthly, per-item vs per-order)",
+      "The physical size of data on disk in gigabytes",
+      "The number of users with view permissions",
+      "The resolution of dashboard charts"
+    ],
+    "correctAnswer": "The level of detail or depth represented by an individual record in a dataset (e.g. daily vs monthly, per-item vs per-order)",
+    "explanation": "Granularity dictates the atomic unit of analysis; higher granularity means finer, row-level detail."
+  },
+  {
+    "questionText": "What does the SQL window function `ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC)` do?",
+    "options": [
+      "Assigns a unique sequential integer (1, 2, 3...) to each row within each department ordered by salary descending",
+      "Calculates the average salary per department",
+      "Counts total employees across all departments",
+      "Ranks salaries with gaps for ties"
+    ],
+    "correctAnswer": "Assigns a unique sequential integer (1, 2, 3...) to each row within each department ordered by salary descending",
+    "explanation": "ROW_NUMBER assigns strictly sequential numbers without ties within each partitioned group."
+  },
+  {
+    "questionText": "In Tableau, what is the visual difference between a 'Dimension' and a 'Measure'?",
+    "options": [
+      "Dimensions are discrete categorical fields (blue pills); measures are continuous numerical values that can be aggregated (green pills)",
+      "Dimensions are always red; measures are always blue",
+      "Measures can only be used on maps",
+      "Dimensions cannot be filtered"
+    ],
+    "correctAnswer": "Dimensions are discrete categorical fields (blue pills); measures are continuous numerical values that can be aggregated (green pills)",
+    "explanation": "Tableau encodes discrete categorical slicing attributes in blue and aggregable continuous quantitative metrics in green."
+  },
+  {
+    "questionText": "What is 'Data Imputation'?",
+    "options": [
+      "Replacing missing or null data points with statistically estimated values like mean, median, or predictive models",
+      "Deleting entire database columns",
+      "Encrypting database backups with passwords",
+      "Exporting tables into CSV format"
+    ],
+    "correctAnswer": "Replacing missing or null data points with statistically estimated values like mean, median, or predictive models",
+    "explanation": "Imputation preserves sample counts by inferring plausible replacements for missing values."
+  },
+  {
+    "questionText": "What is a 'Funnel Analysis' in conversion analytics?",
+    "options": [
+      "Tracking how users drop off across sequential stages of a multi-step user journey (e.g. Visit -> Sign Up -> Cart -> Purchase)",
+      "Measuring the flow of cooling water in server racks",
+      "Analyzing email deliverability rates",
+      "Sorting products by price descending"
+    ],
+    "correctAnswer": "Tracking how users drop off across sequential stages of a multi-step user journey (e.g. Visit -> Sign Up -> Cart -> Purchase)",
+    "explanation": "Funnel charts isolate bottleneck steps where prospective users abandon a conversion flow."
+  },
+  {
+    "questionText": "What is 'Bounce Rate' in web analytics?",
+    "options": [
+      "The percentage of visitors who enter a website and leave without performing any interaction or viewing a second page",
+      "The rate at which emails are rejected by mail servers",
+      "The speed at which a web page loads",
+      "The number of users who return to the site daily"
+    ],
+    "correctAnswer": "The percentage of visitors who enter a website and leave without performing any interaction or viewing a second page",
+    "explanation": "Bounce rate measures single-page sessions with zero subsequent engagement events."
+  },
+  {
+    "questionText": "What does the SQL `CASE WHEN ... THEN ... ELSE ... END` expression do?",
+    "options": [
+      "Evaluates conditional logic row-by-row and returns specific values matching the first true condition",
+      "Creates a new database table",
+      "Sorts query output randomly",
+      "Deletes rows that match the condition"
+    ],
+    "correctAnswer": "Evaluates conditional logic row-by-row and returns specific values matching the first true condition",
+    "explanation": "CASE statements provide if-then-else logic directly inside SQL SELECT, WHERE, or GROUP BY clauses."
+  },
+  {
+    "questionText": "What is a 'Snowflake Schema' compared to a 'Star Schema'?",
+    "options": [
+      "A normalized variation of a star schema where dimension tables are broken down into sub-dimensions to reduce redundancy",
+      "A schema designed strictly for winter clothing stores",
+      "A schema that stores data only on AWS Snowflake",
+      "An unindexed flat table with no foreign keys"
+    ],
+    "correctAnswer": "A normalized variation of a star schema where dimension tables are broken down into sub-dimensions to reduce redundancy",
+    "explanation": "Snowflake schemas normalize dimensions into sub-dimensions (e.g. Product -> Subcategory -> Category), trading simpler joins for storage efficiency."
+  },
+  {
+    "questionText": "What is 'DAX' in Microsoft Power BI and Analysis Services?",
+    "options": [
+      "Data Analysis Expressions: a functional formula language designed for relational data modeling and dynamic aggregations",
+      "Database Administration eXecutable",
+      "Direct Access XML",
+      "Data Analytics eXchange protocol"
+    ],
+    "correctAnswer": "Data Analysis Expressions: a functional formula language designed for relational data modeling and dynamic aggregations",
+    "explanation": "DAX powers calculated columns, tables, and measures in Power BI, operating over tabular data models."
+  },
+  {
+    "questionText": "What is the purpose of 'Data Profiling'?",
+    "options": [
+      "Examining source data to assess quality, completeness, distribution, unique counts, and anomalies before analysis",
+      "Creating user accounts for data analysts",
+      "Profiling the CPU execution time of SQL queries",
+      "Writing a resume for a data science role"
+    ],
+    "correctAnswer": "Examining source data to assess quality, completeness, distribution, unique counts, and anomalies before analysis",
+    "explanation": "Data profiling uncovers missing values, unexpected nulls, distribution skews, and invalid data formats upfront."
+  },
+  {
+    "questionText": "What does 'LTV:CAC Ratio' signify, and what is considered a healthy benchmark for SaaS businesses?",
+    "options": [
+      "The ratio of Customer Lifetime Value to Customer Acquisition Cost; a ratio around 3:1 is considered healthy and sustainable",
+      "The ratio of laptop memory to CPU cores; 1:1 is ideal",
+      "The ratio of monthly website visitors to registered accounts",
+      "The ratio of male to female employees"
+    ],
+    "correctAnswer": "The ratio of Customer Lifetime Value to Customer Acquisition Cost; a ratio around 3:1 is considered healthy and sustainable",
+    "explanation": "A 3:1 ratio indicates customer lifetime value comfortably outstrips acquisition costs without under-investing in growth."
+  },
+  {
+    "questionText": "What is 'Average Revenue Per User' (ARPU)?",
+    "options": [
+      "Total Revenue generated over a period divided by the Total Active Users during that period",
+      "The maximum purchase made by any single user",
+      "The average price of products in the catalog",
+      "Total profit divided by employee headcount"
+    ],
+    "correctAnswer": "Total Revenue generated over a period divided by the Total Active Users during that period",
+    "explanation": "ARPU tracks monetization efficiency across user segments, informing pricing and tier strategies."
+  },
+  {
+    "questionText": "What is 'Data Deduplication'?",
+    "options": [
+      "Identifying and merging or eliminating duplicate records that represent the same real-world entity",
+      "Multiplying dataset size by two for redundancy",
+      "Copying database tables across regions",
+      "Compressing files into zip archives"
+    ],
+    "correctAnswer": "Identifying and merging or eliminating duplicate records that represent the same real-world entity",
+    "explanation": "Deduplication ensures metrics like active customer counts and order totals are not artificially inflated."
+  },
+  {
+    "questionText": "In SQL, what is the difference between `UNION` and `UNION ALL`?",
+    "options": [
+      "`UNION` removes duplicate rows from the combined result set; `UNION ALL` retains all rows including duplicates and executes faster",
+      "`UNION` works only on two tables; `UNION ALL` works on three or more",
+      "`UNION` combines columns; `UNION ALL` combines tables",
+      "`UNION ALL` requires both tables to have identical primary keys"
+    ],
+    "correctAnswer": "`UNION` removes duplicate rows from the combined result set; `UNION ALL` retains all rows including duplicates and executes faster",
+    "explanation": "UNION performs an implicit DISTINCT sort to eliminate duplicate rows, making UNION ALL substantially more efficient when duplicates are acceptable or absent."
+  },
+  {
+    "questionText": "What is 'Data Normalization' in relational databases (OLTP)?",
+    "options": [
+      "Structuring tables to minimize data redundancy and dependency anomalies by dividing large tables into smaller related ones",
+      "Formatting numbers between 0 and 1",
+      "Replacing null values with zeros",
+      "Backing up data every 24 hours"
+    ],
+    "correctAnswer": "Structuring tables to minimize data redundancy and dependency anomalies by dividing large tables into smaller related ones",
+    "explanation": "Relational normalization reduces write anomalies and update redundancies in transactional databases."
+  },
+  {
+    "questionText": "What is 'Data Denormalization' in reporting and data warehousing (OLAP)?",
+    "options": [
+      "Combining related tables into wider, redundant tables to minimize expensive JOINs and optimize analytical read queries",
+      "Corrupting database records deliberately",
+      "Deleting all foreign key constraints",
+      "Converting relational tables into unformatted text"
+    ],
+    "correctAnswer": "Combining related tables into wider, redundant tables to minimize expensive JOINs and optimize analytical read queries",
+    "explanation": "Denormalization trades storage redundancy for query speed, accelerating aggregate analytical workloads."
+  },
+  {
+    "questionText": "What does 'Daily Active Users / Monthly Active Users' (DAU/MAU) ratio measure?",
+    "options": [
+      "Product 'stickiness' and user habituation, showing what proportion of monthly users engage on any given day",
+      "The ratio of full-time employees to contractors",
+      "The server uptime percentage per month",
+      "The proportion of paying customers vs free trial users"
+    ],
+    "correctAnswer": "Product 'stickiness' and user habituation, showing what proportion of monthly users engage on any given day",
+    "explanation": "DAU/MAU quantifies daily engagement stickiness; top consumer apps often surpass 50%+ DAU/MAU."
+  },
+  {
+    "questionText": "What is 'Survival Analysis' in customer retention analytics?",
+    "options": [
+      "Statistical modeling of the time duration until an event occurs (e.g. churn or subscription cancellation)",
+      "Testing whether server hardware survives power outages",
+      "Measuring how many companies survive their first year",
+      "Evaluating battery life of mobile devices"
+    ],
+    "correctAnswer": "Statistical modeling of the time duration until an event occurs (e.g. churn or subscription cancellation)",
+    "explanation": "Survival techniques (Kaplan-Meier curves) analyze customer churn risk over tenure, accounting for censored observations."
+  },
+  {
+    "questionText": "What is 'Heatmap' visualization best used for?",
+    "options": [
+      "Visualizing matrix data where color gradients represent numerical magnitude across two categorical axes",
+      "Showing the physical temperature of the office building",
+      "Tracking GPS locations of delivery trucks",
+      "Displaying hierarchical file folders"
+    ],
+    "correctAnswer": "Visualizing matrix data where color gradients represent numerical magnitude across two categorical axes",
+    "explanation": "Heatmaps use color intensity to reveal concentrations, correlations, or hourly engagement spikes across matrices."
+  },
+  {
+    "questionText": "What is 'Scatter Plot' visualization best used for?",
+    "options": [
+      "Displaying the relationship or correlation between two continuous numerical variables",
+      "Showing progress toward a target percentage",
+      "Displaying categorical percentages of a whole",
+      "Listing individual text records sequentially"
+    ],
+    "correctAnswer": "Displaying the relationship or correlation between two continuous numerical variables",
+    "explanation": "Scatter plots place individual data points on X and Y axes, exposing linear/non-linear correlations and clusters."
+  },
+  {
+    "questionText": "What is an 'Outlier' and how does it distort summary statistics?",
+    "options": [
+      "An observation that lies abnormally far from other values; it heavily skews the Mean but minimally affects the Median",
+      "A data point that is missing a column header",
+      "A database record that cannot be deleted",
+      "A chart that does not have an X-axis"
+    ],
+    "correctAnswer": "An observation that lies abnormally far from other values; it heavily skews the Mean but minimally affects the Median",
+    "explanation": "Extreme outliers pull the arithmetic mean toward themselves, making the median a more robust measure of central tendency."
+  },
+  {
+    "questionText": "Why is 'Median' often preferred over 'Mean' when reporting salaries or real estate prices?",
+    "options": [
+      "Because the median is resistant to extreme high outliers that pull the average up artificially",
+      "Because the median is easier to calculate by hand",
+      "Because the mean cannot be calculated on positive numbers",
+      "Because real estate databases prohibit means"
+    ],
+    "correctAnswer": "Because the median is resistant to extreme high outliers that pull the average up artificially",
+    "explanation": "Income distributions are heavily right-skewed; the median reflects the actual middle experience accurately."
+  },
+  {
+    "questionText": "What is 'Standard Deviation' in statistical analytics?",
+    "options": [
+      "A measure of the dispersion or spread of data points around their mean value",
+      "The average value in a dataset",
+      "The difference between maximum and minimum values",
+      "The number of rows in a database table"
+    ],
+    "correctAnswer": "A measure of the dispersion or spread of data points around their mean value",
+    "explanation": "Standard deviation quantifies how closely observations cluster around the central average."
+  },
+  {
+    "questionText": "What is 'Variance' in relation to Standard Deviation?",
+    "options": [
+      "Variance is the square of the Standard Deviation",
+      "Variance is the square root of standard deviation",
+      "Variance is standard deviation divided by 2",
+      "Variance is the standard deviation multiplied by 100"
+    ],
+    "correctAnswer": "Variance is the square of the Standard Deviation",
+    "explanation": "Variance calculates the average squared deviations from the mean; taking its square root yields standard deviation in original units."
+  },
+  {
+    "questionText": "What is 'Gross Margin' in business financial analytics?",
+    "options": [
+      "(Total Revenue - Cost of Goods Sold) / Total Revenue * 100",
+      "Total Revenue minus Total Operating Expenses",
+      "Total Net Profit divided by Total Employee Count",
+      "Total Cash in bank divided by Total Debt"
+    ],
+    "correctAnswer": "(Total Revenue - Cost of Goods Sold) / Total Revenue * 100",
+    "explanation": "Gross margin indicates the percentage of revenue retained after incurring direct costs of producing goods or services."
+  },
+  {
+    "questionText": "What does the SQL command `GROUP BY 1, 2` mean?",
+    "options": [
+      "Groups the results by the first and second columns specified in the `SELECT` list",
+      "Groups the results into exactly 2 rows",
+      "Multiplies the first column by 2",
+      "Selects rows where the primary key is 1 or 2"
+    ],
+    "correctAnswer": "Groups the results by the first and second columns specified in the `SELECT` list",
+    "explanation": "Positional grouping references columns by their ordinal position in the SELECT statement."
+  },
+  {
+    "questionText": "What does the SQL `DISTINCT` keyword do in a `SELECT` statement?",
+    "options": [
+      "Eliminates duplicate rows from the query result set",
+      "Sorts results in descending order",
+      "Limits the query output to 10 rows",
+      "Converts all text to uppercase"
+    ],
+    "correctAnswer": "Eliminates duplicate rows from the query result set",
+    "explanation": "DISTINCT filters out identical result tuples, returning only unique value combinations."
+  },
+  {
+    "questionText": "What is a 'Bar Chart' vs 'Histogram'?",
+    "options": [
+      "Bar charts plot categorical categories with spaces between bars; histograms plot continuous numerical distributions divided into bins without spaces",
+      "Bar charts are always horizontal; histograms are always vertical",
+      "Histograms can only be used in Excel",
+      "Bar charts cannot display numbers"
+    ],
+    "correctAnswer": "Bar charts plot categorical categories with spaces between bars; histograms plot continuous numerical distributions divided into bins without spaces",
+    "explanation": "Histograms group continuous values into contiguous numeric range bins to visualize distribution frequency."
+  },
+  {
+    "questionText": "What is 'Cross-Tabulation' (Crosstab / Pivot Table)?",
+    "options": [
+      "A matrix table showing frequency distributions or aggregated metrics across two or more categorical dimensions simultaneously",
+      "A table crossing international borders",
+      "Merging two tables without an ON clause",
+      "A table containing crossed-out numbers"
+    ],
+    "correctAnswer": "A matrix table showing frequency distributions or aggregated metrics across two or more categorical dimensions simultaneously",
+    "explanation": "Pivot tables summarize multi-dimensional relationships, grouping one dimension in rows and another in columns."
+  },
+  {
+    "questionText": "What is 'Data Governance' in corporate analytics?",
+    "options": [
+      "The overall management of data availability, usability, integrity, security, and compliance across an organization",
+      "Government regulations on internet bandwidth",
+      "A political committee that votes on database schemas",
+      "A software program that automatically writes SQL queries"
+    ],
+    "correctAnswer": "The overall management of data availability, usability, integrity, security, and compliance across an organization",
+    "explanation": "Governance enforces data dictionaries, stewardship, lineage, access controls, and compliance standards (GDPR, HIPAA)."
+  },
+  {
+    "questionText": "What is 'Data Lineage'?",
+    "options": [
+      "Tracing the origin, movement, transformations, and downstream dependencies of data across its entire lifecycle",
+      "The family tree of the database administrator",
+      "The physical network cables connecting servers",
+      "The version history of operating system updates"
+    ],
+    "correctAnswer": "Tracing the origin, movement, transformations, and downstream dependencies of data across its entire lifecycle",
+    "explanation": "Lineage tracks how data travels from source OLTP systems through ETL stages into final BI reporting metrics."
+  },
+  {
+    "questionText": "What is 'Data Dictionary' (Metadata Catalog)?",
+    "options": [
+      "A centralized repository documenting table definitions, column descriptions, data types, business logic, and metric formulas",
+      "A translation dictionary between English and Spanish",
+      "A list of valid English words in a spellchecker",
+      "A list of database usernames and passwords"
+    ],
+    "correctAnswer": "A centralized repository documenting table definitions, column descriptions, data types, business logic, and metric formulas",
+    "explanation": "Data dictionaries ensure business users and engineers agree on precise definitions of columns and KPIs."
+  },
+  {
+    "questionText": "What is 'Primary Key' in relational databases?",
+    "options": [
+      "A column or set of columns that uniquely identifies every individual row in a table, disallowing nulls",
+      "The password used to log into the database",
+      "The first column in a spreadsheet",
+      "A key used to decrypt encrypted tables"
+    ],
+    "correctAnswer": "A column or set of columns that uniquely identifies every individual row in a table, disallowing nulls",
+    "explanation": "Primary keys guarantee row-level uniqueness and serve as the anchor for foreign key relationships."
+  },
+  {
+    "questionText": "What is a 'Composite Key' in SQL databases?",
+    "options": [
+      "A primary key composed of two or more columns that together uniquely identify a row",
+      "A primary key made of composite materials",
+      "A key that links to three different databases",
+      "An index that compresses data on disk"
+    ],
+    "correctAnswer": "A primary key composed of two or more columns that together uniquely identify a row",
+    "explanation": "Composite keys combine multiple fields (e.g. order_id + line_number) to enforce uniqueness."
+  },
+  {
+    "questionText": "What does the SQL clause `LIMIT 10 OFFSET 20` do?",
+    "options": [
+      "Skips the first 20 rows and returns the next 10 rows from the result set (used for pagination)",
+      "Returns rows 10 through 20",
+      "Limits query execution time to 10 seconds",
+      "Returns only the 10th and 20th rows"
+    ],
+    "correctAnswer": "Skips the first 20 rows and returns the next 10 rows from the result set (used for pagination)",
+    "explanation": "OFFSET and LIMIT enable sequential page-by-page fetching of query result sets."
+  },
+  {
+    "questionText": "What is 'Customer Segmentation' in analytics?",
+    "options": [
+      "Dividing a customer base into distinct groups based on shared demographics, behaviors, purchase patterns, or value",
+      "Deleting inactive customer accounts",
+      "Splitting customer data across multiple hard drives",
+      "Assigning customers random ID numbers"
+    ],
+    "correctAnswer": "Dividing a customer base into distinct groups based on shared demographics, behaviors, purchase patterns, or value",
+    "explanation": "Segmentation allows tailored marketing campaigns and customized product experiences for high-value segments."
+  },
+  {
+    "questionText": "What is 'RFM Analysis' in customer analytics?",
+    "options": [
+      "Recency, Frequency, Monetary: segmenting customers based on how recently they purchased, how often, and how much they spent",
+      "Retention, Funnel, Marketing analysis",
+      "Rate, Frequency, Magnitude scoring",
+      "Return, Forward, Momentum analysis"
+    ],
+    "correctAnswer": "Recency, Frequency, Monetary: segmenting customers based on how recently they purchased, how often, and how much they spent",
+    "explanation": "RFM scoring ranks customer value across behavioral dimensions to identify champions, at-risk, and dormant users."
+  },
+  {
+    "questionText": "What is 'Net Churn' in SaaS metrics?",
+    "options": [
+      "Churned recurring revenue minus expansion/upgrade revenue from existing customers over the same period",
+      "Gross churn multiplied by 100",
+      "Total customer cancellations divided by website visits",
+      "The number of employees who left the company"
+    ],
+    "correctAnswer": "Churned recurring revenue minus expansion/upgrade revenue from existing customers over the same period",
+    "explanation": "Negative net churn is the 'holy grail' where expansion revenue from retained accounts exceeds all lost revenue."
+  },
+  {
+    "questionText": "What is 'Expansion Revenue'?",
+    "options": [
+      "Additional recurring revenue generated from existing customers through up-sells, cross-sells, or usage tiers",
+      "Revenue earned from expanding into a new country",
+      "Money borrowed from investors",
+      "One-time setup fees charged to new clients"
+    ],
+    "correctAnswer": "Additional recurring revenue generated from existing customers through up-sells, cross-sells, or usage tiers",
+    "explanation": "Expansion revenue boosts customer lifetime value without incurring new customer acquisition expense."
+  },
+  {
+    "questionText": "What is 'Rule of 40' in SaaS company performance benchmarking?",
+    "options": [
+      "A benchmark stating that a software company's growth rate plus its profit margin should equal or exceed 40%",
+      "A rule requiring companies to have at least 40 employees",
+      "A rule stating that 40% of customers will churn every year",
+      "A guideline to limit meetings to 40 minutes"
+    ],
+    "correctAnswer": "A benchmark stating that a software company's growth rate plus its profit margin should equal or exceed 40%",
+    "explanation": "The Rule of 40 balances growth and profitability: a 30% growth rate with 10% profit margin satisfies the benchmark."
+  },
+  {
+    "questionText": "What is 'Lead-to-Win Conversion Rate'?",
+    "options": [
+      "The percentage of qualified sales leads that ultimately convert into closed-won paying customers",
+      "The time it takes to win a sports match",
+      "The rate of website traffic growth",
+      "The percentage of leads who open an email"
+    ],
+    "correctAnswer": "The percentage of qualified sales leads that ultimately convert into closed-won paying customers",
+    "explanation": "Conversion rates track pipeline efficiency across sales funnel stages from prospecting to closed revenue."
+  },
+  {
+    "questionText": "What is 'Pipeline Velocity' in sales analytics?",
+    "options": [
+      "A formula calculating the speed at which qualified opportunities convert into closed revenue: (Deals * Win Rate * Deal Size) / Cycle Length",
+      "The physical speed of water in pipes",
+      "The speed at which emails are sent by marketing software",
+      "The number of sales reps hired per month"
+    ],
+    "correctAnswer": "A formula calculating the speed at which qualified opportunities convert into closed revenue: (Deals * Win Rate * Deal Size) / Cycle Length",
+    "explanation": "Pipeline velocity measures revenue generated per unit of time, highlighting acceleration levers."
+  },
+  {
+    "questionText": "What does 'Year-over-Year' (YoY) growth compare?",
+    "options": [
+      "A metric in the current period compared to the exact same period in the previous year, neutralizing seasonality",
+      "Comparing January to February of the same year",
+      "Comparing revenue to expenses",
+      "Comparing actual sales to quota"
+    ],
+    "correctAnswer": "A metric in the current period compared to the exact same period in the previous year, neutralizing seasonality",
+    "explanation": "YoY comparisons eliminate annual seasonal spikes (e.g. Q4 holiday sales) to reveal genuine secular growth."
+  },
+  {
+    "questionText": "What is 'Seasonality' in time-series business data?",
+    "options": [
+      "Predictable, periodic fluctuations that recur regularly at specific calendar intervals (e.g. daily, weekly, or annually)",
+      "Changes in weather outside the office",
+      "Changing employee salaries each year",
+      "When database queries run slower in summer"
+    ],
+    "correctAnswer": "Predictable, periodic fluctuations that recur regularly at specific calendar intervals (e.g. daily, weekly, or annually)",
+    "explanation": "Seasonality causes recurring cyclical patterns (e.g. weekend retail spikes or summer travel surges)."
+  },
+  {
+    "questionText": "What is 'Moving Average' (Rolling Average) used for?",
+    "options": [
+      "Smoothing out short-term fluctuations and random noise to highlight underlying medium-to-long term trends",
+      "Calculating the average speed of moving vehicles",
+      "An average that increases by 1 every day",
+      "A calculation that moves between database servers"
+    ],
+    "correctAnswer": "Smoothing out short-term fluctuations and random noise to highlight underlying medium-to-long term trends",
+    "explanation": "Rolling 7-day or 30-day averages dampen day-of-week noise to expose clean directional trajectory."
+  },
+  {
+    "questionText": "What is a 'Metric' vs a 'KPI'?",
+    "options": [
+      "A metric is any quantifiable measurement; a KPI is a strategic metric directly tied to critical business objectives",
+      "They are identical terms with no difference",
+      "A KPI is always a percentage; a metric is always a whole number",
+      "KPIs can only be calculated by executives"
+    ],
+    "correctAnswer": "A metric is any quantifiable measurement; a KPI is a strategic metric directly tied to critical business objectives",
+    "explanation": "All KPIs are metrics, but only the vital few tied to core business goals achieve Key Performance Indicator status."
+  },
+  {
+    "questionText": "What is 'Data Silo' and why is it problematic for business analytics?",
+    "options": [
+      "Isolated data repositories controlled by one department that are inaccessible to the rest of the company, causing fragmented insights",
+      "A tall metal cylinder used to store grain",
+      "A database server with high security permissions",
+      "A table with more than 1 million rows"
+    ],
+    "correctAnswer": "Isolated data repositories controlled by one department that are inaccessible to the rest of the company, causing fragmented insights",
+    "explanation": "Silos prevent unified customer views, leading to conflicting metrics and uncoordinated cross-functional actions."
+  },
+  {
+    "questionText": "What does the SQL command `TRUNCATE TABLE` do compared to `DELETE FROM`?",
+    "options": [
+      "Rapidly removes all rows by deallocating data pages with minimal logging, cannot be filtered with WHERE, and resets auto-increment sequences",
+      "Deletes the table structure permanently from disk",
+      "Deletes only the first 10 rows",
+      "Truncates text columns to 255 characters"
+    ],
+    "correctAnswer": "Rapidly removes all rows by deallocating data pages with minimal logging, cannot be filtered with WHERE, and resets auto-increment sequences",
+    "explanation": "TRUNCATE is a DDL operation that drops table storage pages, drastically outperforming row-by-row DELETE."
+  },
+  {
+    "questionText": "What is 'Database Index' and what is the trade-off of adding too many indexes?",
+    "options": [
+      "Indexes accelerate SELECT query lookups, but slow down INSERT, UPDATE, and DELETE operations because indexes must be updated",
+      "Indexes compress table storage but cause memory leaks",
+      "Indexes allow users to see hidden columns but cost money",
+      "Indexes have zero drawbacks"
+    ],
+    "correctAnswer": "Indexes accelerate SELECT query lookups, but slow down INSERT, UPDATE, and DELETE operations because indexes must be updated",
+    "explanation": "Indexes create B-Tree lookup paths that boost reads but impose write-amplification overhead on modifications."
+  },
+  {
+    "questionText": "What is 'Foreign Key Cascade Delete'?",
+    "options": [
+      "Automatically deleting corresponding child table rows when their referenced parent record is deleted",
+      "Deleting all foreign users from the database",
+      "Deleting the database backup",
+      "Deleting CSS stylesheets when a page is closed"
+    ],
+    "correctAnswer": "Automatically deleting corresponding child table rows when their referenced parent record is deleted",
+    "explanation": "ON DELETE CASCADE removes orphaned child records automatically when the parent row is deleted."
+  },
+  {
+    "questionText": "What is 'Data Redundancy'?",
+    "options": [
+      "Storing the same data element in multiple different tables or locations across an enterprise",
+      "Backing up a database to an off-site location",
+      "Having two data analysts on the same team",
+      "Using two monitors at a desk"
+    ],
+    "correctAnswer": "Storing the same data element in multiple different tables or locations across an enterprise",
+    "explanation": "Redundant data risks desynchronization and update anomalies unless tightly managed by pipelines."
+  },
+  {
+    "questionText": "What is 'Drill-Down' capability in interactive BI dashboards?",
+    "options": [
+      "Allowing users to navigate from a high-level summary view into deeper granular data by clicking an element (e.g. Year -> Month -> Day)",
+      "Drilling holes into hardware server enclosures",
+      "Deleting old data to free up space",
+      "Zooming into a map visualization"
+    ],
+    "correctAnswer": "Allowing users to navigate from a high-level summary view into deeper granular data by clicking an element (e.g. Year -> Month -> Day)",
+    "explanation": "Drill-downs enable exploratory root-cause analysis by unpacking aggregated charts into underlying detail."
+  },
+  {
+    "questionText": "What is 'Drill-Through' in Power BI / Tableau?",
+    "options": [
+      "Navigating from a visual on one dashboard page to a dedicated, contextually filtered detail page for the selected entity",
+      "Drilling through physical building walls",
+      "Exporting dashboard data into a CSV file",
+      "Sending dashboard links via Slack"
+    ],
+    "correctAnswer": "Navigating from a visual on one dashboard page to a dedicated, contextually filtered detail page for the selected entity",
+    "explanation": "Drill-through carries filter context from a summary tile to a detailed multi-visual reporting canvas."
+  },
+  {
+    "questionText": "What is 'Data Blending' in Tableau?",
+    "options": [
+      "Combining data from multiple separate data sources on a visual without joining them at the physical data source level",
+      "Blending two colors together in a chart",
+      "Mixing text and numbers in the same column",
+      "Running two SQL queries in parallel"
+    ],
+    "correctAnswer": "Combining data from multiple separate data sources on a visual without joining them at the physical data source level",
+    "explanation": "Blending performs left joins on post-aggregated data from distinct sources matching linking fields."
+  },
+  {
+    "questionText": "What is 'Card Sort' in data presentation design?",
+    "options": [
+      "Organizing dashboard visual tiles into logical cards that group related metrics together intuitively",
+      "Sorting playing cards by rank and suit",
+      "A method for checking credit card numbers",
+      "Sorting index cards alphabetically"
+    ],
+    "correctAnswer": "Organizing dashboard visual tiles into logical cards that group related metrics together intuitively",
+    "explanation": "Card-based chunking groups interrelated stats into visual bounding boxes, reducing cognitive overload."
+  },
+  {
+    "questionText": "What does the SQL function `DATE_TRUNC('month', order_date)` do in PostgreSQL?",
+    "options": [
+      "Truncates the timestamp to the first day of that month at midnight (e.g. 2026-03-15 -> 2026-03-01 00:00:00)",
+      "Deletes the month from the date string",
+      "Returns the month number as an integer (e.g. 3)",
+      "Calculates the number of days in the month"
+    ],
+    "correctAnswer": "Truncates the timestamp to the first day of that month at midnight (e.g. 2026-03-15 -> 2026-03-01 00:00:00)",
+    "explanation": "DATE_TRUNC standardizes timestamps into uniform bucket intervals (day, week, month) for clean GROUP BY aggregation."
+  },
+  {
+    "questionText": "What does `EXTRACT(YEAR FROM order_date)` do in SQL?",
+    "options": [
+      "Extracts the numerical year component (e.g. 2026) from a date or timestamp column",
+      "Converts the entire date into a text string",
+      "Calculates how many years ago the order occurred",
+      "Rounds the date to the nearest year"
+    ],
+    "correctAnswer": "Extracts the numerical year component (e.g. 2026) from a date or timestamp column",
+    "explanation": "EXTRACT isolates specific temporal fields (year, month, hour, dow) from timestamps as numeric values."
+  },
+  {
+    "questionText": "What is 'Target Achievement Rate' in KPI tracking?",
+    "options": [
+      "(Actual Performance / Target Goal) * 100",
+      "Total Target minus Total Actual",
+      "Target Goal divided by Number of Days",
+      "The percentage of employees who reached quota"
+    ],
+    "correctAnswer": "(Actual Performance / Target Goal) * 100",
+    "explanation": "Target achievement rate benchmarks realized progress against predetermined organizational milestones."
+  },
+  {
+    "questionText": "What is 'Burn Rate' in startup financial analytics?",
+    "options": [
+      "The rate at which a company spends its cash reserves before generating positive cash flow from operations",
+      "The physical heat dissipation of server processors",
+      "The rate at which customer support tickets are closed",
+      "The speed at which data is written to SSD disks"
+    ],
+    "correctAnswer": "The rate at which a company spends its cash reserves before generating positive cash flow from operations",
+    "explanation": "Monthly net burn rate informs cash runway calculations: Cash Reserves / Net Burn = Months of Runway Remaining."
+  },
+  {
+    "questionText": "What is 'Runway' in financial analytics?",
+    "options": [
+      "The number of months a business can continue operating at its current burn rate before running out of cash",
+      "A runway used by airplanes at an airport",
+      "The length of time required to launch a product",
+      "The physical distance between offices"
+    ],
+    "correctAnswer": "The number of months a business can continue operating at its current burn rate before running out of cash",
+    "explanation": "Runway provides a critical survival timeline that governs fundraising and cost-reduction schedules."
+  },
+  {
+    "questionText": "What does 'Net Profit Margin' measure?",
+    "options": [
+      "The percentage of total revenue remaining as net profit after deducting all expenses, taxes, and interest",
+      "Total Revenue divided by Total Costs",
+      "Total Sales minus Marketing Costs",
+      "The percentage of profit given to shareholders"
+    ],
+    "correctAnswer": "The percentage of total revenue remaining as net profit after deducting all expenses, taxes, and interest",
+    "explanation": "Net profit margin reflects bottom-line financial health: Net Income / Total Revenue * 100."
+  },
+  {
+    "questionText": "What is 'Return on Investment' (ROI)?",
+    "options": [
+      "(Net Profit from Investment / Initial Cost of Investment) * 100",
+      "Total Revenue minus Total Taxes",
+      "The annual interest rate on bank deposits",
+      "The percentage of employees retained per year"
+    ],
+    "correctAnswer": "(Net Profit from Investment / Initial Cost of Investment) * 100",
+    "explanation": "ROI evaluates the financial efficiency or yield of capital allocated to specific initiatives."
+  },
+  {
+    "questionText": "What is 'Sensitivity Analysis' (What-If Analysis) in forecasting?",
+    "options": [
+      "Evaluating how changes in key input assumptions (e.g. price, conversion rate) impact projected outcome metrics",
+      "Analyzing how sensitive employees are to feedback",
+      "Testing how sensors respond to temperature",
+      "Checking database server reaction to network ping"
+    ],
+    "correctAnswer": "Evaluating how changes in key input assumptions (e.g. price, conversion rate) impact projected outcome metrics",
+    "explanation": "Sensitivity models reveal which input variables exert the greatest leverage or risk on business outcomes."
+  },
+  {
+    "questionText": "What is 'Break-Even Analysis'?",
+    "options": [
+      "Determining the production volume or sales revenue required to cover all fixed and variable costs with zero net profit",
+      "Analyzing when computer hardware breaks down",
+      "When a company goes bankrupt",
+      "When two competing products have equal market share"
+    ],
+    "correctAnswer": "Determining the production volume or sales revenue required to cover all fixed and variable costs with zero net profit",
+    "explanation": "Break-even identifies the threshold where total revenues equal total expenditures: Fixed Costs / (Price - Variable Cost)."
+  },
+  {
+    "questionText": "What is 'Variable Cost' vs 'Fixed Cost'?",
+    "options": [
+      "Variable costs fluctuate directly with production volume (e.g. raw materials, packaging); fixed costs remain constant regardless of output (e.g. rent, base salaries)",
+      "Fixed costs change every month; variable costs stay the same",
+      "Variable costs apply only to software; fixed costs apply to hardware",
+      "There is no difference between them"
+    ],
+    "correctAnswer": "Variable costs fluctuate directly with production volume (e.g. raw materials, packaging); fixed costs remain constant regardless of output (e.g. rent, base salaries)",
+    "explanation": "Distinguishing cost structures is foundational for contribution margin and unit economics analysis."
+  },
+  {
+    "questionText": "What is 'Contribution Margin'?",
+    "options": [
+      "Revenue minus Variable Costs; represents the funds available to cover fixed costs and generate profit",
+      "Money contributed by angel investors",
+      "The amount employees contribute to pension funds",
+      "The percentage of code contributed by an engineer"
+    ],
+    "correctAnswer": "Revenue minus Variable Costs; represents the funds available to cover fixed costs and generate profit",
+    "explanation": "Contribution margin reveals whether products generate surplus value after covering incremental marginal costs."
+  },
+  {
+    "questionText": "What is 'Price Elasticity of Demand'?",
+    "options": [
+      "A measure of how sensitive consumer purchase quantity is to a change in the product's price",
+      "How much a rubber band stretches when pulled",
+      "The speed at which prices change on ecommerce sites",
+      "The difference between retail price and wholesale price"
+    ],
+    "correctAnswer": "A measure of how sensitive consumer purchase quantity is to a change in the product's price",
+    "explanation": "Elastic demand (|E| > 1) means price hikes cause disproportionate demand drops; inelastic demand (|E| < 1) tolerates price increases."
+  },
+  {
+    "questionText": "What is 'Market Basket Analysis' (Association Rule Mining)?",
+    "options": [
+      "Discovering products frequently purchased together in transactions (e.g. 'Customers who bought bread also bought butter')",
+      "A survey of fruit prices in grocery stores",
+      "Carrying shopping baskets in retail stores",
+      "Analyzing consumer price indexes across countries"
+    ],
+    "correctAnswer": "Discovering products frequently purchased together in transactions (e.g. 'Customers who bought bread also bought butter')",
+    "explanation": "Support, confidence, and lift metrics reveal product affinities, guiding cross-selling and store layout strategies."
+  },
+  {
+    "questionText": "What is 'Click-Through Rate' (CTR)?",
+    "options": [
+      "(Total Clicks / Total Impressions) * 100",
+      "Total Purchases divided by Total Clicks",
+      "The time it takes to click a button",
+      "The number of users who double-click on links"
+    ],
+    "correctAnswer": "(Total Clicks / Total Impressions) * 100",
+    "explanation": "CTR measures creative engagement efficiency across digital ads, search listings, and email links."
+  },
+  {
+    "questionText": "What is 'Conversion Rate' (CR)?",
+    "options": [
+      "(Total Goal Completions or Purchases / Total Visitors or Sessions) * 100",
+      "Total Pageviews divided by Total Clicks",
+      "The currency exchange rate between dollars and euros",
+      "The rate of database query completion"
+    ],
+    "correctAnswer": "(Total Goal Completions or Purchases / Total Visitors or Sessions) * 100",
+    "explanation": "Conversion rate tracks funnel efficacy, quantifying what percentage of traffic completes a desired objective."
+  },
+  {
+    "questionText": "What is 'Cost Per Click' (CPC)?",
+    "options": [
+      "Total Advertising Spend / Total Number of Clicks Received",
+      "The cost of buying a computer mouse",
+      "The fee paid to internet service providers",
+      "The profit earned per click on an ad"
+    ],
+    "correctAnswer": "Total Advertising Spend / Total Number of Clicks Received",
+    "explanation": "CPC is a foundational pay-per-click advertising metric measuring user acquisition cost efficiency."
+  },
+  {
+    "questionText": "What is 'Cost Per Acquisition' (CPA)?",
+    "options": [
+      "Total Advertising Spend / Total Number of Conversions or Actions Achieved",
+      "The cost of acquiring a competing company",
+      "The salary of a procurement manager",
+      "The cost of physical shipping on orders"
+    ],
+    "correctAnswer": "Total Advertising Spend / Total Number of Conversions or Actions Achieved",
+    "explanation": "CPA measures the cost effectiveness of driving specific business actions (signups, leads, sales)."
+  },
+  {
+    "questionText": "What is 'A/B Test Statistical Significance' (p < 0.05)?",
+    "options": [
+      "Confidence that observed performance differences between variants are unlikely to be the result of random chance alone",
+      "Proof that variant B will increase revenue forever",
+      "That exactly 5% of users converted",
+      "That the test ran for at least 5 days"
+    ],
+    "correctAnswer": "Confidence that observed performance differences between variants are unlikely to be the result of random chance alone",
+    "explanation": "Significance thresholds ensure organizations do not alter products based on random sample variance."
+  },
+  {
+    "questionText": "What is 'ETL Data Latency'?",
+    "options": [
+      "The time delay between when a transaction occurs in a source system and when it becomes available for analysis in the warehouse",
+      "The speed of the network cable in gigabits",
+      "The execution time of a single SQL SELECT query",
+      "The latency of the web browser rendering charts"
+    ],
+    "correctAnswer": "The time delay between when a transaction occurs in a source system and when it becomes available for analysis in the warehouse",
+    "explanation": "Latency dictates whether a warehouse is real-time, micro-batch, or daily batch, setting expectations for reporting freshness."
+  },
+  {
+    "questionText": "What is 'Data Quality Framework' Dimension of Timeliness?",
+    "options": [
+      "Ensuring data represents current reality and is refreshed frequently enough to support operational decisions",
+      "Whether data is saved in UTC timezone",
+      "How fast the database server boots up",
+      "The number of hours employees work per week"
+    ],
+    "correctAnswer": "Ensuring data represents current reality and is refreshed frequently enough to support operational decisions",
+    "explanation": "Timeliness assesses whether information is available within the decision window required by business stakeholders."
+  },
+  {
+    "questionText": "What is 'Data Quality Framework' Dimension of Completeness?",
+    "options": [
+      "Ensuring all required data values are present with minimal unexpected nulls or missing rows",
+      "Ensuring every table has at least 1 million rows",
+      "Whether all columns are formatted as text",
+      "That all employees have access to the database"
+    ],
+    "correctAnswer": "Ensuring all required data values are present with minimal unexpected nulls or missing rows",
+    "explanation": "Completeness evaluates missingness across mandatory business attributes, preventing skewed aggregations."
+  },
+  {
+    "questionText": "What is 'Data Quality Framework' Dimension of Accuracy?",
+    "options": [
+      "The degree to which data correctly describes the real-world object or event being modeled",
+      "The number of decimal places stored in floats",
+      "Whether numbers are rounded to the nearest integer",
+      "The spelling of database table names"
+    ],
+    "correctAnswer": "The degree to which data correctly describes the real-world object or event being modeled",
+    "explanation": "Accuracy measures correctness against authoritative ground truth (e.g. audited invoices vs logged revenues)."
+  },
+  {
+    "questionText": "What is 'Data Quality Framework' Dimension of Consistency?",
+    "options": [
+      "Ensuring data values across different tables, systems, or reporting marts do not contradict one another",
+      "Ensuring all charts use the same blue color",
+      "That all database queries take exactly 1 second",
+      "That table names are in uppercase"
+    ],
+    "correctAnswer": "Ensuring data values across different tables, systems, or reporting marts do not contradict one another",
+    "explanation": "Consistency prevents conflicting numbers across departments, ensuring unified single-source-of-truth metrics."
+  },
+  {
+    "questionText": "What is 'Attribution Modeling' in multi-touch marketing analytics?",
+    "options": [
+      "A framework determining how credit for conversions is assigned across various touchpoints along a customer journey",
+      "Assigning blame for software bugs to developers",
+      "Calculating author copyright royalties",
+      "Tracking which database node wrote a record"
+    ],
+    "correctAnswer": "A framework determining how credit for conversions is assigned across various touchpoints along a customer journey",
+    "explanation": "Attribution models (first-touch, last-touch, linear, W-shaped) evaluate the ROI contribution of each acquisition channel."
+  },
+  {
+    "questionText": "What is the fundamental philosophy of Data Analytics?",
+    "options": [
+      "Transforming disparate raw data into reliable, actionable insights that eliminate guesswork and empower informed decisions",
+      "Writing complex queries to impress colleagues",
+      "Creating charts with as many colors as possible",
+      "Collecting every single byte of data indefinitely"
+    ],
+    "correctAnswer": "Transforming disparate raw data into reliable, actionable insights that eliminate guesswork and empower informed decisions",
+    "explanation": "Data analytics turns information into competitive advantage by answering business questions with empirical clarity."
+  }
+]

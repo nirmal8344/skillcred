@@ -1,0 +1,1102 @@
+[
+  {
+    "questionText": "In ICD-10-CM coding conventions, what is the critical difference between an 'Excludes1' note and an 'Excludes2' note?",
+    "options": [
+      "Excludes1 means 'NOT CODED HERE!' indicating two conditions cannot occur together and should never be billed together; Excludes2 means 'NOT INCLUDED HERE' indicating the two conditions can co-occur and may be coded together if documented",
+      "Excludes1 applies only to outpatient claims, while Excludes2 applies exclusively to inpatient surgery",
+      "Excludes1 permits modifiers to bypass the rule, whereas Excludes2 never allows any modifiers",
+      "Excludes1 is for pediatric conditions, while Excludes2 is for geriatric patients"
+    ],
+    "correctAnswer": "Excludes1 means 'NOT CODED HERE!' indicating two conditions cannot occur together and should never be billed together; Excludes2 means 'NOT INCLUDED HERE' indicating the two conditions can co-occur and may be coded together if documented",
+    "explanation": "Excludes1 represents a pure mutual exclusion where the conditions cannot physiologically or clinically exist simultaneously, whereas Excludes2 indicates the excluded condition is not part of the current code, but the patient may have both conditions simultaneously."
+  },
+  {
+    "questionText": "What does the 7th character 'A' represent in ICD-10-CM Chapter 19 injury and fracture coding?",
+    "options": [
+      "Initial encounter (patient receiving active treatment for the condition)",
+      "Subsequent encounter (patient receiving routine healing care during recovery)",
+      "Sequela (late effect arising as a direct result of the injury)",
+      "Accidental injury caused by an automobile"
+    ],
+    "correctAnswer": "Initial encounter (patient receiving active treatment for the condition)",
+    "explanation": "Character 'A' is used while the patient is receiving active treatment (e.g. surgical treatment, emergency department encounter, evaluation and treatment by a new physician)."
+  },
+  {
+    "questionText": "What does the 7th character 'D' designate in ICD-10-CM fracture and trauma codes?",
+    "options": [
+      "Subsequent encounter for fracture with routine healing (after active phase of treatment has concluded)",
+      "Delayed healing due to systemic infection",
+      "Deceased patient before hospital discharge",
+      "Direct admission to the intensive care unit"
+    ],
+    "correctAnswer": "Subsequent encounter for fracture with routine healing (after active phase of treatment has concluded)",
+    "explanation": "Character 'D' indicates the patient has completed active treatment and is receiving routine care during the healing or recovery phase (e.g. cast change, follow-up X-ray)."
+  },
+  {
+    "questionText": "What does the 7th character 'S' signify in ICD-10-CM?",
+    "options": [
+      "Sequela (complications or conditions arising as a late effect after the acute injury has healed)",
+      "Surgical intervention required during inpatient stay",
+      "Severe acute trauma requiring intensive care",
+      "Subsequent encounter with nonunion"
+    ],
+    "correctAnswer": "Sequela (complications or conditions arising as a late effect after the acute injury has healed)",
+    "explanation": "Character 'S' identifies sequelae (late effects); coding guidelines require reporting both the condition caused by the sequela first, followed by the original injury code with 'S'."
+  },
+  {
+    "questionText": "When an ICD-10-CM code requires a 7th character but only contains 4 or 5 characters, what character must be used as a placeholder?",
+    "options": [
+      "The letter 'X'",
+      "The number '0'",
+      "A hyphen '-'",
+      "The letter 'Z'"
+    ],
+    "correctAnswer": "The letter 'X'",
+    "explanation": "The dummy placeholder 'X' must be used to fill empty character positions so the 7th character falls into the required 7th position (e.g., T15.01XA)."
+  },
+  {
+    "questionText": "Under Official ICD-10-CM Coding Guidelines, what is the mandatory sequencing rule when coding Sepsis, Severe Sepsis, and Septic Shock?",
+    "options": [
+      "Code the underlying systemic infection (e.g. A41.9) first, followed by R65.20 (Severe sepsis) or R65.21 (Septic shock), followed by codes for associated acute organ dysfunction",
+      "Always code Septic Shock (R65.21) first before any infectious etiology",
+      "Code only the acute organ dysfunction and omit sepsis codes completely",
+      "Sequence the primary symptom (such as fever) before sepsis"
+    ],
+    "correctAnswer": "Code the underlying systemic infection (e.g. A41.9) first, followed by R65.20 (Severe sepsis) or R65.21 (Septic shock), followed by codes for associated acute organ dysfunction",
+    "explanation": "The coding guideline for severe sepsis mandates sequencing the systemic infection first, followed by subcategory R65.2, followed by individual acute organ dysfunctions."
+  },
+  {
+    "questionText": "If a patient is admitted for treatment of an acute condition and has Type 2 diabetes with chronic kidney disease (CKD), how is this coded under combination coding rules?",
+    "options": [
+      "Assign category E11.22 (Type 2 diabetes with diabetic CKD) followed by the appropriate N18 stage code for chronic kidney disease",
+      "Assign only diabetes mellitus uncomplicated (E11.9)",
+      "Assign CKD first and omit the diabetes diagnosis",
+      "Assign two separate unlinked codes: one for unspecified diabetes and one for kidney inflammation"
+    ],
+    "correctAnswer": "Assign category E11.22 (Type 2 diabetes with diabetic CKD) followed by the appropriate N18 stage code for chronic kidney disease",
+    "explanation": "ICD-10-CM assumes a causal relationship between diabetes and CKD linked by 'with'; coder must assign the combination code E11.22 plus the specific CKD stage (N18.1-N18.6)."
+  },
+  {
+    "questionText": "What is the official coding rule for long-term current use of insulin in a Type 2 diabetic patient?",
+    "options": [
+      "Assign code Z79.4 (Long term (current) use of insulin) as a secondary diagnosis alongside the Type 2 diabetes code",
+      "Reclassify the patient as Type 1 diabetic immediately",
+      "Do not code insulin use because Type 2 diabetics never use insulin",
+      "Code Z79.4 as the primary diagnosis ahead of diabetes"
+    ],
+    "correctAnswer": "Assign code Z79.4 (Long term (current) use of insulin) as a secondary diagnosis alongside the Type 2 diabetes code",
+    "explanation": "When a Type 2 diabetic patient routinely takes insulin, code Z79.4 should be assigned to indicate current insulin use, but the patient remains classified as Type 2."
+  },
+  {
+    "questionText": "In ICD-10-CM, what is the time limit for coding an Acute Myocardial Infarction (AMI) using category I21 before it is considered an 'old' or healed MI?",
+    "options": [
+      "4 weeks (28 days) or less from onset",
+      "24 hours from admission",
+      "6 months from initial attack",
+      "1 year following coronary stent placement"
+    ],
+    "correctAnswer": "4 weeks (28 days) or less from onset",
+    "explanation": "Codes from category I21 are assigned for an acute MI specified as occurring within 4 weeks (28 days) or less from onset; after 4 weeks, code I25.2 (Old myocardial infarction) is used."
+  },
+  {
+    "questionText": "If a patient suffers a subsequent acute myocardial infarction within the 4-week recovery window of an initial AMI, which code category must be utilized?",
+    "options": [
+      "Category I22 (Subsequent STEMI and NSTEMI)",
+      "Re-code category I21 with modifier 76",
+      "Category I25.2 (Old myocardial infarction)",
+      "Category R94.31 (Abnormal electrocardiogram)"
+    ],
+    "correctAnswer": "Category I22 (Subsequent STEMI and NSTEMI)",
+    "explanation": "Category I22 is specifically designated for a subsequent myocardial infarction occurring within 28 days of an initial acute myocardial infarction (I21)."
+  },
+  {
+    "questionText": "What is the mandatory guideline when an encounter is primarily for the administration of chemotherapy, immunotherapy, or radiation therapy for a malignancy?",
+    "options": [
+      "Sequence the encounter Z-code (e.g., Z51.11 for chemotherapy) as the principal diagnosis, followed by the code for the malignancy",
+      "Sequence the primary cancer code first, followed by the chemotherapy Z-code",
+      "Code only the pharmacy NDC drug code without any diagnosis code",
+      "Code the nausea and vomiting side effects as principal diagnosis"
+    ],
+    "correctAnswer": "Sequence the encounter Z-code (e.g., Z51.11 for chemotherapy) as the principal diagnosis, followed by the code for the malignancy",
+    "explanation": "When the primary purpose of an admission or outpatient visit is antineoplastic chemotherapy, immunotherapy, or radiotherapy, assign the respective Z51 code first, followed by the malignancy."
+  },
+  {
+    "questionText": "What does CPT Modifier -25 indicate?",
+    "options": [
+      "A significant, separately identifiable Evaluation and Management (E/M) service performed by the same physician on the same day as a minor procedure or other service",
+      "A bilateral surgical procedure performed on paired anatomical organs",
+      "A discontinued outpatient surgical procedure before anesthesia",
+      "A procedure executed by two primary operating surgeons"
+    ],
+    "correctAnswer": "A significant, separately identifiable Evaluation and Management (E/M) service performed by the same physician on the same day as a minor procedure or other service",
+    "explanation": "Modifier -25 is appended to an E/M code when a provider renders a distinct, medically necessary E/M service above and beyond the usual preoperative and postoperative care associated with a procedure on the same date."
+  },
+  {
+    "questionText": "What does CPT Modifier -59 signify?",
+    "options": [
+      "Distinct Procedural Service: used to indicate that a procedure or service was independent and distinct from other non-E/M services performed on the same day",
+      "Staged or related surgical procedure during the postoperative global period",
+      "A repeat laboratory test performed on the same calendar day",
+      "A professional interpretation without technical facility usage"
+    ],
+    "correctAnswer": "Distinct Procedural Service: used to indicate that a procedure or service was independent and distinct from other non-E/M services performed on the same day",
+    "explanation": "Modifier -59 documents that a procedure was executed at a separate anatomical site, separate session, or via a distinct incision, bypassing National Correct Coding Initiative (NCCI) unbundling edits."
+  },
+  {
+    "questionText": "What are the CMS 'X{EPSU}' modifiers designed to serve as more specific alternatives to Modifier -59?",
+    "options": [
+      "XE (Separate Encounter), XS (Separate Structure), XP (Separate Practitioner), XU (Unusual Non-Overlapping Service)",
+      "XA (Anesthesia), XB (Bilateral), XC (Critical Care), XD (Dental)",
+      "X1 (Emergency), X2 (Urgent), X3 (Elective), X4 (Consultative)",
+      "XT (Technical), XP (Professional), XM (Medical), XS (Surgical)"
+    ],
+    "correctAnswer": "XE (Separate Encounter), XS (Separate Structure), XP (Separate Practitioner), XU (Unusual Non-Overlapping Service)",
+    "explanation": "CMS introduced the four HCPCS modifiers (XE, XS, XP, XU) to provide explicit clinical justification when unbundling NCCI edit pairs instead of relying on the generic modifier -59."
+  },
+  {
+    "questionText": "What is the purpose of CPT Modifier -26?",
+    "options": [
+      "Professional Component: reports the physician's professional service (interpretation and report) when billing separately from the technical equipment/facility cost",
+      "Bilateral surgical procedure on both hands",
+      "Unusual anesthesia service exceeding 4 hours",
+      "Assistant surgeon participating in major operation"
+    ],
+    "correctAnswer": "Professional Component: reports the physician's professional service (interpretation and report) when billing separately from the technical equipment/facility cost",
+    "explanation": "Certain diagnostic procedures (such as X-rays and EEGs) are split into a technical component (TC, equipment and technician) and professional component (26, physician interpretation)."
+  },
+  {
+    "questionText": "What does CPT Modifier -50 designate?",
+    "options": [
+      "Bilateral Procedure: performed on both sides of the body during the same operative session",
+      "Reduced procedural services when a procedure is partially completed",
+      "Multiple surgical procedures on unrelated anatomical regions",
+      "Surgical care only without postoperative follow-up"
+    ],
+    "correctAnswer": "Bilateral Procedure: performed on both sides of the body during the same operative session",
+    "explanation": "Modifier -50 reports bilateral surgical procedures performed on identical paired organs (e.g. bilateral carpal tunnel release, bilateral knees)."
+  },
+  {
+    "questionText": "What does CPT Modifier -78 report?",
+    "options": [
+      "Unplanned return to the operating/procedure room by the same physician following initial procedure for a related procedure during the postoperative period",
+      "Unrelated procedure performed during the postoperative global period",
+      "Repeat procedure by another physician on the same day",
+      "Staged or anticipated secondary surgical procedure"
+    ],
+    "correctAnswer": "Unplanned return to the operating/procedure room by the same physician following initial procedure for a related procedure during the postoperative period",
+    "explanation": "Modifier -78 indicates a patient had to return to the operating room during the global surgical period for a complication arising from the initial surgery (e.g. postoperative hemorrhage)."
+  },
+  {
+    "questionText": "What does CPT Modifier -79 signify?",
+    "options": [
+      "Unrelated procedure or service by the same physician during the postoperative period",
+      "Unplanned return to the operating room for a surgical complication",
+      "Repeat surgical procedure by an assistant surgeon",
+      "Discontinued procedure due to anesthesia contraindications"
+    ],
+    "correctAnswer": "Unrelated procedure or service by the same physician during the postoperative period",
+    "explanation": "Modifier -79 indicates that a physician performed a new, unrelated procedure on a patient who is currently within the global follow-up period of an earlier operation (e.g. cataract removal on left eye 30 days after right eye)."
+  },
+  {
+    "questionText": "In the 2021/2023 revised Evaluation and Management (E/M) guidelines for office and outpatient visits (99202–99215), what are the two basis options for code selection?",
+    "options": [
+      "Medical Decision Making (MDM) OR Total Time spent on the date of the encounter",
+      "History, Physical Exam, and Medical Decision Making (all 3 required)",
+      "Number of bullet points documented in the physical examination only",
+      "The duration of the patient's waiting room time"
+    ],
+    "correctAnswer": "Medical Decision Making (MDM) OR Total Time spent on the date of the encounter",
+    "explanation": "The updated AMA/CMS E/M guidelines eliminated history and physical exam bullet counting as scoring criteria, allowing physicians to choose code levels based purely on Medical Decision Making (MDM) or Total Time."
+  },
+  {
+    "questionText": "What are the three core elements evaluated when determining the level of Medical Decision Making (MDM)?",
+    "options": [
+      "Number and complexity of problems addressed; Amount and/or complexity of data reviewed and analyzed; Risk of complications, morbidity, or mortality of patient management",
+      "Years of physician practice; Length of hospital stay; Patient age",
+      "Body mass index; Number of medications prescribed; Cost of surgical implants",
+      "Number of symptoms checked; Total diagnostic lab tests ordered; Nurse shift length"
+    ],
+    "correctAnswer": "Number and complexity of problems addressed; Amount and/or complexity of data reviewed and analyzed; Risk of complications, morbidity, or mortality of patient management",
+    "explanation": "To qualify for a given MDM level (Straightforward, Low, Moderate, High), the encounter must meet or exceed the requirements in at least two of these three elements."
+  },
+  {
+    "questionText": "According to E/M guidelines, what defines an 'Established Patient' versus a 'New Patient'?",
+    "options": [
+      "An established patient has received professional services from the physician or another physician of the exact same specialty in the same group practice within the past 3 years",
+      "An established patient has visited the hospital clinic at least once in their lifetime",
+      "A new patient is anyone who does not carry commercial private medical insurance",
+      "An established patient must have had an inpatient surgery at the facility"
+    ],
+    "correctAnswer": "An established patient has received professional services from the physician or another physician of the exact same specialty in the same group practice within the past 3 years",
+    "explanation": "The 3-year rule governs new vs. established status; if no face-to-face service was billed by that physician or a same-specialty partner in the group within 3 years, the patient is new."
+  },
+  {
+    "questionText": "In CPT surgical package guidelines, what are the standard postoperative global periods assigned to major and minor surgeries?",
+    "options": [
+      "Minor procedures have 0 or 10 global days; Major surgeries have 90 global days",
+      "All surgical procedures have exactly 30 global days",
+      "Minor surgeries have 60 days; Major surgeries have 365 days",
+      "Surgeries never include follow-up care in the global package"
+    ],
+    "correctAnswer": "Minor procedures have 0 or 10 global days; Major surgeries have 90 global days",
+    "explanation": "CMS global periods dictate bundled routine postoperative care: 0 days (endoscopies/minor procedures with no post-op period), 10 days (minor procedures), and 90 days (major surgeries)."
+  },
+  {
+    "questionText": "What does HCPCS Level II coding primarily cover that CPT Level I codes do not?",
+    "options": [
+      "Supplies, injectable pharmaceuticals (J-codes), durable medical equipment (DME), prosthetics, orthotics, and ambulance services",
+      "Inpatient surgical procedures performed by neurosurgeons",
+      "Standard office consultations performed by primary care doctors",
+      "Diagnostic MRI and CT scan technical interpretations"
+    ],
+    "correctAnswer": "Supplies, injectable pharmaceuticals (J-codes), durable medical equipment (DME), prosthetics, orthotics, and ambulance services",
+    "explanation": "HCPCS Level II national codes (managed by CMS) are alphanumeric codes (A-V) identifying medical products, injectables, DME supplies, and non-physician services."
+  },
+  {
+    "questionText": "What is an 'Unbundling' (or Fragmentation) coding violation under healthcare compliance laws?",
+    "options": [
+      "Separately reporting multiple individual procedural codes for components of a procedure when a single comprehensive code exists that encompasses all components",
+      "Shipping physical medical equipment across state lines without a bill of lading",
+      "Splitting a patient invoice into monthly credit card installments",
+      "Discharging a patient before completing full surgical recovery"
+    ],
+    "correctAnswer": "Separately reporting multiple individual procedural codes for components of a procedure when a single comprehensive code exists that encompasses all components",
+    "explanation": "Unbundling artificially inflates reimbursement by billing distinct sub-components that should be bundled under one comprehensive CPT code, constituting healthcare fraud or abuse."
+  },
+  {
+    "questionText": "What is 'Upcoding' in medical billing and coding?",
+    "options": [
+      "Assigning an inaccurate diagnosis or procedure code of a higher level of severity or complexity than documented to obtain higher reimbursement",
+      "Updating coding software manuals to the newest annual release",
+      "Submitting claims electronically via high-speed fiber optic networks",
+      "Converting ICD-9 legacy records into ICD-10 format"
+    ],
+    "correctAnswer": "Assigning an inaccurate diagnosis or procedure code of a higher level of severity or complexity than documented to obtain higher reimbursement",
+    "explanation": "Upcoding is fraudulent billing where a provider claims a more intensive service or higher-severity condition than was clinically justified or rendered (e.g. billing 99215 when documentation only supports 99212)."
+  },
+  {
+    "questionText": "In the Medicare Inpatient Prospective Payment System (IPPS), what does MS-DRG stand for?",
+    "options": [
+      "Medicare Severity Diagnosis Related Group",
+      "Medical Standard Diagnostic Resource Guide",
+      "Mandatory Surgical Department Review Group",
+      "Modern Statistical Disease Rate Group"
+    ],
+    "correctAnswer": "Medicare Severity Diagnosis Related Group",
+    "explanation": "MS-DRGs categorize inpatient hospital stays into clinically cohesive groups with similar resource consumption, determining fixed prospective reimbursement."
+  },
+  {
+    "questionText": "What are the three severity levels into which MS-DRGs are typically stratified based on secondary diagnoses?",
+    "options": [
+      "Without CC/MCC; With CC (Complication or Comorbidity); With MCC (Major Complication or Comorbidity)",
+      "Mild; Moderate; Severe",
+      "Inpatient; Observation; Outpatient",
+      "Level 1; Level 2; Level 3"
+    ],
+    "correctAnswer": "Without CC/MCC; With CC (Complication or Comorbidity); With MCC (Major Complication or Comorbidity)",
+    "explanation": "Secondary diagnoses designated as CCs or MCCs reflect higher patient acuity, increasing the hospital case mix index and reimbursement rate."
+  },
+  {
+    "questionText": "Under Uniform Hospital Discharge Data Set (UHDDS) definitions, what is the 'Principal Diagnosis'?",
+    "options": [
+      "The condition established after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care",
+      "The most expensive chronic medical condition listed in the patient's chart",
+      "The primary symptom that prompted the patient to call the ambulance",
+      "The final diagnosis confirmed on the day of hospital discharge"
+    ],
+    "correctAnswer": "The condition established after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care",
+    "explanation": "The principal diagnosis drives the MS-DRG assignment; it is identified 'after study' (post-admission diagnostic evaluation) as the condition that justified hospital admission."
+  },
+  {
+    "questionText": "What is an 'Advance Beneficiary Notice of Noncoverage' (ABN - Form CMS-R-131)?",
+    "options": [
+      "A written notice given to a fee-for-service Medicare beneficiary before receiving a service that Medicare is expected to deny as not medically necessary, informing them of potential out-of-pocket financial liability",
+      "An insurance claim denial letter sent after hospital discharge",
+      "A consent form authorizing organ donation during emergency surgery",
+      "A legal agreement authorizing a healthcare provider to access credit bureaus"
+    ],
+    "correctAnswer": "A written notice given to a fee-for-service Medicare beneficiary before receiving a service that Medicare is expected to deny as not medically necessary, informing them of potential out-of-pocket financial liability",
+    "explanation": "An ABN transfers financial liability to the patient for services likely to be denied as not medically reasonable and necessary, allowing the patient to make an informed choice."
+  },
+  {
+    "questionText": "Which HCPCS modifier is appended to a claim line item to indicate that a valid, signed ABN is on file for a service expected to be denied as not medically necessary?",
+    "options": [
+      "Modifier -GA",
+      "Modifier -GX",
+      "Modifier -GY",
+      "Modifier -GZ"
+    ],
+    "correctAnswer": "Modifier -GA",
+    "explanation": "Modifier -GA signifies an ABN was executed and signed by the patient; if Medicare denies the claim for medical necessity, the provider can bill the patient directly."
+  },
+  {
+    "questionText": "What does HCPCS Modifier -GZ indicate when appended to a claim?",
+    "options": [
+      "The provider expects the service to be denied as not medically necessary, but NO signed ABN was obtained from the beneficiary (provider cannot bill the patient)",
+      "A signed ABN is on file and the patient accepted all financial liability",
+      "The service was provided entirely free of charge as charity care",
+      "The claim is being billed to a private commercial secondary payer"
+    ],
+    "correctAnswer": "The provider expects the service to be denied as not medically necessary, but NO signed ABN was obtained from the beneficiary (provider cannot bill the patient)",
+    "explanation": "Modifier -GZ informs the payer that no ABN was obtained; upon claim denial, the provider must write off the charges and cannot legally bill the beneficiary."
+  },
+  {
+    "questionText": "What is the standard claim form used for billing professional physician services in outpatient settings?",
+    "options": [
+      "CMS-1500 (HCFA-1500)",
+      "UB-04 (CMS-1450)",
+      "Form W-2",
+      "Form 1099-MISC"
+    ],
+    "correctAnswer": "CMS-1500 (HCFA-1500)",
+    "explanation": "The CMS-1500 form is the universal paper claim form (and 837P electronic transaction) utilized by physicians, non-physician practitioners, and outpatient suppliers."
+  },
+  {
+    "questionText": "What is the standard claim form used for billing institutional facility charges by hospitals, skilled nursing facilities, and inpatient rehabilitation units?",
+    "options": [
+      "UB-04 (CMS-1450)",
+      "CMS-1500",
+      "ADA Dental Claim Form",
+      "Form 941"
+    ],
+    "correctAnswer": "UB-04 (CMS-1450)",
+    "explanation": "The UB-04 (Uniform Billing 04, electronic 837I) is the standard claim form for institutional facility billing including room and board, surgery suite fees, and facility overhead."
+  },
+  {
+    "questionText": "Under HIPAA Administrative Simplification standards, what is the National Provider Identifier (NPI)?",
+    "options": [
+      "A unique, intelligence-free 10-digit identification number assigned to covered healthcare providers in the United States",
+      "A 9-digit Social Security Number assigned to registered nurses",
+      "A state medical license number printed on prescription pads",
+      "A hospital bed inventory tracking bar code"
+    ],
+    "correctAnswer": "A unique, intelligence-free 10-digit identification number assigned to covered healthcare providers in the United States",
+    "explanation": "The NPI is a 10-digit numeric identifier mandated by HIPAA that contains no embedded information about the provider's state, specialty, or credentials."
+  },
+  {
+    "questionText": "What is 'Assumption Coding' and why is it considered an unethical coding practice?",
+    "options": [
+      "Assigning codes for diagnoses or procedures based on coder assumptions, inferences, or clinical suspicions without explicit provider documentation in the medical record",
+      "Assuming that coding software updates will be installed automatically by IT",
+      "Assuming that the patient has health insurance without checking their card",
+      "Assigning codes based on standard government guidelines"
+    ],
+    "correctAnswer": "Assigning codes for diagnoses or procedures based on coder assumptions, inferences, or clinical suspicions without explicit provider documentation in the medical record",
+    "explanation": "Assumption coding violates AAPC and AHIMA ethical standards; coders must never guess diagnoses from abnormal lab results alone without explicit physician confirmation."
+  },
+  {
+    "questionText": "In Clinical Documentation Improvement (CDI), what constitutes a compliant, ethical Physician Query?",
+    "options": [
+      "A query that presents clinical indicators from the chart and objectively asks the provider to clarify diagnostic intent, without leading or prompting a specific lucrative code",
+      "A query that explicitly instructs the doctor to write 'Severe Malnutrition' to raise DRG payment",
+      "A phone text asking the physician to sign a pre-filled altered chart",
+      "A query demanding the physician change their surgical technique"
+    ],
+    "correctAnswer": "A query that presents clinical indicators from the chart and objectively asks the provider to clarify diagnostic intent, without leading or prompting a specific lucrative code",
+    "explanation": "Ethical queries must be non-leading, presenting objective clinical indicators and multiple diagnostic options (including 'unable to determine' or 'other') to clarify ambiguity."
+  },
+  {
+    "questionText": "In the National Correct Coding Initiative (NCCI), what does a modifier indicator of '0' in an edit pair table mean?",
+    "options": [
+      "Modifiers are NOT allowed to bypass the edit under any circumstances; the code pair will never be reimbursed together",
+      "Modifiers are allowed to bypass the edit if clinical documentation supports a distinct service",
+      "The edit has been permanently deleted from Medicare systems",
+      "The edit applies only to zero-dollar copay services"
+    ],
+    "correctAnswer": "Modifiers are NOT allowed to bypass the edit under any circumstances; the code pair will never be reimbursed together",
+    "explanation": "Modifier indicator 0 means no CPT modifier (such as -59) can unbundle the pair; the column 2 code will be denied if billed on the same date."
+  },
+  {
+    "questionText": "In NCCI tables, what does a modifier indicator of '1' signify?",
+    "options": [
+      "Modifiers (such as -59, -25, or X-modifiers) ARE permitted to bypass the edit when documentation substantiates an appropriate, distinct service",
+      "Modifiers are prohibited under all circumstances",
+      "The code can only be billed on the first day of each month",
+      "The code requires prior authorization from the primary care physician"
+    ],
+    "correctAnswer": "Modifiers (such as -59, -25, or X-modifiers) ARE permitted to bypass the edit when documentation substantiates an appropriate, distinct service",
+    "explanation": "Modifier indicator 1 allows appropriate modifiers to unbundle the codes when the procedures were performed at separate anatomical sites, separate encounters, or distinct incisions."
+  },
+  {
+    "questionText": "What is a 'Medically Unlikely Edit' (MUE) in Medicare claims adjudication?",
+    "options": [
+      "A maximum unit-of-service limit that a provider would rarely report for a single beneficiary on a single date of service for a specific HCPCS/CPT code",
+      "An edit flagging rare infectious diseases that have been eradicated",
+      "A claim rejected because the patient's address contains a typographical error",
+      "An edit denying procedures performed on weekend holidays"
+    ],
+    "correctAnswer": "A maximum unit-of-service limit that a provider would rarely report for a single beneficiary on a single date of service for a specific HCPCS/CPT code",
+    "explanation": "MUEs prevent over-billing by setting rational anatomical and clinical unit caps (e.g., an MUE of 1 on an appendectomy, or 2 on bilateral knee replacements)."
+  },
+  {
+    "questionText": "What is the HIPAA 'Minimum Necessary Rule' regarding Protected Health Information (PHI)?",
+    "options": [
+      "Covered entities must make reasonable efforts to use, disclose, or request only the minimum amount of PHI needed to accomplish the intended healthcare or administrative purpose",
+      "Providers must charge the minimum possible co-pay fee for routine doctor visits",
+      "Hospitals must maintain medical records for a minimum duration of 3 months",
+      "Coders must write only the shortest possible notes on patient billing claim forms"
+    ],
+    "correctAnswer": "Covered entities must make reasonable efforts to use, disclose, or request only the minimum amount of PHI needed to accomplish the intended healthcare or administrative purpose",
+    "explanation": "The minimum necessary standard restricts access and disclosure to only the specific health information required for the given task, protecting patient confidentiality."
+  },
+  {
+    "questionText": "Under the Federal False Claims Act (FCA), what is the 'Qui Tam' provision?",
+    "options": [
+      "A whistleblower provision allowing private citizens (relators) to file lawsuits on behalf of the federal government against entities committing healthcare fraud and share in recovered proceeds",
+      "A mandatory requirement that medical coders take an annual fraud exam",
+      "A statutory limit capping medical malpractice settlements at $100,000",
+      "An automated audit algorithm screening hospital laboratory invoices"
+    ],
+    "correctAnswer": "A whistleblower provision allowing private citizens (relators) to file lawsuits on behalf of the federal government against entities committing healthcare fraud and share in recovered proceeds",
+    "explanation": "Qui tam allows individuals (often internal billing coders or compliance officers) to expose fraudulent billing against Medicare/Medicaid with federal whistleblower protections."
+  },
+  {
+    "questionText": "What does the federal Anti-Kickback Statute (AKS) prohibit?",
+    "options": [
+      "Knowingly and willfully soliciting, receiving, offering, or paying remuneration in exchange for patient referrals or generating business payable by federal healthcare programs",
+      "Physicians from investing in publicly traded pharmaceutical index mutual funds",
+      "Hospitals from giving free parking passes to senior citizen patients",
+      "Billing insurance companies electronically rather than through certified paper mail"
+    ],
+    "correctAnswer": "Knowingly and willfully soliciting, receiving, offering, or paying remuneration in exchange for patient referrals or generating business payable by federal healthcare programs",
+    "explanation": "AKS is a criminal statute outlawing any financial inducements, kickbacks, or bribes designed to drive patient referrals for services reimbursed by Medicare or Medicaid."
+  },
+  {
+    "questionText": "What is the Physician Self-Referral Law, commonly referred to as the 'Stark Law'?",
+    "options": [
+      "A strict liability statute prohibiting a physician from referring Medicare patients for designated health services (DHS) to an entity with which the physician or immediate family member has a financial relationship, unless an exception applies",
+      "A law prohibiting doctors from prescribing generic medications to elderly patients",
+      "A regulation requiring doctors to work in rural community clinics for two years",
+      "A statute setting national caps on surgeon salaries in teaching hospitals"
+    ],
+    "correctAnswer": "A strict liability statute prohibiting a physician from referring Medicare patients for designated health services (DHS) to an entity with which the physician or immediate family member has a financial relationship, unless an exception applies",
+    "explanation": "Stark Law eliminates financial conflicts of interest by banning self-referrals for designated health services (labs, physical therapy, imaging) where the referring doctor has financial ownership."
+  },
+  {
+    "questionText": "In burn coding (ICD-10-CM Chapter 19), what is the critical distinction between a Burn and a Corrosion?",
+    "options": [
+      "Burns are caused by thermal heat, electricity, or radiation; Corrosions are chemical burns caused by exposure to external chemical agents",
+      "Burns apply to skin; Corrosions apply exclusively to internal stomach lining",
+      "Corrosions heal in 24 hours, whereas burns always cause permanent scarring",
+      "There is no distinction; both conditions share identical T-codes"
+    ],
+    "correctAnswer": "Burns are caused by thermal heat, electricity, or radiation; Corrosions are chemical burns caused by exposure to external chemical agents",
+    "explanation": "ICD-10-CM classifies thermal, electrical, and radiation injuries under Burn categories (T20-T25, T30-T32) while chemical-induced burns are coded as Corrosions (T26-T28)."
+  },
+  {
+    "questionText": "When coding multiple burns of different degrees on the same anatomical site, what is the official sequencing guideline?",
+    "options": [
+      "Sequence the code for the highest degree of burn first on that anatomical site",
+      "Code the first-degree burn first, followed by second, then third",
+      "Code only the burn that covers the smallest surface area",
+      "Combine all burns into an unspecified allergy code"
+    ],
+    "correctAnswer": "Sequence the code for the highest degree of burn first on that anatomical site",
+    "explanation": "When a single anatomical region exhibits multiple burn severities, guidelines require coding only the highest degree burn for that location."
+  },
+  {
+    "questionText": "In the 'Rule of Nines' used to calculate Total Body Surface Area (TBSA) in adult burn victims, what percentage is assigned to the entire head and neck?",
+    "options": [
+      "9% (4.5% anterior, 4.5% posterior)",
+      "18%",
+      "4.5%",
+      "1%"
+    ],
+    "correctAnswer": "9% (4.5% anterior, 4.5% posterior)",
+    "explanation": "The Rule of Nines estimates burn extent: head and neck = 9%, each arm = 9%, anterior torso = 18%, posterior torso = 18%, each leg = 18%, and perineum/groin = 1%."
+  },
+  {
+    "questionText": "How are pressure ulcers classified and sequenced in ICD-10-CM category L89?",
+    "options": [
+      "Combination codes that identify both the anatomical site (e.g. sacral region) and the clinical stage (Stage 1 through Stage 4, unstageable, or deep tissue pressure injury)",
+      "Single generic codes that do not distinguish ulcer location",
+      "Coded based solely on the patient's body mass index",
+      "Coded as accidental lacerations under trauma category S"
+    ],
+    "correctAnswer": "Combination codes that identify both the anatomical site (e.g. sacral region) and the clinical stage (Stage 1 through Stage 4, unstageable, or deep tissue pressure injury)",
+    "explanation": "Category L89 uses specific combination codes detailing the exact location, laterality, and depth/stage of pressure ulceration based on clinical documentation."
+  },
+  {
+    "questionText": "What is the official coding rule regarding the staging of pressure ulcers when documented by non-physician clinicians (such as wound care nurses)?",
+    "options": [
+      "The ulcer stage may be coded based on documentation by registered nurses or wound care specialists, provided the physician explicitly documented the diagnosis of pressure ulcer",
+      "Coders cannot utilize nursing documentation under any circumstance",
+      "Only the chief medical officer can document ulcer stages",
+      "The patient must self-report the ulcer stage on admission forms"
+    ],
+    "correctAnswer": "The ulcer stage may be coded based on documentation by registered nurses or wound care specialists, provided the physician explicitly documented the diagnosis of pressure ulcer",
+    "explanation": "Official coding guidelines allow using nursing notes for depth/staging of pressure ulcers, BMI, and social determinants of health, so long as the treating physician diagnoses the condition."
+  },
+  {
+    "questionText": "In ICD-10-CM Chapter 15 (Pregnancy, Childbirth, and the Puerperium), what is the overarching sequencing guideline for inpatient obstetric admissions?",
+    "options": [
+      "Chapter 15 codes (O00–O9A) have sequencing priority over all other chapters and must be sequenced first whenever a woman is admitted for an obstetric condition",
+      "Obstetric codes are never sequenced first under any circumstance",
+      "The newborn baby's delivery weight is sequenced as the principal diagnosis",
+      "Chapter 15 codes are optional supplementary codes"
+    ],
+    "correctAnswer": "Chapter 15 codes (O00–O9A) have sequencing priority over all other chapters and must be sequenced first whenever a woman is admitted for an obstetric condition",
+    "explanation": "Obstetric codes take sequencing precedence; any condition affecting pregnancy management requires an 'O' code as principal diagnosis, followed by secondary manifestation codes."
+  },
+  {
+    "questionText": "What code category must be reported on the mother's record to indicate the outcome of delivery (single liveborn, twins, stillborn)?",
+    "options": [
+      "Category Z37 (Outcome of delivery)",
+      "Category Z38 (Liveborn infants according to place of birth)",
+      "Category O80 (Encounter for full-term uncomplicated delivery)",
+      "Category P00 (Newborn affected by maternal factors)"
+    ],
+    "correctAnswer": "Category Z37 (Outcome of delivery)",
+    "explanation": "Category Z37 is assigned as a secondary code on the mother's record to indicate the delivery outcome (e.g. Z37.0 Single live birth), while Z38 is coded on the baby's record."
+  },
+  {
+    "questionText": "When is code O80 (Encounter for full-term uncomplicated delivery) assigned?",
+    "options": [
+      "Only for a full-term, single liveborn delivered vaginally with cephalic presentation, requiring no fetal manipulation, episiotomy/tear repair allowed, and zero antenatal/postpartum maternal complications",
+      "For any successful delivery regardless of whether a Cesarean section was performed",
+      "Whenever twin infants are delivered safely without complications",
+      "For premature births occurring before 36 weeks gestation"
+    ],
+    "correctAnswer": "Only for a full-term, single liveborn delivered vaginally with cephalic presentation, requiring no fetal manipulation, episiotomy/tear repair allowed, and zero antenatal/postpartum maternal complications",
+    "explanation": "Code O80 has strict criteria: single liveborn, full-term, spontaneous cephalic delivery, with absolutely no complications during pregnancy, labor, or puerperium."
+  },
+  {
+    "questionText": "In ICD-10-CM, how is Human Immunodeficiency Virus (HIV) coded when a patient is admitted with an active AIDS-defining illness (such as Pneumocystis jirovecii pneumonia)?",
+    "options": [
+      "Sequence code B20 (HIV disease) as principal diagnosis, followed by the code for the opportunistic infection (B59)",
+      "Sequence code B59 first, followed by asymptomatic HIV code Z21",
+      "Code only the pneumonia and never disclose HIV status",
+      "Assign code R75 (Inconclusive laboratory evidence of HIV)"
+    ],
+    "correctAnswer": "Sequence code B20 (HIV disease) as principal diagnosis, followed by the code for the opportunistic infection (B59)",
+    "explanation": "Guidelines state that when a patient with HIV is admitted for an HIV-related condition, code B20 is sequenced first, followed by the specific opportunistic condition."
+  },
+  {
+    "questionText": "Once a patient has been diagnosed with an AIDS-defining condition and coded as B20, can they ever be coded as Z21 (Asymptomatic HIV infection) in subsequent encounters?",
+    "options": [
+      "No; once a patient has developed an AIDS-related condition, code B20 must be assigned for every subsequent encounter for the rest of the patient's life",
+      "Yes; if their CD4 viral count returns to normal levels, they return to Z21",
+      "Yes; if they have had no active symptoms for 12 continuous months",
+      "The choice between B20 and Z21 is at the coder's personal discretion each visit"
+    ],
+    "correctAnswer": "No; once a patient has developed an AIDS-related condition, code B20 must be assigned for every subsequent encounter for the rest of the patient's life",
+    "explanation": "Under official guidelines, once a patient develops an HIV-related illness and is assigned B20, they can never be assigned Z21 again, regardless of viral suppression."
+  },
+  {
+    "questionText": "What does the CPT Category II code set represent?",
+    "options": [
+      "Supplemental tracking codes utilized for Performance Measurement and quality reporting (e.g., MIPS, HEDIS), ending in the letter 'F'",
+      "Codes for temporary emerging medical technologies ending in the letter 'T'",
+      "Codes for durable medical supplies and prescription pharmaceuticals",
+      "An alternative code set used exclusively for pediatric immunizations"
+    ],
+    "correctAnswer": "Supplemental tracking codes utilized for Performance Measurement and quality reporting (e.g., MIPS, HEDIS), ending in the letter 'F'",
+    "explanation": "Category II codes (e.g., 3008F for blood pressure measurement) are optional performance tracking codes that support clinical quality metrics and value-based care programs."
+  },
+  {
+    "questionText": "What does the CPT Category III code set represent?",
+    "options": [
+      "Temporary codes for emerging technology, services, and procedures that are awaiting FDA approval or Category I endorsement, ending in the letter 'T'",
+      "Codes for hospital cafeteria room and board charges",
+      "Codes for performance measures under Medicare MIPS",
+      "Permanent codes for standard open surgical procedures"
+    ],
+    "correctAnswer": "Temporary codes for emerging technology, services, and procedures that are awaiting FDA approval or Category I endorsement, ending in the letter 'T'",
+    "explanation": "Category III codes (e.g. 0200T) allow data collection and tracking for cutting-edge techniques and emerging procedures that have not yet met criteria for permanent Category I CPT codes."
+  },
+  {
+    "questionText": "In CPT, what is an 'Add-On Code' and how is it identified in the code book?",
+    "options": [
+      "A code describing secondary or additional work performed in conjunction with a primary procedure, identified by a plus symbol (+), and never reported as a standalone code",
+      "A code identified by a triangle indicating that the text description changed",
+      "A code identified by a bullet point indicating a brand new code release",
+      "A code for supplementary medications administered during dental surgery"
+    ],
+    "correctAnswer": "A code describing secondary or additional work performed in conjunction with a primary procedure, identified by a plus symbol (+), and never reported as a standalone code",
+    "explanation": "Add-on codes (+) describe supplementary intraoperative work (e.g., additional spinal levels, additional lesions) and are exempt from multiple procedure modifier -51 discounts."
+  },
+  {
+    "questionText": "What does the circle symbol with a slash (parenthetical prohibition) next to a CPT code denote?",
+    "options": [
+      "The code is exempt from modifier -51 (Multiple Procedures) and is not subject to standard multiple procedure payment reductions",
+      "The code is strictly prohibited from being billed to Medicare",
+      "The procedure cannot be performed under local anesthesia",
+      "The code description was deleted in the current revision year"
+    ],
+    "correctAnswer": "The code is exempt from modifier -51 (Multiple Procedures) and is not subject to standard multiple procedure payment reductions",
+    "explanation": "The modifier -51 exempt symbol indicates the procedure does not incur multiple procedure discounting when billed with other major surgeries."
+  },
+  {
+    "questionText": "In CPT Anesthesia guidelines, what does the Physical Status Modifier 'P3' represent?",
+    "options": [
+      "A patient with severe systemic disease",
+      "A normal healthy patient",
+      "A patient with mild systemic disease",
+      "A patient with severe systemic disease that is a constant threat to life"
+    ],
+    "correctAnswer": "A patient with severe systemic disease",
+    "explanation": "ASA Physical Status modifiers classify patient preoperative health: P1 = normal healthy, P2 = mild systemic disease, P3 = severe systemic disease, P4 = constant threat to life, P5 = moribund, P6 = brain dead."
+  },
+  {
+    "questionText": "What are 'Qualifying Circumstances' codes in CPT Anesthesia coding?",
+    "options": [
+      "Add-on codes (99100–99140) reporting unusual circumstances that impact anesthesia administration, such as extreme age, emergency conditions, or hypothermia",
+      "Codes verifying that the anesthesiologist attended an accredited medical university",
+      "Codes detailing whether the patient signed a living will directive",
+      "Codes tracking operating room ambient humidity and temperature levels"
+    ],
+    "correctAnswer": "Add-on codes (99100–99140) reporting unusual circumstances that impact anesthesia administration, such as extreme age, emergency conditions, or hypothermia",
+    "explanation": "Qualifying circumstances provide additional anesthesia conversion units for extraordinary environmental or clinical complexities (e.g. 99100 for patients under 1 year or over 70 years old)."
+  },
+  {
+    "questionText": "What is 'Anesthesia Time' and when does it begin and end under CPT guidelines?",
+    "options": [
+      "It begins when the anesthesia provider starts to prepare the patient for induction and ends when the patient is safely placed under postoperative nursing supervision",
+      "It begins when the surgeon makes the skin incision and ends when the incision is sutured",
+      "It begins when the patient arrives at the hospital lobby and ends at discharge",
+      "It covers only the precise minutes that the patient is unconscious"
+    ],
+    "correctAnswer": "It begins when the anesthesia provider starts to prepare the patient for induction and ends when the patient is safely placed under postoperative nursing supervision",
+    "explanation": "Anesthesia time measures continuous provider attendance, starting during pre-induction preparation and terminating when the patient is safely turned over to PACU care."
+  },
+  {
+    "questionText": "What is an 'Accountable Care Organization' (ACO) in modern healthcare reimbursement?",
+    "options": [
+      "A network of doctors, hospitals, and other healthcare providers who coordinate care to deliver high-quality coordinated services while sharing in cost savings under value-based payment models",
+      "A private debt collection agency hired by hospitals to recover unpaid patient bills",
+      "A state government agency licensing registered practical nurses",
+      "A commercial accounting firm auditing physician medical charts"
+    ],
+    "correctAnswer": "A network of doctors, hospitals, and other healthcare providers who coordinate care to deliver high-quality coordinated services while sharing in cost savings under value-based payment models",
+    "explanation": "ACOs shift reimbursement from fee-for-service volume to value-based care, rewarding provider coalitions that meet quality standards while curbing Medicare spending."
+  },
+  {
+    "questionText": "What does 'Capitation' mean in managed care payer contracts?",
+    "options": [
+      "A fixed per-member-per-month (PMPM) prepayment made to a healthcare provider to cover comprehensive medical services for an enrolled patient, regardless of service frequency",
+      "A cap on the maximum fee that can be charged for an open heart surgery",
+      "Paying a doctor a variable fee for every blood pressure reading taken",
+      "A penalty fee deducted when a doctor refers a patient to an outside specialist"
+    ],
+    "correctAnswer": "A fixed per-member-per-month (PMPM) prepayment made to a healthcare provider to cover comprehensive medical services for an enrolled patient, regardless of service frequency",
+    "explanation": "Capitation shifts financial utilization risk onto the healthcare provider, incentivizing preventive wellness care over high-volume acute utilization."
+  },
+  {
+    "questionText": "What is a 'Clean Claim' in medical billing?",
+    "options": [
+      "A claim that is submitted with all required demographic and clinical data elements, free from coding errors, and passes all payer adjudication edits without requiring manual intervention",
+      "A paper claim form that has been sterilized with medical alcohol",
+      "A claim submitted for hospital janitorial and linen cleaning expenses",
+      "A claim where the patient has paid 100% of the bill in advance"
+    ],
+    "correctAnswer": "A claim that is submitted with all required demographic and clinical data elements, free from coding errors, and passes all payer adjudication edits without requiring manual intervention",
+    "explanation": "Clean claims process through electronic clearinghouses directly into adjudication and payment, minimizing days in accounts receivable (AR)."
+  },
+  {
+    "questionText": "What is an 'Electronic Remittance Advice' (ERA - 835 transaction)?",
+    "options": [
+      "An electronic transaction sent by a payer to a provider explaining the adjudication details, allowable amounts, contractual adjustments, deductibles, and payments for submitted claims",
+      "An automated text message sent to patients reminding them of doctor visits",
+      "An email advertising hospital surgical suites to referring physicians",
+      "A digital receipt acknowledging receipt of paper claim forms by the post office"
+    ],
+    "correctAnswer": "An electronic transaction sent by a payer to a provider explaining the adjudication details, allowable amounts, contractual adjustments, deductibles, and payments for submitted claims",
+    "explanation": "The HIPAA standard 835 ERA details payment distribution, co-pays, and contractual write-offs, enabling automated auto-posting of remittances into billing systems."
+  },
+  {
+    "questionText": "What are 'Claim Adjustment Reason Codes' (CARC)?",
+    "options": [
+      "Standard national codes used on Remittance Advice documents to explain why a claim line item was paid differently than the original billed charge or denied",
+      "Codes assigned to patients who adjust their hospital bed height",
+      "Codes detailing physician adjustment of prescription medication dosages",
+      "Codes tracking changes made to an employee's annual insurance deduction"
+    ],
+    "correctAnswer": "Standard national codes used on Remittance Advice documents to explain why a claim line item was paid differently than the original billed charge or denied",
+    "explanation": "CARC codes (e.g., CARC 45: charges exceed fee schedule maximum allowable amount) standardize denial and adjustment explanations across all insurance payers."
+  },
+  {
+    "questionText": "What is the primary role of a Healthcare Clearinghouse in Revenue Cycle Management?",
+    "options": [
+      "An intermediary entity that receives electronic claims from healthcare providers, scrubs them against payer-specific edits for errors, and translates them into standard 837 EDI format for delivery to payers",
+      "A company that disposes of hazardous clinical bio-waste from hospital operating rooms",
+      "A commercial bank that exchanges foreign currencies for international medical travelers",
+      "A legal arbitration bureau that resolves malpractice disputes between patients and doctors"
+    ],
+    "correctAnswer": "An intermediary entity that receives electronic claims from healthcare providers, scrubs them against payer-specific edits for errors, and translates them into standard 837 EDI format for delivery to payers",
+    "explanation": "Clearinghouses act as billing routers, pre-auditing claims to catch errors early before submission, reducing payer rejection rates and speeding reimbursement."
+  },
+  {
+    "questionText": "What is an 'Exploratory Laparotomy' coded as when a definitive surgical procedure (such as a bowel resection) is successfully performed during the same operative opening?",
+    "options": [
+      "The laparotomy is considered the surgical approach and is bundled into the definitive bowel resection code; it is NOT coded separately",
+      "Both the exploratory laparotomy and the bowel resection are coded together with modifier -59",
+      "Only the exploratory laparotomy is coded; the bowel resection is omitted",
+      "The laparotomy is coded with modifier -51"
+    ],
+    "correctAnswer": "The laparotomy is considered the surgical approach and is bundled into the definitive bowel resection code; it is NOT coded separately",
+    "explanation": "Surgical approaches (such as laparotomy or arthrotomy) are bundled into the primary definitive therapeutic procedure under NCCI and CPT coding principles."
+  },
+  {
+    "questionText": "What does the term 'Separate Procedure' in a CPT code descriptor signify?",
+    "options": [
+      "The code is considered an integral component of a more comprehensive service and should only be billed independently when performed alone, or distinctly at a separate anatomical site or session",
+      "The procedure must always be performed in a separate operating room facility",
+      "The procedure requires two separate surgeons working in turns",
+      "The procedure must be scheduled on a separate calendar month"
+    ],
+    "correctAnswer": "The code is considered an integral component of a more comprehensive service and should only be billed independently when performed alone, or distinctly at a separate anatomical site or session",
+    "explanation": "Designation as a 'separate procedure' indicates that the service is commonly part of a larger procedure and can only be billed as standalone if performed independently."
+  },
+  {
+    "questionText": "In ICD-10-CM coding, what does the term 'Default Code' represent?",
+    "options": [
+      "The code listed next to the main term in the Alphabetic Index that represents the condition most commonly associated with the symptom or unspecified form",
+      "The code used when a patient defaults on paying their hospital invoice",
+      "A code reserved exclusively for system software defaults when network connections fail",
+      "A code that cannot be audited by insurance medical review officers"
+    ],
+    "correctAnswer": "The code listed next to the main term in the Alphabetic Index that represents the condition most commonly associated with the symptom or unspecified form",
+    "explanation": "Default codes represent the standard assigned code when clinical documentation lacks further specificity (e.g. appendicitis with no perforation or abscess)."
+  },
+  {
+    "questionText": "What is 'Laterality' in ICD-10-CM and why is it essential?",
+    "options": [
+      "The specification of whether a condition affects the right side, left side, or bilateral paired organs, required for code completeness and claim approval",
+      "The patient's preferred handedness when signing consent forms",
+      "The lateral positioning of the patient on the operating room table",
+      "The lateral movement of medical records across department archives"
+    ],
+    "correctAnswer": "The specification of whether a condition affects the right side, left side, or bilateral paired organs, required for code completeness and claim approval",
+    "explanation": "ICD-10-CM requires specifying right, left, or bilateral sides for paired anatomical sites (limbs, eyes, ears, kidneys) to achieve code specificity and avoid claim denials."
+  },
+  {
+    "questionText": "In ICD-10-CM, what is the convention regarding the acute and chronic conditions of the same disease when both have separate subentries in the index at the same indentation level?",
+    "options": [
+      "If separate codes exist for both the acute and chronic forms, code both, sequencing the acute code first followed by the chronic code",
+      "Code only the chronic form because it has lasted longer",
+      "Code only the acute form and omit the chronic condition",
+      "Merge both into an unspecified general condition code"
+    ],
+    "correctAnswer": "If separate codes exist for both the acute and chronic forms, code both, sequencing the acute code first followed by the chronic code",
+    "explanation": "Official coding guidelines dictate that if both acute and chronic forms are documented and indexed, both codes are reported with the acute condition sequenced first."
+  },
+  {
+    "questionText": "What is the primary role of a Certified Professional Coder (CPC) credentialed by the AAPC?",
+    "options": [
+      "To review clinical documentation, translate diagnoses and procedures into standardized alphanumeric codes, ensure compliance with billing regulations, and optimize revenue cycle integrity",
+      "To prescribe medications and perform minor outpatient surgical incisions",
+      "To program computer software code for hospital network firewalls",
+      "To manage hospital human resource hiring interviews and payroll disbursements"
+    ],
+    "correctAnswer": "To review clinical documentation, translate diagnoses and procedures into standardized alphanumeric codes, ensure compliance with billing regulations, and optimize revenue cycle integrity",
+    "explanation": "Certified Professional Coders bridge clinical notes and administrative reimbursement, ensuring healthcare documentation is accurately coded in compliance with federal guidelines."
+  },
+  {
+    "questionText": "What does the acronym 'HIPAA' stand for?",
+    "options": [
+      "Health Insurance Portability and Accountability Act",
+      "Hospital Information Privacy and Administration Association",
+      "Healthcare Institution Payment and Accounting Agreement",
+      "Health Insurance Policy Audit Administration"
+    ],
+    "correctAnswer": "Health Insurance Portability and Accountability Act",
+    "explanation": "HIPAA (1996) safeguards patient privacy and security, establishes national electronic EDI transaction standards, and protects the confidentiality of medical records."
+  },
+  {
+    "questionText": "What is a 'Local Coverage Determination' (LCD) issued by a Medicare Administrative Contractor (MAC)?",
+    "options": [
+      "A decision by a Medicare contractor whether to cover a particular item or service on an intermediary-wide or carrier-wide basis in accordance with Medicare medical necessity criteria",
+      "A determination of hospital room and board rates in a municipal area",
+      "A local zoning permit approving the construction of an outpatient surgery center",
+      "A list of local physician telephone directories in a county"
+    ],
+    "correctAnswer": "A decision by a Medicare contractor whether to cover a particular item or service on an intermediary-wide or carrier-wide basis in accordance with Medicare medical necessity criteria",
+    "explanation": "LCDs provide regional guidance detailing specific ICD-10 diagnosis codes that support medical necessity for procedures under Medicare."
+  },
+  {
+    "questionText": "What is the purpose of an 'External Cause Code' (ICD-10-CM Chapters 20)?",
+    "options": [
+      "To capture the mechanism, intent (unintentional, self-harm, assault), place of occurrence, and activity that caused an injury, poisoning, or adverse health effect",
+      "To record foreign patients who receive medical treatment outside their home country",
+      "To identify external pharmaceutical sales representatives visiting the hospital",
+      "To code financial losses caused by external economic recessions"
+    ],
+    "correctAnswer": "To capture the mechanism, intent (unintentional, self-harm, assault), place of occurrence, and activity that caused an injury, poisoning, or adverse health effect",
+    "explanation": "External cause codes (V00-Y99) provide vital public health and liability data on how accidents and injuries occurred, but are never sequenced as principal diagnosis."
+  },
+  {
+    "questionText": "What is the critical rule for coding 'uncertain diagnoses' (documented as 'probable', 'suspected', 'questionable', or 'rule out') in inpatient versus outpatient settings?",
+    "options": [
+      "Inpatient admissions (UHDDS) permit coding uncertain diagnoses as if established at discharge; Outpatient settings strictly forbid coding uncertain diagnoses and require coding documented symptoms or signs instead",
+      "Both inpatient and outpatient settings permit coding uncertain diagnoses freely",
+      "Both inpatient and outpatient settings strictly forbid coding uncertain diagnoses",
+      "Outpatient settings permit coding uncertain diagnoses, while inpatient settings forbid it"
+    ],
+    "correctAnswer": "Inpatient admissions (UHDDS) permit coding uncertain diagnoses as if established at discharge; Outpatient settings strictly forbid coding uncertain diagnoses and require coding documented symptoms or signs instead",
+    "explanation": "Under UHDDS inpatient guidelines, uncertain diagnoses existing at discharge are coded as if confirmed; in outpatient encounters, coders must only report confirmed diagnoses, symptoms, or abnormal signs."
+  },
+  {
+    "questionText": "How does ICD-10-CM distinguish between a 'Pathological Fracture' and a 'Traumatic Fracture'?",
+    "options": [
+      "Pathological fractures occur in bone weakened by underlying disease (such as osteoporosis, neoplasm, or infection) without normal trauma; Traumatic fractures result from physical injury applied to normal bone",
+      "Pathological fractures only occur in pediatric patients",
+      "Traumatic fractures never require 7th character extensions",
+      "There is no difference in code classification"
+    ],
+    "correctAnswer": "Pathological fractures occur in bone weakened by underlying disease (such as osteoporosis, neoplasm, or infection) without normal trauma; Traumatic fractures result from physical injury applied to normal bone",
+    "explanation": "Pathological fractures are classified under Chapter 13 (M80, M84) and occur under normal stress or minor trauma due to bone pathology, whereas traumatic fractures are classified in Chapter 19 (S-codes)."
+  },
+  {
+    "questionText": "When coding Adverse Effects of therapeutic drugs versus Poisoning in ICD-10-CM, what is the key diagnostic guideline?",
+    "options": [
+      "An adverse effect occurs when a drug is taken correctly as prescribed; Poisoning occurs when there is an error in administration, overdose, intentional self-harm, or combination with unauthorized substances",
+      "Adverse effects apply only to illegal street narcotics",
+      "Poisoning codes are only assigned if the patient expires",
+      "They share identical coding sequencing rules"
+    ],
+    "correctAnswer": "An adverse effect occurs when a drug is taken correctly as prescribed; Poisoning occurs when there is an error in administration, overdose, intentional self-harm, or combination with unauthorized substances",
+    "explanation": "When properly prescribed and administered medication causes an allergic or therapeutic reaction, it is an adverse effect (manifestation coded first, followed by T-code adverse effect); improper dosing or overdose is coded as poisoning (T-code poisoning first)."
+  },
+  {
+    "questionText": "What is 'Underdosing' in ICD-10-CM drug coding conventions?",
+    "options": [
+      "Taking or administering less of a medication than is prescribed by a provider or recommended by the manufacturer; underdosing codes are never sequenced as principal diagnosis",
+      "Taking medication with water instead of milk",
+      "An allergic reaction to an antibiotic",
+      "Taking expired over-the-counter vitamins"
+    ],
+    "correctAnswer": "Taking or administering less of a medication than is prescribed by a provider or recommended by the manufacturer; underdosing codes are never sequenced as principal diagnosis",
+    "explanation": "Underdosing codes (T36–T50 with 6th character 6) represent taking less than prescribed medication; guidelines mandate coding the medical condition first, followed by underdosing code and compliance Z-code."
+  },
+  {
+    "questionText": "What does CPT Modifier -22 indicate when appended to a surgical procedure code?",
+    "options": [
+      "Increased Procedural Services: the work required was substantially greater than typically required due to increased complexity, severe anatomy, trauma, or morbid obesity (requires supporting operative documentation)",
+      "A routine surgical procedure performed in under 15 minutes",
+      "A surgery performed by two co-surgeons of different specialties",
+      "A surgery performed during weekend holiday hours"
+    ],
+    "correctAnswer": "Increased Procedural Services: the work required was substantially greater than typically required due to increased complexity, severe anatomy, trauma, or morbid obesity (requires supporting operative documentation)",
+    "explanation": "Modifier -22 requests additional reimbursement for exceptional surgical difficulty or time, requiring an operative report detailing why the case was substantially more complex than usual."
+  },
+  {
+    "questionText": "What is the difference between CPT Modifier -52 (Reduced Services) and Modifier -53 (Discontinued Procedure)?",
+    "options": [
+      "Modifier -52 indicates a service was partially reduced or eliminated at the physician's election; Modifier -53 indicates a procedure was terminated due to extenuating circumstances threatening the patient's well-being",
+      "Modifier -52 is for surgery; Modifier -53 is for laboratory tests",
+      "Modifier -52 is for inpatient; Modifier -53 is for outpatient",
+      "Modifier -52 increases payment; Modifier -53 denies payment"
+    ],
+    "correctAnswer": "Modifier -52 indicates a service was partially reduced or eliminated at the physician's election; Modifier -53 indicates a procedure was terminated due to extenuating circumstances threatening the patient's well-being",
+    "explanation": "Modifier -52 reflects planned partial performance or reduction of a service; modifier -53 reports unexpected procedural abortion due to patient instability (e.g. cardiac arrhythmia under anesthesia)."
+  },
+  {
+    "questionText": "What is CPT Modifier -51 used for?",
+    "options": [
+      "Multiple Procedures: indicates that multiple surgical procedures were performed during the same operative session by the same provider (subject to multiple procedure payment reduction)",
+      "Unilateral procedure converted into bilateral",
+      "Staged or anticipated secondary surgery",
+      "Repeat procedure by another physician"
+    ],
+    "correctAnswer": "Multiple Procedures: indicates that multiple surgical procedures were performed during the same operative session by the same provider (subject to multiple procedure payment reduction)",
+    "explanation": "Modifier -51 notifies the payer that multiple procedures occurred in the same session, allowing the payer to apply standard multiple procedure discounting (typically 100% for highest, 50% for secondary)."
+  },
+  {
+    "questionText": "In wound repair coding (integumentary system), how are wound closures categorized into Simple, Intermediate, and Complex?",
+    "options": [
+      "Simple involves superficial single-layer closure; Intermediate requires layered closure of deeper fascia/dermis or single-layer extensive cleaning; Complex requires layered repair with extensive debridement, undermining, or retention sutures",
+      "Simple is under 1 cm; Intermediate is 1-5 cm; Complex is over 5 cm regardless of layers",
+      "Simple requires anesthesia; Intermediate uses glue; Complex uses metal clips",
+      "They are categorized based strictly on the patient's age"
+    ],
+    "correctAnswer": "Simple involves superficial single-layer closure; Intermediate requires layered closure of deeper fascia/dermis or single-layer extensive cleaning; Complex requires layered repair with extensive debridement, undermining, or retention sutures",
+    "explanation": "Repair complexity depends on tissue depth and techniques: simple (epidermis/dermis only), intermediate (layered subcutaneous/deep fascia), complex (reconstructive tissue rearrangement, extensive debridement)."
+  },
+  {
+    "questionText": "What is the official CPT coding rule when multiple laceration wounds of the SAME complexity (e.g., Simple) in the SAME anatomical classification area are repaired?",
+    "options": [
+      "The lengths of all wounds in that anatomical grouping are summed together and reported as a single cumulative CPT code",
+      "Each individual laceration is coded separately with modifier -59",
+      "Only the longest laceration is coded; all shorter wounds are bundled",
+      "The repairs are coded under general surgery consultation codes"
+    ],
+    "correctAnswer": "The lengths of all wounds in that anatomical grouping are summed together and reported as a single cumulative CPT code",
+    "explanation": "CPT guidelines instruct coders to sum lengths of repairs within the same anatomical grouping and complexity classification (e.g. summing three simple repairs on the arm into one combined length code)."
+  },
+  {
+    "questionText": "When an excision of a benign or malignant skin lesion is performed, how is the excised lesion diameter measured for code selection under CPT guidelines?",
+    "options": [
+      "Maximum clinical diameter of the lesion plus the most narrow margin required for complete excision (lesion diameter + both margins)",
+      "The diameter of the lesion only, disregarding surgical margins",
+      "The depth of the incision into subcutaneous fat",
+      "The final shrunken measurement recorded in the pathology jar"
+    ],
+    "correctAnswer": "Maximum clinical diameter of the lesion plus the most narrow margin required for complete excision (lesion diameter + both margins)",
+    "explanation": "CPT defines lesion excision size as the greatest clinical diameter of the lesion plus the margins taken at the time of excision (lesion diameter + 2 × margin width)."
+  },
+  {
+    "questionText": "If a physician performs a skin biopsy of a lesion and, during the same encounter, immediately proceeds to perform a complete surgical excision of that same lesion, how should it be coded?",
+    "options": [
+      "Code ONLY the complete surgical excision; the biopsy is bundled into the excision",
+      "Code both the biopsy and the excision with modifier -59",
+      "Code only the biopsy and omit the surgical excision",
+      "Code the biopsy as primary and the excision as an add-on code"
+    ],
+    "correctAnswer": "Code ONLY the complete surgical excision; the biopsy is bundled into the excision",
+    "explanation": "Under CPT and NCCI guidelines, an initial biopsy of the same lesion immediately followed by complete excision in the same session is considered incidental and bundled into the excision code."
+  },
+  {
+    "questionText": "In fracture treatment coding, what is the difference between 'Closed Treatment' and 'Open Treatment'?",
+    "options": [
+      "Closed treatment means the fracture site is not surgically opened; Open treatment involves surgically exposing the fractured bone, or placing an intramedullary nail across the fracture site",
+      "Closed treatment is for hair-line cracks; Open treatment is for bruises",
+      "Closed treatment is performed in an ambulance; Open treatment is in a clinic",
+      "Closed treatment always requires general anesthesia; Open does not"
+    ],
+    "correctAnswer": "Closed treatment means the fracture site is not surgically opened; Open treatment involves surgically exposing the fractured bone, or placing an intramedullary nail across the fracture site",
+    "explanation": "Treatment method refers to whether the fracture site is surgically exposed to the environment (open treatment) or manipulated externally without exposing the fractured bone (closed treatment)."
+  },
+  {
+    "questionText": "In excisional wound debridement coding (CPT 11042–11047), how is the depth of debridement determined for code selection?",
+    "options": [
+      "Coded based on the DEEPEST level of non-viable tissue removed (e.g., subcutaneous tissue, muscle, or bone)",
+      "Coded based on the surface surface area of the skin only",
+      "Coded based on the duration of time the debridement scalpel was held",
+      "Coded based on the concentration of saline irrigation used"
+    ],
+    "correctAnswer": "Coded based on the DEEPEST level of non-viable tissue removed (e.g., subcutaneous tissue, muscle, or bone)",
+    "explanation": "CPT debridement codes are categorized by the deepest anatomical layer excised: subcutaneous tissue (11042), muscle/fascia (11043), or bone (11044)."
+  },
+  {
+    "questionText": "In ICD-10-PCS (Inpatient Procedure Coding System), what are the 7 characters representing a complete procedure code?",
+    "options": [
+      "Section, Body System, Root Operation, Body Part, Approach, Device, Qualifier",
+      "Category, Chapter, Subcategory, Severity, Laterality, Extension, Outcome",
+      "Service, Facility, Physician, Specialty, Time, Units, Modifiers",
+      "Department, Room, Surgeon, Anesthesiologist, Implant, Status, Date"
+    ],
+    "correctAnswer": "Section, Body System, Root Operation, Body Part, Approach, Device, Qualifier",
+    "explanation": "Every ICD-10-PCS code contains exactly 7 alphanumeric characters specifying Section, Body System, Root Operation, Body Part, Approach, Device, and Qualifier."
+  },
+  {
+    "questionText": "In ICD-10-PCS root operations, what is the difference between 'Excision' and 'Resection'?",
+    "options": [
+      "Excision cuts out a PORTION of a body part; Resection cuts out ALL of an entire body part",
+      "Excision uses lasers; Resection uses scalpels",
+      "Excision applies only to skin; Resection applies only to organs",
+      "There is no difference; they are clinical synonyms"
+    ],
+    "correctAnswer": "Excision cuts out a PORTION of a body part; Resection cuts out ALL of an entire body part",
+    "explanation": "ICD-10-PCS distinguishes partial vs total organ removal: cutting out a portion (e.g. partial mastectomy) is Excision; cutting out the entire organ (e.g. total mastectomy) is Resection."
+  },
+  {
+    "questionText": "In ICD-10-PCS, which root operation describes 'taking out or off a device from a body part'?",
+    "options": [
+      "Removal",
+      "Extirpation",
+      "Extraction",
+      "Release"
+    ],
+    "correctAnswer": "Removal",
+    "explanation": "The root operation 'Removal' specifically denotes taking out or off a device from a body part without replacing it with another device."
+  },
+  {
+    "questionText": "What does the ICD-10-PCS root operation 'Bypass' signify?",
+    "options": [
+      "Altering the route of passage of the contents of a tubular body part",
+      "Completely stopping fluid circulation in an organ",
+      "Dilating a narrowed lumen using a balloon catheter",
+      "Connecting two severed nerves together"
+    ],
+    "correctAnswer": "Altering the route of passage of the contents of a tubular body part",
+    "explanation": "Bypass reroutes fluid flow in a tubular organ (such as coronary artery bypass graft CABG or gastric bypass)."
+  },
+  {
+    "questionText": "What does CPT Modifier -95 indicate?",
+    "options": [
+      "Synchronous Telemedicine Service rendered via a real-time interactive audio and video telecommunications system",
+      "Emergency room care delivered on an ambulance flight",
+      "Services provided outside the United States",
+      "A 95% discounted charity service"
+    ],
+    "correctAnswer": "Synchronous Telemedicine Service rendered via a real-time interactive audio and video telecommunications system",
+    "explanation": "Modifier -95 identifies professional telehealth encounters conducted via real-time two-way audio-video communication."
+  },
+  {
+    "questionText": "In Place of Service (POS) coding for telehealth claims, what is the difference between POS 02 and POS 10?",
+    "options": [
+      "POS 02 is Telehealth Provided Other than in Patient's Home; POS 10 is Telehealth Provided in Patient's Home",
+      "POS 02 is for surgery; POS 10 is for emergency care",
+      "POS 02 is for telephone only; POS 10 is for video only",
+      "POS 02 is for children; POS 10 is for adults"
+    ],
+    "correctAnswer": "POS 02 is Telehealth Provided Other than in Patient's Home; POS 10 is Telehealth Provided in Patient's Home",
+    "explanation": "CMS established POS 10 for telehealth delivered to patients in their private homes, while POS 02 designates telehealth delivered to patients located at medical facilities."
+  },
+  {
+    "questionText": "In ICD-10-CM Chapter 7 (Diseases of the Eye), what is required when coding Glaucoma staging (category H40)?",
+    "options": [
+      "A 7th character identifying the stage of glaucoma (mild, moderate, severe, or indeterminate stage) for each eye",
+      "A statement detailing the patient's eyeglass lens prescription",
+      "A confirmation that the patient has had laser eye surgery",
+      "A genetic test verifying hereditary eye disease"
+    ],
+    "correctAnswer": "A 7th character identifying the stage of glaucoma (mild, moderate, severe, or indeterminate stage) for each eye",
+    "explanation": "ICD-10-CM glaucoma codes require a 7th character specifying disease stage (1=mild, 2=moderate, 3=severe, 4=indeterminate), which can progress differently in each eye."
+  },
+  {
+    "questionText": "When coding Chronic Obstructive Pulmonary Disease (COPD) with Acute Bronchitis in ICD-10-CM, what is the coding rule?",
+    "options": [
+      "Assign combination code J44.0 (COPD with acute lower respiratory infection) and code also the specific acute bronchitis",
+      "Assign code J44.9 and omit the acute bronchitis",
+      "Code the acute bronchitis as principal and omit the COPD",
+      "Assign an unspecified asthma code"
+    ],
+    "correctAnswer": "Assign combination code J44.0 (COPD with acute lower respiratory infection) and code also the specific acute bronchitis",
+    "explanation": "Category J44 contains combination codes for acute respiratory infections; J44.0 is assigned with an instructional note to 'use additional code' to identify the infection (acute bronchitis J20.-)."
+  },
+  {
+    "questionText": "What is the official coding rule for coding acute kidney injury (AKI) in a patient who already has pre-existing chronic kidney disease (CKD)?",
+    "options": [
+      "Both AKI (category N17) and the specific stage of CKD (category N18) must be coded together, sequencing the reason for admission first",
+      "Only the AKI code is assigned; CKD is ignored",
+      "Only the CKD code is assigned; AKI is ignored",
+      "Merge both into a single dialysis code"
+    ],
+    "correctAnswer": "Both AKI (category N17) and the specific stage of CKD (category N18) must be coded together, sequencing the reason for admission first",
+    "explanation": "Acute kidney injury superimposed on chronic kidney disease requires reporting both codes: N17.- for the acute episode and N18.- for the baseline chronic kidney disease stage."
+  },
+  {
+    "questionText": "In diagnostic cardiac catheterization CPT coding, what components are bundled into the primary code (e.g. 93458)?",
+    "options": [
+      "Catheter placement in coronary arteries, injection procedure for coronary angiography, and imaging supervision, interpretation, and report",
+      "Only the physical plastic catheter supply cost",
+      "Emergency ambulance transportation to the hospital",
+      "Postoperative cardiac rehabilitation sessions for six months"
+    ],
+    "correctAnswer": "Catheter placement in coronary arteries, injection procedure for coronary angiography, and imaging supervision, interpretation, and report",
+    "explanation": "Modern CPT cardiac catheterization codes are comprehensive bundle codes combining vascular access, catheter placement, contrast injections, angiography imaging, and physician interpretation."
+  },
+  {
+    "questionText": "What is an 'Unspecified' ICD-10-CM code (often ending in 9), and when is its use clinically acceptable?",
+    "options": [
+      "It represents a condition where the clinical documentation lacks the detailed diagnostic specifics needed for a more specific code, acceptable only when greater detail is unavailable",
+      "It is an error code that triggers automatic criminal fraud investigations",
+      "It is the preferred default code that coders should use on every claim",
+      "It is used exclusively when patient insurance has lapsed"
+    ],
+    "correctAnswer": "It represents a condition where the clinical documentation lacks the detailed diagnostic specifics needed for a more specific code, acceptable only when greater detail is unavailable",
+    "explanation": "While high specificity is mandated, unspecified codes are legitimate when a physician cannot make a more specific diagnosis due to preliminary workup or early presentation."
+  },
+  {
+    "questionText": "What does the code Z00.00 represent in ICD-10-CM?",
+    "options": [
+      "Encounter for general adult medical examination without abnormal findings",
+      "Encounter for emergency gunshot wound treatment",
+      "Encounter for organ transplant rejection",
+      "Encounter for chemotherapy treatment"
+    ],
+    "correctAnswer": "Encounter for general adult medical examination without abnormal findings",
+    "explanation": "Z00.00 is the standard preventive medicine encounter code for routine annual physical examinations in adults when no abnormal findings are discovered."
+  }
+]

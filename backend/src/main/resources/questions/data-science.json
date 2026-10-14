@@ -1,0 +1,1102 @@
+[
+  {
+    "questionText": "What is the primary difference between Supervised and Unsupervised learning?",
+    "options": [
+      "Supervised learning trains on labeled target data; unsupervised learning identifies patterns in unlabeled data",
+      "Supervised learning only works on images; unsupervised learning works only on numbers",
+      "Supervised learning requires zero mathematical optimization",
+      "Unsupervised learning always produces higher accuracy than supervised learning"
+    ],
+    "correctAnswer": "Supervised learning trains on labeled target data; unsupervised learning identifies patterns in unlabeled data",
+    "explanation": "Supervised algorithms learn a mapping function from input features to known target labels; unsupervised algorithms discover intrinsic groupings."
+  },
+  {
+    "questionText": "In Pandas, which function is used to compute summary statistics (count, mean, std, quartiles) of numeric columns?",
+    "options": [
+      "df.describe()",
+      "df.summary()",
+      "df.stats()",
+      "df.info()"
+    ],
+    "correctAnswer": "df.describe()",
+    "explanation": "df.describe() generates descriptive statistics summarizing the central tendency, dispersion, and shape of a dataset's distribution."
+  },
+  {
+    "questionText": "What does the p-value represent in statistical hypothesis testing?",
+    "options": [
+      "The probability of obtaining test results at least as extreme as observed, assuming the null hypothesis is true",
+      "The probability that the alternate hypothesis is completely false",
+      "The percentage of data points that are outliers",
+      "The statistical power of the regression model"
+    ],
+    "correctAnswer": "The probability of obtaining test results at least as extreme as observed, assuming the null hypothesis is true",
+    "explanation": "A p-value measures evidence against the null hypothesis; a value below significance alpha (e.g. 0.05) leads to rejecting H0."
+  },
+  {
+    "questionText": "Which metric is most appropriate for evaluating a classification model on an imbalanced dataset (e.g., fraud detection)?",
+    "options": [
+      "Precision-Recall AUC / F1-Score",
+      "Raw Accuracy",
+      "Mean Absolute Error",
+      "R-Squared"
+    ],
+    "correctAnswer": "Precision-Recall AUC / F1-Score",
+    "explanation": "Accuracy can be deceptively high by predicting only the majority class; F1-score balances precision and recall on the minority class."
+  },
+  {
+    "questionText": "What is the effect of L1 (Lasso) regularization on regression coefficients?",
+    "options": [
+      "It drives less important feature coefficients strictly to zero, performing automatic feature selection",
+      "It shrinks coefficients toward zero without ever making them exactly zero",
+      "It exponentially expands coefficients to prevent underfitting",
+      "It converts continuous variables into discrete categories"
+    ],
+    "correctAnswer": "It drives less important feature coefficients strictly to zero, performing automatic feature selection",
+    "explanation": "Lasso adds an absolute value penalty |w| to the loss function, inducing sparsity by forcing non-essential weights to zero."
+  },
+  {
+    "questionText": "What is the 'Bias-Variance Tradeoff' in machine learning?",
+    "options": [
+      "High bias leads to underfitting; high variance leads to overfitting on training noise",
+      "Bias measures computational speed; variance measures memory consumption",
+      "Bias applies only to neural networks; variance applies only to decision trees",
+      "Decreasing model complexity increases variance and decreases bias"
+    ],
+    "correctAnswer": "High bias leads to underfitting; high variance leads to overfitting on training noise",
+    "explanation": "Models must balance simplicity (avoiding underfitting from high bias) and flexibility (avoiding overfitting from high variance)."
+  },
+  {
+    "questionText": "Which clustering algorithm requires you to specify the number of clusters (k) beforehand?",
+    "options": [
+      "K-Means Clustering",
+      "DBSCAN",
+      "Mean Shift",
+      "Agglomerative Hierarchical Clustering with distance threshold"
+    ],
+    "correctAnswer": "K-Means Clustering",
+    "explanation": "K-Means partitions data into k Voronoi cells and requires the hyperparameter k (number of centroids) prior to execution."
+  },
+  {
+    "questionText": "What does the Central Limit Theorem state?",
+    "options": [
+      "The distribution of sample means approximates a normal distribution as sample size increases, regardless of population distribution",
+      "All real-world populations are normally distributed",
+      "Every machine learning model converges to zero loss with enough data",
+      "The variance of a population is always equal to its mean"
+    ],
+    "correctAnswer": "The distribution of sample means approximates a normal distribution as sample size increases, regardless of population distribution",
+    "explanation": "The CLT proves that the sum or average of independent random variables converges toward a Gaussian bell curve as N grows."
+  },
+  {
+    "questionText": "In Principal Component Analysis (PCA), what do the principal components represent?",
+    "options": [
+      "Orthogonal axes that capture the directions of maximum variance in the data",
+      "The columns with the highest missing value count",
+      "The target variables in supervised regression",
+      "The cluster centroids found by K-Means"
+    ],
+    "correctAnswer": "Orthogonal axes that capture the directions of maximum variance in the data",
+    "explanation": "PCA projects high-dimensional data onto orthogonal eigenvectors ordered by explained variance, reducing dimensionality."
+  },
+  {
+    "questionText": "Which activation function is most susceptible to the 'Vanishing Gradient' problem in deep neural networks?",
+    "options": [
+      "Sigmoid",
+      "ReLU",
+      "Leaky ReLU",
+      "ELU"
+    ],
+    "correctAnswer": "Sigmoid",
+    "explanation": "Sigmoid saturates at both tails with derivative values close to 0, causing gradients to diminish exponentially through backpropagation."
+  },
+  {
+    "questionText": "What is the purpose of 'K-Fold Cross-Validation'?",
+    "options": [
+      "To evaluate model generalization performance reliably across k partitioned training and testing splits",
+      "To compress datasets by a factor of k",
+      "To train k different neural network architectures simultaneously",
+      "To speed up database query execution by k times"
+    ],
+    "correctAnswer": "To evaluate model generalization performance reliably across k partitioned training and testing splits",
+    "explanation": "K-fold cross-validation rotates training and test folds to ensure every data point is used for evaluation, mitigating split bias."
+  },
+  {
+    "questionText": "Which NumPy command computes the dot product of two 2D matrices A and B?",
+    "options": [
+      "np.dot(A, B) or A @ B",
+      "A * B",
+      "np.add(A, B)",
+      "np.cross(A, B)"
+    ],
+    "correctAnswer": "np.dot(A, B) or A @ B",
+    "explanation": "In NumPy, A @ B or np.dot(A, B) performs matrix multiplication, whereas A * B performs element-wise multiplication."
+  },
+  {
+    "questionText": "In classification, what is 'Recall' (also known as Sensitivity)?",
+    "options": [
+      "True Positives / (True Positives + False Negatives)",
+      "True Positives / (True Positives + False Positives)",
+      "True Negatives / (True Negatives + False Positives)",
+      "(True Positives + True Negatives) / Total Samples"
+    ],
+    "correctAnswer": "True Positives / (True Positives + False Negatives)",
+    "explanation": "Recall measures the proportion of actual positive instances that were successfully identified by the model."
+  },
+  {
+    "questionText": "What is 'Data Leakage' in machine learning workflows?",
+    "options": [
+      "When information from outside the training dataset (such as the target or test split) inadvertently contaminates model training",
+      "A hardware leak of coolant onto server racks",
+      "Users downloading CSV files without admin permission",
+      "Losing database records during server reboot"
+    ],
+    "correctAnswer": "When information from outside the training dataset (such as the target or test split) inadvertently contaminates model training",
+    "explanation": "Data leakage creates unrealistically optimistic validation metrics because test information leaked into training feature creation."
+  },
+  {
+    "questionText": "Which algorithm uses an ensemble of decision trees trained on random bootstrap samples with random feature subsets?",
+    "options": [
+      "Random Forest",
+      "Linear Discriminant Analysis",
+      "K-Nearest Neighbors",
+      "Naive Bayes"
+    ],
+    "correctAnswer": "Random Forest",
+    "explanation": "Random Forest combines bagging (bootstrap aggregating) and random feature subspaces to build an uncorrelated forest of trees."
+  },
+  {
+    "questionText": "What does the 'ROC-AUC' score represent?",
+    "options": [
+      "The model's ability to discriminate between positive and negative classes across all classification thresholds",
+      "The ratio of regression errors to total sum of squares",
+      "The percentage of missing values imputed correctly",
+      "The computational runtime of the gradient descent solver"
+    ],
+    "correctAnswer": "The model's ability to discriminate between positive and negative classes across all classification thresholds",
+    "explanation": "Area Under the ROC Curve measures rank-order separability; a score of 1.0 indicates perfect discrimination across all decision thresholds."
+  },
+  {
+    "questionText": "Why is 'Feature Scaling' (e.g. StandardScaler or MinMaxScaler) critical for algorithms like SVM and KNN?",
+    "options": [
+      "Because they rely on Euclidean distance calculations that are distorted by features with larger numeric scales",
+      "Because tree algorithms crash if values exceed 100",
+      "Because SQL queries require normalized column values",
+      "Because it reduces the number of rows in the training dataset"
+    ],
+    "correctAnswer": "Because they rely on Euclidean distance calculations that are distorted by features with larger numeric scales",
+    "explanation": "Distance-based models are dominated by features with large ranges (e.g. salary in thousands vs age in tens) unless scaled."
+  },
+  {
+    "questionText": "What is 'Gradient Descent'?",
+    "options": [
+      "An iterative optimization algorithm that updates parameters in the direction of steepest descent of the loss function",
+      "A sorting algorithm for descending numerical arrays",
+      "A visual styling technique for CSS background gradients",
+      "A method for compressing audio files"
+    ],
+    "correctAnswer": "An iterative optimization algorithm that updates parameters in the direction of steepest descent of the loss function",
+    "explanation": "Gradient descent computes the loss gradient with respect to model weights and updates them iteratively via learning rate step size."
+  },
+  {
+    "questionText": "In a box plot, what do the lower and upper edges of the central box represent?",
+    "options": [
+      "First quartile (Q1, 25th percentile) and Third quartile (Q3, 75th percentile)",
+      "Minimum and maximum values in the dataset",
+      "Mean minus standard deviation and mean plus standard deviation",
+      "0th and 100th percentiles"
+    ],
+    "correctAnswer": "First quartile (Q1, 25th percentile) and Third quartile (Q3, 75th percentile)",
+    "explanation": "The box spans the Interquartile Range (IQR) from Q1 (25th percentile) to Q3 (75th percentile), enclosing the median line."
+  },
+  {
+    "questionText": "What is 'One-Hot Encoding'?",
+    "options": [
+      "Converting categorical variables into binary 0/1 indicator columns for each distinct category",
+      "Compressing integers into single-byte representations",
+      "Normalizing numeric features to have zero mean and unit variance",
+      "Calculating moving averages across time-series data"
+    ],
+    "correctAnswer": "Converting categorical variables into binary 0/1 indicator columns for each distinct category",
+    "explanation": "One-hot encoding represents N distinct categories as N binary columns where exactly one bit is 'hot' (1) per observation."
+  },
+  {
+    "questionText": "What is the purpose of the 'learning rate' hyperparameter in gradient descent?",
+    "options": [
+      "It dictates the step size taken in the direction of the negative gradient during weight updates",
+      "It measures how fast a human learns machine learning",
+      "It controls the number of CPU threads allocated to training",
+      "It counts the number of training samples per second"
+    ],
+    "correctAnswer": "It dictates the step size taken in the direction of the negative gradient during weight updates",
+    "explanation": "Learning rate scales gradient updates; too high causes divergence, too low causes agonizingly slow convergence."
+  },
+  {
+    "questionText": "What does a correlation coefficient of -0.92 between two variables X and Y indicate?",
+    "options": [
+      "A strong negative linear relationship where Y decreases consistently as X increases",
+      "No relationship between X and Y",
+      "A weak positive non-linear relationship",
+      "That 92% of data points are outliers"
+    ],
+    "correctAnswer": "A strong negative linear relationship where Y decreases consistently as X increases",
+    "explanation": "Correlation near -1 indicates a strong inverse linear association."
+  },
+  {
+    "questionText": "What is 'Overfitting'?",
+    "options": [
+      "When a model learns the training noise and fails to generalize to unseen test data",
+      "When the training dataset has too few features",
+      "When a computer runs out of physical memory",
+      "When the learning rate is set too low"
+    ],
+    "correctAnswer": "When a model learns the training noise and fails to generalize to unseen test data",
+    "explanation": "Overfitting achieves near-zero training error but performs poorly on test distributions."
+  },
+  {
+    "questionText": "Which library in Python is the industry standard for classical machine learning algorithms?",
+    "options": [
+      "Scikit-Learn",
+      "Matplotlib",
+      "Requests",
+      "Flask"
+    ],
+    "correctAnswer": "Scikit-Learn",
+    "explanation": "Scikit-Learn provides cohesive, standardized estimators, transformers, and pipelines for ML in Python."
+  },
+  {
+    "questionText": "In Scikit-Learn, what is the standard method sequence to prepare features and fit a model?",
+    "options": [
+      "fit_transform() on training data, then transform() on testing data",
+      "fit() on testing data, then transform() on training data",
+      "predict() then fit()",
+      "compile() then render()"
+    ],
+    "correctAnswer": "fit_transform() on training data, then transform() on testing data",
+    "explanation": "Transformers must be fit only on training data to prevent data leakage, then applied via transform() to test data."
+  },
+  {
+    "questionText": "What does 'Silhouette Score' evaluate in cluster analysis?",
+    "options": [
+      "How similar an object is to its own cluster compared to neighboring clusters (-1 to +1)",
+      "The color brightness of a scatter plot",
+      "The number of outliers removed by truncation",
+      "The training time of a neural network"
+    ],
+    "correctAnswer": "How similar an object is to its own cluster compared to neighboring clusters (-1 to +1)",
+    "explanation": "Silhouette scores measure cluster compactness and separation; higher values indicate well-separated clusters."
+  },
+  {
+    "questionText": "What is 'XGBoost'?",
+    "options": [
+      "An optimized distributed gradient boosting library implementing tree boosting algorithms efficiently",
+      "A gaming graphics card accelerator",
+      "A high-speed relational database engine",
+      "A CSS framework for data visualization"
+    ],
+    "correctAnswer": "An optimized distributed gradient boosting library implementing tree boosting algorithms efficiently",
+    "explanation": "XGBoost (Extreme Gradient Boosting) is a premier gradient boosted decision tree framework offering speed and regularization."
+  },
+  {
+    "questionText": "What is 'Early Stopping' during model training?",
+    "options": [
+      "Halting training when validation loss stops improving to prevent overfitting",
+      "Shutting down the server when work hours end",
+      "Stopping a database transaction on syntax error",
+      "Killing background processes automatically"
+    ],
+    "correctAnswer": "Halting training when validation loss stops improving to prevent overfitting",
+    "explanation": "Early stopping monitors validation metrics and halts epochs when generalization performance degrades."
+  },
+  {
+    "questionText": "What is the difference between Mean Absolute Error (MAE) and Mean Squared Error (MSE)?",
+    "options": [
+      "MSE penalizes larger errors more heavily because errors are squared; MAE treats errors linearly",
+      "MAE can only be calculated on binary classifications",
+      "MSE is always smaller than MAE",
+      "MAE requires taking derivatives of square roots"
+    ],
+    "correctAnswer": "MSE penalizes larger errors more heavily because errors are squared; MAE treats errors linearly",
+    "explanation": "Squaring deviations in MSE amplifies the impact of large outlier errors compared to absolute linear differences."
+  },
+  {
+    "questionText": "What is 'Stratified Sampling' in train-test splitting?",
+    "options": [
+      "Ensuring each split maintains the same proportion of class labels as the complete dataset",
+      "Selecting samples based on alphabetical order",
+      "Taking only the first 80% rows of a CSV",
+      "Randomly discarding rare classes"
+    ],
+    "correctAnswer": "Ensuring each split maintains the same proportion of class labels as the complete dataset",
+    "explanation": "Stratification preserves class frequency distributions across folds, critical for imbalanced target classification."
+  },
+  {
+    "questionText": "What is 'Multicollinearity' in linear regression?",
+    "options": [
+      "When two or more predictor features are highly linearly correlated, inflating coefficient variance",
+      "When a dataset has multiple target columns",
+      "When a regression line is non-linear",
+      "When a model uses multiple GPUs"
+    ],
+    "correctAnswer": "When two or more predictor features are highly linearly correlated, inflating coefficient variance",
+    "explanation": "Multicollinearity undermines the statistical reliability of individual regression coefficient estimates."
+  },
+  {
+    "questionText": "What is 'Imputation' in data preprocessing?",
+    "options": [
+      "Replacing missing data with substituted values (mean, median, mode, or model-predicted)",
+      "Deleting columns that contain numbers",
+      "Converting text to uppercase",
+      "Encrypting database tables"
+    ],
+    "correctAnswer": "Replacing missing data with substituted values (mean, median, mode, or model-predicted)",
+    "explanation": "Imputation preserves sample counts by inferring plausible replacements for missing entries."
+  },
+  {
+    "questionText": "In decision trees, what does 'Gini Impurity' quantify?",
+    "options": [
+      "The probability of incorrectly classifying a randomly chosen element if labeled according to class distribution",
+      "The depth of the tree branches",
+      "The number of leaf nodes in a forest",
+      "The training execution time in seconds"
+    ],
+    "correctAnswer": "The probability of incorrectly classifying a randomly chosen element if labeled according to class distribution",
+    "explanation": "Gini impurity measures node heterogeneity; a pure node with only one class has a Gini index of 0."
+  },
+  {
+    "questionText": "What does the 'StandardScaler' transformer in Scikit-Learn do?",
+    "options": [
+      "Standardizes features by removing the mean and scaling to unit variance (z-score scaling)",
+      "Scales features strictly between 0 and 1",
+      "Converts floats to 32-bit integers",
+      "Multiplies feature values by 100"
+    ],
+    "correctAnswer": "Standardizes features by removing the mean and scaling to unit variance (z-score scaling)",
+    "explanation": "StandardScaler computes (x - mean) / std, transforming feature distributions to mean 0 and standard deviation 1."
+  },
+  {
+    "questionText": "What is 'Backpropagation' in artificial neural networks?",
+    "options": [
+      "Calculating the gradient of the loss function with respect to weights using the chain rule from output back to input",
+      "Running neural networks in reverse to generate training data",
+      "Reverting database changes when a test fails",
+      "Saving weights to disk"
+    ],
+    "correctAnswer": "Calculating the gradient of the loss function with respect to weights using the chain rule from output back to input",
+    "explanation": "Backpropagation propagates errors backward through layers to compute partial derivatives for gradient descent updates."
+  },
+  {
+    "questionText": "What is 'Dropout' in deep learning?",
+    "options": [
+      "A regularization technique that randomly deactivates a fraction of neurons during training to prevent co-adaptation",
+      "Dropping corrupted rows from a dataset",
+      "Disconnecting slow network cables",
+      "Deleting unneeded database tables"
+    ],
+    "correctAnswer": "A regularization technique that randomly deactivates a fraction of neurons during training to prevent co-adaptation",
+    "explanation": "Dropout forces neural networks to learn redundant, robust feature representations across independent pathways."
+  },
+  {
+    "questionText": "What is 'Confusion Matrix' in classification analysis?",
+    "options": [
+      "A tabular layout showing counts of True Positives, False Positives, True Negatives, and False Negatives",
+      "A mathematical matrix that cannot be inverted",
+      "A spreadsheet with missing headers",
+      "A graph showing loss over time"
+    ],
+    "correctAnswer": "A tabular layout showing counts of True Positives, False Positives, True Negatives, and False Negatives",
+    "explanation": "A confusion matrix maps predicted versus actual class distributions, revealing exact error profiles."
+  },
+  {
+    "questionText": "What is a 'Type I Error' in statistics?",
+    "options": [
+      "A False Positive: rejecting a true null hypothesis",
+      "A False Negative: failing to reject a false null hypothesis",
+      "A database connection timeout error",
+      "A syntax error in Python code"
+    ],
+    "correctAnswer": "A False Positive: rejecting a true null hypothesis",
+    "explanation": "Type I error is concluding an effect exists when it actually does not (False Alarm)."
+  },
+  {
+    "questionText": "What is a 'Type II Error' in statistics?",
+    "options": [
+      "A False Negative: failing to reject a false null hypothesis",
+      "A False Positive: rejecting a true null hypothesis",
+      "A segmentation fault in C code",
+      "A 404 HTTP error"
+    ],
+    "correctAnswer": "A False Negative: failing to reject a false null hypothesis",
+    "explanation": "Type II error is missing a genuine effect that is actually present."
+  },
+  {
+    "questionText": "What does 'R-Squared' (Coefficient of Determination) represent in regression?",
+    "options": [
+      "The proportion of variance in the dependent variable that is predictable from the independent variables",
+      "The square root of the residual sum of squares",
+      "The correlation between two random variables",
+      "The learning rate of the regression solver"
+    ],
+    "correctAnswer": "The proportion of variance in the dependent variable that is predictable from the independent variables",
+    "explanation": "R-squared indicates the goodness of fit; 1.0 means the regression line explains 100% of target variability."
+  },
+  {
+    "questionText": "Which Python data visualization library is built on Matplotlib and offers high-level statistical charting?",
+    "options": [
+      "Seaborn",
+      "PyQt",
+      "Selenium",
+      "Django"
+    ],
+    "correctAnswer": "Seaborn",
+    "explanation": "Seaborn provides aesthetically polished statistical visualizations like pairplots, heatmaps, and violinplots."
+  },
+  {
+    "questionText": "What is 'Feature Importance' in Random Forest models?",
+    "options": [
+      "A metric measuring how much a feature's splits reduce impurity across all trees in the forest",
+      "How much a client values a feature in software",
+      "The memory size of a feature column",
+      "Whether a feature is required in SQL"
+    ],
+    "correctAnswer": "A metric measuring how much a feature's splits reduce impurity across all trees in the forest",
+    "explanation": "MDI (Mean Decrease in Impurity) computes the relative contribution of each variable across tree splits."
+  },
+  {
+    "questionText": "What is 'Target Encoding' in categorical feature engineering?",
+    "options": [
+      "Replacing each category with the average target value for that category",
+      "Encoding the target variable as 0 or 1",
+      "Selecting features based on correlation with target",
+      "Encrypting target column values"
+    ],
+    "correctAnswer": "Replacing each category with the average target value for that category",
+    "explanation": "Target encoding maps categorical levels to target conditional expectations, preserving ordinal relationship to outcome."
+  },
+  {
+    "questionText": "What does the 'cost function' (or loss function) do in machine learning?",
+    "options": [
+      "Quantifies the error discrepancy between model predictions and actual ground truth labels",
+      "Calculates the financial billing of cloud computing instances",
+      "Measures the time required to train a model",
+      "Counts the number of parameters in a neural network"
+    ],
+    "correctAnswer": "Quantifies the error discrepancy between model predictions and actual ground truth labels",
+    "explanation": "Optimization algorithms minimize the loss function to align model predictions with observed reality."
+  },
+  {
+    "questionText": "What is 'Stochastic Gradient Descent' (SGD)?",
+    "options": [
+      "Updating model parameters using a single training example or mini-batch per step rather than the entire dataset",
+      "Updating weights at completely random time intervals",
+      "Training models without using loss derivatives",
+      "Running gradient descent on multiple servers"
+    ],
+    "correctAnswer": "Updating model parameters using a single training example or mini-batch per step rather than the entire dataset",
+    "explanation": "SGD computes noisy, fast updates on mini-batches, escaping local minima while accelerating convergence on large data."
+  },
+  {
+    "questionText": "What is the purpose of 'Cross-Entropy Loss' in multi-class classification?",
+    "options": [
+      "Measuring the divergence between predicted probability distributions and true one-hot class indicators",
+      "Measuring linear Euclidean distance between vectors",
+      "Calculating R-squared on numeric targets",
+      "Computing standard deviation of features"
+    ],
+    "correctAnswer": "Measuring the divergence between predicted probability distributions and true one-hot class indicators",
+    "explanation": "Cross-entropy penalizes confident wrong predictions logarithmically, driving softmax outputs toward target distributions."
+  },
+  {
+    "questionText": "What is an 'Eigenvalue' and 'Eigenvector' in PCA?",
+    "options": [
+      "An eigenvector is the direction of variance; an eigenvalue represents the magnitude of variance along that axis",
+      "They are random noise parameters in decision trees",
+      "They represent missing values in Pandas",
+      "They are hyperparameters in gradient descent"
+    ],
+    "correctAnswer": "An eigenvector is the direction of variance; an eigenvalue represents the magnitude of variance along that axis",
+    "explanation": "Covariance matrix decomposition yields eigenvectors (principal axes) and eigenvalues (explained variance scales)."
+  },
+  {
+    "questionText": "What is the 'Adam' optimizer in deep learning?",
+    "options": [
+      "Adaptive Moment Estimation: combines momentum with adaptive learning rates per parameter",
+      "An automatic data cleaning script",
+      "A framework for hosting web servers",
+      "A visual debugging tool for PyTorch"
+    ],
+    "correctAnswer": "Adaptive Moment Estimation: combines momentum with adaptive learning rates per parameter",
+    "explanation": "Adam maintains exponentially decaying averages of past gradients and squared gradients for robust parameter updates."
+  },
+  {
+    "questionText": "What is 'DBSCAN' clustering particularly effective at?",
+    "options": [
+      "Discovering clusters of arbitrary shapes and identifying noise/outlier points without specifying k",
+      "Partitioning data strictly into spherical clusters of equal size",
+      "Clustering binary text strings alphabetically",
+      "Sorting numeric data in ascending order"
+    ],
+    "correctAnswer": "Discovering clusters of arbitrary shapes and identifying noise/outlier points without specifying k",
+    "explanation": "Density-Based Spatial Clustering of Applications with Noise detects density contours while filtering outliers."
+  },
+  {
+    "questionText": "What is 'Time Series Stationarity'?",
+    "options": [
+      "When statistical properties like mean, variance, and autocorrelation remain constant over time",
+      "When a computer clock never changes timezones",
+      "When a database server has 100% uptime",
+      "When data points are recorded once per second"
+    ],
+    "correctAnswer": "When statistical properties like mean, variance, and autocorrelation remain constant over time",
+    "explanation": "Stationary series lack trends or seasonality, satisfying key assumptions of models like ARIMA."
+  },
+  {
+    "questionText": "What does the 'Differencing' operation do in ARIMA modeling?",
+    "options": [
+      "Subtracts consecutive observations to stabilize the mean and eliminate non-stationary trends",
+      "Calculates differences between two database tables",
+      "Subtracts model training time from test time",
+      "Computes the derivative of loss functions"
+    ],
+    "correctAnswer": "Subtracts consecutive observations to stabilize the mean and eliminate non-stationary trends",
+    "explanation": "First-order differencing y_t - y_{t-1} converts non-stationary trending series into stationary increments."
+  },
+  {
+    "questionText": "What is 'Hyperparameter Tuning'?",
+    "options": [
+      "Searching for optimal configuration parameters (e.g. max_depth, learning_rate) that govern model learning",
+      "Tuning GPU fan speeds on server racks",
+      "Editing SQL queries to run faster",
+      "Renaming variables in Python"
+    ],
+    "correctAnswer": "Searching for optimal configuration parameters (e.g. max_depth, learning_rate) that govern model learning",
+    "explanation": "Hyperparameters are set prior to training; techniques like GridSearchCV and Optuna optimize them systematically."
+  },
+  {
+    "questionText": "What is 'Grid Search' compared to 'Random Search' for hyperparameter optimization?",
+    "options": [
+      "Grid Search exhaustively evaluates all combinations; Random Search samples random combinations from distributions",
+      "Grid Search runs faster than Random Search on high dimensions",
+      "Grid Search works only on neural networks",
+      "Random Search evaluates every possible value"
+    ],
+    "correctAnswer": "Grid Search exhaustively evaluates all combinations; Random Search samples random combinations from distributions",
+    "explanation": "Random search explores continuous spaces more efficiently than grid search when only a few hyperparameters dominate performance."
+  },
+  {
+    "questionText": "What is 'Bayesian Optimization' in hyperparameter tuning?",
+    "options": [
+      "Using a probabilistic surrogate model (e.g. Gaussian Process) to guide search toward promising parameter regions",
+      "Using Bayes theorem to classify spam emails",
+      "Calculating p-values for linear regression",
+      "Generating random numbers using seeds"
+    ],
+    "correctAnswer": "Using a probabilistic surrogate model (e.g. Gaussian Process) to guide search toward promising parameter regions",
+    "explanation": "Bayesian optimization balances exploration and exploitation, finding optimal parameters in far fewer trials than brute force."
+  },
+  {
+    "questionText": "What is 'VIF' (Variance Inflation Factor) used to detect?",
+    "options": [
+      "Multicollinearity among independent features in a multiple regression model",
+      "Outliers in univariate data distributions",
+      "Overfitting in deep neural networks",
+      "GPU memory leaks in PyTorch"
+    ],
+    "correctAnswer": "Multicollinearity among independent features in a multiple regression model",
+    "explanation": "A VIF exceeding 5 or 10 indicates severe multicollinearity inflating coefficient uncertainty."
+  },
+  {
+    "questionText": "What is the effect of L2 (Ridge) regularization on regression weights?",
+    "options": [
+      "It shrinks coefficients toward zero by adding a squared penalty, handling multicollinear predictors",
+      "It drives coefficients strictly to zero",
+      "It doubles the magnitude of weights",
+      "It removes categorical features"
+    ],
+    "correctAnswer": "It shrinks coefficients toward zero by adding a squared penalty, handling multicollinear predictors",
+    "explanation": "Ridge shrinks weights uniformly without zeroing them, stabilizing estimation when features correlate."
+  },
+  {
+    "questionText": "What is the 'Elbow Method' used for in unsupervised learning?",
+    "options": [
+      "Identifying the optimal number of clusters k by plotting inertia (sum of squared distances) vs k",
+      "Detecting elbow fractures in medical X-rays",
+      "Measuring curvature in polynomial regression",
+      "Selecting the learning rate in deep learning"
+    ],
+    "correctAnswer": "Identifying the optimal number of clusters k by plotting inertia (sum of squared distances) vs k",
+    "explanation": "The elbow point marks the diminishing returns threshold where adding more clusters yields marginal reduction in inertia."
+  },
+  {
+    "questionText": "What is 'Resampling' with SMOTE in imbalanced datasets?",
+    "options": [
+      "Synthetic Minority Over-sampling Technique: creates synthetic examples along line segments connecting minority instances",
+      "Deleting majority class examples randomly",
+      "Duplicating existing rows without changes",
+      "Scrambling label assignments randomly"
+    ],
+    "correctAnswer": "Synthetic Minority Over-sampling Technique: creates synthetic examples along line segments connecting minority instances",
+    "explanation": "SMOTE synthesizes novel minority class points using k-nearest neighbors, preventing over-simplistic exact duplication."
+  },
+  {
+    "questionText": "What is 'SHAP' (SHapley Additive exPlanations) used for in explainable AI?",
+    "options": [
+      "Quantifying the fair marginal contribution of each feature to an individual model prediction using game theory",
+      "Accelerating neural network training speed",
+      "Imputing missing values in Pandas",
+      "Generating synthetic text datasets"
+    ],
+    "correctAnswer": "Quantifying the fair marginal contribution of each feature to an individual model prediction using game theory",
+    "explanation": "SHAP values provide consistent, mathematically principled local explanations for complex black-box models."
+  },
+  {
+    "questionText": "What is 'Linear Discriminant Analysis' (LDA)?",
+    "options": [
+      "A supervised dimensionality reduction and classification method that maximizes between-class separation",
+      "An unsupervised clustering algorithm like K-Means",
+      "A regression algorithm for predicting continuous prices",
+      "A database indexing method"
+    ],
+    "correctAnswer": "A supervised dimensionality reduction and classification method that maximizes between-class separation",
+    "explanation": "LDA projects data onto axes that maximize between-class variance relative to within-class variance."
+  },
+  {
+    "questionText": "What does 'np.nan' represent in Python data analysis?",
+    "options": [
+      "'Not a Number' - IEEE 754 floating point representation of missing or undefined numerical values",
+      "A null pointer in C",
+      "A string containing the letters 'nan'",
+      "A negative zero value"
+    ],
+    "correctAnswer": "'Not a Number' - IEEE 754 floating point representation of missing or undefined numerical values",
+    "explanation": "np.nan denotes missing numeric data in NumPy arrays and Pandas Series."
+  },
+  {
+    "questionText": "What is 'Data Wrangling'?",
+    "options": [
+      "The process of cleaning, structuring, and enriching raw data into a usable format for analytics and modeling",
+      "Fighting with database administrator permissions",
+      "Compressing files onto backup tapes",
+      "Designing graphic design slides"
+    ],
+    "correctAnswer": "The process of cleaning, structuring, and enriching raw data into a usable format for analytics and modeling",
+    "explanation": "Wrangling converts unstructured, messy data into standardized dataframes suitable for statistical analysis."
+  },
+  {
+    "questionText": "What is 'A/B Testing' in data science?",
+    "options": [
+      "A randomized controlled experiment comparing two variants (A and B) to test statistical impact on a key KPI",
+      "Testing software on two different operating systems",
+      "Running unit tests and integration tests",
+      "Grading student tests with two teachers"
+    ],
+    "correctAnswer": "A randomized controlled experiment comparing two variants (A and B) to test statistical impact on a key KPI",
+    "explanation": "A/B testing splits traffic randomly between control and treatment to establish causal impact via hypothesis testing."
+  },
+  {
+    "questionText": "What is 'Statistical Power' in experimental design?",
+    "options": [
+      "The probability of correctly rejecting a false null hypothesis (1 - beta)",
+      "The computational power of server hardware",
+      "The number of rows in the experiment dataset",
+      "The statistical variance of the target variable"
+    ],
+    "correctAnswer": "The probability of correctly rejecting a false null hypothesis (1 - beta)",
+    "explanation": "High power (typically 80%+) ensures the experiment is sufficiently sensitive to detect real differences if they exist."
+  },
+  {
+    "questionText": "What is 'Sample Size Calculation' in experimentation?",
+    "options": [
+      "Determining the minimum number of observations required to detect a minimum detectable effect (MDE) with target power",
+      "Counting how many rows are in a CSV file",
+      "Dividing dataset size by 10",
+      "Limiting experiments to exactly 100 users"
+    ],
+    "correctAnswer": "Determining the minimum number of observations required to detect a minimum detectable effect (MDE) with target power",
+    "explanation": "Power analysis establishes required sample volume based on baseline rate, MDE, alpha, and power."
+  },
+  {
+    "questionText": "What is 'Confidence Interval' in estimation?",
+    "options": [
+      "A range of values likely to contain the true population parameter with a specified probability (e.g. 95%)",
+      "A measure of how confident a data scientist feels",
+      "The accuracy percentage of a machine learning model",
+      "The percentage of data points without missing values"
+    ],
+    "correctAnswer": "A range of values likely to contain the true population parameter with a specified probability (e.g. 95%)",
+    "explanation": "A 95% CI means if sampling were repeated infinitely, 95% of constructed intervals would bracket the true parameter."
+  },
+  {
+    "questionText": "What is 'Curse of Dimensionality'?",
+    "options": [
+      "As the number of features grows, data points become exponentially sparse in high-dimensional space, undermining distance metrics",
+      "Having too many rows in a database",
+      "Running out of hard drive space on a server",
+      "When code files exceed 1000 lines"
+    ],
+    "correctAnswer": "As the number of features grows, data points become exponentially sparse in high-dimensional space, undermining distance metrics",
+    "explanation": "High dimensions dilute Euclidean distance differences, making all pairs equidistant and causing overfitting."
+  },
+  {
+    "questionText": "What is 'TF-IDF' in text vectorization?",
+    "options": [
+      "Term Frequency-Inverse Document Frequency: weights terms by local frequency penalizing common global words",
+      "TensorFlow Integrated Data Flow",
+      "True Fast Instant Data Format",
+      "Tree Forest Induction Decision Function"
+    ],
+    "correctAnswer": "Term Frequency-Inverse Document Frequency: weights terms by local frequency penalizing common global words",
+    "explanation": "TF-IDF reflects word importance by scaling term occurrence against how rare it is across the entire corpus."
+  },
+  {
+    "questionText": "What is 'Softmax' activation function used for?",
+    "options": [
+      "Converting a vector of raw logits into normalized probabilities that sum to 1 in multi-class classification",
+      "Smoothing noisy line charts in Matplotlib",
+      "Softening harsh edges in image processing",
+      "Preventing memory overflow in NumPy"
+    ],
+    "correctAnswer": "Converting a vector of raw logits into normalized probabilities that sum to 1 in multi-class classification",
+    "explanation": "Softmax exponentiates logits and normalizes by their sum, yielding valid class probabilities."
+  },
+  {
+    "questionText": "What does 'ROC' stand for in ROC-AUC?",
+    "options": [
+      "Receiver Operating Characteristic",
+      "Random Optimization Classifier",
+      "Residual Output Calculation",
+      "Regression Optimal Coefficient"
+    ],
+    "correctAnswer": "Receiver Operating Characteristic",
+    "explanation": "ROC curves plot True Positive Rate against False Positive Rate across all classification thresholds."
+  },
+  {
+    "questionText": "What is 'Precision' in binary classification?",
+    "options": [
+      "True Positives / (True Positives + False Positives)",
+      "True Positives / (True Positives + False Negatives)",
+      "True Negatives / (True Negatives + False Positives)",
+      "Total Correct / Total Samples"
+    ],
+    "correctAnswer": "True Positives / (True Positives + False Positives)",
+    "explanation": "Precision evaluates the accuracy of positive predictions (when the model predicts positive, how often is it right?)."
+  },
+  {
+    "questionText": "What is 'F1-Score'?",
+    "options": [
+      "The harmonic mean of Precision and Recall: 2 * (Precision * Recall) / (Precision + Recall)",
+      "The arithmetic average of True Positives and False Positives",
+      "The percentage of features used in a random forest",
+      "The ratio of training loss to validation loss"
+    ],
+    "correctAnswer": "The harmonic mean of Precision and Recall: 2 * (Precision * Recall) / (Precision + Recall)",
+    "explanation": "Harmonic mean gives higher weight to low values, ensuring high F1 requires both solid precision and solid recall."
+  },
+  {
+    "questionText": "What is 'Polynomial Regression'?",
+    "options": [
+      "Modeling non-linear relationships by including polynomial powers and interaction terms of independent variables",
+      "Fitting linear regression on multiple datasets",
+      "A regression model with multiple target columns",
+      "A regression algorithm using neural networks"
+    ],
+    "correctAnswer": "Modeling non-linear relationships by including polynomial powers and interaction terms of independent variables",
+    "explanation": "Polynomial expansion transforms features (x, x^2, x^3) while preserving linear parameter estimation."
+  },
+  {
+    "questionText": "What is 'Logistic Regression' used for?",
+    "options": [
+      "Estimating the probability of a categorical outcome (e.g. binary 0/1) using the logistic sigmoid function",
+      "Predicting continuous numeric values like stock prices",
+      "Clustering unlabeled customer data",
+      "Dimensionality reduction like PCA"
+    ],
+    "correctAnswer": "Estimating the probability of a categorical outcome (e.g. binary 0/1) using the logistic sigmoid function",
+    "explanation": "Despite the name 'regression', logistic regression is a foundational linear classification algorithm."
+  },
+  {
+    "questionText": "What is 'Support Vector Machine' (SVM) objective?",
+    "options": [
+      "Finding the optimal hyperplane that maximizes the margin separating distinct classes in feature space",
+      "Minimizing mean squared error on continuous variables",
+      "Constructing an ensemble of randomized trees",
+      "Grouping nearest neighbors into clusters"
+    ],
+    "correctAnswer": "Finding the optimal hyperplane that maximizes the margin separating distinct classes in feature space",
+    "explanation": "SVM optimizes support vectors to achieve maximum margin separation, resisting overfitting in high dimensions."
+  },
+  {
+    "questionText": "What is the 'Kernel Trick' in Support Vector Machines?",
+    "options": [
+      "Implicitly mapping inputs into high-dimensional feature spaces using inner-product kernel functions without explicit coordinates",
+      "Writing Linux kernel modules in C",
+      "A shortcut to speed up Python loops",
+      "A way to bypass security firewalls"
+    ],
+    "correctAnswer": "Implicitly mapping inputs into high-dimensional feature spaces using inner-product kernel functions without explicit coordinates",
+    "explanation": "Kernels (RBF, Polynomial) compute inner products in infinite-dimensional Hilbert spaces cheaply, solving non-linear boundaries."
+  },
+  {
+    "questionText": "What is 'Bagging' (Bootstrap Aggregating)?",
+    "options": [
+      "Training multiple base models in parallel on bootstrap samples and averaging their predictions to reduce variance",
+      "Training models sequentially to correct previous errors",
+      "Compressing model weights into a zip bag",
+      "Packaging Python libraries into wheels"
+    ],
+    "correctAnswer": "Training multiple base models in parallel on bootstrap samples and averaging their predictions to reduce variance",
+    "explanation": "Bagging (used in Random Forest) dampens variance by averaging predictions across bootstrap-resampled estimators."
+  },
+  {
+    "questionText": "What is 'Boosting' in machine learning?",
+    "options": [
+      "Training models sequentially, where each new weak learner focuses on correcting errors made by prior learners",
+      "Overclocking server CPUs to boost training speed",
+      "Increasing marketing budget to boost sales",
+      "Enlarging neural network layer width"
+    ],
+    "correctAnswer": "Training models sequentially, where each new weak learner focuses on correcting errors made by prior learners",
+    "explanation": "Boosting (AdaBoost, Gradient Boosting) iteratively converts weak learners into a strong predictive ensemble."
+  },
+  {
+    "questionText": "What is 'LightGBM' known for?",
+    "options": [
+      "A fast, distributed gradient boosting framework using histogram-based algorithms and leaf-wise tree growth",
+      "A lightweight version of Matplotlib",
+      "A CSS theme for data science dashboards",
+      "A Python package for controlling smart lights"
+    ],
+    "correctAnswer": "A fast, distributed gradient boosting framework using histogram-based algorithms and leaf-wise tree growth",
+    "explanation": "LightGBM grows trees leaf-wise with maximum loss reduction, yielding superior training speed on large tabular datasets."
+  },
+  {
+    "questionText": "What is 'CatBoost' specialized in?",
+    "options": [
+      "Gradient boosting algorithm uniquely optimized for categorical features with minimal preprocessing",
+      "A computer vision model for identifying cats",
+      "A command-line tool for concatenating files",
+      "A database engine for storing documents"
+    ],
+    "correctAnswer": "Gradient boosting algorithm uniquely optimized for categorical features with minimal preprocessing",
+    "explanation": "CatBoost natively encodes categorical features using ordered target statistics, preventing target leakage."
+  },
+  {
+    "questionText": "What does 'K-Nearest Neighbors' (KNN) do during prediction?",
+    "options": [
+      "Assigns the label or average value of the k closest training points based on distance metrics",
+      "Clusters data into k centroids",
+      "Splits data into k tree branches",
+      "Draws k random samples from normal distribution"
+    ],
+    "correctAnswer": "Assigns the label or average value of the k closest training points based on distance metrics",
+    "explanation": "KNN is an instance-based lazy learner that classifies query points by majority vote among nearest neighbors."
+  },
+  {
+    "questionText": "What is 'Curse of Imbalance' in fraud detection?",
+    "options": [
+      "When legitimate transactions vastly outnumber fraudulent ones (e.g. 99.9% vs 0.1%), causing naive models to predict all normal",
+      "When the server hardware has unequal CPU cores",
+      "When test data has more rows than training data",
+      "When data features have different units"
+    ],
+    "correctAnswer": "When legitimate transactions vastly outnumber fraudulent ones (e.g. 99.9% vs 0.1%), causing naive models to predict all normal",
+    "explanation": "Class imbalance requires threshold tuning, cost-sensitive learning, or PR-AUC metrics rather than raw accuracy."
+  },
+  {
+    "questionText": "What is 'Autocorrelation' in time-series analysis?",
+    "options": [
+      "The correlation of a variable with a lagged version of itself over successive time intervals",
+      "Correlation between two completely unrelated stocks",
+      "When a Python script calls itself recursively",
+      "Automatic calculation of correlation matrices"
+    ],
+    "correctAnswer": "The correlation of a variable with a lagged version of itself over successive time intervals",
+    "explanation": "Autocorrelation measures temporal persistence, plotted in ACF/PACF charts to configure ARIMA lag orders."
+  },
+  {
+    "questionText": "What is 'Cross-Validation Leakage'?",
+    "options": [
+      "Applying transformations (like scaling or imputation) on the full dataset before splitting cross-validation folds",
+      "Saving cross-validation scores in a public repo",
+      "Running cross-validation on two different laptops",
+      "Printing validation errors in logs"
+    ],
+    "correctAnswer": "Applying transformations (like scaling or imputation) on the full dataset before splitting cross-validation folds",
+    "explanation": "Transforming data before splitting contaminates validation folds with training distribution statistics."
+  },
+  {
+    "questionText": "What is 'Dimensionality Reduction' primarily used for?",
+    "options": [
+      "Mitigating the curse of dimensionality, speeding up computation, and visualizing multi-featured data in 2D/3D",
+      "Decreasing the number of training samples",
+      "Formatting numbers from double to float",
+      "Reducing screen resolution of plots"
+    ],
+    "correctAnswer": "Mitigating the curse of dimensionality, speeding up computation, and visualizing multi-featured data in 2D/3D",
+    "explanation": "Techniques like PCA, t-SNE, and UMAP compress feature dimensions while preserving variance or neighborhood structure."
+  },
+  {
+    "questionText": "What is 't-SNE' (t-Distributed Stochastic Neighbor Embedding)?",
+    "options": [
+      "A non-linear dimensionality reduction technique specialized for visualizing high-dimensional data in 2D or 3D",
+      "A linear regression algorithm",
+      "A statistical test for comparing two means",
+      "A time-series forecasting model"
+    ],
+    "correctAnswer": "A non-linear dimensionality reduction technique specialized for visualizing high-dimensional data in 2D or 3D",
+    "explanation": "t-SNE converts pairwise Euclidean distances into conditional probabilities, excelling at visualizing manifold clusters."
+  },
+  {
+    "questionText": "What is 'UMAP' (Uniform Manifold Approximation and Projection)?",
+    "options": [
+      "A manifold learning technique for dimension reduction preserving both local and global structure faster than t-SNE",
+      "A mapping library for GPS coordinates",
+      "A database indexing method for maps",
+      "A Python script for unzipping files"
+    ],
+    "correctAnswer": "A manifold learning technique for dimension reduction preserving both local and global structure faster than t-SNE",
+    "explanation": "UMAP scales to large datasets efficiently while preserving broader topological structures across dimensions."
+  },
+  {
+    "questionText": "What does 'np.where(condition, x, y)' do in NumPy?",
+    "options": [
+      "Returns elements chosen from x or y depending on whether the boolean condition is True or False",
+      "Searches for files on the hard drive",
+      "Finds the memory address of an array",
+      "Deletes elements that match the condition"
+    ],
+    "correctAnswer": "Returns elements chosen from x or y depending on whether the boolean condition is True or False",
+    "explanation": "np.where performs vectorized ternary if-else conditional selection across array dimensions."
+  },
+  {
+    "questionText": "What is 'Pandas groupby().agg()' used for?",
+    "options": [
+      "Grouping data by one or more categorical columns and calculating specific summary aggregations on other columns",
+      "Merging two dataframes on an inner join",
+      "Filtering rows based on index positions",
+      "Sorting dataframe rows alphabetically"
+    ],
+    "correctAnswer": "Grouping data by one or more categorical columns and calculating specific summary aggregations on other columns",
+    "explanation": "agg() applies multiple aggregation functions (e.g. {'salary': 'mean', 'age': 'max'}) across grouped partitions."
+  },
+  {
+    "questionText": "What is the 'Pareto Principle' (80/20 rule) in exploratory business data analysis?",
+    "options": [
+      "The observation that roughly 80% of consequences come from 20% of causes (e.g. 80% of revenue from 20% of clients)",
+      "A rule requiring models to have 80% accuracy",
+      "A requirement to split data 80% train and 20% test",
+      "A rule stating that 80% of data is always missing"
+    ],
+    "correctAnswer": "The observation that roughly 80% of consequences come from 20% of causes (e.g. 80% of revenue from 20% of clients)",
+    "explanation": "Pareto distributions highlight power-law concentration, guiding feature focus toward dominant business drivers."
+  },
+  {
+    "questionText": "What does the 'p-hacking' (data dredging) phenomenon refer to?",
+    "options": [
+      "Misusing statistical analysis to search until statistically significant p-values are found by chance",
+      "Hacking into computer databases using Python",
+      "Cracking password hashes using GPU clusters",
+      "Writing fast scripts to clean data"
+    ],
+    "correctAnswer": "Misusing statistical analysis to search until statistically significant p-values are found by chance",
+    "explanation": "Testing dozens of hypotheses without correction produces spurious false-positive significance at alpha = 0.05."
+  },
+  {
+    "questionText": "What is 'Bonferroni Correction'?",
+    "options": [
+      "Adjusting the significance threshold alpha by dividing by the number of hypotheses tested to counter multiple testing error",
+      "A method for imputing missing numbers",
+      "A clustering algorithm for spatial data",
+      "A mathematical proof of central limit theorem"
+    ],
+    "correctAnswer": "Adjusting the significance threshold alpha by dividing by the number of hypotheses tested to counter multiple testing error",
+    "explanation": "Bonferroni controls the family-wise error rate by testing each individual hypothesis at alpha / m."
+  },
+  {
+    "questionText": "What is 'Residual' in regression analysis?",
+    "options": [
+      "The difference between the observed actual value and the value predicted by the regression line (y - y_hat)",
+      "The portion of data left after train-test split",
+      "The memory remaining on the server",
+      "The uncompiled source code in a package"
+    ],
+    "correctAnswer": "The difference between the observed actual value and the value predicted by the regression line (y - y_hat)",
+    "explanation": "Residual analysis diagnoses violations of regression assumptions (homoscedasticity, normality, independence)."
+  },
+  {
+    "questionText": "What is 'Homoscedasticity' in regression assumptions?",
+    "options": [
+      "When the variance of residual errors is constant across all levels of the independent variables",
+      "When all features have identical mean values",
+      "When two regression models have identical accuracy",
+      "When all data points are integers"
+    ],
+    "correctAnswer": "When the variance of residual errors is constant across all levels of the independent variables",
+    "explanation": "Heteroscedasticity (fan-shaped residual spread) violates OLS assumptions and distorts hypothesis test reliability."
+  },
+  {
+    "questionText": "What is 'Q-Q Plot' (Quantile-Quantile Plot) used for?",
+    "options": [
+      "Assessing whether a dataset's distribution aligns with a theoretical normal distribution by comparing quantiles",
+      "Plotting two questions against each other in a quiz",
+      "Comparing two neural network loss curves",
+      "Evaluating query execution time in SQL"
+    ],
+    "correctAnswer": "Assessing whether a dataset's distribution aligns with a theoretical normal distribution by comparing quantiles",
+    "explanation": "Points falling along the 45-degree reference line confirm the empirical sample conforms to normality."
+  },
+  {
+    "questionText": "What is 'Interquartile Range' (IQR) rule for outlier detection?",
+    "options": [
+      "Points falling below Q1 - 1.5*IQR or above Q3 + 1.5*IQR are flagged as potential outliers",
+      "Points that fall exactly on the median line",
+      "Points that have negative values",
+      "Points that are outside the first 100 rows"
+    ],
+    "correctAnswer": "Points falling below Q1 - 1.5*IQR or above Q3 + 1.5*IQR are flagged as potential outliers",
+    "explanation": "Tukey's fence rule defines outlier cutoffs using 1.5 times the spread between the 25th and 75th percentiles."
+  },
+  {
+    "questionText": "What is 'Feature Interaction' in machine learning?",
+    "options": [
+      "When the effect of one feature on the target depends on the magnitude of another feature (e.g. X1 * X2)",
+      "When features exchange data over web sockets",
+      "When features are displayed in the same chart",
+      "When features have the same column name"
+    ],
+    "correctAnswer": "When the effect of one feature on the target depends on the magnitude of another feature (e.g. X1 * X2)",
+    "explanation": "Explicit interaction features capture multiplicative synergies that simple linear models cannot otherwise discern."
+  },
+  {
+    "questionText": "What is 'Data Normalization' (Min-Max Scaling)?",
+    "options": [
+      "Rescaling feature values into a fixed range, typically between 0 and 1, using (x - min) / (max - min)",
+      "Converting text into standard English grammar",
+      "Removing duplicates from a database",
+      "Converting tables into Third Normal Form (3NF)"
+    ],
+    "correctAnswer": "Rescaling feature values into a fixed range, typically between 0 and 1, using (x - min) / (max - min)",
+    "explanation": "Min-Max normalization compresses data into a bounded [0, 1] interval, preserving relative spacing."
+  },
+  {
+    "questionText": "What is 'Ensemble Learning'?",
+    "options": [
+      "Combining predictions from multiple diverse models to achieve higher accuracy and generalization than any individual model",
+      "Playing multiple instruments in an orchestra",
+      "Running multiple Python scripts in parallel",
+      "Storing data in multiple cloud regions"
+    ],
+    "correctAnswer": "Combining predictions from multiple diverse models to achieve higher accuracy and generalization than any individual model",
+    "explanation": "Ensembles leverage diversity (bagging, boosting, stacking) to cancel individual error variances."
+  },
+  {
+    "questionText": "What is the fundamental philosophy of Data Science?",
+    "options": [
+      "Extracting actionable knowledge and verifiable patterns from data to drive informed decisions",
+      "Writing the longest possible Python scripts",
+      "Replacing all human judgment with computers",
+      "Collecting every piece of data regardless of utility"
+    ],
+    "correctAnswer": "Extracting actionable knowledge and verifiable patterns from data to drive informed decisions",
+    "explanation": "Data science fuses domain expertise, mathematical modeling, and engineering to solve empirical problems rigorously."
+  }
+]

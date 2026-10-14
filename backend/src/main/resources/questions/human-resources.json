@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What is the primary purpose of a job analysis?",
+    "options": ["Systematically collect information about duties, responsibilities, necessary skills, and work environment of a job", "Determine employee salaries", "Schedule interviews", "Plan employee vacations"],
+    "correct": "Systematically collect information about duties, responsibilities, necessary skills, and work environment of a job",
+    "explanation": "Job analysis is the foundation of many HR functions including recruitment, compensation, and training."
+  },
+  {
+    "question": "Which interview technique uses past behavior to predict future performance?",
+    "options": ["Behavioral interviewing", "Stress interviewing", "Panel interviewing", "Unstructured interviewing"],
+    "correct": "Behavioral interviewing",
+    "explanation": "Behavioral interviewing asks candidates to describe specific situations and their actions, based on the premise that past behavior predicts future behavior."
+  },
+  {
+    "question": "What does SMART stand for in goal setting?",
+    "options": ["Specific, Measurable, Achievable, Relevant, Time-bound", "Strategic, Managed, Assessed, Reported, Tracked", "Simple, Meaningful, Actionable, Realistic, Tangible", "Systematic, Monitored, Aligned, Resourced, Targeted"],
+    "correct": "Specific, Measurable, Achievable, Relevant, Time-bound",
+    "explanation": "SMART goals provide a structured framework for setting clear, achievable objectives with defined timelines."
+  },
+  {
+    "question": "What is the purpose of an assessment center in recruitment?",
+    "options": ["Evaluate candidates through multiple exercises including simulations, group tasks, and presentations", "A physical center for medical assessments", "A room for written tests only", "An external audit facility"],
+    "correct": "Evaluate candidates through multiple exercises including simulations, group tasks, and presentations",
+    "explanation": "Assessment centers use multiple methods to evaluate candidates competencies in realistic work scenarios."
+  },
+  {
+    "question": "What is the difference between intrinsic and extrinsic motivation?",
+    "options": ["Intrinsic comes from internal satisfaction; extrinsic comes from external rewards", "They are the same concept", "Intrinsic is monetary; extrinsic is non-monetary", "Extrinsic is more effective than intrinsic"],
+    "correct": "Intrinsic comes from internal satisfaction; extrinsic comes from external rewards",
+    "explanation": "Intrinsic motivation involves personal fulfillment, while extrinsic motivation involves tangible rewards like pay or bonuses."
+  },
+  {
+    "question": "What is the Kirkpatrick model used for?",
+    "options": ["Evaluating training effectiveness across four levels: Reaction, Learning, Behavior, and Results", "A leadership development model", "A recruitment funnel model", "A compensation structure"],
+    "correct": "Evaluating training effectiveness across four levels: Reaction, Learning, Behavior, and Results",
+    "explanation": "The Kirkpatrick model systematically measures the impact and ROI of training programs."
+  },
+  {
+    "question": "What is constructive dismissal?",
+    "options": ["When an employer makes working conditions so intolerable that the employee is forced to resign", "When an employee is dismissed for good reasons", "When a contractor's work is terminated", "When an employee voluntarily leaves"],
+    "correct": "When an employer makes working conditions so intolerable that the employee is forced to resign",
+    "explanation": "Constructive dismissal is treated as employer-initiated termination in labor law, even though the employee technically resigns."
+  },
+  {
+    "question": "What is the primary purpose of job enrichment?",
+    "options": ["Increase job satisfaction by adding more meaningful tasks, autonomy, and responsibility", "Increase the number of tasks without adding complexity", "Rotate employees between different jobs", "Reduce the scope of a job"],
+    "correct": "Increase job satisfaction by adding more meaningful tasks, autonomy, and responsibility",
+    "explanation": "Job enrichment vertically expands a role, giving employees more control and developmental opportunities."
+  },
+  {
+    "question": "What is the Hay method in job evaluation?",
+    "options": ["A point-factor system evaluating jobs based on know-how, problem solving, and accountability", "A method for harvesting employee data", "A salary benchmarking tool", "A recruitment screening technique"],
+    "correct": "A point-factor system evaluating jobs based on know-how, problem solving, and accountability",
+    "explanation": "The Hay method is one of the most widely used job evaluation methodologies for establishing pay grades."
+  },
+  {
+    "question": "What is the significance of the Employment Provident Fund (EPF)?",
+    "options": ["A mandatory savings scheme where both employer and employee contribute to retirement savings", "A discretionary bonus scheme", "Health insurance coverage", "Travel allowance fund"],
+    "correct": "A mandatory savings scheme where both employer and employee contribute to retirement savings",
+    "explanation": "EPF provides financial security for employees after retirement through systematic savings contributions."
+  },
+  {
+    "question": "What is the purpose of a competency-based interview?",
+    "options": ["Assess specific skills and behaviors relevant to the role through structured questioning", "Test general knowledge only", "Evaluate physical fitness", "Check references and backgrounds"],
+    "correct": "Assess specific skills and behaviors relevant to the role through structured questioning",
+    "explanation": "Competency-based interviews focus on evidence of specific skills that predict job success."
+  },
+  {
+    "question": "What is a merit-based pay system?",
+    "options": ["Compensation linked to individual performance and contributions", "Equal pay for all employees regardless of performance", "Pay based solely on seniority", "Pay determined by job title only"],
+    "correct": "Compensation linked to individual performance and contributions",
+    "explanation": "Merit pay rewards high performers and incentivizes continuous improvement."
+  },
+  {
+    "question": "What is the role of an ombudsman in an organization?",
+    "options": ["An independent, neutral party who investigates and resolves workplace complaints informally", "A senior executive who makes all decisions", "A legal attorney for the company", "A payroll administrator"],
+    "correct": "An independent, neutral party who investigates and resolves workplace complaints informally",
+    "explanation": "Ombudsmen provide confidential, impartial conflict resolution outside formal grievance procedures."
+  },
+  {
+    "question": "What is the concept of pay equity?",
+    "options": ["Ensuring equal pay for work of equal value regardless of gender, race, or other protected characteristics", "Paying all employees the same salary", "Equity-based compensation through stock options", "Performance-based pay differentials"],
+    "correct": "Ensuring equal pay for work of equal value regardless of gender, race, or other protected characteristics",
+    "explanation": "Pay equity addresses systemic wage disparities and ensures fair compensation practices."
+  },
+  {
+    "question": "What is organizational development (OD)?",
+    "options": ["A planned, systematic approach to improving organizational effectiveness through behavioral science interventions", "Building new office locations", "Developing new products", "Financial development of the organization"],
+    "correct": "A planned, systematic approach to improving organizational effectiveness through behavioral science interventions",
+    "explanation": "OD focuses on improving organizational health, culture, and performance through change interventions."
+  },
+  {
+    "question": "What is the difference between job rotation and job enlargement?",
+    "options": ["Job rotation moves employees between different jobs; job enlargement adds more tasks at the same level", "They are identical concepts", "Job enlargement moves employees; job rotation adds tasks", "Neither involves changing job responsibilities"],
+    "correct": "Job rotation moves employees between different jobs; job enlargement adds more tasks at the same level",
+    "explanation": "Job rotation provides variety through different roles; job enlargement horizontally expands the current role."
+  },
+  {
+    "question": "What is the primary purpose of a talent pipeline?",
+    "options": ["Develop a pool of qualified candidates ready to fill key positions when vacancies arise", "A pipeline for transporting materials", "A plumbing analogy for office management", "A financial projection tool"],
+    "correct": "Develop a pool of qualified candidates ready to fill key positions when vacancies arise",
+    "explanation": "Talent pipelines reduce time-to-fill and ensure business continuity through proactive talent cultivation."
+  },
+  {
+    "question": "What does right to work mean in employment law?",
+    "options": ["Employees cannot be required to join a union or pay union dues as a condition of employment", "Every citizen has a guaranteed job", "Employers must provide work to anyone who applies", "Workers have the right to choose their own hours"],
+    "correct": "Employees cannot be required to join a union or pay union dues as a condition of employment",
+    "explanation": "Right-to-work laws give employees the choice of whether to join or financially support a union."
+  },
+  {
+    "question": "What is the purpose of an employee referral program?",
+    "options": ["Encourage existing employees to recommend qualified candidates for open positions", "Refer employees to external counseling", "Transfer employees between departments", "Refer employees to partner companies"],
+    "correct": "Encourage existing employees to recommend qualified candidates for open positions",
+    "explanation": "Referral programs leverage employees networks, typically resulting in faster hires and better cultural fit."
+  },
+  {
+    "question": "What is the concept of total rewards in compensation management?",
+    "options": ["The complete package of compensation, benefits, work-life balance, recognition, and career development", "Only base salary and bonuses", "Awards ceremonies for employees", "Customer loyalty programs"],
+    "correct": "The complete package of compensation, benefits, work-life balance, recognition, and career development",
+    "explanation": "Total rewards takes a holistic view of everything an employer offers to attract, retain, and motivate employees."
+  },
+  {
+    "question": "What is the glass ceiling effect?",
+    "options": ["An invisible barrier that prevents minorities and women from advancing to senior leadership positions", "A transparent office design concept", "A salary cap for executives", "A legal limit on promotions"],
+    "correct": "An invisible barrier that prevents minorities and women from advancing to senior leadership positions",
+    "explanation": "The glass ceiling represents systemic barriers to advancement based on gender, race, or ethnicity."
+  },
+  {
+    "question": "What is a learning management system (LMS)?",
+    "options": ["A software platform for creating, delivering, and tracking employee training programs", "A system for managing office leases", "A library management system", "A logistics management system"],
+    "correct": "A software platform for creating, delivering, and tracking employee training programs",
+    "explanation": "LMS platforms enable scalable training delivery, compliance tracking, and skill development management."
+  },
+  {
+    "question": "What is the purpose of a stay interview?",
+    "options": ["Understand what keeps valued employees engaged and identify retention risks before they resign", "A panel interview technique", "An interview conducted while standing", "A final interview before termination"],
+    "correct": "Understand what keeps valued employees engaged and identify retention risks before they resign",
+    "explanation": "Stay interviews proactively address retention by understanding employee motivation and concerns."
+  },
+  {
+    "question": "What is the concept of employer of choice?",
+    "options": ["An organization recognized as a highly desirable workplace that attracts and retains top talent", "The employer with the most employees", "The largest employer in a region", "An employer chosen by the government"],
+    "correct": "An organization recognized as a highly desirable workplace that attracts and retains top talent",
+    "explanation": "Being an employer of choice reduces recruitment costs and attracts higher-quality candidates."
+  },
+  {
+    "question": "What is the role of mediation in workplace conflict resolution?",
+    "options": ["A voluntary process where a neutral third party helps disputing parties reach a mutually acceptable solution", "A legal proceeding in court", "A mandatory arbitration process", "A management directive to resolve disputes"],
+    "correct": "A voluntary process where a neutral third party helps disputing parties reach a mutually acceptable solution",
+    "explanation": "Mediation is less adversarial and more collaborative than arbitration or litigation."
+  },
+  {
+    "question": "What is the significance of the 9-box grid in talent management?",
+    "options": ["A tool that plots employees on performance and potential axes to guide development and succession decisions", "A grid for organizing office cubicles", "A scheduling tool with 9 time slots", "A payroll categorization system"],
+    "correct": "A tool that plots employees on performance and potential axes to guide development and succession decisions",
+    "explanation": "The 9-box grid helps leaders identify high-potential employees, succession candidates, and development needs."
+  },
+  {
+    "question": "What is the purpose of variable pay?",
+    "options": ["Compensation tied to individual, team, or organizational performance that varies based on results", "Pay that changes randomly each month", "Different pay rates for different shifts", "Pay based on variable work hours only"],
+    "correct": "Compensation tied to individual, team, or organizational performance that varies based on results",
+    "explanation": "Variable pay aligns employee incentives with business outcomes through bonuses, commissions, or profit-sharing."
+  },
+  {
+    "question": "What is the concept of psychological safety in the workplace?",
+    "options": ["A belief that one can speak up, take risks, and make mistakes without fear of punishment or humiliation", "Physical safety of employees", "Mental health counseling services", "Security clearance protocols"],
+    "correct": "A belief that one can speak up, take risks, and make mistakes without fear of punishment or humiliation",
+    "explanation": "Psychological safety fosters innovation, learning, and team performance by encouraging open communication."
+  },
+  {
+    "question": "What is the purpose of an applicant tracking system (ATS)?",
+    "options": ["Software that automates and manages the recruitment process from job posting to hire", "A system for tracking employee attendance", "A GPS tracking system for delivery applicants", "A performance tracking system"],
+    "correct": "Software that automates and manages the recruitment process from job posting to hire",
+    "explanation": "ATS streamlines recruitment by managing applications, screening resumes, and tracking candidates through hiring stages."
+  },
+  {
+    "question": "What is the difference between coaching and mentoring?",
+    "options": ["Coaching is task-focused and short-term; mentoring is relationship-focused and long-term", "They are identical practices", "Mentoring is only for new employees", "Coaching is always done by external professionals"],
+    "correct": "Coaching is task-focused and short-term; mentoring is relationship-focused and long-term",
+    "explanation": "Coaching targets specific skills or performance; mentoring provides broader career guidance and wisdom."
+  },
+  {
+    "question": "What is the concept of human capital?",
+    "options": ["The economic value of an employees experience, skills, knowledge, and abilities", "The financial capital of the HR department", "Capital punishment in the workplace", "The companys market capitalization"],
+    "correct": "The economic value of an employees experience, skills, knowledge, and abilities",
+    "explanation": "Human capital theory recognizes employees as assets whose value increases with investment in development."
+  },
+  {
+    "question": "What is the purpose of a salary survey?",
+    "options": ["Collect and analyze market compensation data to ensure competitive pay practices", "Survey employees about their satisfaction with salary", "A customer satisfaction survey", "A survey about workplace facilities"],
+    "correct": "Collect and analyze market compensation data to ensure competitive pay practices",
+    "explanation": "Salary surveys help organizations benchmark their compensation against the external market."
+  },
+  {
+    "question": "What is the concept of gainsharing?",
+    "options": ["A group incentive plan that shares financial gains from improved productivity with employees", "Sharing gains from stock market investments", "A weight gain program", "Sharing company losses with employees"],
+    "correct": "A group incentive plan that shares financial gains from improved productivity with employees",
+    "explanation": "Gainsharing aligns employee and organizational interests by distributing productivity improvements."
+  },
+  {
+    "question": "What is the purpose of a skills inventory?",
+    "options": ["A database of employee competencies, qualifications, and experience for workforce planning", "An inventory of office supplies", "A list of products for sale", "A financial asset inventory"],
+    "correct": "A database of employee competencies, qualifications, and experience for workforce planning",
+    "explanation": "Skills inventories help identify talent gaps, plan training, and make informed deployment decisions."
+  },
+  {
+    "question": "What is the concept of distributive justice in HR?",
+    "options": ["The perceived fairness of outcomes such as pay, promotions, and resource allocation", "Distributing office supplies equally", "Justice served in distribution centers", "A legal concept only"],
+    "correct": "The perceived fairness of outcomes such as pay, promotions, and resource allocation",
+    "explanation": "Distributive justice influences employee satisfaction and commitment based on perceived equity in rewards."
+  },
+  {
+    "question": "What is the purpose of an HR audit?",
+    "options": ["Systematically review HR policies, procedures, and practices for compliance, efficiency, and effectiveness", "Audit employee personal finances", "An accounting audit of the company", "Audit of office equipment"],
+    "correct": "Systematically review HR policies, procedures, and practices for compliance, efficiency, and effectiveness",
+    "explanation": "HR audits identify risks, ensure compliance, and improve the overall effectiveness of HR functions."
+  },
+  {
+    "question": "What is the concept of a learning organization?",
+    "options": ["An organization that continuously transforms itself by facilitating learning and knowledge sharing among members", "A school or university", "An organization that sells learning materials", "A training company"],
+    "correct": "An organization that continuously transforms itself by facilitating learning and knowledge sharing among members",
+    "explanation": "Learning organizations adapt faster to change by encouraging experimentation, dialogue, and systems thinking."
+  },
+  {
+    "question": "What is the purpose of a critical incident technique in performance appraisal?",
+    "options": ["Document specific examples of exceptionally good or poor employee behavior for accurate evaluation", "Report workplace accidents", "Track security incidents", "Monitor system outages"],
+    "correct": "Document specific examples of exceptionally good or poor employee behavior for accurate evaluation",
+    "explanation": "Critical incident technique provides concrete, objective evidence for performance discussions."
+  },
+  {
+    "question": "What is the significance of employee value proposition (EVP)?",
+    "options": ["The unique set of benefits and rewards an employer offers in exchange for employee contributions", "The financial value an employee generates", "A proposal submitted by employees", "A valuation of the company"],
+    "correct": "The unique set of benefits and rewards an employer offers in exchange for employee contributions",
+    "explanation": "A compelling EVP differentiates an employer and helps attract, engage, and retain talent."
+  },
+  {
+    "question": "What is the concept of span of control in organizational design?",
+    "options": ["The number of direct reports a manager oversees", "The geographic area a company controls", "The range of products a company offers", "The market share of a company"],
+    "correct": "The number of direct reports a manager oversees",
+    "explanation": "Span of control affects management effectiveness, organizational structure, and communication efficiency."
+  },
+  {
+    "question": "What is the purpose of outplacement services?",
+    "options": ["Support laid-off employees with career transition, resume writing, and job search assistance", "Placing employees in outside offices", "Outsourcing placement services", "Relocating employees to other cities"],
+    "correct": "Support laid-off employees with career transition, resume writing, and job search assistance",
+    "explanation": "Outplacement mitigates the impact of layoffs and maintains the employers reputation."
+  },
+  {
+    "question": "What is strategic HR management?",
+    "options": ["Aligning HR practices with the organizations strategic goals to drive competitive advantage", "Managing HR strategy games", "Strategic planning for office layout", "Managing HR software systems"],
+    "correct": "Aligning HR practices with the organizations strategic goals to drive competitive advantage",
+    "explanation": "Strategic HRM transforms HR from an administrative function to a strategic business partner."
+  },
+  {
+    "question": "What is the concept of a matrix organization structure?",
+    "options": ["Employees report to both a functional manager and a project manager simultaneously", "An organization shaped like a matrix", "A mathematical model for organizational design", "A flat organizational structure"],
+    "correct": "Employees report to both a functional manager and a project manager simultaneously",
+    "explanation": "Matrix structures enable flexibility and expertise sharing but can create complexity in reporting relationships."
+  },
+  {
+    "question": "What is the significance of the Phillips ROI methodology in training?",
+    "options": ["Extends Kirkpatricks model by adding a fifth level to calculate the financial return on training investment", "A stock market investment methodology", "A method for calculating employee ROI", "A payroll calculation method"],
+    "correct": "Extends Kirkpatricks model by adding a fifth level to calculate the financial return on training investment",
+    "explanation": "The Phillips ROI model provides a financial justification for training expenditures."
+  },
+  {
+    "question": "What is the concept of voluntary benefits?",
+    "options": ["Employee-paid benefits offered through the employer at group rates, such as dental, vision, or life insurance", "Benefits volunteered by the company", "Free volunteer services by employees", "Charity contributions by the employer"],
+    "correct": "Employee-paid benefits offered through the employer at group rates, such as dental, vision, or life insurance",
+    "explanation": "Voluntary benefits enhance the total rewards package at minimal cost to the employer."
+  },
+  {
+    "question": "What is the purpose of a reduction in force (RIF)?",
+    "options": ["Permanently eliminate positions due to organizational restructuring, financial constraints, or strategic changes", "Reduce physical force usage at work", "A temporary suspension of duties", "Reducing overtime hours"],
+    "correct": "Permanently eliminate positions due to organizational restructuring, financial constraints, or strategic changes",
+    "explanation": "RIFs differ from layoffs in that the positions are permanently removed rather than temporarily suspended."
+  },
+  {
+    "question": "What is the concept of cultural intelligence (CQ)?",
+    "options": ["The ability to function effectively across different cultural contexts in the workplace", "Intelligence about pop culture", "A measure of IQ related to arts", "Knowledge of company culture only"],
+    "correct": "The ability to function effectively across different cultural contexts in the workplace",
+    "explanation": "CQ is essential for managing diverse teams and global operations effectively."
+  },
+  {
+    "question": "What is the purpose of a structured interview?",
+    "options": ["Ensure consistency by asking all candidates the same predetermined questions in the same order", "An interview in a structured building", "A free-flowing conversation with no set agenda", "An interview about building structures"],
+    "correct": "Ensure consistency by asking all candidates the same predetermined questions in the same order",
+    "explanation": "Structured interviews improve fairness, validity, and legal defensibility of hiring decisions."
+  },
+  {
+    "question": "What is the concept of emotional intelligence (EQ) in leadership?",
+    "options": ["The ability to recognize, understand, manage, and use emotions effectively in interpersonal interactions", "Intelligence quotient for emotional topics", "The ability to memorize emotions", "Emotional reactions to intelligence tests"],
+    "correct": "The ability to recognize, understand, manage, and use emotions effectively in interpersonal interactions",
+    "explanation": "Leaders with high EQ build stronger relationships, manage conflict better, and inspire their teams."
+  },
+  {
+    "question": "What is the significance of an HR balanced scorecard?",
+    "options": ["Measures HR department performance across strategic perspectives aligned with business objectives", "A score card for balancing HR budgets", "An employee performance card", "A scorecard for office games"],
+    "correct": "Measures HR department performance across strategic perspectives aligned with business objectives",
+    "explanation": "The HR balanced scorecard demonstrates HRs strategic value through measurable outcomes."
+  }
+]

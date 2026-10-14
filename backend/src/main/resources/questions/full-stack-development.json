@@ -1,0 +1,1102 @@
+[
+  {
+    "questionText": "What is the primary difference between 'let', 'const', and 'var' in modern JavaScript (ES6+)?",
+    "options": [
+      "'let' and 'const' are block-scoped and temporal dead zone aware, whereas 'var' is function-scoped and hoisted with undefined",
+      "'var' cannot be reassigned once initialized",
+      "'const' creates immutable deep objects that prevent object key modification",
+      "'let' is only available inside browser Web Workers"
+    ],
+    "correctAnswer": "'let' and 'const' are block-scoped and temporal dead zone aware, whereas 'var' is function-scoped and hoisted with undefined",
+    "explanation": "'let' and 'const' respect lexical block scopes ({ ... }) and cannot be accessed before declaration, unlike function-scoped 'var'."
+  },
+  {
+    "questionText": "In React, what is the consequence of modifying state directly via `this.state.count = 5` or mutating state variables without setter functions?",
+    "options": [
+      "React will not trigger a re-render because it relies on setter functions to schedule reconciliation updates",
+      "The browser will immediately throw an uncaught ReferenceError",
+      "The database server will abort the current HTTP request",
+      "All child components are immediately unmounted from the DOM"
+    ],
+    "correctAnswer": "React will not trigger a re-render because it relies on setter functions to schedule reconciliation updates",
+    "explanation": "Direct mutation bypasses React's state management lifecycle, so the Virtual DOM diffing algorithm is never scheduled to re-render the UI."
+  },
+  {
+    "questionText": "In Spring Boot, which annotation is used on a class to define REST endpoints that automatically serialize return values to JSON?",
+    "options": [
+      "@RestController",
+      "@Controller",
+      "@Service",
+      "@Repository"
+    ],
+    "correctAnswer": "@RestController",
+    "explanation": "@RestController is a convenience convenience annotation combining @Controller and @ResponseBody, serializing returned objects directly into HTTP response bodies."
+  },
+  {
+    "questionText": "What HTTP response status code should be returned when a resource is successfully created via a POST request?",
+    "options": [
+      "201 Created",
+      "200 OK",
+      "204 No Content",
+      "202 Accepted"
+    ],
+    "correctAnswer": "201 Created",
+    "explanation": "HTTP 201 Created indicates the request succeeded and resulted in the creation of one or more new resources, usually returning a Location header."
+  },
+  {
+    "questionText": "In PostgreSQL, which index type is the default when creating an index on a column?",
+    "options": [
+      "B-Tree",
+      "Hash",
+      "GIN (Generalized Inverted Index)",
+      "BRIN (Block Range Index)"
+    ],
+    "correctAnswer": "B-Tree",
+    "explanation": "PostgreSQL defaults to B-Tree indexes, which efficiently handle equality and range queries (<, <=, =, >=, >) on sortable data."
+  },
+  {
+    "questionText": "In React, what is the primary purpose of the `useEffect` hook's dependency array `[dep1, dep2]`?",
+    "options": [
+      "It instructs React to re-execute the effect only when one of the specified dependencies changes between renders",
+      "It binds Redux store dispatchers to the component",
+      "It caches the return value in browser localStorage",
+      "It prevents the component from rendering more than once"
+    ],
+    "correctAnswer": "It instructs React to re-execute the effect only when one of the specified dependencies changes between renders",
+    "explanation": "The dependency array allows React to skip re-running the effect on renders where none of the specified values have changed."
+  },
+  {
+    "questionText": "Which CSS property and value enables a flex container to arrange its children in a column and center them horizontally?",
+    "options": [
+      "display: flex; flex-direction: column; align-items: center;",
+      "display: flex; flex-direction: row; justify-content: center;",
+      "display: block; text-align: center; margin: auto;",
+      "display: grid; grid-template-columns: 1fr;"
+    ],
+    "correctAnswer": "display: flex; flex-direction: column; align-items: center;",
+    "explanation": "In column direction, the cross-axis is horizontal; therefore `align-items: center` centers items horizontally across the cross-axis."
+  },
+  {
+    "questionText": "In SQL, what is the key difference between `WHERE` and `HAVING` clauses?",
+    "options": [
+      "`WHERE` filters individual rows before grouping; `HAVING` filters aggregated group records after `GROUP BY`",
+      "`WHERE` works only on text columns; `HAVING` works only on numbers",
+      "`HAVING` can only be used with subqueries",
+      "`WHERE` cannot be used with `JOIN` operations"
+    ],
+    "correctAnswer": "`WHERE` filters individual rows before grouping; `HAVING` filters aggregated group records after `GROUP BY`",
+    "explanation": "WHERE filters rows prior to aggregation, while HAVING filters the results of aggregate expressions (SUM, COUNT, AVG) after grouping."
+  },
+  {
+    "questionText": "What does the JavaScript event loop do when an asynchronous Promise resolves?",
+    "options": [
+      "Places the Promise callback into the Microtask Queue to be executed before the next Macrotask",
+      "Immediately interrupts synchronous execution on the call stack",
+      "Pushes the callback to a background thread in the operating system",
+      "Restarts the browser's JavaScript engine"
+    ],
+    "correctAnswer": "Places the Promise callback into the Microtask Queue to be executed before the next Macrotask",
+    "explanation": "Resolved Promises are enqueued in the high-priority microtask queue, which is emptied immediately after the current call stack clears."
+  },
+  {
+    "questionText": "In Spring Data JPA, what does the `@Transactional` annotation guarantee on a service method?",
+    "options": [
+      "That all database operations within the method execute inside a database transaction, rolling back on unhandled exceptions",
+      "That the endpoint is secured with JWT tokens",
+      "That HTTP requests are cached in Redis",
+      "That the method executes asynchronously on a separate thread pool"
+    ],
+    "correctAnswer": "That all database operations within the method execute inside a database transaction, rolling back on unhandled exceptions",
+    "explanation": "@Transactional defines the scope of a single database transaction, ensuring ACID compliance and rolling back on runtime exceptions."
+  },
+  {
+    "questionText": "What vulnerability occurs when an application renders untrusted user input directly into HTML without sanitization?",
+    "options": [
+      "Cross-Site Scripting (XSS)",
+      "Cross-Site Request Forgery (CSRF)",
+      "Server-Side Request Forgery (SSRF)",
+      "Denial of Service (DoS)"
+    ],
+    "correctAnswer": "Cross-Site Scripting (XSS)",
+    "explanation": "XSS allows attackers to inject malicious scripts into trusted websites, executing in victim browsers and stealing cookies or tokens."
+  },
+  {
+    "questionText": "In React, why must list elements have a unique `key` prop when mapped dynamically?",
+    "options": [
+      "To help React's reconciliation algorithm identify which items were changed, added, or removed efficiently",
+      "To provide accessibility labels for screen readers",
+      "To automatically apply CSS styles to list items",
+      "To persist item data to IndexedDB"
+    ],
+    "correctAnswer": "To help React's reconciliation algorithm identify which items were changed, added, or removed efficiently",
+    "explanation": "Keys give stable identity to Virtual DOM elements, preventing unnecessary DOM re-creations and state bugs during list mutations."
+  },
+  {
+    "questionText": "Which HTTP header is sent by servers to instruct browsers which origins are permitted to access resources via XMLHttpRequest or fetch?",
+    "options": [
+      "Access-Control-Allow-Origin",
+      "Content-Security-Policy",
+      "X-Frame-Options",
+      "Authorization"
+    ],
+    "correctAnswer": "Access-Control-Allow-Origin",
+    "explanation": "Access-Control-Allow-Origin is the foundational CORS header specifying allowed requesting origins (* or specific domain)."
+  },
+  {
+    "questionText": "In modern CSS, what does `box-sizing: border-box` do?",
+    "options": [
+      "Includes padding and border within the specified element width and height",
+      "Adds a black border around every HTML element",
+      "Forces elements to display as inline boxes",
+      "Disables CSS margins completely"
+    ],
+    "correctAnswer": "Includes padding and border within the specified element width and height",
+    "explanation": "With border-box, padding and borders do not expand the element beyond its declared width and height, simplifying layout math."
+  },
+  {
+    "questionText": "In Node.js, what is the role of `package.json`?",
+    "options": [
+      "Manifest containing project metadata, script commands, and direct project dependencies",
+      "The compiled binary executable for Node",
+      "A database schema migration file",
+      "The web server configuration for Nginx"
+    ],
+    "correctAnswer": "Manifest containing project metadata, script commands, and direct project dependencies",
+    "explanation": "package.json defines project details, execution scripts (e.g. npm start), and lists production and dev dependencies."
+  },
+  {
+    "questionText": "What does the SQL statement `SELECT u.name, o.total FROM users u LEFT JOIN orders o ON u.id = o.user_id;` return?",
+    "options": [
+      "All users, including those who have placed no orders, with NULL in order columns",
+      "Only users who have placed at least one order",
+      "Only orders that belong to non-existent users",
+      "A cross product multiplying every user by every order"
+    ],
+    "correctAnswer": "All users, including those who have placed no orders, with NULL in order columns",
+    "explanation": "LEFT JOIN preserves all rows from the left table (users); matching right table rows are joined, and non-matches populate NULL."
+  },
+  {
+    "questionText": "In React, what does the `useMemo` hook do?",
+    "options": [
+      "Memoizes the computed result of an expensive calculation to avoid recalculating on every render",
+      "Stores component state in browser RAM permanently",
+      "Caches API responses from backend endpoints",
+      "Creates a reference to a DOM element"
+    ],
+    "correctAnswer": "Memoizes the computed result of an expensive calculation to avoid recalculating on every render",
+    "explanation": "useMemo recomputes a memoized value only when one of its specified dependencies has changed."
+  },
+  {
+    "questionText": "What is the purpose of password hashing algorithms like BCrypt over standard SHA-256?",
+    "options": [
+      "BCrypt incorporates a salt and an adaptive work factor (computational cost) to thwart brute-force and GPU attacks",
+      "BCrypt decrypts passwords faster when logging in",
+      "BCrypt converts passwords into plain text for verification",
+      "BCrypt requires no database storage"
+    ],
+    "correctAnswer": "BCrypt incorporates a salt and an adaptive work factor (computational cost) to thwart brute-force and GPU attacks",
+    "explanation": "BCrypt is deliberately slow and salted, making rainbow table lookups and high-speed GPU cracking computationally intractable."
+  },
+  {
+    "questionText": "In React Router v6+, which component is used to define dynamic route matching and render matching route elements?",
+    "options": [
+      "<Routes> and <Route>",
+      "<Switch> and <Router>",
+      "<NavigationContainer> and <Screen>",
+      "<Path> and <View>"
+    ],
+    "correctAnswer": "<Routes> and <Route>",
+    "explanation": "In React Router v6, <Routes> wraps individual <Route path='...' element={<Component />} /> definitions."
+  },
+  {
+    "questionText": "What is an ORM (Object-Relational Mapping) library such as Hibernate or Prisma?",
+    "options": [
+      "A tool that bridges object-oriented code and relational database tables, mapping classes to entities and methods to queries",
+      "A database server that stores JSON documents",
+      "A CSS preprocessor like SASS",
+      "A load balancer for HTTP traffic"
+    ],
+    "correctAnswer": "A tool that bridges object-oriented code and relational database tables, mapping classes to entities and methods to queries",
+    "explanation": "ORMs map object-oriented domain models into relational SQL schemas, abstracting low-level SQL query generation and result mapping."
+  },
+  {
+    "questionText": "What is the purpose of the `useCallback` hook in React?",
+    "options": [
+      "Returns a memoized version of a callback function that only changes when its dependencies change",
+      "Calls an API endpoint immediately on render",
+      "Creates a callback function that runs on a separate worker thread",
+      "Deletes unmounted components from memory"
+    ],
+    "correctAnswer": "Returns a memoized version of a callback function that only changes when its dependencies change",
+    "explanation": "useCallback prevents unnecessary re-renders of memoized child components by preserving function identity between renders."
+  },
+  {
+    "questionText": "What does the HTTP header `Authorization: Bearer <token>` typically carry in modern web apps?",
+    "options": [
+      "A signed JSON Web Token (JWT) representing verified user identity and claims",
+      "The user's plaintext password",
+      "The browser's version number",
+      "The server's IP address"
+    ],
+    "correctAnswer": "A signed JSON Web Token (JWT) representing verified user identity and claims",
+    "explanation": "Bearer tokens carry compact credentials (like JWTs) in authorization headers to authenticate stateless REST API requests."
+  },
+  {
+    "questionText": "What are the three parts of a JSON Web Token (JWT)?",
+    "options": [
+      "Header, Payload, and Signature",
+      "Username, Password, and Email",
+      "IP address, MAC address, and Port",
+      "Public key, Private key, and Certificate"
+    ],
+    "correctAnswer": "Header, Payload, and Signature",
+    "explanation": "JWTs consist of base64url-encoded Header, Payload (claims), and cryptographic Signature separated by dots."
+  },
+  {
+    "questionText": "In CSS Grid, what does `grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));` create?",
+    "options": [
+      "A responsive layout where columns automatically wrap and fill available row space with min width 250px",
+      "A fixed 3-column table",
+      "A single column that scrolls horizontally",
+      "A layout that only works on mobile screens"
+    ],
+    "correctAnswer": "A responsive layout where columns automatically wrap and fill available row space with min width 250px",
+    "explanation": "repeat(auto-fit, minmax(...)) dynamically adjusts column count to container width without media queries."
+  },
+  {
+    "questionText": "What is 'Prop Drilling' in React?",
+    "options": [
+      "Passing props through multiple intermediate components that do not need the data, merely to reach deeply nested children",
+      "Drilling holes into computer motherboards",
+      "Writing props with incorrect TypeScript types",
+      "Overriding props with state setters"
+    ],
+    "correctAnswer": "Passing props through multiple intermediate components that do not need the data, merely to reach deeply nested children",
+    "explanation": "Prop drilling creates coupling across layers; mitigated using React Context, Zustand, or Redux state stores."
+  },
+  {
+    "questionText": "What does `git rebase main` do compared to `git merge main`?",
+    "options": [
+      "Re-applies commits from the current branch on top of main's latest commit, creating a linear history",
+      "Deletes all commits on the current branch",
+      "Merges both branches and creates an explicit merge commit",
+      "Reverts all uncommitted changes in the working directory"
+    ],
+    "correctAnswer": "Re-applies commits from the current branch on top of main's latest commit, creating a linear history",
+    "explanation": "Rebasing replays local commits on the tip of the target branch, producing clean, sequential project history."
+  },
+  {
+    "questionText": "What is the primary difference between SQL databases (PostgreSQL) and NoSQL document databases (MongoDB)?",
+    "options": [
+      "SQL enforces structured schemas with ACID relational joins; document NoSQL stores schema-less JSON-like BSON documents",
+      "SQL can only store text; NoSQL can store numbers",
+      "NoSQL cannot be hosted in the cloud",
+      "SQL does not support primary keys"
+    ],
+    "correctAnswer": "SQL enforces structured schemas with ACID relational joins; document NoSQL stores schema-less JSON-like BSON documents",
+    "explanation": "Relational databases excel at normalized relational schemas and strict transactions; document stores prioritize flexible, nested documents."
+  },
+  {
+    "questionText": "In REST architecture, what does 'Idempotence' mean?",
+    "options": [
+      "Making multiple identical requests has the same outcome on server state as making a single request",
+      "The request completes in under 100 milliseconds",
+      "The endpoint requires administrative authorization",
+      "The request body must be empty"
+    ],
+    "correctAnswer": "Making multiple identical requests has the same outcome on server state as making a single request",
+    "explanation": "GET, PUT, and DELETE are idempotent; repeating them multiple times results in the same resource state."
+  },
+  {
+    "questionText": "Which HTTP method is typically NOT idempotent?",
+    "options": [
+      "POST",
+      "GET",
+      "PUT",
+      "DELETE"
+    ],
+    "correctAnswer": "POST",
+    "explanation": "Submitting multiple identical POST requests typically creates multiple distinct resource entities."
+  },
+  {
+    "questionText": "What does the JavaScript `Array.prototype.reduce()` function do?",
+    "options": [
+      "Executes a reducer callback on each element of the array, returning a single accumulated output value",
+      "Reduces array length by removing null items",
+      "Sorts array items in descending order",
+      "Filters elements matching a boolean predicate"
+    ],
+    "correctAnswer": "Executes a reducer callback on each element of the array, returning a single accumulated output value",
+    "explanation": "reduce() iterates through array items, carrying an accumulator forward to produce a consolidated result."
+  },
+  {
+    "questionText": "What is 'Debouncing' in frontend user input handling?",
+    "options": [
+      "Delaying execution of a function until a specified time has elapsed since the last time the event was triggered",
+      "Executing a function twice on every keystroke",
+      "Disabling buttons when forms are submitted",
+      "Converting strings to lowercase"
+    ],
+    "correctAnswer": "Delaying execution of a function until a specified time has elapsed since the last time the event was triggered",
+    "explanation": "Debounce waits for user typing to pause (e.g. 300ms in search inputs) before firing expensive API requests."
+  },
+  {
+    "questionText": "What is 'Throttling' in web event handling?",
+    "options": [
+      "Ensuring a function is called at most once within a specified time interval (e.g. on window scroll)",
+      "Slowing down internet connection speed",
+      "Canceling all background network requests",
+      "Reducing CPU usage to 10%"
+    ],
+    "correctAnswer": "Ensuring a function is called at most once within a specified time interval (e.g. on window scroll)",
+    "explanation": "Throttling regulates execution frequency, executing callbacks at regular paced intervals during continuous events."
+  },
+  {
+    "questionText": "In Spring Boot, what is the role of `@Autowired` or constructor injection?",
+    "options": [
+      "Injecting dependent bean instances automatically into managed classes via Dependency Injection (IoC)",
+      "Compiling Java bytecode into machine code",
+      "Validating form fields automatically",
+      "Opening database connections manually"
+    ],
+    "correctAnswer": "Injecting dependent bean instances automatically into managed classes via Dependency Injection (IoC)",
+    "explanation": "Dependency injection decouples class creation from dependencies, injecting collaborating beans managed by Spring container."
+  },
+  {
+    "questionText": "What does `git stash` do?",
+    "options": [
+      "Temporarily shelves uncommitted changes so you can work on a clean working copy, retrievable via `git stash pop`",
+      "Permanently deletes all modified files",
+      "Pushes code to GitHub immediately",
+      "Creates a new Git tag for release"
+    ],
+    "correctAnswer": "Temporarily shelves uncommitted changes so you can work on a clean working copy, retrievable via `git stash pop`",
+    "explanation": "git stash records the current state of the working directory and index, resetting back to the HEAD commit."
+  },
+  {
+    "questionText": "What is a 'Pure Component' or pure function in React?",
+    "options": [
+      "A component/function that returns the exact same JSX output for the same input props without side effects",
+      "A component written without using JSX",
+      "A component that has zero props",
+      "A component that never re-renders"
+    ],
+    "correctAnswer": "A component/function that returns the exact same JSX output for the same input props without side effects",
+    "explanation": "Pure components compute output strictly from inputs, avoiding unpredictable mutations or hidden state."
+  },
+  {
+    "questionText": "What does the `@OneToMany(mappedBy = '...')` attribute in JPA specify?",
+    "options": [
+      "Defines the inverse side of a bidirectional relationship, referencing the field in the child entity that owns the foreign key",
+      "Creates a new database table called one_to_many",
+      "Limits the query to only 1 row",
+      "Disables database transactions"
+    ],
+    "correctAnswer": "Defines the inverse side of a bidirectional relationship, referencing the field in the child entity that owns the foreign key",
+    "explanation": "mappedBy tells Hibernate that the relationship is mapped by the opposing entity, preventing redundant join tables."
+  },
+  {
+    "questionText": "What is 'CORS Preflight' request in web browsers?",
+    "options": [
+      "An automated HTTP OPTIONS request sent by browsers to verify server CORS permissions before sending non-simple requests",
+      "A test flight of an airplane",
+      "Checking internet bandwidth before downloading images",
+      "Validating HTML syntax before rendering"
+    ],
+    "correctAnswer": "An automated HTTP OPTIONS request sent by browsers to verify server CORS permissions before sending non-simple requests",
+    "explanation": "Browsers send preflight OPTIONS requests for custom headers or non-simple methods (PUT/DELETE) to ensure server consent."
+  },
+  {
+    "questionText": "What is 'Content Security Policy' (CSP)?",
+    "options": [
+      "An HTTP response header allowing site administrators to restrict resources (scripts, images, styles) browsers are allowed to load",
+      "A privacy policy displayed on a website footer",
+      "A security guard at a data center",
+      "A firewall configured on an operating system"
+    ],
+    "correctAnswer": "An HTTP response header allowing site administrators to restrict resources (scripts, images, styles) browsers are allowed to load",
+    "explanation": "CSP mitigates XSS attacks by restricting authorized script sources and blocking inline execution."
+  },
+  {
+    "questionText": "What does the CSS property `z-index` control?",
+    "options": [
+      "The stacking order of positioned elements along the z-axis (depth)",
+      "The zoom level of images",
+      "The horizontal alignment of text",
+      "The transparency of background colors"
+    ],
+    "correctAnswer": "The stacking order of positioned elements along the z-axis (depth)",
+    "explanation": "z-index specifies layering priority for positioned elements (relative, absolute, fixed, sticky) within a stacking context."
+  },
+  {
+    "questionText": "In React, what is the difference between controlled and uncontrolled form inputs?",
+    "options": [
+      "Controlled inputs have their value driven by React state; uncontrolled inputs store value in the DOM accessed via refs",
+      "Controlled inputs have validation; uncontrolled inputs do not",
+      "Controlled inputs only work on mobile devices",
+      "Uncontrolled inputs cannot be submitted"
+    ],
+    "correctAnswer": "Controlled inputs have their value driven by React state; uncontrolled inputs store value in the DOM accessed via refs",
+    "explanation": "Controlled components bind input value to React state via onChange handlers, giving full programmatic control."
+  },
+  {
+    "questionText": "What does `npm install --save-dev <pkg>` (or `-D`) do?",
+    "options": [
+      "Installs the package as a development dependency, excluded from production deployment bundles",
+      "Installs the package globally on the computer",
+      "Runs the package immediately in the terminal",
+      "Downloads source code without installing"
+    ],
+    "correctAnswer": "Installs the package as a development dependency, excluded from production deployment bundles",
+    "explanation": "Dev dependencies (linters, test runners, build tools) are isolated from production runtime environments."
+  },
+  {
+    "questionText": "What is 'Lazy Loading' (React.lazy and dynamic import)?",
+    "options": [
+      "Deferring component download until it is actually rendered on screen, splitting bundles into smaller chunks",
+      "Writing code slowly over several days",
+      "Delaying API responses by 5 seconds",
+      "Loading images only when clicked"
+    ],
+    "correctAnswer": "Deferring component download until it is actually rendered on screen, splitting bundles into smaller chunks",
+    "explanation": "React.lazy() and import() enable code-splitting, downloading bundle chunks on demand to minimize initial page load times."
+  },
+  {
+    "questionText": "In SQL, what is an 'ACID' transaction?",
+    "options": [
+      "Atomicity, Consistency, Isolation, Durability: guarantees database transactions are processed reliably",
+      "A database query with multiple WHERE conditions",
+      "A syntax error in PostgreSQL",
+      "A method for encrypting database tables"
+    ],
+    "correctAnswer": "Atomicity, Consistency, Isolation, Durability: guarantees database transactions are processed reliably",
+    "explanation": "ACID guarantees: all-or-nothing changes (A), valid state constraints (C), isolated execution (I), and permanent persistence (D)."
+  },
+  {
+    "questionText": "What does the `git cherry-pick <commit-hash>` command do?",
+    "options": [
+      "Applies the changes from a specific existing commit onto the current working HEAD branch",
+      "Deletes a specific commit from history",
+      "Picks random files to delete",
+      "Pushes a branch to production"
+    ],
+    "correctAnswer": "Applies the changes from a specific existing commit onto the current working HEAD branch",
+    "explanation": "cherry-pick copies a specific commit from one branch and commits it onto the currently active branch."
+  },
+  {
+    "questionText": "What is the purpose of the `useRef` hook in React?",
+    "options": [
+      "Returns a mutable ref object whose .current property persists across renders without triggering a re-render when changed",
+      "Refreshes the page automatically",
+      "Fetches data from a REST API",
+      "Manages Redux store state"
+    ],
+    "correctAnswer": "Returns a mutable ref object whose .current property persists across renders without triggering a re-render when changed",
+    "explanation": "useRef provides access to DOM nodes and holds mutable instance variables across render cycles without causing re-renders."
+  },
+  {
+    "questionText": "What is the 'Same-Origin Policy' (SOP) implemented by web browsers?",
+    "options": [
+      "A critical security mechanism that prevents scripts on one origin from accessing sensitive resources on another origin",
+      "A rule requiring all web pages to use the same font",
+      "A law requiring websites to display cookie banners",
+      "A network policy that blocks all external links"
+    ],
+    "correctAnswer": "A critical security mechanism that prevents scripts on one origin from accessing sensitive resources on another origin",
+    "explanation": "SOP isolates distinct origins (protocol + host + port), preventing malicious sites from reading authenticated data from others."
+  },
+  {
+    "questionText": "What is 'SQL Injection' (SQLi)?",
+    "options": [
+      "An exploit where untrusted user input manipulates backend SQL queries due to unescaped string concatenation",
+      "Injecting database records using an automated script",
+      "Backing up a database using SQL scripts",
+      "Creating indexes on database columns"
+    ],
+    "correctAnswer": "An exploit where untrusted user input manipulates backend SQL queries due to unescaped string concatenation",
+    "explanation": "SQL injection allows attackers to bypass authentication or extract sensitive database tables via malicious input parameters."
+  },
+  {
+    "questionText": "How do parameterized queries (PreparedStatement in Java / JPA) prevent SQL injection?",
+    "options": [
+      "They treat user inputs strictly as literal data parameters, never parsing them as executable SQL commands",
+      "They encrypt the database server hard drive",
+      "They convert all input text into base64",
+      "They delete dangerous words like 'DROP' and 'SELECT'"
+    ],
+    "correctAnswer": "They treat user inputs strictly as literal data parameters, never parsing them as executable SQL commands",
+    "explanation": "Prepared statements compile query templates first, binding inputs as raw literal values so structure cannot be altered."
+  },
+  {
+    "questionText": "In CSS, what is the 'Cascade' in Cascading Style Sheets?",
+    "options": [
+      "The algorithm that resolves conflicts between multiple CSS rules based on origin, specificity, and source order",
+      "A waterfall animation in CSS",
+      "Applying styles to all child elements",
+      "Loading CSS files over HTTPS"
+    ],
+    "correctAnswer": "The algorithm that resolves conflicts between multiple CSS rules based on origin, specificity, and source order",
+    "explanation": "The cascade resolves style conflicts using explicit hierarchy: importance (!important), specificity, and source declaration order."
+  },
+  {
+    "questionText": "What is 'Semantic HTML' and why is it important?",
+    "options": [
+      "Using HTML tags that describe meaning (e.g. <header>, <nav>, <article>) for accessibility, SEO, and maintainability",
+      "Writing HTML without any CSS",
+      "Using only <div> and <span> tags",
+      "Writing HTML in alphabetical order"
+    ],
+    "correctAnswer": "Using HTML tags that describe meaning (e.g. <header>, <nav>, <article>) for accessibility, SEO, and maintainability",
+    "explanation": "Semantic elements convey structural purpose to screen readers and search engines, creating accessible page hierarchies."
+  },
+  {
+    "questionText": "What is 'Server-Side Rendering' (SSR) compared to 'Client-Side Rendering' (CSR)?",
+    "options": [
+      "SSR renders HTML on the server and delivers ready markup to browsers; CSR downloads JavaScript which builds DOM in browser",
+      "SSR requires no backend server",
+      "CSR loads faster on slow 2G internet connections",
+      "SSR works only on mobile phones"
+    ],
+    "correctAnswer": "SSR renders HTML on the server and delivers ready markup to browsers; CSR downloads JavaScript which builds DOM in browser",
+    "explanation": "SSR delivers pre-rendered HTML for faster initial content paint and superior SEO indexing compared to pure client bundles."
+  },
+  {
+    "questionText": "What does `npm run build` typically produce in a modern Vite/React project?",
+    "options": [
+      "A minified, bundled, and optimized production-ready `dist` folder containing HTML, JS, and CSS static assets",
+      "Starts a development hot-reloading server",
+      "Installs missing npm packages",
+      "Runs all automated unit tests"
+    ],
+    "correctAnswer": "A minified, bundled, and optimized production-ready `dist` folder containing HTML, JS, and CSS static assets",
+    "explanation": "Vite compiles JSX/TypeScript, tree-shakes dead code, and minifies assets into static production bundles."
+  },
+  {
+    "questionText": "What is 'Tree Shaking' in modern JavaScript bundlers (Vite / Rollup / Webpack)?",
+    "options": [
+      "Dead-code elimination that strips unused exports from the final JavaScript production bundle",
+      "Shaking computer hardware to test stability",
+      "Sorting files in alphabetical order in directories",
+      "Removing comments from CSS files"
+    ],
+    "correctAnswer": "Dead-code elimination that strips unused exports from the final JavaScript production bundle",
+    "explanation": "Tree shaking uses ES6 static import/export analysis to omit unused functions and libraries from bundled code."
+  },
+  {
+    "questionText": "In Spring Boot, what does `@PathVariable` do in a controller method signature?",
+    "options": [
+      "Extracts dynamic URI template variable values from the request path (e.g. `/users/{id}`)",
+      "Reads query parameters from the URL (?key=val)",
+      "Extracts JSON from the request body",
+      "Reads cookies from the HTTP header"
+    ],
+    "correctAnswer": "Extracts dynamic URI template variable values from the request path (e.g. `/users/{id}`)",
+    "explanation": "@PathVariable binds URI placeholders (like {id}) directly to controller method parameter variables."
+  },
+  {
+    "questionText": "In Spring Boot, what does `@RequestParam` do?",
+    "options": [
+      "Extracts query parameters or form data from the URL query string (e.g. `?page=1&size=10`)",
+      "Extracts path variables from the URI",
+      "Validates request headers",
+      "Extracts JWT tokens"
+    ],
+    "correctAnswer": "Extracts query parameters or form data from the URL query string (e.g. `?page=1&size=10`)",
+    "explanation": "@RequestParam maps URL query parameters to method arguments, supporting optional defaults."
+  },
+  {
+    "questionText": "What is 'Database Normalization' (e.g. 1NF, 2NF, 3NF)?",
+    "options": [
+      "Organizing database columns and tables to minimize redundant duplicate data and eliminate modification anomalies",
+      "Formatting numbers to two decimal places",
+      "Backing up database tables to cloud storage",
+      "Creating indexes on foreign keys"
+    ],
+    "correctAnswer": "Organizing database columns and tables to minimize redundant duplicate data and eliminate modification anomalies",
+    "explanation": "Normalization structures relational schemas into distinct related tables, ensuring data integrity and consistency."
+  },
+  {
+    "questionText": "What is a 'Foreign Key' constraint in relational databases?",
+    "options": [
+      "A column constraint enforcing referential integrity by ensuring values match primary keys in a referenced table",
+      "A key used to encrypt database backups",
+      "A primary key imported from an external database",
+      "A password used by database administrators"
+    ],
+    "correctAnswer": "A column constraint enforcing referential integrity by ensuring values match primary keys in a referenced table",
+    "explanation": "Foreign keys prevent orphaned records by ensuring child table references correspond to valid parent records."
+  },
+  {
+    "questionText": "What is 'Virtual DOM' in React?",
+    "options": [
+      "A lightweight in-memory JavaScript representation of the real DOM used to compute optimal updates via diffing",
+      "A 3D virtual reality interface in the browser",
+      "A headless Chrome browser instance",
+      "A copy of the database stored in RAM"
+    ],
+    "correctAnswer": "A lightweight in-memory JavaScript representation of the real DOM used to compute optimal updates via diffing",
+    "explanation": "React renders to an in-memory Virtual DOM, diffing changes to apply minimal batch updates to the real browser DOM."
+  },
+  {
+    "questionText": "What is 'Reconciliation' in React?",
+    "options": [
+      "The recursive diffing algorithm React uses to compare Virtual DOM trees and update the real browser DOM",
+      "Reconnecting a disconnected database",
+      "Reconciling credit card statements",
+      "Synchronizing Git branches"
+    ],
+    "correctAnswer": "The recursive diffing algorithm React uses to compare Virtual DOM trees and update the real browser DOM",
+    "explanation": "Reconciliation determines what parts of the DOM changed between renders to minimize costly browser reflows."
+  },
+  {
+    "questionText": "What does the CSS property `flex-wrap: wrap;` do?",
+    "options": [
+      "Allows flex items to wrap onto multiple lines if they exceed the container width",
+      "Forces all items onto a single line",
+      "Hides overflowing items from view",
+      "Animates items when hovering"
+    ],
+    "correctAnswer": "Allows flex items to wrap onto multiple lines if they exceed the container width",
+    "explanation": "flex-wrap: wrap allows items that overflow the main axis to break cleanly onto new flex lines."
+  },
+  {
+    "questionText": "In JavaScript, what does `JSON.stringify()` do?",
+    "options": [
+      "Converts a JavaScript object or value into a serialized JSON text string",
+      "Parses a JSON string into a JavaScript object",
+      "Validates whether a string is valid HTML",
+      "Encrypts objects using AES"
+    ],
+    "correctAnswer": "Converts a JavaScript object or value into a serialized JSON text string",
+    "explanation": "JSON.stringify serializes in-memory objects into portable JSON string format."
+  },
+  {
+    "questionText": "In JavaScript, what does `JSON.parse()` do?",
+    "options": [
+      "Parses a serialized JSON text string, constructing the JavaScript value or object described by the string",
+      "Converts objects to strings",
+      "Prints JSON to the terminal console",
+      "Compresses JSON files with gzip"
+    ],
+    "correctAnswer": "Parses a serialized JSON text string, constructing the JavaScript value or object described by the string",
+    "explanation": "JSON.parse deserializes valid JSON strings into native JavaScript objects, arrays, and primitives."
+  },
+  {
+    "questionText": "What is the purpose of the `HTML5 <form>` tag's `event.preventDefault()` in React submit handlers?",
+    "options": [
+      "Prevents the browser's default behavior of reloading the entire web page on form submission",
+      "Stops the form from submitting data",
+      "Clears all input values in the form",
+      "Submits the form directly to Google"
+    ],
+    "correctAnswer": "Prevents the browser's default behavior of reloading the entire web page on form submission",
+    "explanation": "e.preventDefault() cancels standard browser page reloads, allowing React SPA code to handle submission via fetch/axios."
+  },
+  {
+    "questionText": "What is 'Destructuring Assignment' in JavaScript?",
+    "options": [
+      "A syntax that allows unpacking values from arrays or properties from objects into distinct variables",
+      "Deleting object properties using the delete operator",
+      "Compiling JavaScript into WebAssembly",
+      "Splitting strings by commas"
+    ],
+    "correctAnswer": "A syntax that allows unpacking values from arrays or properties from objects into distinct variables",
+    "explanation": "const { title, price } = course unpacks properties cleanly into local variables."
+  },
+  {
+    "questionText": "What is the 'Spread Operator' (`...`) in JavaScript used for?",
+    "options": [
+      "Expanding iterable elements (arrays, objects) into individual elements or shallow copying object properties",
+      "Calculating math averages",
+      "Splitting long strings into paragraphs",
+      "Connecting two network sockets"
+    ],
+    "correctAnswer": "Expanding iterable elements (arrays, objects) into individual elements or shallow copying object properties",
+    "explanation": "Spread ({ ...oldObj, newKey: val }) creates clean shallow copies with updated properties immutably."
+  },
+  {
+    "questionText": "In Spring Boot, how do you handle CORS globally across all controller endpoints?",
+    "options": [
+      "By implementing `WebMvcConfigurer` and overriding `addCorsMappings(CorsRegistry registry)`",
+      "By adding `cors=true` in `application.properties`",
+      "By installing the CORS plugin in Chrome",
+      "By modifying the Windows firewall"
+    ],
+    "correctAnswer": "By implementing `WebMvcConfigurer` and overriding `addCorsMappings(CorsRegistry registry)`",
+    "explanation": "WebMvcConfigurer allows setting allowed origins, methods, and headers across all API routes centralized in WebConfig."
+  },
+  {
+    "questionText": "What does HTTP Status Code `401 Unauthorized` signify?",
+    "options": [
+      "The request lacks valid authentication credentials (e.g. missing or expired token)",
+      "The user is authenticated but lacks required permission roles",
+      "The requested resource was not found",
+      "The server crashed due to an exception"
+    ],
+    "correctAnswer": "The request lacks valid authentication credentials (e.g. missing or expired token)",
+    "explanation": "401 indicates authentication is required and has failed or has not been provided."
+  },
+  {
+    "questionText": "What does HTTP Status Code `403 Forbidden` signify?",
+    "options": [
+      "The client is authenticated, but does not possess the permissions or authorization required for the resource",
+      "The client token is missing",
+      "The request syntax is malformed",
+      "The server is temporarily overloaded"
+    ],
+    "correctAnswer": "The client is authenticated, but does not possess the permissions or authorization required for the resource",
+    "explanation": "403 indicates the server understood the request and verified identity, but refuses authorization."
+  },
+  {
+    "questionText": "What does HTTP Status Code `404 Not Found` mean?",
+    "options": [
+      "The server cannot locate a resource matching the requested Request-URI",
+      "The user password is incorrect",
+      "The request took too long to complete",
+      "The server is offline"
+    ],
+    "correctAnswer": "The server cannot locate a resource matching the requested Request-URI",
+    "explanation": "404 indicates the endpoint URI does not match any existing server route or entity record."
+  },
+  {
+    "questionText": "What does HTTP Status Code `500 Internal Server Error` mean?",
+    "options": [
+      "The server encountered an unexpected condition or unhandled exception that prevented fulfilling the request",
+      "The user input failed validation",
+      "The database does not exist",
+      "The client disconnected early"
+    ],
+    "correctAnswer": "The server encountered an unexpected condition or unhandled exception that prevented fulfilling the request",
+    "explanation": "500 indicates an unhandled server-side crash or uncaught runtime exception occurred."
+  },
+  {
+    "questionText": "What is 'State Lifting' in React architecture?",
+    "options": [
+      "Moving shared state up to the closest common ancestor component so siblings can coordinate",
+      "Uploading state to cloud storage",
+      "Converting component state into local variables",
+      "Deleting state when unmounting"
+    ],
+    "correctAnswer": "Moving shared state up to the closest common ancestor component so siblings can coordinate",
+    "explanation": "Lifting state up shares single-source-of-truth state across multiple child components via props and callbacks."
+  },
+  {
+    "questionText": "What is 'Context API' in React?",
+    "options": [
+      "A built-in mechanism to pass data through the component tree without manually passing props down every level",
+      "A tool for translating text into multiple languages",
+      "A database connection pool manager",
+      "A React hook for managing CSS animations"
+    ],
+    "correctAnswer": "A built-in mechanism to pass data through the component tree without manually passing props down every level",
+    "explanation": "React.createContext and useContext allow broadcasting values (auth, theme) globally down component subtrees."
+  },
+  {
+    "questionText": "In PostgreSQL, what is a `SERIAL` or `BIGSERIAL` column type?",
+    "options": [
+      "An auto-incrementing integer sequence commonly used for primary keys",
+      "A column for storing serial numbers of hardware",
+      "A column that stores serialized JSON strings",
+      "An encrypted binary column"
+    ],
+    "correctAnswer": "An auto-incrementing integer sequence commonly used for primary keys",
+    "explanation": "SERIAL creates an auto-incrementing integer sequence default, generating sequential numeric primary keys automatically."
+  },
+  {
+    "questionText": "What is a 'Database Migration' tool (Flyway / Liquibase)?",
+    "options": [
+      "A version control tool that tracks, manages, and applies incremental SQL schema changes predictably across environments",
+      "Moving physical database servers between offices",
+      "Exporting database tables into Excel spreadsheets",
+      "Converting PostgreSQL into MySQL"
+    ],
+    "correctAnswer": "A version control tool that tracks, manages, and applies incremental SQL schema changes predictably across environments",
+    "explanation": "Migration tools apply versioned DDL scripts sequentially, keeping schema revisions in lockstep with codebase versions."
+  },
+  {
+    "questionText": "What does the CSS pseudo-class `:hover` do?",
+    "options": [
+      "Applies styles to an element when the user points to it with a cursor or mouse",
+      "Applies styles when an element is clicked",
+      "Applies styles when an input is focused",
+      "Applies styles only on mobile screens"
+    ],
+    "correctAnswer": "Applies styles to an element when the user points to it with a cursor or mouse",
+    "explanation": ":hover enables micro-interactions by transforming appearances (colors, transforms) when cursors hover."
+  },
+  {
+    "questionText": "What does the CSS pseudo-class `:focus-visible` do?",
+    "options": [
+      "Applies focus indicators (rings, outlines) only when keyboard navigation warrants focus visibility",
+      "Hides elements from screen readers",
+      "Makes invisible elements visible",
+      "Zooms elements on click"
+    ],
+    "correctAnswer": "Applies focus indicators (rings, outlines) only when keyboard navigation warrants focus visibility",
+    "explanation": ":focus-visible provides clean accessible focus rings for keyboard tab users while omitting them on mouse clicks."
+  },
+  {
+    "questionText": "What is the 'Box Model' in CSS consisting of, from inside out?",
+    "options": [
+      "Content, Padding, Border, Margin",
+      "Margin, Border, Padding, Content",
+      "Border, Margin, Content, Padding",
+      "Padding, Content, Border, Margin"
+    ],
+    "correctAnswer": "Content, Padding, Border, Margin",
+    "explanation": "The box model wraps every HTML element in layers: inner Content, internal Padding, enclosing Border, and external Margin."
+  },
+  {
+    "questionText": "What does `git status` show in the command line?",
+    "options": [
+      "The state of the working directory and staging area, highlighting modified, untracked, and staged files",
+      "The battery status of the computer",
+      "The internet upload and download speed",
+      "The version of Git installed on the computer"
+    ],
+    "correctAnswer": "The state of the working directory and staging area, highlighting modified, untracked, and staged files",
+    "explanation": "git status details modified tracked files, staged changes ready for commit, and new untracked files."
+  },
+  {
+    "questionText": "What does `git pull` do?",
+    "options": [
+      "Fetches commits from a remote repository and immediately integrates/merges them into the current local branch",
+      "Pushes local commits to the remote repository",
+      "Deletes remote branches",
+      "Pulls changes into a stash"
+    ],
+    "correctAnswer": "Fetches commits from a remote repository and immediately integrates/merges them into the current local branch",
+    "explanation": "git pull combines git fetch (downloading remote objects) and git merge (integrating into the local HEAD)."
+  },
+  {
+    "questionText": "What is 'Tree Traversal' in DOM manipulation?",
+    "options": [
+      "Navigating parent, child, and sibling nodes within the hierarchical document object model tree",
+      "Traversing tree structures in binary search trees",
+      "Climbing trees in computer graphics games",
+      "Scanning folders on a hard drive"
+    ],
+    "correctAnswer": "Navigating parent, child, and sibling nodes within the hierarchical document object model tree",
+    "explanation": "DOM traversal navigates relations (parentElement, children, nextElementSibling) to inspect or modify elements."
+  },
+  {
+    "questionText": "What is the difference between synchronous and asynchronous code execution in JavaScript?",
+    "options": [
+      "Synchronous code blocks thread execution until complete; asynchronous code delegates tasks and continues execution",
+      "Synchronous code runs in parallel on 8 threads; asynchronous code runs on 1 thread",
+      "Synchronous code is faster than asynchronous code",
+      "Asynchronous code cannot be used in web browsers"
+    ],
+    "correctAnswer": "Synchronous code blocks thread execution until complete; asynchronous code delegates tasks and continues execution",
+    "explanation": "JavaScript's single thread avoids blocking on I/O by delegating async operations to the browser runtime and event loop."
+  },
+  {
+    "questionText": "What does `async/await` syntax provide in JavaScript?",
+    "options": [
+      "Syntactic sugar over Promises that allows writing asynchronous code with sequential, readable synchronous-like flow",
+      "A way to run code on background threads in C++",
+      "An alternative to HTML form tags",
+      "A CSS animation library"
+    ],
+    "correctAnswer": "Syntactic sugar over Promises that allows writing asynchronous code with sequential, readable synchronous-like flow",
+    "explanation": "async functions return Promises, and await pauses execution until the awaited Promise resolves cleanly."
+  },
+  {
+    "questionText": "What is 'REST' (Representational State Transfer)?",
+    "options": [
+      "An architectural style for designing networked web APIs using standard HTTP verbs, statelessness, and resource URIs",
+      "A Java library for connecting to databases",
+      "A command-line tool for restarting servers",
+      "A CSS layout framework like Bootstrap"
+    ],
+    "correctAnswer": "An architectural style for designing networked web APIs using standard HTTP verbs, statelessness, and resource URIs",
+    "explanation": "REST defines architectural constraints (stateless, client-server, cacheable, uniform interface) for interoperable web services."
+  },
+  {
+    "questionText": "What does the `@Column(unique = true)` annotation in JPA enforce?",
+    "options": [
+      "A database UNIQUE constraint preventing duplicate column values across table rows",
+      "That the column can only be updated once",
+      "That only one user can read the column",
+      "That the column value must be a UUID"
+    ],
+    "correctAnswer": "A database UNIQUE constraint preventing duplicate column values across table rows",
+    "explanation": "unique = true adds a UNIQUE DDL constraint in relational tables, throwing integrity exceptions on duplicates."
+  },
+  {
+    "questionText": "What is 'CascadeType.ALL' in JPA entity relationships?",
+    "options": [
+      "Cascades all persistence lifecycle operations (PERSIST, MERGE, REMOVE, REFRESH, DETACH) from parent to child entities",
+      "Deletes all tables in the database",
+      "Runs queries on all database nodes",
+      "Cascades CSS styles down all child elements"
+    ],
+    "correctAnswer": "Cascades all persistence lifecycle operations (PERSIST, MERGE, REMOVE, REFRESH, DETACH) from parent to child entities",
+    "explanation": "CascadeType.ALL ensures child entities are automatically persisted, updated, or deleted alongside their parent entity."
+  },
+  {
+    "questionText": "What does `orphanRemoval = true` in JPA `@OneToMany` achieve?",
+    "options": [
+      "Automatically deletes child entity rows from the database if they are dereferenced or removed from the parent's collection",
+      "Deletes parent entities if they have no children",
+      "Removes unused columns from database tables",
+      "Kills orphaned backend server processes"
+    ],
+    "correctAnswer": "Automatically deletes child entity rows from the database if they are dereferenced or removed from the parent's collection",
+    "explanation": "orphanRemoval ensures child records unlinked from parent collections are automatically issued SQL DELETE commands."
+  },
+  {
+    "questionText": "What is the purpose of `@JsonIgnore` in Jackson / Spring Boot?",
+    "options": [
+      "Excludes the annotated property or field from JSON serialization and deserialization",
+      "Ignores JSON formatting syntax errors",
+      "Deletes JSON files from the server",
+      "Converts JSON into XML"
+    ],
+    "correctAnswer": "Excludes the annotated property or field from JSON serialization and deserialization",
+    "explanation": "@JsonIgnore prevents sensitive fields (passwords) or circular relationship collections from serializing into response JSON."
+  },
+  {
+    "questionText": "What is 'Circular Reference' in Jackson JSON serialization?",
+    "options": [
+      "When entity A references entity B, and B references A, causing infinite recursion during JSON serialization",
+      "When a database query has a recursive CTE",
+      "When a JavaScript function calls itself infinitely",
+      "When two CSS rules reference each other"
+    ],
+    "correctAnswer": "When entity A references entity B, and B references A, causing infinite recursion during JSON serialization",
+    "explanation": "Bidirectional JPA entities create infinite recursive serialization loops unless broken by @JsonIgnore or @JsonManagedReference."
+  },
+  {
+    "questionText": "What is 'CORS' (Cross-Origin Resource Sharing)?",
+    "options": [
+      "A browser security mechanism that restricts web applications on one origin from requesting resources from another origin",
+      "A database replication protocol",
+      "A CSS responsive layout technique",
+      "A Git branch merging strategy"
+    ],
+    "correctAnswer": "A browser security mechanism that restricts web applications on one origin from requesting resources from another origin",
+    "explanation": "CORS prevents malicious cross-origin scripts from making unauthorized requests to internal API services."
+  },
+  {
+    "questionText": "What is 'JWT Statelessness' and why is it beneficial for scalable web backends?",
+    "options": [
+      "Servers verify user sessions mathematically using cryptographic signatures without needing session storage in memory or databases",
+      "Tokens are completely unencrypted and public",
+      "Servers do not verify user permissions",
+      "Sessions never expire"
+    ],
+    "correctAnswer": "Servers verify user sessions mathematically using cryptographic signatures without needing session storage in memory or databases",
+    "explanation": "Stateless JWT verification scales across distributed microservice instances without requiring shared session cache lookups."
+  },
+  {
+    "questionText": "What does `npm audit` do?",
+    "options": [
+      "Scans installed npm package dependencies for known security vulnerabilities recorded in the vulnerability database",
+      "Audits company financial records",
+      "Checks that code compiles without warnings",
+      "Counts the total lines of code in the project"
+    ],
+    "correctAnswer": "Scans installed npm package dependencies for known security vulnerabilities recorded in the vulnerability database",
+    "explanation": "npm audit analyzes dependency trees against CVE security advisory databases, reporting known security flaws."
+  },
+  {
+    "questionText": "What is 'Responsive Web Design'?",
+    "options": [
+      "Designing web applications that dynamically adapt layout, typography, and elements smoothly across any device screen width",
+      "Making websites that load in under 1 second",
+      "A website that sends automated email responses",
+      "An app that speaks to the user using voice"
+    ],
+    "correctAnswer": "Designing web applications that dynamically adapt layout, typography, and elements smoothly across any device screen width",
+    "explanation": "Responsive design uses fluid grids, flexible images, and media queries to deliver great UX on mobile, tablet, and desktop."
+  },
+  {
+    "questionText": "What is 'Flexbox' in CSS designed for?",
+    "options": [
+      "One-dimensional layout alignment and space distribution among items along a row or column axis",
+      "Two-dimensional grid layouts with columns and rows",
+      "3D web animations with WebGL",
+      "Responsive typography font scaling"
+    ],
+    "correctAnswer": "One-dimensional layout alignment and space distribution among items along a row or column axis",
+    "explanation": "CSS Flexbox provides layout models for aligning items along a single axis (either row or column)."
+  },
+  {
+    "questionText": "What is 'CSS Grid' designed for?",
+    "options": [
+      "Two-dimensional layouts allowing precise positioning of items across both rows and columns simultaneously",
+      "One-dimensional linear layouts",
+      "Styling forms and buttons",
+      "Drawing vector icons"
+    ],
+    "correctAnswer": "Two-dimensional layouts allowing precise positioning of items across both rows and columns simultaneously",
+    "explanation": "CSS Grid is a two-dimensional layout system that manages both horizontal columns and vertical rows simultaneously."
+  },
+  {
+    "questionText": "What is 'Media Query' in CSS (`@media (max-width: 768px)`)?",
+    "options": [
+      "A CSS rule that applies style blocks conditionally based on device viewport capabilities and screen widths",
+      "A query that plays video and audio files",
+      "A database query for media files",
+      "An API call that downloads images"
+    ],
+    "correctAnswer": "A CSS rule that applies style blocks conditionally based on device viewport capabilities and screen widths",
+    "explanation": "Media queries evaluate viewport dimensions, applying targeted style overrides for smaller mobile and tablet viewports."
+  },
+  {
+    "questionText": "What is 'Local Storage' in modern browsers?",
+    "options": [
+      "A persistent client-side key-value storage mechanism with ~5MB quota that survives browser restarts",
+      "A temporary cookie that expires in 10 minutes",
+      "A local file on the user's desktop",
+      "A database hosted on localhost"
+    ],
+    "correctAnswer": "A persistent client-side key-value storage mechanism with ~5MB quota that survives browser restarts",
+    "explanation": "localStorage stores string key-value pairs persistently across browser tabs and sessions until programmatically cleared."
+  },
+  {
+    "questionText": "What is 'Session Storage' in modern browsers?",
+    "options": [
+      "A client-side key-value storage mechanism whose data is purged when the specific browser tab is closed",
+      "Storage that lasts for 1 year",
+      "A database on the backend server",
+      "A file stored in the cloud"
+    ],
+    "correctAnswer": "A client-side key-value storage mechanism whose data is purged when the specific browser tab is closed",
+    "explanation": "sessionStorage stores data strictly for the duration of a single browser tab session, clearing upon tab closure."
+  },
+  {
+    "questionText": "What is 'Tree-Walking' in Git commit history?",
+    "options": [
+      "Navigating the directed acyclic graph (DAG) of commit snapshots using parent commit hashes",
+      "Scanning directories on a hard drive",
+      "Merging two unrelated Git repositories",
+      "Deleting unreferenced Git objects with prune"
+    ],
+    "correctAnswer": "Navigating the directed acyclic graph (DAG) of commit snapshots using parent commit hashes",
+    "explanation": "Git represents commit history as a DAG of immutable snapshots; traversing parent pointers reconstructs history."
+  },
+  {
+    "questionText": "What is 'Cross-Origin Resource Sharing' (CORS) preflight caching using `Access-Control-Max-Age`?",
+    "options": [
+      "Specifies how many seconds the results of a preflight OPTIONS request can be cached by the browser",
+      "Caches all API responses in the browser for 1 year",
+      "Sets the maximum size of uploaded files",
+      "Limits the maximum age of users"
+    ],
+    "correctAnswer": "Specifies how many seconds the results of a preflight OPTIONS request can be cached by the browser",
+    "explanation": "Access-Control-Max-Age reduces latency by instructing browsers to cache preflight responses for the specified duration."
+  },
+  {
+    "questionText": "What is the fundamental philosophy of Full Stack Engineering?",
+    "options": [
+      "Building cohesive end-to-end digital experiences from intuitive user interfaces down to resilient backend systems and databases",
+      "Writing only backend code and ignoring UI design",
+      "Focusing exclusively on CSS styling",
+      "Delegating all database queries to third parties"
+    ],
+    "correctAnswer": "Building cohesive end-to-end digital experiences from intuitive user interfaces down to resilient backend systems and databases",
+    "explanation": "Full stack engineering integrates UX, frontend state, API contracts, backend logic, and database schemas holistically."
+  }
+]

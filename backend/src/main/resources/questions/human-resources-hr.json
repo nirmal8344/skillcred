@@ -1,0 +1,1102 @@
+[
+  {
+    "questionText": "What is the primary difference between a Job Description (JD) and a Job Specification (JS)?",
+    "options": [
+      "A JD outlines the duties, responsibilities, and reporting lines, while a JS specifies the qualifications, skills, and experience required of the candidate",
+      "A JD defines compensation and benefits, while a JS describes daily working hours",
+      "A JD is shared with external candidates, while a JS is only used internally by finance",
+      "There is no difference; they are interchangeable HR terms"
+    ],
+    "correctAnswer": "A JD outlines the duties, responsibilities, and reporting lines, while a JS specifies the qualifications, skills, and experience required of the candidate",
+    "explanation": "Job Description details the tasks and scope of the role itself, whereas Job Specification defines the human attributes, credentials, and competencies needed to perform the role."
+  },
+  {
+    "questionText": "When crafting a Boolean search string in talent sourcing, which operator is used to broaden results by searching for synonymous titles?",
+    "options": [
+      "OR",
+      "AND",
+      "NOT",
+      "XOR"
+    ],
+    "correctAnswer": "OR",
+    "explanation": "The OR operator expands the search pool by including any of the specified keywords, such as ('HR Executive' OR 'HR Generalist' OR 'Talent Specialist')."
+  },
+  {
+    "questionText": "In structured competency-based interviewing, what does the STAR methodology stand for?",
+    "options": [
+      "Situation, Task, Action, Result",
+      "Strategy, Technique, Assessment, Review",
+      "Source, Track, Acquire, Retain",
+      "Scope, Target, Action, Return"
+    ],
+    "correctAnswer": "Situation, Task, Action, Result",
+    "explanation": "STAR is a behavioral interviewing framework prompting candidates to describe a specific Situation, the Task assigned, the Actions they took, and the measurable Results achieved."
+  },
+  {
+    "questionText": "What metric measures the average number of days from the approval of a job requisition until the candidate accepts an offer?",
+    "options": [
+      "Time to Fill",
+      "Time to Hire",
+      "Requisition Turnaround Index",
+      "Offer Acceptance Velocity"
+    ],
+    "correctAnswer": "Time to Fill",
+    "explanation": "Time to Fill tracks the total duration from job opening creation/approval to candidate offer acceptance, reflecting recruitment pipeline efficiency."
+  },
+  {
+    "questionText": "How is an organization's Cost per Hire (CPH) calculated according to the SHRM standard formula?",
+    "options": [
+      "(Total External Costs + Total Internal Recruiting Costs) / Total Number of Hires",
+      "Total Agency Fees / Number of External Hires",
+      "Total Annual HR Department Budget / Headcount at year end",
+      "(Recruiter Salaries + Advertising Costs) / Number of Resumes Screened"
+    ],
+    "correctAnswer": "(Total External Costs + Total Internal Recruiting Costs) / Total Number of Hires",
+    "explanation": "SHRM calculates CPH by dividing the sum of all internal recruitment expenses (recruiter salaries, internal referral payouts) and external costs (job board subscriptions, agency fees, assessment tools) by total hires made."
+  },
+  {
+    "questionText": "What is the primary role of an Applicant Tracking System (ATS) in modern talent acquisition?",
+    "options": [
+      "To automate requisition workflows, parse resumes, track candidate stages, and ensure hiring compliance",
+      "To automatically compute payroll tax deductions and PF slips",
+      "To conduct background legal credit checks without candidate knowledge",
+      "To design company employee engagement survey dashboards"
+    ],
+    "correctAnswer": "To automate requisition workflows, parse resumes, track candidate stages, and ensure hiring compliance",
+    "explanation": "An ATS is software designed to streamline sourcing, filter applications, coordinate interview scheduling, and maintain audit-ready recruitment records."
+  },
+  {
+    "questionText": "Which background verification (BGV) check verifies whether a candidate was officially relieved and had no disciplinary misconduct at previous firms?",
+    "options": [
+      "Employment Verification",
+      "Criminal Court Record Verification",
+      "Address & Identity Verification",
+      "Credit History Verification"
+    ],
+    "correctAnswer": "Employment Verification",
+    "explanation": "Employment verification involves contacting previous employers or verifying documentation (relieving letters, service certificates, provident fund records) to confirm designations, tenure, and good standing."
+  },
+  {
+    "questionText": "What is the primary purpose of a 30-60-90 day onboarding roadmap for a new hire?",
+    "options": [
+      "To establish structured learning milestones, performance expectations, and clear deliverables during the probation phase",
+      "To extend the employee probation period past statutory limits",
+      "To delay insurance policy enrollment until the 90th day",
+      "To schedule annual appraisal increments in three installments"
+    ],
+    "correctAnswer": "To establish structured learning milestones, performance expectations, and clear deliverables during the probation phase",
+    "explanation": "A 30-60-90 day plan provides a structured ramp-up schedule: 30 days for learning/assimilation, 60 days for collaboration/contribution, and 90 days for independent leadership and initiative."
+  },
+  {
+    "questionText": "In instructional design and training programs, what does the ADDIE framework stand for?",
+    "options": [
+      "Analysis, Design, Development, Implementation, Evaluation",
+      "Assessment, Direction, Delivery, Inspection, Execution",
+      "Aptitude, Discussion, Demonstration, Integration, Engagement",
+      "Action, Definition, Deployment, Iteration, Excellence"
+    ],
+    "correctAnswer": "Analysis, Design, Development, Implementation, Evaluation",
+    "explanation": "ADDIE is the standard instructional systems design (ISD) methodology encompassing needs analysis, instructional design, content development, pilot implementation, and outcome evaluation."
+  },
+  {
+    "questionText": "According to Kirkpatrick's Four-Level Training Evaluation Model, which level measures the actual change in on-the-job performance and habits resulting from the training?",
+    "options": [
+      "Level 3: Behavior",
+      "Level 1: Reaction",
+      "Level 2: Learning",
+      "Level 4: Results"
+    ],
+    "correctAnswer": "Level 3: Behavior",
+    "explanation": "Level 1 measures participant satisfaction (smile sheets), Level 2 assesses acquired knowledge (tests), Level 3 assesses behavioral transfer on the job, and Level 4 evaluates business ROI."
+  },
+  {
+    "questionText": "What is a Training Needs Analysis (TNA)?",
+    "options": [
+      "A systematic process of identifying performance gaps between current workforce capabilities and required organizational competencies",
+      "A budgeting spreadsheet for booking corporate offsite training hotels",
+      "An automated survey testing employee hardware and laptop performance",
+      "A mandatory audit conducted exclusively by statutory government inspectors"
+    ],
+    "correctAnswer": "A systematic process of identifying performance gaps between current workforce capabilities and required organizational competencies",
+    "explanation": "TNA identifies organizational, operational, and individual knowledge deficits to design targeted, high-impact training interventions."
+  },
+  {
+    "questionText": "In modern performance management, what distinguishes OKRs (Objectives and Key Results) from traditional KPIs (Key Performance Indicators)?",
+    "options": [
+      "OKRs are aspirational, time-bound goals with measurable outcomes designed for agility, while KPIs track steady-state operational performance against benchmarks",
+      "OKRs are only used for individual compensation, whereas KPIs are exclusively corporate",
+      "KPIs must change every quarter, while OKRs remain fixed for 5 years",
+      "OKRs apply only to sales commissions, while KPIs apply to engineering"
+    ],
+    "correctAnswer": "OKRs are aspirational, time-bound goals with measurable outcomes designed for agility, while KPIs track steady-state operational performance against benchmarks",
+    "explanation": "OKRs drive ambitious strategic transformation through qualitative objectives and quantitative key results, whereas KPIs monitor ongoing operational health."
+  },
+  {
+    "questionText": "What appraisal method utilizes systematic feedback collected from an employee's manager, peers, direct reports, and internal clients?",
+    "options": [
+      "360-Degree Feedback",
+      "Management by Objectives (MBO)",
+      "Behaviorally Anchored Rating Scales (BARS)",
+      "Forced Ranking Distribution"
+    ],
+    "correctAnswer": "360-Degree Feedback",
+    "explanation": "360-degree feedback gathers multi-rater perspectives from all operational touchpoints around the individual to provide holistic developmental insights."
+  },
+  {
+    "questionText": "Which appraisal error occurs when an appraiser allows one outstanding positive accomplishment to overshadow all other performance areas?",
+    "options": [
+      "Halo Effect",
+      "Horn Effect",
+      "Central Tendency Bias",
+      "Recency Bias"
+    ],
+    "correctAnswer": "Halo Effect",
+    "explanation": "The Halo Effect is a cognitive rating bias where one positive characteristic or triumph positively distorts the overall assessment of the employee's total performance."
+  },
+  {
+    "questionText": "What is 'Recency Bias' in annual employee performance reviews?",
+    "options": [
+      "The tendency of appraisers to overemphasize recent events and performance from the last few weeks while overlooking achievements from earlier in the year",
+      "Giving higher ratings to recently joined employees over senior staff",
+      "Evaluating employees based solely on their previous company's reputation",
+      "Assuming high performers will never decline in future quarters"
+    ],
+    "correctAnswer": "The tendency of appraisers to overemphasize recent events and performance from the last few weeks while overlooking achievements from earlier in the year",
+    "explanation": "Recency bias happens when evaluators rely heavily on freshest memories rather than evaluating the entire 12-month performance appraisal period uniformly."
+  },
+  {
+    "questionText": "What is the primary objective of a Performance Improvement Plan (PIP)?",
+    "options": [
+      "To provide clear, documented performance objectives, support, and a defined timeline for an underperforming employee to meet acceptable standards",
+      "To immediately execute an unconditional termination without legal notice",
+      "To reassign employee duties to third-party agency contractors",
+      "To freeze an employee's bank salary account during disciplinary inquiries"
+    ],
+    "correctAnswer": "To provide clear, documented performance objectives, support, and a defined timeline for an underperforming employee to meet acceptable standards",
+    "explanation": "A PIP is a formal, constructive intervention detailing specific deficiencies, measurable targets, required support, check-ins, and timelines (typically 30-60 days) to assist recovery."
+  },
+  {
+    "questionText": "In the 9-Box Grid used for leadership talent review and succession planning, what are the two core axes evaluated?",
+    "options": [
+      "Performance and Potential",
+      "Tenure and Salary Grade",
+      "Attendance and Technical Certifications",
+      "Sales Revenue and Client Feedback"
+    ],
+    "correctAnswer": "Performance and Potential",
+    "explanation": "The 9-Box Grid cross-references Current Job Performance (horizontal axis) with Future Leadership Potential (vertical axis) to classify high potentials, solid performers, and talent risks."
+  },
+  {
+    "questionText": "What is a 'Compa-Ratio' in compensation and benefits management?",
+    "options": [
+      "The ratio of an employee's actual base salary to the midpoint of their defined salary grade range",
+      "The comparison between company net profit and total workforce payroll expenditure",
+      "The proportion of fixed salary components compared to variable commission",
+      "The ratio of executive leadership compensation to median frontline staff wages"
+    ],
+    "correctAnswer": "The ratio of an employee's actual base salary to the midpoint of their defined salary grade range",
+    "explanation": "Compa-Ratio = (Actual Salary / Salary Range Midpoint) * 100. A score of 100% means the employee is paid exactly at market midpoint; below 100% indicates below midpoint."
+  },
+  {
+    "questionText": "In Indian payroll structures, what is the statutory ceiling on Basic Wages for mandatory coverage under the Employees' Provident Fund (EPF) Scheme?",
+    "options": [
+      "₹15,000 per month",
+      "₹21,000 per month",
+      "₹10,000 per month",
+      "₹25,000 per month"
+    ],
+    "correctAnswer": "₹15,000 per month",
+    "explanation": "Under the EPF Act, mandatory provident fund enrollment applies to employees drawing basic wages plus dearness allowance up to ₹15,000 per month at covered establishments."
+  },
+  {
+    "questionText": "What is the standard employer contribution rate towards the Employee Provident Fund (EPF) on eligible wages?",
+    "options": [
+      "12% of Basic + DA (split between EPF 3.67% and EPS 8.33%)",
+      "10% of Total Gross Salary",
+      "8.33% entirely allocated to employee pension",
+      "15% of basic salary plus annual variable allowance"
+    ],
+    "correctAnswer": "12% of Basic + DA (split between EPF 3.67% and EPS 8.33%)",
+    "explanation": "The employer contributes 12% of basic + DA: 8.33% goes to the Employee Pension Scheme (EPS capped at ₹1,250 on ₹15,000 wage ceiling) and 3.67% goes into the EPF account."
+  },
+  {
+    "questionText": "Under the Employees' State Insurance (ESI) Act, what is the maximum monthly gross wage limit for an employee to be eligible for statutory ESI benefits?",
+    "options": [
+      "₹21,000 per month (₹25,000 for employees with disabilities)",
+      "₹15,000 per month",
+      "₹30,000 per month",
+      "₹18,000 per month"
+    ],
+    "correctAnswer": "₹21,000 per month (₹25,000 for employees with disabilities)",
+    "explanation": "Employees whose gross monthly salary is up to ₹21,000 are covered under the ESI Act (raised to ₹25,000 for persons with disabilities) for healthcare, maternity, and sickness coverage."
+  },
+  {
+    "questionText": "What is the current statutory contribution rate for ESI for employees and employers respectively?",
+    "options": [
+      "Employee: 0.75%, Employer: 3.25% of gross wages",
+      "Employee: 1.75%, Employer: 4.75% of gross wages",
+      "Employee: 1.00%, Employer: 3.00% of basic wages",
+      "Employee: 2.00%, Employer: 5.00% of gross wages"
+    ],
+    "correctAnswer": "Employee: 0.75%, Employer: 3.25% of gross wages",
+    "explanation": "Following government revision, ESI contribution rates stand at 0.75% of wages for employees and 3.25% of wages for employers, totaling 4.0%."
+  },
+  {
+    "questionText": "Under the Payment of Gratuity Act, 1972, what is the minimum period of continuous service required for an employee to become entitled to gratuity on resignation or retirement?",
+    "options": [
+      "5 years (waived in case of death or permanent disablement)",
+      "3 years",
+      "1 year",
+      "10 years"
+    ],
+    "correctAnswer": "5 years (waived in case of death or permanent disablement)",
+    "explanation": "Section 4 of the Payment of Gratuity Act stipulates that an employee must render a minimum of 5 years of continuous service to qualify for statutory gratuity payouts."
+  },
+  {
+    "questionText": "What is the statutory formula to calculate gratuity payable under the Payment of Gratuity Act, 1972?",
+    "options": [
+      "(15 × Last Drawn Basic & DA × Number of Completed Years) / 26",
+      "(30 × Last Drawn Gross Salary × Years of Service) / 365",
+      "(15 × Average Annual CTC × Years of Service) / 30",
+      "(10 × Basic Salary × Years of Service) / 20"
+    ],
+    "correctAnswer": "(15 × Last Drawn Basic & DA × Number of Completed Years) / 26",
+    "explanation": "Gratuity is calculated as 15 days of wages for every completed year of service, where a month's wage is computed by dividing last drawn basic + DA by 26 working days."
+  },
+  {
+    "questionText": "What is the statutory cap on the maximum gratuity amount exempt from income tax in India?",
+    "options": [
+      "₹20,00,000 (20 Lakhs)",
+      "₹10,00,000 (10 Lakhs)",
+      "₹15,00,000 (15 Lakhs)",
+      "₹50,00,000 (50 Lakhs)"
+    ],
+    "correctAnswer": "₹20,00,000 (20 Lakhs)",
+    "explanation": "The central government enhanced the tax-exempt gratuity ceiling under the Payment of Gratuity Act to ₹20 Lakhs."
+  },
+  {
+    "questionText": "Under the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (POSH), every employer employing how many workers must constitute an Internal Committee (IC)?",
+    "options": [
+      "10 or more employees",
+      "20 or more employees",
+      "50 or more employees",
+      "5 or more employees"
+    ],
+    "correctAnswer": "10 or more employees",
+    "explanation": "Under Section 4 of the POSH Act, every organization having 10 or more employees across any administrative branch or unit must constitute an Internal Committee."
+  },
+  {
+    "questionText": "Who must head the Internal Committee (IC) constituted under the POSH Act, 2013?",
+    "options": [
+      "A senior level woman employed at the workplace (Presiding Officer)",
+      "The Chief Executive Officer or Managing Director",
+      "The Head of Human Resources",
+      "An external labor union advocate"
+    ],
+    "correctAnswer": "A senior level woman employed at the workplace (Presiding Officer)",
+    "explanation": "The Presiding Officer of the IC must be a senior woman employee working at that workplace, and at least 50% of the total committee members must be women."
+  },
+  {
+    "questionText": "What is the statutory timeline within which an aggrieved woman must submit a complaint of sexual harassment to the Internal Committee under the POSH Act?",
+    "options": [
+      "Within 3 months from the date of the incident (extendable by up to another 3 months with documented reasons)",
+      "Within 30 days from the incident without exceptions",
+      "Within 1 year from the incident",
+      "Immediately within 24 hours of the occurrence"
+    ],
+    "correctAnswer": "Within 3 months from the date of the incident (extendable by up to another 3 months with documented reasons)",
+    "explanation": "A written complaint must be lodged within 3 months, with provision for a 3-month extension if the IC is satisfied circumstances prevented earlier filing."
+  },
+  {
+    "questionText": "What is the maximum time limit mandated by the POSH Act for the Internal Committee to complete an inquiry into a complaint?",
+    "options": [
+      "90 days",
+      "30 days",
+      "60 days",
+      "180 days"
+    ],
+    "correctAnswer": "90 days",
+    "explanation": "Under Section 11 of the POSH Act, the inquiry by the Internal Committee must be completed within a period of 90 days from the receipt of the complaint."
+  },
+  {
+    "questionText": "Under the Maternity Benefit (Amendment) Act, 2017, what is the paid maternity leave entitlement for female employees for up to two surviving children?",
+    "options": [
+      "26 weeks",
+      "12 weeks",
+      "16 weeks",
+      "52 weeks"
+    ],
+    "correctAnswer": "26 weeks",
+    "explanation": "The Maternity Benefit Amendment Act increased the duration of paid maternity leave from 12 weeks to 26 weeks for women having up to two surviving children."
+  },
+  {
+    "questionText": "Under the Maternity Benefit Amendment Act, an establishment with how many employees must mandatorily provide crèche facilities within prescribed walking distance?",
+    "options": [
+      "50 or more employees",
+      "30 or more employees",
+      "100 or more employees",
+      "20 or more employees"
+    ],
+    "correctAnswer": "50 or more employees",
+    "explanation": "Every establishment employing 50 or more employees must provide a crèche facility, allowing the mother four visits daily including rest intervals."
+  },
+  {
+    "questionText": "Under the Factories Act, 1948, what is the statutory ceiling on maximum daily and weekly working hours for an adult worker without overtime?",
+    "options": [
+      "9 hours per day and 48 hours per week",
+      "8 hours per day and 40 hours per week",
+      "10 hours per day and 50 hours per week",
+      "12 hours per day and 60 hours per week"
+    ],
+    "correctAnswer": "9 hours per day and 48 hours per week",
+    "explanation": "Sections 51 and 54 of the Factories Act prescribe a maximum of 48 hours per week and 9 hours per day for adult workers."
+  },
+  {
+    "questionText": "What overtime pay rate is mandated under the Factories Act and Code on Wages for work performed beyond normal statutory daily or weekly limits?",
+    "options": [
+      "Twice the ordinary rate of wages (double rate)",
+      "1.5 times the ordinary rate of wages",
+      "Regular single hourly rate with compensatory off",
+      "2.5 times the ordinary rate of wages"
+    ],
+    "correctAnswer": "Twice the ordinary rate of wages (double rate)",
+    "explanation": "Under Section 59 of the Factories Act, overtime work in excess of 9 hours a day or 48 hours a week must be compensated at twice the ordinary rate of wages."
+  },
+  {
+    "questionText": "What is the Bradford Factor used for in HR management?",
+    "options": [
+      "A formula measuring the operational disruption caused by frequent, short, unplanned employee absenteeism",
+      "A factor determining executive equity vesting schedules",
+      "A calculation measuring campus hiring interview conversion rates",
+      "A metric scoring employee compliance during annual financial audits"
+    ],
+    "correctAnswer": "A formula measuring the operational disruption caused by frequent, short, unplanned employee absenteeism",
+    "explanation": "The Bradford Factor (B = S² × D, where S is spells of absence and D is total days absent) emphasizes that frequent, short absences are more disruptive than single prolonged medical leaves."
+  },
+  {
+    "questionText": "How is the Employee Net Promoter Score (eNPS) calculated from employee sentiment surveys?",
+    "options": [
+      "% of Promoters (rating 9-10) minus % of Detractors (rating 0-6)",
+      "% of Promoters divided by % of Detractors multiplied by 100",
+      "Total positive responses divided by total survey participants",
+      "% of Passives (rating 7-8) subtracted from % of Promoters"
+    ],
+    "correctAnswer": "% of Promoters (rating 9-10) minus % of Detractors (rating 0-6)",
+    "explanation": "eNPS categorizes respondents into Promoters (9-10), Passives (7-8), and Detractors (0-6), calculating the final score as (% Promoters - % Detractors), spanning from -100 to +100."
+  },
+  {
+    "questionText": "What does the 70:20:10 learning and development framework propose regarding employee skill acquisition?",
+    "options": [
+      "70% from on-the-job experiential learning, 20% from mentoring and social interaction, 10% from formal classroom or e-learning coursework",
+      "70% technical skills, 20% managerial skills, 10% soft skills",
+      "70% internal trainers, 20% external consultants, 10% self-study",
+      "70% formal education, 20% reading manuals, 10% job performance"
+    ],
+    "correctAnswer": "70% from on-the-job experiential learning, 20% from mentoring and social interaction, 10% from formal classroom or e-learning coursework",
+    "explanation": "The 70-20-10 model establishes that the vast majority of effective workplace learning happens through direct work challenges, followed by developmental social relationships, and lastly formal coursework."
+  },
+  {
+    "questionText": "Which conflict management style in the Thomas-Kilmann Instrument (TKI) is characterized by high assertiveness and high cooperativeness aimed at win-win solutions?",
+    "options": [
+      "Collaborating",
+      "Competing",
+      "Compromising",
+      "Accommodating"
+    ],
+    "correctAnswer": "Collaborating",
+    "explanation": "Collaborating involves both parties exploring deep underlying concerns to engineer an innovative solution satisfying all stakeholders' goals completely."
+  },
+  {
+    "questionText": "In Kurt Lewin's classic Three-Stage Change Management Model, what is the correct chronological sequence?",
+    "options": [
+      "Unfreeze → Change (Transition) → Refreeze",
+      "Plan → Do → Review",
+      "Prepare → Launch → Sustain",
+      "Identify → Implement → Evaluate"
+    ],
+    "correctAnswer": "Unfreeze → Change (Transition) → Refreeze",
+    "explanation": "Lewin's model consists of Unfreezing (breaking existing habits and overcoming resistance), Changing (executing new behaviors), and Refreezing (anchoring changes into ongoing institutional norms)."
+  },
+  {
+    "questionText": "What is John Kotter's recommended first step in his 8-Step Process for Leading Change in an enterprise?",
+    "options": [
+      "Create a sense of urgency",
+      "Form a strategic guiding coalition",
+      "Generate short-term wins",
+      "Develop a change vision"
+    ],
+    "correctAnswer": "Create a sense of urgency",
+    "explanation": "Kotter argues change fails without immediate motivation; leaders must establish urgency by highlighting compelling market realities, competitive threats, and impending opportunities."
+  },
+  {
+    "questionText": "In compensation management, what is a 'Broadbanding' salary structure?",
+    "options": [
+      "Consolidating numerous narrow salary grades into a smaller number of wide pay bands with extensive salary ranges",
+      "Broadcasting executive salary figures openly across the intranet",
+      "Fixing all employee salaries strictly to internet broadband allowances",
+      "Eliminating performance bonuses in favor of flat hourly rates"
+    ],
+    "correctAnswer": "Consolidating numerous narrow salary grades into a smaller number of wide pay bands with extensive salary ranges",
+    "explanation": "Broadbanding reduces bureaucratic pay grades and promotes lateral career growth, flexibility, and cross-functional skill acquisition without triggering grade reclassification."
+  },
+  {
+    "questionText": "What is an ESOP (Employee Stock Ownership Plan) 'Cliff Period'?",
+    "options": [
+      "The minimum qualifying duration of service an employee must complete before any allocated stock options begin to vest",
+      "The date on which all company stock options expire permanently",
+      "The sudden price drop of company shares on public markets",
+      "The maximum limit of shares an executive can exercise within a financial year"
+    ],
+    "correctAnswer": "The minimum qualifying duration of service an employee must complete before any allocated stock options begin to vest",
+    "explanation": "A cliff period (commonly 1 year) prevents premature equity ownership; if an employee leaves before the cliff date, zero options vest."
+  },
+  {
+    "questionText": "Under Indian labor jurisprudence, what is the consequence of failing to provide a 'Show Cause Notice' before issuing punitive termination for misconduct?",
+    "options": [
+      "It violates the Principles of Natural Justice (Audi Alteram Partem), rendering disciplinary termination vulnerable to being quashed by labor tribunals",
+      "It allows the employer to bypass paying notice period pay",
+      "It makes the dispute non-justiciable in industrial courts",
+      "It automatically converts misconduct into voluntary resignation"
+    ],
+    "correctAnswer": "It violates the Principles of Natural Justice (Audi Alteram Partem), rendering disciplinary termination vulnerable to being quashed by labor tribunals",
+    "explanation": "Natural justice mandates that no employee may be condemned unheard; a show cause notice and opportunity to explain charges are indispensable before dismissal."
+  },
+  {
+    "questionText": "What is 'Regrettable Attrition' in HR workforce analytics?",
+    "options": [
+      "The voluntary departure of high-performing, critical, or difficult-to-replace talent whose exit hurts business capabilities",
+      "The termination of employees during mass company layoffs",
+      "Employees dismissed due to repeated performance improvement failures",
+      "Retirements of employees upon reaching superannuation age"
+    ],
+    "correctAnswer": "The voluntary departure of high-performing, critical, or difficult-to-replace talent whose exit hurts business capabilities",
+    "explanation": "Regrettable turnover isolates voluntary departures among top-tier performers or key domain experts that organizations actively strived to retain."
+  },
+  {
+    "questionText": "What is the formula to calculate the annual Attrition Rate of an organization?",
+    "options": [
+      "(Total Exits during the year / Average Headcount during the year) × 100",
+      "(Total Exits / Opening Headcount on Day 1) × 100",
+      "(Involuntary Exits / Total Applications Received) × 100",
+      "(Voluntary Exits / Net New Hires) × 100"
+    ],
+    "correctAnswer": "(Total Exits during the year / Average Headcount during the year) × 100",
+    "explanation": "Annual attrition is calculated by dividing total separations within the period by the average headcount (Opening Headcount + Closing Headcount)/2, expressed as a percentage."
+  },
+  {
+    "questionText": "What is 'Glass Ceiling' in diversity, equity, and inclusion (DEI)?",
+    "options": [
+      "An unacknowledged, invisible barrier that prevents women and marginalized groups from ascending to upper-level managerial and executive roles",
+      "A modern architectural design trend in tech offices",
+      "A statutory transparency mandate requiring public declaration of top executive salaries",
+      "The formal cap on maximum annual bonus allocations for contractors"
+    ],
+    "correctAnswer": "An unacknowledged, invisible barrier that prevents women and marginalized groups from ascending to upper-level managerial and executive roles",
+    "explanation": "The glass ceiling represents systemic biases, informal networks, and stereotypes that hinder qualified diverse candidates from reaching C-suite positions."
+  },
+  {
+    "questionText": "What does the 'Gallup Q12' measure in organizational development?",
+    "options": [
+      "Employee engagement through 12 actionable workplace survey questions predictive of productivity and retention",
+      "Quarterly earnings generated per dozen employees",
+      "A 12-stage disciplinary investigation procedure for industrial disputes",
+      "A psychometric coding test measuring IQ and cognitive aptitude"
+    ],
+    "correctAnswer": "Employee engagement through 12 actionable workplace survey questions predictive of productivity and retention",
+    "explanation": "The Gallup Q12 evaluates fundamental engagement factors, including role clarity, recognition, development opportunities, and psychological safety."
+  },
+  {
+    "questionText": "What is the purpose of a Competency Dictionary in Human Resource Architecture?",
+    "options": [
+      "A comprehensive, structured guide defining organizational behavioral and technical competencies alongside observable behavioral indicators across proficiency levels",
+      "A glossary of HR acronyms and definitions distributed to incoming interns",
+      "A legal compendium of statutory minimum wage enactments by state",
+      "A corporate telephone directory indexing employees by department"
+    ],
+    "correctAnswer": "A comprehensive, structured guide defining organizational behavioral and technical competencies alongside observable behavioral indicators across proficiency levels",
+    "explanation": "A competency dictionary establishes standard behavioral descriptions for core, functional, and leadership capabilities to align hiring, evaluation, and promotion."
+  },
+  {
+    "questionText": "What is the primary role of an Assessment Center in executive talent selection and development?",
+    "options": [
+      "A standardized evaluation process utilizing multiple assessment techniques (in-baskets, group simulations, role-plays) evaluated by trained assessors",
+      "A medical testing laboratory for pre-employment drug screening",
+      "A government employment exchange bureau registering jobseekers",
+      "An automated online typing speed examination room"
+    ],
+    "correctAnswer": "A standardized evaluation process utilizing multiple assessment techniques (in-baskets, group simulations, role-plays) evaluated by trained assessors",
+    "explanation": "Assessment Centers evaluate candidate readiness for complex leadership roles through multi-faceted behavioral simulations, presentations, and objective multi-rater scoring."
+  },
+  {
+    "questionText": "In HR management, what is 'Quiet Quitting'?",
+    "options": [
+      "When employees strictly fulfill their contracted job descriptions without working unpaid overtime, volunteering for extra duties, or sacrificing personal time",
+      "Submitting a secret resignation letter without informing the reporting manager",
+      "Filing for anonymous whistleblower investigations against executives",
+      "Gradual absenteeism where an employee stops reporting to office unannounced"
+    ],
+    "correctAnswer": "When employees strictly fulfill their contracted job descriptions without working unpaid overtime, volunteering for extra duties, or sacrificing personal time",
+    "explanation": "Quiet quitting refers to employees establishing firm work-life boundaries by doing strictly what is required by their employment contract while rejecting hustle culture."
+  },
+  {
+    "questionText": "What is the primary objective of 'Succession Planning' in human capital management?",
+    "options": [
+      "To identify, nurture, and prepare high-potential internal talent to seamlessly assume critical business leadership positions when they become vacant",
+      "To plan corporate dividend distribution to company shareholders",
+      "To execute annual campus placement drives for junior trainee batches",
+      "To document historical founder biographies and company archives"
+    ],
+    "correctAnswer": "To identify, nurture, and prepare high-potential internal talent to seamlessly assume critical business leadership positions when they become vacant",
+    "explanation": "Succession planning mitigates leadership disruption risk by building a continuous bench of qualified successors for business-critical roles."
+  },
+  {
+    "questionText": "What is 'Behaviorally Anchored Rating Scales' (BARS) in performance evaluation?",
+    "options": [
+      "An appraisal method combining quantitative rating scales with specific narrative examples of effective and ineffective job behaviors",
+      "A scale measuring physical stamina for factory workers",
+      "A compensation index tied directly to consumer price changes",
+      "An automated punch-in biometric tracking algorithm"
+    ],
+    "correctAnswer": "An appraisal method combining quantitative rating scales with specific narrative examples of effective and ineffective job behaviors",
+    "explanation": "BARS replaces subjective numerical rankings with concrete behavioral anchor statements that illustrate specific performance standards."
+  },
+  {
+    "questionText": "What is the 'Central Tendency Bias' commonly observed in manager appraisals?",
+    "options": [
+      "The tendency of raters to evaluate all subordinates near the average or middle of the scale to avoid conflict or justification",
+      "Focusing reviews exclusively on central office employees over remote branches",
+      "Prioritizing headquarter directives over local team goals",
+      "Rating employees based strictly on central government civil service guidelines"
+    ],
+    "correctAnswer": "The tendency of raters to evaluate all subordinates near the average or middle of the scale to avoid conflict or justification",
+    "explanation": "Central tendency occurs when evaluators avoid assigning extreme high or low scores, clustering everyone around the midpoint."
+  },
+  {
+    "questionText": "Under the Code on Wages, 2019, statutory wages for calculating PF, gratuity, and bonus must generally comprise at least what percentage of total employee compensation?",
+    "options": [
+      "At least 50% of total remuneration",
+      "At least 75% of total remuneration",
+      "At least 30% of total remuneration",
+      "There is no statutory percentage cap"
+    ],
+    "correctAnswer": "At least 50% of total remuneration",
+    "explanation": "The Code on Wages specifies that specified exclusions (like HRA, conveyance, overtime) cannot exceed 50% of total compensation; any excess is treated as basic wage."
+  },
+  {
+    "questionText": "What is 'Employer Branding'?",
+    "options": [
+      "An organization's reputation and value proposition as an employer of choice in the eyes of current employees and potential candidates",
+      "The trademark registration of the company's consumer product logo",
+      "The corporate identity guidelines for business cards and letterheads",
+      "Branded merchandise distributed to clients during trade exhibitions"
+    ],
+    "correctAnswer": "An organization's reputation and value proposition as an employer of choice in the eyes of current employees and potential candidates",
+    "explanation": "Employer branding communicates company culture, values, and benefits to attract, engage, and retain elite talent."
+  },
+  {
+    "questionText": "What is a 'Job Evaluation' exercise in compensation architecture?",
+    "options": [
+      "The systematic process of determining the relative internal worth and hierarchy of various jobs within an organization",
+      "An annual feedback review session conducted between a worker and their manager",
+      "Auditing whether a job role violates statutory child labor prohibitions",
+      "Calculating the hourly billable client fee for consulting positions"
+    ],
+    "correctAnswer": "The systematic process of determining the relative internal worth and hierarchy of various jobs within an organization",
+    "explanation": "Job evaluation (using point-factor or ranking methods) establishes internal equity by objectively comparing job duties, responsibilities, and required problem-solving."
+  },
+  {
+    "questionText": "What does the 'Hay Guide Chart-Profile Method' evaluate when ranking managerial positions?",
+    "options": [
+      "Know-How, Problem Solving, and Accountability",
+      "Seniority, Department Size, and Overseas Travel",
+      "Technical Degrees, Age, and Financial Net Worth",
+      "Customer Count, Vendor Volume, and Inventory Turnover"
+    ],
+    "correctAnswer": "Know-How, Problem Solving, and Accountability",
+    "explanation": "The Hay Group methodology analyzes three universal factors across all organizational roles: Know-How, Problem Solving demands, and Accountability for business outcomes."
+  },
+  {
+    "questionText": "What is 'Golden Handshake' in employee separations?",
+    "options": [
+      "A substantial financial compensation package offered to an executive or senior employee upon termination, retirement, or voluntary separation",
+      "A prestigious company award given upon completing 25 years of service",
+      "The formal greeting protocol during high-level corporate mergers",
+      "A signing bonus paid to newly appointed Chief Executive Officers"
+    ],
+    "correctAnswer": "A substantial financial compensation package offered to an executive or senior employee upon termination, retirement, or voluntary separation",
+    "explanation": "A golden handshake provides generous severance or voluntary retirement compensation (VRS) to facilitate smooth separation."
+  },
+  {
+    "questionText": "In HR operations, what is a 'Full and Final' (FNF) settlement?",
+    "options": [
+      "The complete financial accounting and clearance process resolving all dues, earned leaves, unpaid salary, gratuity, and deductions upon employee separation",
+      "The final contract signed between an employer and a third-party recruitment staffing agency",
+      "The annual audited balance sheet submitted to the corporate affairs ministry",
+      "The closure of all open job requisitions at the end of the fiscal year"
+    ],
+    "correctAnswer": "The complete financial accounting and clearance process resolving all dues, earned leaves, unpaid salary, gratuity, and deductions upon employee separation",
+    "explanation": "FNF settlement reconciles all payable salary, notice adjustments, bonus, encashment of leave balances, and company asset returns when an employee departs."
+  },
+  {
+    "questionText": "What is 'Moonlighting' in employment contracts?",
+    "options": [
+      "The act of taking up a secondary or secret job while holding full-time employment with a primary employer, often raising conflict-of-interest concerns",
+      "Working night shifts during manufacturing graveyard rotations",
+      "Telecommuting after office hours to finish pending company projects",
+      "Taking an extended career sabbatical to pursue higher academic studies"
+    ],
+    "correctAnswer": "The act of taking up a secondary or secret job while holding full-time employment with a primary employer, often raising conflict-of-interest concerns",
+    "explanation": "Moonlighting involves side gigs or secondary commercial employment that may violate exclusivity, dual-employment covenants, or intellectual property terms."
+  },
+  {
+    "questionText": "What is the primary role of an 'Employee Assistance Program' (EAP)?",
+    "options": [
+      "A confidential, employer-sponsored support service assisting employees with personal, emotional, financial, or mental health problems affecting well-being",
+      "A microfinance loan facility provided to purchase company vehicles",
+      "An automated ticketing system for resetting email and laptop passwords",
+      "A legal defense fund representing executives facing corporate litigation"
+    ],
+    "correctAnswer": "A confidential, employer-sponsored support service assisting employees with personal, emotional, financial, or mental health problems affecting well-being",
+    "explanation": "EAPs provide confidential counseling, psychological therapy, and wellness interventions to support holistic worker health."
+  },
+  {
+    "questionText": "What does 'Psychological Safety' in team dynamics mean according to Amy Edmondson's research?",
+    "options": [
+      "A shared belief held by team members that the team is safe for interpersonal risk-taking without fear of humiliation, ridicule, or punishment",
+      "Providing certified safety helmets and hazard goggles in chemical facilities",
+      "Conducting mandatory psychiatric background evaluations on all prospective hires",
+      "A non-disclosure agreement prohibiting employees from criticizing company leadership"
+    ],
+    "correctAnswer": "A shared belief held by team members that the team is safe for interpersonal risk-taking without fear of humiliation, ridicule, or punishment",
+    "explanation": "Psychological safety fosters innovation and high performance by allowing workers to voice questions, propose bold ideas, or admit errors without reprisal."
+  },
+  {
+    "questionText": "Under the Industrial Disputes Act, 1947, what is 'Retrenchment'?",
+    "options": [
+      "The termination by the employer of the service of a workman for any reason whatsoever, otherwise than as a punishment inflicted by way of disciplinary action or superannuation",
+      "Voluntary resignation submitted by an employee for personal health reasons",
+      "Reassigning an employee from a factory floor to corporate marketing",
+      "Granting an unpaid study sabbatical to an industrial apprentice"
+    ],
+    "correctAnswer": "The termination by the employer of the service of a workman for any reason whatsoever, otherwise than as a punishment inflicted by way of disciplinary action or superannuation",
+    "explanation": "Retrenchment covers surplus labor rationalization and staff downsizing, carrying statutory mandates for advance notice and retrenchment compensation."
+  },
+  {
+    "questionText": "How much retrenchment compensation must be paid to a workman with continuous service under the Industrial Disputes Act, 1947?",
+    "options": [
+      "15 days' average pay for every completed year of continuous service or any part thereof in excess of six months",
+      "One month's basic salary for every year of completed service",
+      "Three months' gross salary regardless of tenure length",
+      "Half of the annual CTC plus variable sales commissions"
+    ],
+    "correctAnswer": "15 days' average pay for every completed year of continuous service or any part thereof in excess of six months",
+    "explanation": "Section 25F mandates that retrenched workmen with at least one year of continuous service receive 15 days' average pay per completed year of service alongside notice pay."
+  },
+  {
+    "questionText": "What is 'HR Business Partnering' (HRBP) according to Dave Ulrich's HR Model?",
+    "options": [
+      "Strategic alignment where HR professionals collaborate directly with business unit leaders to drive commercial objectives through talent capabilities",
+      "Outsourcing the entire HR payroll and recruitment division to third-party vendors",
+      "A formal commercial joint-venture between an HR consultancy and an enterprise",
+      "A legal dispute committee resolving contract breaches between company partners"
+    ],
+    "correctAnswer": "Strategic alignment where HR professionals collaborate directly with business unit leaders to drive commercial objectives through talent capabilities",
+    "explanation": "In Ulrich's model, the HRBP acts as an internal strategic consultant translating corporate business strategy into organizational talent initiatives."
+  },
+  {
+    "questionText": "What are the four core HR roles defined in Dave Ulrich's classic HR Model?",
+    "options": [
+      "Strategic Partner, Change Agent, Administrative Expert, and Employee Champion",
+      "Recruiter, Payroll Officer, Legal Counsel, and Training Coordinator",
+      "Sourcing Specialist, Interviewer, Appraiser, and Compliance Auditor",
+      "Operations Manager, Benefit Specialist, Facilities Lead, and Policy Writer"
+    ],
+    "correctAnswer": "Strategic Partner, Change Agent, Administrative Expert, and Employee Champion",
+    "explanation": "Ulrich's HR organization model categorizes HR deliverables into four quadrants: Strategic Partner, Change Agent, Administrative Expert, and Employee Champion."
+  },
+  {
+    "questionText": "In organizational culture analysis, what are Edgar Schein's Three Levels of Culture?",
+    "options": [
+      "Artifacts, Espoused Values, and Basic Underlying Assumptions",
+      "Vision, Mission, and Core Strategic Objectives",
+      "Policies, Procedures, and Disciplinary Guidelines",
+      "Language, Attire, and Office Architecture"
+    ],
+    "correctAnswer": "Artifacts, Espoused Values, and Basic Underlying Assumptions",
+    "explanation": "Schein categorizes organizational culture from visible surface level (Artifacts), through stated principles (Espoused Values), down to subconscious unquestioned truths (Basic Underlying Assumptions)."
+  },
+  {
+    "questionText": "What does 'T-Group' or 'Sensitivity Training' in Organizational Development (OD) aim to achieve?",
+    "options": [
+      "Increase self-awareness, emotional intelligence, and interpersonal effectiveness through unstructured, experiential group interactions",
+      "Train factory floor operators in handling sensitive electronic circuit equipment",
+      "Conduct specialized training on intellectual property confidentiality clauses",
+      "Teach rapid touch-typing and office shorthand techniques"
+    ],
+    "correctAnswer": "Increase self-awareness, emotional intelligence, and interpersonal effectiveness through unstructured, experiential group interactions",
+    "explanation": "Pioneered by Kurt Lewin and NTL, Sensitivity Training (T-groups) enables participants to explore how their behavior impacts peers in real time."
+  },
+  {
+    "questionText": "What is an 'In-Basket Exercise' in executive recruitment assessment centers?",
+    "options": [
+      "A simulation where candidates must review, prioritize, and make decisions on a simulated backlog of emails, memos, and operational crises within a time limit",
+      "A physical agility exercise used for factory logistics workers",
+      "Collecting candidate resume applications in an office deposit box",
+      "An informal team-building game played during campus orientation"
+    ],
+    "correctAnswer": "A simulation where candidates must review, prioritize, and make decisions on a simulated backlog of emails, memos, and operational crises within a time limit",
+    "explanation": "In-basket tests evaluate a candidate's administrative proficiency, prioritization under pressure, delegation, and decision-making rigor."
+  },
+  {
+    "questionText": "What is the primary characteristic of an 'Unstructured Interview' compared to a 'Structured Interview'?",
+    "options": [
+      "Unstructured interviews lack standardized questions and predetermined scoring rubrics, leading to lower reliability and higher interviewer bias",
+      "Unstructured interviews are always conducted in outdoor informal settings",
+      "Unstructured interviews are strictly legally prohibited in all public sector hiring",
+      "Unstructured interviews require five interviewers present simultaneously"
+    ],
+    "correctAnswer": "Unstructured interviews lack standardized questions and predetermined scoring rubrics, leading to lower reliability and higher interviewer bias",
+    "explanation": "Unstructured interviews follow conversational whim without standardized evaluation benchmarks, resulting in poor predictive validity and heightened cognitive bias."
+  },
+  {
+    "questionText": "What is 'Adverse Impact' (or Disparate Impact) in talent selection?",
+    "options": [
+      "When a seemingly neutral employment practice or selection test disproportionately excludes members of a protected demographic group",
+      "The physical damage caused to office hardware during workplace accidents",
+      "The negative reaction of current employees to a newly hired executive's salary",
+      "The financial loss incurred when a top client terminates an enterprise contract"
+    ],
+    "correctAnswer": "When a seemingly neutral employment practice or selection test disproportionately excludes members of a protected demographic group",
+    "explanation": "Adverse impact occurs when objective hiring criteria (e.g. unvalidated height or cognitive cutoffs) disproportionately eliminate protected groups regardless of discriminatory intent."
+  },
+  {
+    "questionText": "What is the 'Four-Fifths Rule' (80% Rule) used by employment regulators to identify Adverse Impact?",
+    "options": [
+      "The selection rate for any demographic group must be at least 80% (4/5ths) of the selection rate for the group with the highest selection rate",
+      "80% of all staff must pass annual compliance quizzes on their initial try",
+      "Four out of five interviewers on a panel must approve an offer before release",
+      "New hires must complete at least 80% of their probation period without leave"
+    ],
+    "correctAnswer": "The selection rate for any demographic group must be at least 80% (4/5ths) of the selection rate for the group with the highest selection rate",
+    "explanation": "Under EEOC guidelines, if a minority group's pass rate is less than 80% of the majority group's pass rate, the selection tool demonstrates prima facie adverse impact."
+  },
+  {
+    "questionText": "What does SCORM stand for in corporate e-learning systems?",
+    "options": [
+      "Shareable Content Object Reference Model",
+      "Structured Corporate Online Resource Management",
+      "Standardized Course Optimization & Review Mechanism",
+      "Systematic Competency & Onboarding Reporting Matrix"
+    ],
+    "correctAnswer": "Shareable Content Object Reference Model",
+    "explanation": "SCORM is an international technical standard ensuring e-learning software courses and Learning Management Systems (LMS) integrate and track user progress seamlessly."
+  },
+  {
+    "questionText": "In instructional design, what is 'Microlearning'?",
+    "options": [
+      "Delivering educational content in small, highly focused bursts (typically 3 to 7 minutes) targeted to a single learning objective",
+      "Teaching microchip manufacturing techniques to cleanroom technicians",
+      "Conducting training exclusively for tiny startup teams with fewer than 5 members",
+      "Shrinking font sizes on training handbooks to reduce corporate printing costs"
+    ],
+    "correctAnswer": "Delivering educational content in small, highly focused bursts (typically 3 to 7 minutes) targeted to a single learning objective",
+    "explanation": "Microlearning delivers bite-sized, accessible learning modules on demand to enhance retention and fit within busy workday schedules."
+  },
+  {
+    "questionText": "What is Bloom's Taxonomy primarily used for in HR training curriculum design?",
+    "options": [
+      "Classifying educational learning objectives into hierarchical levels of cognitive complexity from Remember to Create",
+      "Budgeting flower floral arrangements for corporate banquet lobbies",
+      "Categorizing employee salary increments based on tenure milestones",
+      "Evaluating toxic personality traits in executive coaching sessions"
+    ],
+    "correctAnswer": "Classifying educational learning objectives into hierarchical levels of cognitive complexity from Remember to Create",
+    "explanation": "Bloom's Taxonomy organizes learning objectives across six cognitive levels: Remember, Understand, Apply, Analyze, Evaluate, and Create."
+  },
+  {
+    "questionText": "What does 'Management by Objectives' (MBO) emphasize?",
+    "options": [
+      "Joint establishment of specific, measurable performance goals agreed upon between manager and employee against which results are evaluated",
+      "Unilateral dictation of executive sales targets without subordinate input",
+      "Eliminating all individual performance reviews in favor of company profit sharing",
+      "Managing employees exclusively through continuous surveillance and time tracking"
+    ],
+    "correctAnswer": "Joint establishment of specific, measurable performance goals agreed upon between manager and employee against which results are evaluated",
+    "explanation": "Popularized by Peter Drucker, MBO aligns individual and organizational goals through collaborative goal-setting and periodic milestone reviews."
+  },
+  {
+    "questionText": "What is 'Forced Distribution' (or Bell Curve Grading) in performance appraisals?",
+    "options": [
+      "A system that mandates managers distribute employee performance ratings across a predetermined statistical curve (e.g. 10% top, 70% average, 20% bottom)",
+      "Forcing all employees to take annual leave during the company's December shutdown",
+      "Distributing physical bonus pay envelopes in person to avoid banking delays",
+      "Mandatory rotation of software engineers across disparate client projects"
+    ],
+    "correctAnswer": "A system that mandates managers distribute employee performance ratings across a predetermined statistical curve (e.g. 10% top, 70% average, 20% bottom)",
+    "explanation": "Forced ranking prevents grade inflation by requiring managers to fit performance scores into fixed quotas, though it can hinder collaboration."
+  },
+  {
+    "questionText": "What is 'Calibration' in organizational performance appraisal cycles?",
+    "options": [
+      "A structured moderation meeting where leaders review proposed ratings across teams to ensure uniform evaluation standards and eliminate rater bias",
+      "Resetting mechanical machinery sensors in factory quality control units",
+      "Adjusting employee computer monitors for ergonomic posture compliance",
+      "Recalculating monthly income tax withholding deductions after budget updates"
+    ],
+    "correctAnswer": "A structured moderation meeting where leaders review proposed ratings across teams to ensure uniform evaluation standards and eliminate rater bias",
+    "explanation": "Calibration sessions gather cross-functional managers to review rating distributions, ensuring lenient and harsh managers evaluate against consistent yardsticks."
+  },
+  {
+    "questionText": "What is 'Job Enlargement' compared to 'Job Enrichment'?",
+    "options": [
+      "Job enlargement expands the quantity of horizontal tasks at the same skill level, while job enrichment adds depth, autonomy, and vertical decision-making authority",
+      "Job enlargement increases executive salaries, while job enrichment provides medical insurance",
+      "Job enlargement is an internal promotion, while job enrichment is a lateral transfer",
+      "There is no distinction; both mean giving an employee an increased workload"
+    ],
+    "correctAnswer": "Job enlargement expands the quantity of horizontal tasks at the same skill level, while job enrichment adds depth, autonomy, and vertical decision-making authority",
+    "explanation": "Job enlargement widens horizontal scope (more similar tasks) to mitigate boredom, whereas job enrichment injects vertical depth and self-governance to foster intrinsic motivation."
+  },
+  {
+    "questionText": "What is Frederick Herzberg's 'Two-Factor Theory' (Motivator-Hygiene Theory)?",
+    "options": [
+      "Hygiene factors (salary, working conditions) prevent dissatisfaction when present, but only Motivators (recognition, responsibility, growth) generate true job satisfaction",
+      "Employees are motivated exclusively by cash incentives and strict supervision",
+      "Hygiene factors inspire peak performance, while motivators prevent health hazards",
+      "Worker productivity depends equally on physical nutrition and office ventilation"
+    ],
+    "correctAnswer": "Hygiene factors (salary, working conditions) prevent dissatisfaction when present, but only Motivators (recognition, responsibility, growth) generate true job satisfaction",
+    "explanation": "Herzberg demonstrated that fixing baseline hygiene needs prevents unhappiness but cannot induce high motivation, which requires intrinsic motivators like achievement and autonomy."
+  },
+  {
+    "questionText": "What does Douglas McGregor's 'Theory X' assume about worker motivation?",
+    "options": [
+      "Employees inherently dislike work, avoid responsibility, and must be strictly coerced, controlled, and threatened with punishment to achieve objectives",
+      "Employees naturally seek responsibility, exercise self-direction, and take pride in creative craftsmanship",
+      "Employees are motivated exclusively by corporate stock options and equity",
+      "Employees value workplace social friendships above monetary compensation"
+    ],
+    "correctAnswer": "Employees inherently dislike work, avoid responsibility, and must be strictly coerced, controlled, and threatened with punishment to achieve objectives",
+    "explanation": "Theory X represents authoritarian, pessimistic assumptions about worker initiative, contrasting with the collaborative, self-actualizing premises of Theory Y."
+  },
+  {
+    "questionText": "What is an 'Expatriate Failure' in global mobility HR management?",
+    "options": [
+      "The premature return of an international assignee before the scheduled assignment completion date, or failure to achieve target business objectives overseas",
+      "The bankruptcy of a multinational company's offshore manufacturing subsidiary",
+      "The rejection of an overseas visa application by foreign embassy authorities",
+      "A foreign employee failing an annual local language fluency exam"
+    ],
+    "correctAnswer": "The premature return of an international assignee before the scheduled assignment completion date, or failure to achieve target business objectives overseas",
+    "explanation": "Expatriate failure carries heavy relocation and strategic costs, most frequently triggered by family maladjustment, cultural isolation, or inadequate pre-departure training."
+  },
+  {
+    "questionText": "What is 'Culture Shock' in international human resources?",
+    "options": [
+      "The psychological disorientation and anxiety experienced when an employee relocates to an unfamiliar cultural and social environment",
+      "A sudden change in senior company management that disrupts operational procedures",
+      "A hostile dispute between an employer and organized labor unions",
+      "An unexpected corporate acquisition by a foreign sovereign wealth fund"
+    ],
+    "correctAnswer": "The psychological disorientation and anxiety experienced when an employee relocates to an unfamiliar cultural and social environment",
+    "explanation": "Culture shock involves stages (honeymoon, frustration, adjustment, mastery) as expatriates adapt to contrasting communication norms and cultural values."
+  },
+  {
+    "questionText": "Under Hofstede's Cultural Dimensions Theory, what does 'Power Distance' measure?",
+    "options": [
+      "The degree to which less powerful members of organizations accept and expect that power is distributed unequally",
+      "The physical spatial distance separating corporate headquarters from regional warehouses",
+      "The electrical wattage required to maintain server data infrastructure",
+      "The legal jurisdiction separating municipal labor inspectors from federal judges"
+    ],
+    "correctAnswer": "The degree to which less powerful members of organizations accept and expect that power is distributed unequally",
+    "explanation": "High power distance cultures respect formal hierarchies and centralized authority, whereas low power distance cultures favor egalitarian, participative consultation."
+  },
+  {
+    "questionText": "What is 'Green HR' (Green Human Resource Management)?",
+    "options": [
+      "Integrating environmentally sustainable practices and eco-friendly policies into recruitment, training, performance metrics, and corporate operations",
+      "Hiring inexperienced, fresh college graduates into junior trainee ranks",
+      "Mandating that all HR office stationery and desks be painted green",
+      "Managing agricultural landscaping and outdoor park zones around corporate buildings"
+    ],
+    "correctAnswer": "Integrating environmentally sustainable practices and eco-friendly policies into recruitment, training, performance metrics, and corporate operations",
+    "explanation": "Green HRM aligns HR processes (digital onboarding, paperless reviews, carbon-neutral incentives) with environmental sustainability."
+  },
+  {
+    "questionText": "What is the primary role of a 'Human Resource Information System' (HRIS)?",
+    "options": [
+      "An integrated software database managing employee demographic records, payroll, benefits, attendance, and compliance workflows",
+      "An internal employee chat room dedicated to social sports discussions",
+      "An IT cybersecurity firewall screening outside email attachments",
+      "An artificial intelligence bot writing external corporate press releases"
+    ],
+    "correctAnswer": "An integrated software database managing employee demographic records, payroll, benefits, attendance, and compliance workflows",
+    "explanation": "An HRIS centralizes master employee data to automate recordkeeping, generate statutory compliance reports, and empower self-service transactions."
+  },
+  {
+    "questionText": "What is 'People Analytics' (or Workforce Analytics)?",
+    "options": [
+      "Applying statistical modeling and data science to workforce data to make evidence-based talent acquisition, retention, and productivity decisions",
+      "Manually tallying monthly attendance registers using paper logbooks",
+      "Recording surveillance audio of employee cafeteria conversations",
+      "Publicly publishing individual worker performance scores on social media"
+    ],
+    "correctAnswer": "Applying statistical modeling and data science to workforce data to make evidence-based talent acquisition, retention, and productivity decisions",
+    "explanation": "People Analytics uses empirical data and predictive algorithms to discover drivers of employee retention, optimize workforce scheduling, and identify leadership traits."
+  },
+  {
+    "questionText": "In labor law compliance, what is the 'Contract Labour (Regulation and Abolition) Act, 1970' primarily intended to govern?",
+    "options": [
+      "Regulating the employment of contract labor in certain establishments and providing for its abolition in certain core perennial operations",
+      "Abolishing all fixed-term employment contracts across all commercial sectors",
+      "Mandating that all freelancers receive identical stock option grants as executive directors",
+      "Requiring government approval before hiring third-party security guards"
+    ],
+    "correctAnswer": "Regulating the employment of contract labor in certain establishments and providing for its abolition in certain core perennial operations",
+    "explanation": "The Act safeguards contract workers' welfare, amenities, and wage guarantees while preventing the replacement of permanent workers in perennial core activities with contract labor."
+  },
+  {
+    "questionText": "What is 'Equal Remuneration Act, 1976' designed to guarantee in the workplace?",
+    "options": [
+      "Equal remuneration to men and women workers for same work or work of a similar nature, without gender discrimination in recruitment or promotions",
+      "Equal salaries to all employees holding the same college degree regardless of performance",
+      "Equalizing private tech salaries with public sector civil service pay scales",
+      "Mandating that interns earn identical compensation to senior project managers"
+    ],
+    "correctAnswer": "Equal remuneration to men and women workers for same work or work of a similar nature, without gender discrimination in recruitment or promotions",
+    "explanation": "The Equal Remuneration Act prevents gender pay gaps and outlaws discriminatory practices during hiring, transfers, or training opportunities."
+  },
+  {
+    "questionText": "Under the Employee Compensation Act, 1923, what is an employer liable to pay compensation for?",
+    "options": [
+      "Personal injury or occupational disease caused to an employee by accident arising out of and in the course of employment",
+      "Loss of personal baggage during private holiday travel",
+      "Salary losses incurred when an employee leaves to join a competitor",
+      "Routine seasonal influenza contracted at home outside working hours"
+    ],
+    "correctAnswer": "Personal injury or occupational disease caused to an employee by accident arising out of and in the course of employment",
+    "explanation": "Employers must provide statutory financial compensation for work-related accidental injuries, permanent disability, or fatalities occurring during the course of employment."
+  },
+  {
+    "questionText": "What is 'Constructive Dismissal' in labor jurisprudence?",
+    "options": [
+      "When an employer creates or permits an intolerably hostile or altered working environment that effectively coerces the employee into resigning involuntarily",
+      "Dismissing an employee constructively with a positive written recommendation letter",
+      "Terminating an employee following a successful project completion",
+      "A dismissal carried out by a certified building construction firm"
+    ],
+    "correctAnswer": "When an employer creates or permits an intolerably hostile or altered working environment that effectively coerces the employee into resigning involuntarily",
+    "explanation": "Constructive dismissal occurs when unilateral breach of contract, demotion, or systemic harassment forces an employee to resign, legally equating to wrongful termination."
+  },
+  {
+    "questionText": "What is an 'Internal Complaints Committee' (ICC) Annual Report mandate under the POSH Act?",
+    "options": [
+      "The IC must prepare and submit an annual report detailing the number of complaints received, disposed of, pending, and awareness workshops conducted to the employer and District Officer",
+      "A confidential financial audit of all cash penalties collected from respondents",
+      "A public press release published in local newspapers identifying complainants by name",
+      "An internal memo shared only with the company Board of Directors"
+    ],
+    "correctAnswer": "The IC must prepare and submit an annual report detailing the number of complaints received, disposed of, pending, and awareness workshops conducted to the employer and District Officer",
+    "explanation": "Section 21 of the POSH Act requires the IC to submit an annual report summarizing filings, hearings, and compliance workshops to the employer and designated municipal/district authorities."
+  },
+  {
+    "questionText": "What is the legal stance on confidentiality under Section 16 of the POSH Act, 2013?",
+    "options": [
+      "The contents of the complaint, identities of complainant, respondent and witnesses, and inquiry proceedings must not be published or disclosed to the public or press",
+      "All inquiry proceedings must be live-streamed on company social channels for transparency",
+      "Complainant identities must be posted on office bulletin boards during inquiries",
+      "Confidentiality is optional and at the sole discretion of the human resources manager"
+    ],
+    "correctAnswer": "The contents of the complaint, identities of complainant, respondent and witnesses, and inquiry proceedings must not be published or disclosed to the public or press",
+    "explanation": "The POSH Act strictly forbids making inquiry details, addresses, or identities public, imposing heavy statutory financial penalties for breaches of confidentiality."
+  },
+  {
+    "questionText": "What is 'Severance Pay'?",
+    "options": [
+      "Compensation and benefits granted to an employee upon involuntary separation due to layoffs, restructuring, or role redundancy",
+      "A cash bonus awarded to employees completing 10 years of service",
+      "A deduction made from salary when an employee breaks office equipment",
+      "The monthly fee paid to an employee medical insurance provider"
+    ],
+    "correctAnswer": "Compensation and benefits granted to an employee upon involuntary separation due to layoffs, restructuring, or role redundancy",
+    "explanation": "Severance pay bridges the transition period for displaced employees following organizational downsizing, company closures, or involuntary redundancies."
+  },
+  {
+    "questionText": "What is 'Job Sharing' in flexible workplace arrangements?",
+    "options": [
+      "An arrangement where two part-time employees share the responsibilities, hours, and compensation of one full-time role",
+      "Posting open job openings on social media so friends can apply",
+      "Allowing multiple employees to use the same corporate computer terminal",
+      "Assigning all department tasks to a single senior employee"
+    ],
+    "correctAnswer": "An arrangement where two part-time employees share the responsibilities, hours, and compensation of one full-time role",
+    "explanation": "Job sharing allows two professionals to split workload and schedule for a single job, accommodating work-life balance while ensuring coverage."
+  },
+  {
+    "questionText": "What is an 'Employee Handbook'?",
+    "options": [
+      "A comprehensive corporate manual detailing organizational policies, procedures, code of conduct, benefits, and cultural expectations for all staff",
+      "A pocket diary issued to employees to record daily handwritten to-do lists",
+      "A legal contract signed exclusively between executive directors and shareholders",
+      "A catalog of company consumer products sold to outside customers"
+    ],
+    "correctAnswer": "A comprehensive corporate manual detailing organizational policies, procedures, code of conduct, benefits, and cultural expectations for all staff",
+    "explanation": "The Employee Handbook communicates workplace policies, grievance avenues, anti-harassment standards, and legal compliance obligations."
+  },
+  {
+    "questionText": "What does 'Competency Mapping' identify?",
+    "options": [
+      "The key knowledge, technical skills, behavioral traits, and attitudes essential for successfully executing specific organizational roles",
+      "The physical GPS office location of mobile field technicians",
+      "The network architecture connecting company desktop computers",
+      "The global distribution of international customer branches"
+    ],
+    "correctAnswer": "The key knowledge, technical skills, behavioral traits, and attitudes essential for successfully executing specific organizational roles",
+    "explanation": "Competency mapping identifies exact capabilities required for success across job families, facilitating targeted hiring and role progression."
+  },
+  {
+    "questionText": "What is 'Attrition Cost' comprised of in talent economics?",
+    "options": [
+      "Direct separation costs, loss of institutional knowledge, vacant seat productivity deficit, recruitment advertising, and new-hire ramp-up training costs",
+      "Only the final month's salary paid to the departing employee",
+      "The physical cost of collecting and re-imaging a company laptop",
+      "The filing fees charged by local municipal labor authorities"
+    ],
+    "correctAnswer": "Direct separation costs, loss of institutional knowledge, vacant seat productivity deficit, recruitment advertising, and new-hire ramp-up training costs",
+    "explanation": "Replacing an experienced employee typically costs 50% to 200% of their annual salary when factoring downtime, lost client relationships, recruiter fees, and onboarding lag."
+  },
+  {
+    "questionText": "What is 'Stay Interview' in proactive talent retention?",
+    "options": [
+      "A structured conversation with a high-performing current employee to understand what keeps them at the company and what could trigger them to leave",
+      "An interrogation conducted when an employee is caught looking for outside jobs",
+      "An interview conducted after 10:00 PM during late-night office work sessions",
+      "A mandatory review before an employee can take annual paid vacation"
+    ],
+    "correctAnswer": "A structured conversation with a high-performing current employee to understand what keeps them at the company and what could trigger them to leave",
+    "explanation": "Unlike exit interviews conducted after an employee resigns, stay interviews proactively identify friction points while there is still time to improve their experience."
+  },
+  {
+    "questionText": "What is the primary objective of a 'Grievance Redressal Procedure' in industrial relations?",
+    "options": [
+      "To provide a fair, structured, and speedy channel for employees to raise complaints and resolve workplace grievances without escalation to industrial disputes",
+      "To punish employees who express dissatisfaction with company policies",
+      "To replace corporate management with outside union representatives",
+      "To automate the rejection of employee salary increment appeals"
+    ],
+    "correctAnswer": "To provide a fair, structured, and speedy channel for employees to raise complaints and resolve workplace grievances without escalation to industrial disputes",
+    "explanation": "A formalized grievance procedure ensures systematic, progressive investigation of employee dissatisfactions, maintaining trust and industrial peace."
+  },
+  {
+    "questionText": "What is 'Work-Life Balance' in strategic human resource management?",
+    "options": [
+      "Organizational policies and cultural practices that support employees in harmonizing their professional responsibilities with personal, family, and health priorities",
+      "Mandating that employees spend exactly 12 hours working and 12 hours resting",
+      "Requiring employees to bring family members to work during weekday meetings",
+      "Eliminating all weekend operations and closing the business permanently"
+    ],
+    "correctAnswer": "Organizational policies and cultural practices that support employees in harmonizing their professional responsibilities with personal, family, and health priorities",
+    "explanation": "Work-life balance initiatives (flexible hours, hybrid work, wellness allowances) curb burnout, boost psychological well-being, and drive sustained productivity."
+  }
+]
