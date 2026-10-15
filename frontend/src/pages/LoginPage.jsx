@@ -62,18 +62,21 @@ export const LoginPage = () => {
   const brandFont = fontUrbanist;
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      background: 'linear-gradient(135deg, #E0EAFC 0%, #CFDEF3 100%)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '40px 56px',
-      boxSizing: 'border-box',
-      fontFamily: fontBody,
-      position: 'relative',
-      overflow: 'hidden',
-    }}>
+    <div
+      className="login-page-container"
+      style={{
+        minHeight: '100vh',
+        background: 'linear-gradient(135deg, #E0EAFC 0%, #CFDEF3 100%)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '40px 56px',
+        boxSizing: 'border-box',
+        fontFamily: fontBody,
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+    >
       {/* Subtle background decoration */}
       <div style={{
         position: 'absolute',
@@ -120,12 +123,15 @@ export const LoginPage = () => {
           className="login-left-content"
         >
           {/* Official SkillCred Branding */}
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '18px',
-            marginBottom: '48px',
-          }}>
+          <div
+            className="login-brand-header"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '18px',
+              marginBottom: '48px',
+            }}
+          >
             <img
               src="/assets/skillcred_logo.png"
               alt="SkillCred Logo"
@@ -166,40 +172,49 @@ export const LoginPage = () => {
           </div>
 
           {/* Main Heading — Matching Pagedone Reference "Hey, Hello!" */}
-          <h1 style={{
-            fontSize: 'clamp(56px, 6vw, 72px)',
-            fontWeight: '700',
-            lineHeight: 1.08,
-            letterSpacing: '-1.5px',
-            margin: '0 0 24px 0',
-            color: '#0F172A',
-            fontFamily: fontOutfit,
-          }}>
+          <h1
+            className="login-main-heading"
+            style={{
+              fontSize: 'clamp(56px, 6vw, 72px)',
+              fontWeight: '700',
+              lineHeight: 1.08,
+              letterSpacing: '-1.5px',
+              margin: '0 0 24px 0',
+              color: '#0F172A',
+              fontFamily: fontOutfit,
+            }}
+          >
             Hey, Hello!
           </h1>
 
           {/* Supporting Line — Matching reference */}
-          <p style={{
-            fontSize: '23px',
-            fontWeight: '600',
-            color: '#1E293B',
-            margin: '0 0 20px 0',
-            lineHeight: 1.45,
-            fontFamily: fontOutfit,
-          }}>
+          <p
+            className="login-sub-heading"
+            style={{
+              fontSize: '23px',
+              fontWeight: '600',
+              color: '#1E293B',
+              margin: '0 0 20px 0',
+              lineHeight: 1.45,
+              fontFamily: fontOutfit,
+            }}
+          >
             Ready to continue your certified learning?
           </p>
 
           {/* Description — Matching reference */}
-          <p style={{
-            fontSize: '16.5px',
-            lineHeight: 1.75,
-            color: '#334155',
-            margin: 0,
-            maxWidth: '520px',
-            fontWeight: '400',
-            fontFamily: fontInter,
-          }}>
+          <p
+            className="login-desc-text"
+            style={{
+              fontSize: '16.5px',
+              lineHeight: 1.75,
+              color: '#334155',
+              margin: 0,
+              maxWidth: '520px',
+              fontWeight: '400',
+              fontFamily: fontInter,
+            }}
+          >
             Access your course modules, complete practical assessments, and earn credentials verified directly through our registry.
           </p>
         </div>
@@ -220,7 +235,7 @@ export const LoginPage = () => {
           className="login-card"
         >
           {/* Card Header */}
-          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+          <div className="login-card-header" style={{ textAlign: 'center', marginBottom: '40px' }}>
             <h2 style={{
               fontSize: '30px',
               fontWeight: '700',

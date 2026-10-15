@@ -14,7 +14,9 @@ import {
   AlertTriangle,
   Bell,
   Search,
-  ExternalLink
+  ExternalLink,
+  Menu,
+  X
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { api } from '../api/client';
@@ -25,6 +27,7 @@ export const AdminLayout = () => {
   const location = useLocation();
 
   const [pendingPaymentsCount, setPendingPaymentsCount] = useState(0);
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
   useEffect(() => {
     if (user?.role === 'ADMIN') {
@@ -36,7 +39,22 @@ export const AdminLayout = () => {
     }
   }, [user]);
 
+  // Close drawer on navigation or tab changes
+  useEffect(() => {
+    setMobileDrawerOpen(false);
+  }, [location.search, location.pathname]);
+
+  // Close drawer on Escape key
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setMobileDrawerOpen(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   const handleAdminLogout = () => {
+    setMobileDrawerOpen(false);
     logout();
     navigate('/login');
   };
@@ -60,7 +78,7 @@ export const AdminLayout = () => {
             width: '44px',
             height: '44px',
             border: '4px solid #CFDEF3',
-            borderTop: '4px solid #64748B',
+            borderTop: '4px solid #586B84',
             borderRadius: '50%',
             animation: 'spin 0.8s linear infinite',
           }} />
@@ -103,14 +121,71 @@ export const AdminLayout = () => {
   const currentTab = new URLSearchParams(location.search).get('tab') || 'overview';
 
   return (
-    <div style={{
+    <div className="admin-layout-container" style={{
       display: 'flex',
       minHeight: '100vh',
       backgroundColor: '#F0F4F8',
       fontFamily: "'Plus Jakarta Sans', sans-serif",
     }}>
-      {/* ─── Dedicated Admin Sidebar ─── */}
-      <aside style={{
+      {/* ─── Admin Mobile Top Header (<= 1024px) ─── */}
+      <header className="admin-mobile-header">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <img
+            src="/assets/adzivo_icon.png"
+            alt="SkillCred Logo"
+            style={{ width: '34px', height: '34px', objectFit: 'contain' }}
+          />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <h2 style={{ fontSize: '19px', fontWeight: '800', letterSpacing: '-0.3px', margin: 0, color: '#0F172A', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              Skill<span style={{ color: '#2563EB' }}>C</span>red
+            </h2>
+            <span style={{
+              backgroundColor: '#586B84',
+              color: '#FFFFFF',
+              fontSize: '9.5px',
+              fontWeight: '800',
+              padding: '2px 6px',
+              borderRadius: '4px',
+              letterSpacing: '0.4px',
+            }}>
+              ADMIN
+            </span>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          {pendingPaymentsCount > 0 && (
+            <span style={{
+              backgroundColor: '#D92D20',
+              color: '#FFFFFF',
+              fontSize: '11px',
+              fontWeight: '800',
+              padding: '2px 8px',
+              borderRadius: '999px',
+            }}>
+              {pendingPaymentsCount}
+            </span>
+          )}
+          <button
+            onClick={() => setMobileDrawerOpen(!mobileDrawerOpen)}
+            className="mobile-menu-btn"
+            aria-label="Toggle Admin Navigation Menu"
+          >
+            {mobileDrawerOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
+      </header>
+
+      {/* ─── Mobile Drawer Backdrop Overlay ─── */}
+      {mobileDrawerOpen && (
+        <div
+          className="mobile-drawer-backdrop"
+          onClick={() => setMobileDrawerOpen(false)}
+        />
+      )}
+
+      {/* ─── Dedicated Admin Sidebar (Desktop Sticky / Mobile Drawer) ─── */}
+      <aside className={`admin-sidebar ${mobileDrawerOpen ? 'drawer-open' : ''}`} style={{
         width: '260px',
         background: 'linear-gradient(180deg, #E0EAFC 0%, #CFDEF3 100%)',
         borderRadius: '24px',
@@ -126,34 +201,45 @@ export const AdminLayout = () => {
         zIndex: 20,
         boxSizing: 'border-box',
       }}>
-        {/* Admin Brand Header — matches Student sidebar logo layout */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '32px', paddingLeft: '8px' }}>
-          <img
-            src="/assets/adzivo_icon.png"
-            alt="SkillCred Logo"
-            style={{ width: '42px', height: '42px', objectFit: 'contain', flexShrink: 0 }}
-          />
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <h2 style={{ fontSize: '20px', fontWeight: '800', letterSpacing: '-0.3px', margin: 0, color: '#0F172A', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-                Skill<span style={{ color: '#2563EB' }}>C</span>red
-              </h2>
-              <span style={{
-                backgroundColor: '#586B84',
-                color: '#FFFFFF',
-                fontSize: '9.5px',
-                fontWeight: '800',
-                padding: '2px 6px',
-                borderRadius: '4px',
-                letterSpacing: '0.4px',
-              }}>
-                ADMIN
+        {/* Admin Brand Header */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '32px', paddingLeft: '8px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <img
+              src="/assets/adzivo_icon.png"
+              alt="SkillCred Logo"
+              style={{ width: '42px', height: '42px', objectFit: 'contain', flexShrink: 0 }}
+            />
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <h2 style={{ fontSize: '20px', fontWeight: '800', letterSpacing: '-0.3px', margin: 0, color: '#0F172A', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  Skill<span style={{ color: '#2563EB' }}>C</span>red
+                </h2>
+                <span style={{
+                  backgroundColor: '#586B84',
+                  color: '#FFFFFF',
+                  fontSize: '9.5px',
+                  fontWeight: '800',
+                  padding: '2px 6px',
+                  borderRadius: '4px',
+                  letterSpacing: '0.4px',
+                }}>
+                  ADMIN
+                </span>
+              </div>
+              <span style={{ fontSize: '10.5px', color: '#475569', fontWeight: '600', letterSpacing: '0.8px', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                By ADZ4NEEDZ
               </span>
             </div>
-            <span style={{ fontSize: '10.5px', color: '#475569', fontWeight: '600', letterSpacing: '0.8px', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-              By ADZ4NEEDZ
-            </span>
           </div>
+
+          {/* Close button inside mobile drawer */}
+          <button
+            onClick={() => setMobileDrawerOpen(false)}
+            className="mobile-drawer-close"
+            aria-label="Close Admin Navigation Menu"
+          >
+            <X size={18} />
+          </button>
         </div>
 
         {/* Admin Navigation List */}
@@ -164,7 +250,10 @@ export const AdminLayout = () => {
             return (
               <button
                 key={item.id}
-                onClick={() => navigate(`/admin?tab=${item.id}`)}
+                onClick={() => {
+                  navigate(`/admin?tab=${item.id}`);
+                  setMobileDrawerOpen(false);
+                }}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -184,7 +273,7 @@ export const AdminLayout = () => {
                   transition: 'all 0.15s ease',
                 }}
               >
-                <Icon size={18} color={isActive ? '#334155' : '#64748B'} style={{ flexShrink: 0 }} />
+                <Icon size={18} strokeWidth={1.75} color={isActive ? '#334155' : '#586B84'} style={{ flexShrink: 0 }} />
                 <span style={{ flex: 1 }}>{item.name}</span>
                 {item.badge > 0 && (
                   <span style={{
@@ -271,7 +360,7 @@ export const AdminLayout = () => {
       </aside>
 
       {/* ─── Main Admin Workspace ─── */}
-      <main style={{
+      <main className="admin-main-workspace" style={{
         flex: 1,
         padding: '24px 32px 48px 32px',
         overflowY: 'auto',

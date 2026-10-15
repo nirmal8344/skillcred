@@ -1,10 +1,27 @@
-import React from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Navigate, Outlet, useLocation } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
 import { useAuth } from '../context/AuthContext';
+import { Menu, X } from 'lucide-react';
 
 export const AppLayout = () => {
   const { user, loading } = useAuth();
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const location = useLocation();
+
+  // Close drawer on route change
+  useEffect(() => {
+    setMobileDrawerOpen(false);
+  }, [location.pathname]);
+
+  // Close drawer on Escape key
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setMobileDrawerOpen(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   if (loading) {
     return (
@@ -25,7 +42,7 @@ export const AppLayout = () => {
             width: '44px',
             height: '44px',
             border: '4px solid #CFDEF3',
-            borderTop: '4px solid #64748B',
+            borderTop: '4px solid #586B84',
             borderRadius: '50%',
             animation: 'spin 0.8s linear infinite',
           }} />
@@ -53,7 +70,47 @@ export const AppLayout = () => {
 
   return (
     <div className="app-container">
-      <Sidebar />
+      {/* ─── Student Mobile Top Header (<= 1024px) ─── */}
+      <header className="mobile-header">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <img
+            src="/assets/adzivo_icon.png"
+            alt="SkillCred Logo"
+            style={{ width: '34px', height: '34px', objectFit: 'contain' }}
+          />
+          <div>
+            <h2 style={{ fontSize: '19px', fontWeight: '800', letterSpacing: '-0.3px', margin: 0, color: '#0F172A', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              Skill<span style={{ color: '#2563EB' }}>C</span>red
+            </h2>
+            <span style={{ fontSize: '9.5px', color: '#475569', fontWeight: '600', letterSpacing: '0.6px', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              By ADZ4NEEDZ
+            </span>
+          </div>
+        </div>
+
+        <button
+          onClick={() => setMobileDrawerOpen(!mobileDrawerOpen)}
+          className="mobile-menu-btn"
+          aria-label="Toggle Navigation Menu"
+        >
+          {mobileDrawerOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
+      </header>
+
+      {/* ─── Mobile Drawer Backdrop Overlay ─── */}
+      {mobileDrawerOpen && (
+        <div
+          className="mobile-drawer-backdrop"
+          onClick={() => setMobileDrawerOpen(false)}
+        />
+      )}
+
+      {/* ─── Student Sidebar (Desktop Sticky / Mobile Drawer) ─── */}
+      <Sidebar
+        isOpen={mobileDrawerOpen}
+        onClose={() => setMobileDrawerOpen(false)}
+      />
+
       <main className="main-content">
         <Outlet />
       </main>

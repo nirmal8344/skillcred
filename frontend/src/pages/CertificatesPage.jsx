@@ -60,7 +60,7 @@ export const CertificatesPage = () => {
           </Link>
         </div>
       ) : (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))', gap: '24px' }}>
+        <div className="certificates-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: '24px' }}>
           {certificates.map((cert) => (
             <div
               key={cert.id}

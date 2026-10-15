@@ -78,7 +78,7 @@
 
   --text-main: #0F172A;
   --text-muted: #475569;
-  --text-light: #64748B;
+  --text-light: #586B84;
   --border-subtle: #CFDEF3;
   --border-focus: #586B84;
 
@@ -242,4 +242,256 @@ input, textarea, select {
 .btn-secondary:hover {
   background: var(--ice-light);
   border-color: var(--ice-blue);
+}
+
+/* ─── Mobile Elements Base (Hidden on Desktop > 1024px) ─── */
+.mobile-header,
+.admin-mobile-header {
+  display: none;
+}
+
+.mobile-drawer-backdrop {
+  display: none;
+}
+
+.mobile-drawer-close {
+  display: none;
+}
+
+/* ─── Tablet & Mobile Responsive Breakpoints (<= 1024px) ─── */
+@media (max-width: 1024px) {
+  .app-container,
+  .admin-layout-container {
+    flex-direction: column !important;
+    min-height: 100vh;
+  }
+
+  /* Mobile Top Bar */
+  .mobile-header,
+  .admin-mobile-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    background: rgba(240, 244, 248, 0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #CFDEF3;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  }
+
+  .mobile-menu-btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    border: 1px solid #CFDEF3;
+    color: #334155;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(207, 222, 243, 0.4);
+    transition: all 0.15s ease;
+  }
+  .mobile-menu-btn:active {
+    transform: scale(0.95);
+    background: #E0EAFC;
+  }
+
+  /* Backdrop Overlay */
+  .mobile-drawer-backdrop {
+    display: block !important;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(3px);
+    z-index: 998;
+    animation: fadeIn 0.2s ease forwards;
+  }
+
+  /* Sidebars transformed into slide-over Navigation Drawers */
+  .student-sidebar,
+  .admin-sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 290px !important;
+    max-width: 85vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    border-radius: 0 24px 24px 0 !important;
+    z-index: 999 !important;
+    transform: translateX(-105%) !important;
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 8px 0 32px rgba(15, 23, 42, 0.25) !important;
+    overflow-y: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .student-sidebar.drawer-open,
+  .admin-sidebar.drawer-open {
+    transform: translateX(0) !important;
+  }
+
+  .mobile-drawer-close {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #BDD3F0;
+    color: #334155;
+    cursor: pointer;
+    margin-left: auto;
+    transition: all 0.15s ease;
+  }
+  .mobile-drawer-close:hover {
+    background: #FFFFFF;
+    color: #0F172A;
+  }
+
+  /* Main workspaces on tablet */
+  .main-content,
+  .admin-main-workspace {
+    padding: 22px 22px 40px 22px !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow-y: visible !important;
+  }
+
+  .login-page-container,
+  .register-page-container {
+    padding: 32px 24px !important;
+  }
+}
+
+/* ─── Mobile Screen Breakpoint (<= 768px) ─── */
+@media (max-width: 768px) {
+  .main-content,
+  .admin-main-workspace {
+    padding: 16px 14px 36px 14px !important;
+  }
+
+  /* Login & Registration Page Responsive Stack */
+  .login-page-container,
+  .register-page-container {
+    padding: 20px 16px !important;
+    min-height: 100vh;
+    align-items: flex-start !important;
+  }
+
+  .login-split-layout,
+  .register-split-layout {
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: stretch !important;
+  }
+
+  .login-left-content,
+  .register-left-content {
+    flex: 1 1 auto !important;
+    max-width: 100% !important;
+    text-align: center;
+    margin-bottom: 0 !important;
+  }
+
+  .login-brand-header,
+  .register-brand-header {
+    justify-content: center !important;
+    margin-bottom: 16px !important;
+  }
+
+  .login-main-heading {
+    font-size: 32px !important;
+    margin-bottom: 8px !important;
+    line-height: 1.2 !important;
+  }
+
+  .register-main-heading {
+    font-size: 26px !important;
+    margin-bottom: 8px !important;
+    line-height: 1.2 !important;
+  }
+
+  .login-sub-heading,
+  .register-sub-heading {
+    font-size: 15px !important;
+    margin-bottom: 6px !important;
+  }
+
+  /* Hide redundant descriptive blocks on mobile to eliminate huge vertical scrolling */
+  .login-desc-text,
+  .register-features,
+  .register-desc-text {
+    display: none !important;
+  }
+
+  .login-card,
+  .register-card {
+    flex: 1 1 auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 24px 18px !important;
+    border-radius: 20px !important;
+  }
+
+  .login-card h2,
+  .register-card h2 {
+    font-size: 22px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .login-card-header {
+    margin-bottom: 20px !important;
+  }
+
+  /* Assessment Page Layout on Mobile */
+  .assessment-main-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* Course Detail Header Banner */
+  .course-detail-banner {
+    padding: 20px 16px !important;
+  }
+}
+
+/* ─── Small Phones Breakpoint (<= 480px / 320px) ─── */
+@media (max-width: 480px) {
+  .topbar-header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .course-catalog-grid,
+  .certificates-grid,
+  .mylearning-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .register-cat-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .login-page-container,
+  .register-page-container {
+    padding: 16px 12px !important;
+  }
+
+  .login-card,
+  .register-card {
+    padding: 20px 14px !important;
+    border-radius: 16px !important;
+  }
 }

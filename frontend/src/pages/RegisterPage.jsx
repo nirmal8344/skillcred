@@ -345,18 +345,21 @@ export const RegisterPage = () => {
   };
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      background: 'linear-gradient(135deg, #E0EAFC 0%, #CFDEF3 100%)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '40px 56px',
-      boxSizing: 'border-box',
-      fontFamily: fontBody,
-      position: 'relative',
-      overflow: 'hidden',
-    }}>
+    <div
+      className="register-page-container"
+      style={{
+        minHeight: '100vh',
+        background: 'linear-gradient(135deg, #E0EAFC 0%, #CFDEF3 100%)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '40px 56px',
+        boxSizing: 'border-box',
+        fontFamily: fontBody,
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+    >
       {/* Subtle background decoration with reduced brightness & glow */}
       <div style={{
         position: 'absolute',
@@ -403,12 +406,15 @@ export const RegisterPage = () => {
           className="register-left-content"
         >
           {/* Official SkillCred Branding */}
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '18px',
-            marginBottom: '44px',
-          }}>
+          <div
+            className="register-brand-header"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '18px',
+              marginBottom: '44px',
+            }}
+          >
             <img
               src="/assets/skillcred_logo.png"
               alt="SkillCred Logo"
@@ -449,50 +455,62 @@ export const RegisterPage = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 style={{
-            fontSize: 'clamp(42px, 5vw, 56px)',
-            fontWeight: '700',
-            lineHeight: 1.15,
-            letterSpacing: '-1.5px',
-            margin: '0 0 20px 0',
-            color: '#0F172A',
-            fontFamily: fontOutfit,
-          }}>
+          <h1
+            className="register-main-heading"
+            style={{
+              fontSize: 'clamp(42px, 5vw, 56px)',
+              fontWeight: '700',
+              lineHeight: 1.15,
+              letterSpacing: '-1.5px',
+              margin: '0 0 20px 0',
+              color: '#0F172A',
+              fontFamily: fontOutfit,
+            }}
+          >
             Learn New Skills. Earn Your Certificate.
           </h1>
 
           {/* Supporting Line */}
-          <p style={{
-            fontSize: '21px',
-            fontWeight: '600',
-            color: '#1E293B',
-            margin: '0 0 16px 0',
-            lineHeight: 1.45,
-            fontFamily: fontOutfit,
-          }}>
+          <p
+            className="register-sub-heading"
+            style={{
+              fontSize: '21px',
+              fontWeight: '600',
+              color: '#1E293B',
+              margin: '0 0 16px 0',
+              lineHeight: 1.45,
+              fontFamily: fontOutfit,
+            }}
+          >
             Learn at your own pace and prove what you know.
           </p>
 
           {/* Description */}
-          <p style={{
-            fontSize: '16px',
-            lineHeight: 1.75,
-            color: '#334155',
-            margin: '0 0 32px 0',
-            maxWidth: '500px',
-            fontWeight: '400',
-            fontFamily: fontInter,
-          }}>
+          <p
+            className="register-desc-text"
+            style={{
+              fontSize: '16px',
+              lineHeight: 1.75,
+              color: '#334155',
+              margin: '0 0 32px 0',
+              maxWidth: '500px',
+              fontWeight: '400',
+              fontFamily: fontInter,
+            }}
+          >
             Choose a course, complete the lessons, and take the assessment. Pass the test to earn your course completion certificate.
           </p>
 
           {/* Feature Highlights on Left Panel */}
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '15px',
-            maxWidth: '480px',
-          }}>
+          <div
+            className="register-features"
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '15px',
+              maxWidth: '480px',
+            }}
+          >
             <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
               <div style={{
                 width: '34px',

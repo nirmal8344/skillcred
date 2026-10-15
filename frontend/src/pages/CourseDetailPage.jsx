@@ -84,7 +84,7 @@ export const CourseDetailPage = () => {
       </button>
 
       {/* Course Header Banner */}
-      <div style={{
+      <div className="course-detail-banner" style={{
         background: 'linear-gradient(135deg, #E0EAFC 0%, #CFDEF3 100%)',
         borderRadius: '24px',
         padding: '36px',
@@ -97,7 +97,7 @@ export const CourseDetailPage = () => {
         gap: '24px',
         flexWrap: 'wrap',
       }}>
-        <div style={{ flex: 1, minWidth: '300px' }}>
+        <div style={{ flex: 1, minWidth: 'min(100%, 280px)' }}>
           <span style={{
             ...body,
             backgroundColor: '#E0EAFC',

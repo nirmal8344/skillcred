@@ -8,15 +8,17 @@ import {
   CircleUser, 
   ShieldCheck, 
   LogOut,
-  Sparkles
+  Sparkles,
+  X
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
-export const Sidebar = () => {
+export const Sidebar = ({ isOpen, onClose }) => {
   const { user, isAdmin, logout } = useAuth();
   const navigate = useNavigate();
 
   const handleLogout = () => {
+    onClose?.();
     logout();
     navigate('/login');
   };
@@ -30,7 +32,7 @@ export const Sidebar = () => {
   ];
 
   return (
-    <aside style={{
+    <aside className={`student-sidebar ${isOpen ? 'drawer-open' : ''}`} style={{
       width: '250px',
       background: 'linear-gradient(180deg, #E0EAFC 0%, #CFDEF3 100%)',
       borderRadius: '24px',
@@ -47,20 +49,31 @@ export const Sidebar = () => {
       zIndex: 10,
     }}>
       {/* Brand Header */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '32px', paddingLeft: '8px' }}>
-        <img
-          src="/assets/adzivo_icon.png"
-          alt="SkillCred Logo"
-          style={{ width: '42px', height: '42px', objectFit: 'contain', flexShrink: 0 }}
-        />
-        <div>
-          <h2 style={{ fontSize: '20px', fontWeight: '800', letterSpacing: '-0.3px', margin: 0, color: '#0F172A', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-            Skill<span style={{ color: '#2563EB' }}>C</span>red
-          </h2>
-          <span style={{ fontSize: '10.5px', color: '#475569', fontWeight: '600', letterSpacing: '0.8px', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-            By ADZ4NEEDZ
-          </span>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '32px', paddingLeft: '8px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <img
+            src="/assets/adzivo_icon.png"
+            alt="SkillCred Logo"
+            style={{ width: '42px', height: '42px', objectFit: 'contain', flexShrink: 0 }}
+          />
+          <div>
+            <h2 style={{ fontSize: '20px', fontWeight: '800', letterSpacing: '-0.3px', margin: 0, color: '#0F172A', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              Skill<span style={{ color: '#2563EB' }}>C</span>red
+            </h2>
+            <span style={{ fontSize: '10.5px', color: '#475569', fontWeight: '600', letterSpacing: '0.8px', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              By ADZ4NEEDZ
+            </span>
+          </div>
         </div>
+
+        {/* Mobile drawer close button */}
+        <button
+          onClick={onClose}
+          className="mobile-drawer-close"
+          aria-label="Close Navigation Menu"
+        >
+          <X size={18} />
+        </button>
       </div>
 
       {/* Navigation Links */}
@@ -71,6 +84,7 @@ export const Sidebar = () => {
             <NavLink
               key={item.path}
               to={item.path}
+              onClick={onClose}
               style={({ isActive }) => ({
                 display: 'flex',
                 alignItems: 'center',
@@ -88,7 +102,7 @@ export const Sidebar = () => {
                 transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
               })}
             >
-              <Icon size={20} strokeWidth={2} color="currentColor" style={{ flexShrink: 0 }} />
+              <Icon size={20} strokeWidth={1.75} color="currentColor" style={{ flexShrink: 0 }} />
               <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{item.name}</span>
             </NavLink>
           );

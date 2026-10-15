@@ -349,7 +349,7 @@ export const AssessmentPage = () => {
       </header>
 
       {/* ================= ASSESSMENT CONTENT CONTAINER ================= */}
-      <main style={{
+      <main className="assessment-main-grid" style={{
         flex: 1,
         maxWidth: '1240px',
         width: '100%',

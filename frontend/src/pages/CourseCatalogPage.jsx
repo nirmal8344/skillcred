@@ -178,9 +178,10 @@ export const CourseCatalogPage = () => {
         </div>
       ) : (
         <div
+          className="course-catalog-grid"
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(310px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))',
             gap: 22,
           }}
         >
