@@ -47,7 +47,7 @@ export const CertificatesPage = () => {
             justifyContent: 'center',
             marginBottom: '16px',
           }}>
-            <Award size={32} color="#2563EB" />
+            <Award size={32} color="#64748B" />
           </div>
           <h3 style={{ ...heading, fontSize: '18px', fontWeight: '600', color: '#0F172A', marginBottom: '8px' }}>
             No certificates earned yet
@@ -94,7 +94,7 @@ export const CertificatesPage = () => {
                   textAlign: 'center',
                   boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
                 }}>
-                  <div style={{ ...body, fontSize: '11px', fontWeight: '700', color: '#2563EB', textTransform: 'uppercase' }}>
+                  <div style={{ ...body, fontSize: '11px', fontWeight: '700', color: '#64748B', textTransform: 'uppercase' }}>
                     CERTIFICATE OF COMPLETION
                   </div>
                   <div style={{ ...heading, fontSize: '14px', fontWeight: '800', color: '#0F172A', marginTop: '2px' }}>
@@ -107,7 +107,7 @@ export const CertificatesPage = () => {
               <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-                    <span style={{ ...body, fontSize: '11px', fontWeight: '700', color: '#2563EB' }}>
+                    <span style={{ ...body, fontSize: '11px', fontWeight: '700', color: '#64748B' }}>
                       ID: {cert.certificateId}
                     </span>
                     <span className="badge badge-green" style={{ ...body }}>
@@ -149,7 +149,7 @@ export const CertificatesPage = () => {
                       borderRadius: '999px',
                       backgroundColor: '#E0EAFC',
                       border: '1px solid #CFDEF3',
-                      color: '#1E40AF',
+                      color: '#334155',
                       textDecoration: 'none',
                     }}
                     title="Public Verification Link"

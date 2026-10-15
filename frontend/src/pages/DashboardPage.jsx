@@ -26,15 +26,15 @@ import {
 
 /* ───────── category colors ───────── */
 const CATEGORY_COLORS = {
-  'Marketing & Growth': { bg: '#E0EAFC', text: '#1E40AF' },
-  'Engineering & Web': { bg: '#CFDEF3', text: '#1E3A8A' },
+  'Marketing & Growth': { bg: '#E0EAFC', text: '#334155' },
+  'Engineering & Web': { bg: '#CFDEF3', text: '#334155' },
   'Data & AI': { bg: '#FEF3C7', text: '#92400E' },
-  'Design & Product': { bg: '#E0EAFC', text: '#1E40AF' },
+  'Design & Product': { bg: '#E0EAFC', text: '#334155' },
   'Cloud & Infrastructure': { bg: '#ECFDF5', text: '#065F46' },
-  'Programming': { bg: '#CFDEF3', text: '#1E3A8A' },
-  'Security & Networks': { bg: '#E0EAFC', text: '#1E40AF' },
+  'Programming': { bg: '#CFDEF3', text: '#334155' },
+  'Security & Networks': { bg: '#E0EAFC', text: '#334155' },
 };
-const catColor = (cat) => CATEGORY_COLORS[cat] || { bg: '#E0EAFC', text: '#1E40AF' };
+const catColor = (cat) => CATEGORY_COLORS[cat] || { bg: '#E0EAFC', text: '#334155' };
 
 /* ───────── typography ───────── */
 const heading = { fontFamily: "'Plus Jakarta Sans', sans-serif" };
@@ -154,7 +154,7 @@ export const DashboardPage = () => {
                 width: 68,
                 height: 68,
                 borderRadius: 18,
-                background: 'linear-gradient(135deg, #1E40AF, #2563EB)',
+                background: 'linear-gradient(135deg, #334155, #64748B)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -207,8 +207,8 @@ export const DashboardPage = () => {
                   fontSize: 15,
                   fontWeight: 600,
                   borderRadius: 14,
-                  backgroundColor: '#2563EB',
-                  boxShadow: '0 4px 14px rgba(37, 99, 235, 0.3)',
+                  backgroundColor: '#64748B',
+                  boxShadow: '0 4px 14px rgba(100, 116, 139, 0.25)',
                   display: 'flex',
                   alignItems: 'center',
                   gap: 8,
@@ -324,7 +324,7 @@ export const DashboardPage = () => {
                         gap: 8,
                       }}
                     >
-                      <Award size={16} color="#2563EB" />
+                      <Award size={16} color="#64748B" />
                       <span>View Certificate</span>
                     </button>
                   ) : (
@@ -339,7 +339,7 @@ export const DashboardPage = () => {
                           padding: '11px 16px',
                           fontSize: 14,
                           fontWeight: 600,
-                          backgroundColor: '#2563EB',
+                          backgroundColor: '#64748B',
                           borderRadius: 12,
                           display: 'flex',
                           alignItems: 'center',
@@ -424,7 +424,7 @@ export const DashboardPage = () => {
                 gap: 6,
                 fontSize: 14,
                 fontWeight: 600,
-                color: '#2563EB',
+                color: '#64748B',
                 textDecoration: 'none',
               }}
             >
@@ -600,7 +600,7 @@ export const DashboardPage = () => {
                             style={{
                               background: 'none',
                               border: 'none',
-                              color: '#2563EB',
+                              color: '#64748B',
                               fontWeight: '600',
                               cursor: 'pointer',
                               fontSize: '13px',
@@ -614,7 +614,7 @@ export const DashboardPage = () => {
                             style={{
                               background: 'none',
                               border: 'none',
-                              color: '#2563EB',
+                              color: '#64748B',
                               fontWeight: '600',
                               cursor: 'pointer',
                               fontSize: '13px',
@@ -668,7 +668,7 @@ const SectionHeader = ({ title, linkTo, linkLabel }) => (
           gap: 4,
           fontSize: 14,
           fontWeight: 500,
-          color: '#2563EB',
+          color: '#64748B',
           textDecoration: 'none',
         }}
       >
@@ -759,7 +759,7 @@ const ProgressRing = ({ percent, size = 64 }) => {
   const r = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * r;
   const offset = circumference - (percent / 100) * circumference;
-  const color = percent === 100 ? '#059669' : '#2563EB';
+  const color = percent === 100 ? '#059669' : '#64748B';
 
   return (
     <div style={{ position: 'relative', width: size, height: size }}>
@@ -865,7 +865,7 @@ const CourseCard = ({ enrollment: en, navigate }) => {
               ...heading,
               fontSize: 14,
               fontWeight: 600,
-              color: isCompleted ? '#059669' : '#2563EB',
+              color: isCompleted ? '#059669' : '#64748B',
             }}
           >
             {en.progressPercent}%
@@ -886,7 +886,7 @@ const CourseCard = ({ enrollment: en, navigate }) => {
               height: '100%',
               background: isCompleted
                 ? '#059669'
-                : 'linear-gradient(90deg, #2563EB, #60A5FA)',
+                : 'linear-gradient(90deg, #64748B, #94A3B8)',
               borderRadius: 999,
               transition: 'width 0.4s ease',
             }}
@@ -903,7 +903,7 @@ const CourseCard = ({ enrollment: en, navigate }) => {
               padding: '11px 16px',
               fontSize: 14,
               fontWeight: 600,
-              backgroundColor: '#2563EB',
+              backgroundColor: '#64748B',
               borderRadius: 12,
               display: 'flex',
               alignItems: 'center',
@@ -919,7 +919,7 @@ const CourseCard = ({ enrollment: en, navigate }) => {
               onClick={() => navigate('/certificates')}
               style={{
                 backgroundColor: '#E0EAFC',
-                color: '#1E40AF',
+                color: '#334155',
                 border: '1px solid #CFDEF3',
                 padding: '11px 16px',
                 borderRadius: 12,

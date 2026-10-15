@@ -48,7 +48,7 @@ export const ProfilePage = () => {
             width: '68px',
             height: '68px',
             borderRadius: '50%',
-            background: 'linear-gradient(135deg, #1E40AF, #2563EB)',
+            background: 'linear-gradient(135deg, #334155, #64748B)',
             color: '#FFFFFF',
             fontSize: '26px',
             fontWeight: '800',
@@ -151,7 +151,7 @@ export const ProfilePage = () => {
               <label style={{ ...body, fontSize: '13px', fontWeight: '700', color: '#1E293B' }}>
                 Certificate Display Name
               </label>
-              <span style={{ ...body, fontSize: '11px', color: '#2563EB', fontWeight: '700' }}>
+              <span style={{ ...body, fontSize: '11px', color: '#64748B', fontWeight: '700' }}>
                 Official Credential Authority
               </span>
             </div>

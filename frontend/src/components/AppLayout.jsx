@@ -25,7 +25,7 @@ export const AppLayout = () => {
             width: '44px',
             height: '44px',
             border: '4px solid #CFDEF3',
-            borderTop: '4px solid #2563EB',
+            borderTop: '4px solid #64748B',
             borderRadius: '50%',
             animation: 'spin 0.8s linear infinite',
           }} />
@@ -35,7 +35,7 @@ export const AppLayout = () => {
               100% { transform: rotate(360deg); }
             }
           `}</style>
-          <span style={{ fontSize: '14px', fontWeight: '600', color: '#1E40AF' }}>
+          <span style={{ fontSize: '14px', fontWeight: '600', color: '#334155' }}>
             Loading SkillCred...
           </span>
         </div>

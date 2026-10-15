@@ -789,7 +789,7 @@ export const AdminDashboardPage = () => {
   if (loading) {
     return (
       <div style={{ ...body, padding: '80px', textAlign: 'center', color: '#64748B' }}>
-        <RotateCcw size={32} color="#2563EB" className="animate-spin-slow" style={{ margin: '0 auto 16px auto' }} />
+        <RotateCcw size={32} color="#64748B" className="animate-spin-slow" style={{ margin: '0 auto 16px auto' }} />
         <p style={{ fontWeight: '600' }}>Loading Admin Console & Analytics...</p>
       </div>
     );
@@ -852,7 +852,7 @@ export const AdminDashboardPage = () => {
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
                 <span style={{ ...body, fontSize: '13px', color: '#64748B', fontWeight: '600' }}>Active Learners</span>
                 <div style={{ width: '36px', height: '36px', borderRadius: '10px', backgroundColor: '#E0EAFC', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <Users size={18} color="#2563EB" />
+                  <Users size={18} color="#64748B" />
                 </div>
               </div>
               <div style={{ ...heading, fontSize: '26px', fontWeight: '800', color: '#0F172A' }}>
@@ -969,7 +969,7 @@ export const AdminDashboardPage = () => {
               </h3>
               <button
                 onClick={() => navigate('/admin?tab=payments')}
-                style={{ ...body, background: 'none', border: 'none', color: '#2563EB', fontWeight: '700', fontSize: '13px', cursor: 'pointer' }}
+                style={{ ...body, background: 'none', border: 'none', color: '#64748B', fontWeight: '700', fontSize: '13px', cursor: 'pointer' }}
               >
                 View All Payments ({payments.length}) →
               </button>
@@ -997,7 +997,7 @@ export const AdminDashboardPage = () => {
                       <td style={{ padding: '12px 14px', color: '#334155' }}>
                         {p.courseTitle}
                       </td>
-                      <td style={{ padding: '12px 14px', fontFamily: 'monospace', fontWeight: '700', color: '#1E40AF' }}>
+                      <td style={{ padding: '12px 14px', fontFamily: 'monospace', fontWeight: '700', color: '#334155' }}>
                         {p.utrNumber}
                       </td>
                       <td style={{ padding: '12px 14px', fontWeight: '700', color: '#0F172A' }}>
@@ -1062,10 +1062,10 @@ export const AdminDashboardPage = () => {
                     ...body,
                     padding: '8px 16px',
                     borderRadius: '20px',
-                    backgroundColor: paymentFilter === f.id ? '#2563EB' : '#FFFFFF',
+                    backgroundColor: paymentFilter === f.id ? '#64748B' : '#FFFFFF',
                     color: paymentFilter === f.id ? '#FFFFFF' : '#334155',
                     border: '1px solid',
-                    borderColor: paymentFilter === f.id ? '#2563EB' : '#CFDEF3',
+                    borderColor: paymentFilter === f.id ? '#64748B' : '#CFDEF3',
                     fontSize: '13px',
                     fontWeight: '600',
                     cursor: 'pointer',
@@ -1077,7 +1077,7 @@ export const AdminDashboardPage = () => {
                   <span>{f.label}</span>
                   <span style={{
                     backgroundColor: paymentFilter === f.id ? 'rgba(255,255,255,0.25)' : '#E0EAFC',
-                    color: paymentFilter === f.id ? '#FFFFFF' : '#1E40AF',
+                    color: paymentFilter === f.id ? '#FFFFFF' : '#334155',
                     padding: '1px 7px',
                     borderRadius: '10px',
                     fontSize: '11px',
@@ -1119,7 +1119,7 @@ export const AdminDashboardPage = () => {
                         {p.courseTitle}
                       </td>
                       <td style={{ padding: '14px' }}>
-                        <div style={{ fontFamily: 'monospace', fontWeight: '700', color: '#1E40AF', fontSize: '14px' }}>
+                        <div style={{ fontFamily: 'monospace', fontWeight: '700', color: '#334155', fontSize: '14px' }}>
                           {p.utrNumber}
                         </div>
                         {p.notes && (
@@ -1153,7 +1153,7 @@ export const AdminDashboardPage = () => {
                               alt="Proof thumbnail"
                               style={{ width: '44px', height: '44px', objectFit: 'cover', borderRadius: '6px' }}
                             />
-                            <Eye size={14} color="#2563EB" style={{ margin: '0 4px' }} />
+                            <Eye size={14} color="#64748B" style={{ margin: '0 4px' }} />
                           </button>
                         ) : (
                           <span style={{ color: '#94A3B8', fontSize: '12px' }}>No image</span>
@@ -1172,7 +1172,7 @@ export const AdminDashboardPage = () => {
                               href={`/certificates/${p.certificateId}`}
                               target="_blank"
                               rel="noreferrer"
-                              style={{ fontSize: '11px', color: '#2563EB', textDecoration: 'none', fontWeight: '600' }}
+                              style={{ fontSize: '11px', color: '#64748B', textDecoration: 'none', fontWeight: '600' }}
                             >
                               View Certificate ↗
                             </a>
@@ -1453,7 +1453,7 @@ export const AdminDashboardPage = () => {
             {/* Live Student Checkout Preview Card */}
             <div className="skill-card" style={{ padding: '32px', backgroundColor: '#F8FAFD' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
-                <Eye size={18} color="#2563EB" />
+                <Eye size={18} color="#64748B" />
                 <h3 style={{ ...heading, fontSize: '16px', fontWeight: '800', color: '#0F172A', margin: 0 }}>
                   Live Candidate Checkout Preview
                 </h3>
@@ -1602,7 +1602,7 @@ export const AdminDashboardPage = () => {
                     fontSize: '12px',
                     color: '#475569',
                   }}>
-                    <span style={{ fontWeight: '700', color: '#1E40AF' }}>
+                    <span style={{ fontWeight: '700', color: '#334155' }}>
                       {course.questionCount || 0} Questions
                     </span>
                     <span>•</span>
@@ -1709,7 +1709,7 @@ export const AdminDashboardPage = () => {
                         <span style={{
                           fontSize: '12px',
                           fontWeight: '800',
-                          color: '#2563EB',
+                          color: '#64748B',
                           backgroundColor: '#EFF8FF',
                           border: '1px solid #B2DDFF',
                           padding: '3px 10px',
@@ -1733,7 +1733,7 @@ export const AdminDashboardPage = () => {
                       display: 'flex',
                       justifyContent: 'space-between',
                       alignItems: 'center',
-                      color: '#2563EB',
+                      color: '#64748B',
                       fontSize: '13px',
                       fontWeight: '700',
                     }}>
@@ -1784,7 +1784,7 @@ export const AdminDashboardPage = () => {
                           gap: '6px',
                           fontSize: '12.5px',
                           fontWeight: '700',
-                          color: '#1E40AF',
+                          color: '#334155',
                           flexShrink: 0,
                         }}
                       >
@@ -1800,7 +1800,7 @@ export const AdminDashboardPage = () => {
                           <span style={{
                             fontSize: '11.5px',
                             fontWeight: '800',
-                            color: '#2563EB',
+                            color: '#64748B',
                             backgroundColor: '#EFF8FF',
                             border: '1px solid #B2DDFF',
                             padding: '2px 8px',
@@ -1827,7 +1827,7 @@ export const AdminDashboardPage = () => {
                           display: 'inline-flex',
                           alignItems: 'center',
                           gap: '6px',
-                          backgroundColor: '#2563EB',
+                          backgroundColor: '#64748B',
                           color: '#FFFFFF',
                           borderRadius: '10px',
                           border: 'none',
@@ -1900,7 +1900,7 @@ export const AdminDashboardPage = () => {
                         <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                           <span style={{
                             backgroundColor: '#E0EAFC',
-                            color: '#1E40AF',
+                            color: '#334155',
                             fontWeight: '800',
                             fontSize: '12px',
                             padding: '4px 10px',
@@ -1940,7 +1940,7 @@ export const AdminDashboardPage = () => {
                               borderRadius: '8px',
                               border: '1px solid #CFDEF3',
                               backgroundColor: '#FFFFFF',
-                              color: '#2563EB',
+                              color: '#64748B',
                               cursor: 'pointer',
                               display: 'flex',
                               alignItems: 'center',
@@ -2064,8 +2064,8 @@ export const AdminDashboardPage = () => {
                           padding: '10px 14px',
                           borderRadius: '8px',
                           fontSize: '12.5px',
-                          color: '#1E40AF',
-                          borderLeft: '3px solid #2563EB',
+                          color: '#334155',
+                          borderLeft: '3px solid #64748B',
                           lineHeight: 1.45,
                         }}>
                           <strong>Explanation:</strong> {q.explanation}
@@ -2190,7 +2190,7 @@ export const AdminDashboardPage = () => {
                     <tr key={s.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
                       <td style={{ padding: '14px', fontWeight: '700', color: '#0F172A' }}>
                         <div>{s.fullName}</div>
-                        <div style={{ fontSize: '11.5px', color: '#1E40AF', fontWeight: '600', marginTop: '2px' }}>
+                        <div style={{ fontSize: '11.5px', color: '#334155', fontWeight: '600', marginTop: '2px' }}>
                           Cert: {s.certificateDisplayName || s.fullName}
                         </div>
                       </td>
@@ -2232,7 +2232,7 @@ export const AdminDashboardPage = () => {
                             borderRadius: '8px',
                             backgroundColor: '#E0EAFC',
                             border: '1px solid #CFDEF3',
-                            color: '#1E40AF',
+                            color: '#334155',
                             fontSize: '12px',
                             fontWeight: '700',
                             cursor: 'pointer',
@@ -2307,7 +2307,7 @@ export const AdminDashboardPage = () => {
 
             <div style={{ flex: '1 1 300px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
-                <Award size={18} color="#2563EB" />
+                <Award size={18} color="#64748B" />
                 <h3 style={{ ...heading, fontSize: '16px', fontWeight: '800', color: '#0F172A', margin: 0 }}>
                   ADZ4NEEDZ Official Certificate Specification
                 </h3>
@@ -2364,7 +2364,7 @@ export const AdminDashboardPage = () => {
                   fontSize: '12.5px',
                   fontWeight: '700',
                   textDecoration: 'none',
-                  color: '#1E40AF',
+                  color: '#334155',
                   backgroundColor: '#EFF8FF',
                   border: '1px solid #B2DDFF',
                   justifyContent: 'center',
@@ -2398,7 +2398,7 @@ export const AdminDashboardPage = () => {
                     const isValid = cert.status === 'VALID';
                     return (
                       <tr key={cert.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
-                        <td style={{ padding: '14px', fontFamily: 'monospace', fontWeight: '700', color: '#1E40AF' }}>
+                        <td style={{ padding: '14px', fontFamily: 'monospace', fontWeight: '700', color: '#334155' }}>
                           {cert.certificateId}
                         </td>
                         <td style={{ padding: '14px', fontWeight: '700', color: '#0F172A' }}>
@@ -2426,7 +2426,7 @@ export const AdminDashboardPage = () => {
                                 borderRadius: '8px',
                                 backgroundColor: '#E0EAFC',
                                 border: '1px solid #CFDEF3',
-                                color: '#1E40AF',
+                                color: '#334155',
                                 fontSize: '11px',
                                 fontWeight: '600',
                                 textDecoration: 'none',
@@ -2506,7 +2506,7 @@ export const AdminDashboardPage = () => {
             </div>
             <div className="skill-card" style={{ padding: '20px' }}>
               <div style={{ fontSize: '12px', color: '#64748B', fontWeight: '600', marginBottom: '4px' }}>Passing Standard</div>
-              <div style={{ ...heading, fontSize: '24px', fontWeight: '800', color: '#2563EB' }}>18/30 (60%)</div>
+              <div style={{ ...heading, fontSize: '24px', fontWeight: '800', color: '#64748B' }}>18/30 (60%)</div>
             </div>
           </div>
 
@@ -2545,8 +2545,8 @@ export const AdminDashboardPage = () => {
                     padding: '8px 14px',
                     borderRadius: '8px',
                     border: '1px solid',
-                    borderColor: auditFilterResult === res ? '#2563EB' : '#CFDEF3',
-                    backgroundColor: auditFilterResult === res ? '#2563EB' : '#FFFFFF',
+                    borderColor: auditFilterResult === res ? '#64748B' : '#CFDEF3',
+                    backgroundColor: auditFilterResult === res ? '#64748B' : '#FFFFFF',
                     color: auditFilterResult === res ? '#FFFFFF' : '#334155',
                     fontSize: '12px',
                     fontWeight: '700',
@@ -2583,7 +2583,7 @@ export const AdminDashboardPage = () => {
                         {att.studentName}
                         <div style={{ fontSize: '11px', color: '#64748B', fontWeight: '400' }}>{att.studentEmail}</div>
                       </td>
-                      <td style={{ padding: '14px', color: '#1E40AF', fontWeight: '600' }}>
+                      <td style={{ padding: '14px', color: '#334155', fontWeight: '600' }}>
                         {att.assessmentTitle}
                       </td>
                       <td style={{ padding: '14px', color: '#334155', fontWeight: '600' }}>
@@ -2690,7 +2690,7 @@ export const AdminDashboardPage = () => {
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '6px',
-                  color: '#2563EB',
+                  color: '#64748B',
                   fontSize: '13px',
                   fontWeight: '600',
                   textDecoration: 'none',
@@ -2959,7 +2959,7 @@ export const AdminDashboardPage = () => {
                   borderRadius: '12px',
                   border: '1px solid #E2E8F0',
                 }}>
-                  <div style={{ fontSize: '13px', fontWeight: '700', color: '#1E40AF', marginBottom: '12px' }}>
+                  <div style={{ fontSize: '13px', fontWeight: '700', color: '#334155', marginBottom: '12px' }}>
                     Assessment Settings (Evaluation Parameters)
                   </div>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
@@ -3899,7 +3899,7 @@ export const AdminDashboardPage = () => {
                   }}
                 >
                   <div>
-                    <span style={{ fontFamily: 'monospace', fontWeight: '700', color: '#1E40AF', marginRight: '8px' }}>
+                    <span style={{ fontFamily: 'monospace', fontWeight: '700', color: '#334155', marginRight: '8px' }}>
                       {c.certificateId}
                     </span>
                     <span style={{ color: '#0F172A', fontWeight: '600' }}>{c.courseTitle}</span>
@@ -3908,7 +3908,7 @@ export const AdminDashboardPage = () => {
                     href={`/certificates/${c.certificateId}`}
                     target="_blank"
                     rel="noreferrer"
-                    style={{ color: '#2563EB', fontWeight: '700', textDecoration: 'none', fontSize: '12px' }}
+                    style={{ color: '#64748B', fontWeight: '700', textDecoration: 'none', fontSize: '12px' }}
                   >
                     View ↗
                   </a>

@@ -60,7 +60,7 @@ export const AdminLayout = () => {
             width: '44px',
             height: '44px',
             border: '4px solid #CFDEF3',
-            borderTop: '4px solid #2563EB',
+            borderTop: '4px solid #64748B',
             borderRadius: '50%',
             animation: 'spin 0.8s linear infinite',
           }} />
@@ -70,7 +70,7 @@ export const AdminLayout = () => {
               100% { transform: rotate(360deg); }
             }
           `}</style>
-          <span style={{ fontSize: '14px', fontWeight: '600', color: '#1E40AF', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+          <span style={{ fontSize: '14px', fontWeight: '600', color: '#334155', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             Validating Administrator Credentials...
           </span>
         </div>
@@ -136,10 +136,10 @@ export const AdminLayout = () => {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               <h2 style={{ fontSize: '20px', fontWeight: '800', letterSpacing: '-0.3px', margin: 0, color: '#0F172A', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-                Skill<span style={{ color: '#2563EB' }}>C</span>red
+                Skill<span style={{ color: '#64748B' }}>C</span>red
               </h2>
               <span style={{
-                backgroundColor: '#2563EB',
+                backgroundColor: '#64748B',
                 color: '#FFFFFF',
                 fontSize: '9.5px',
                 fontWeight: '800',
@@ -174,7 +174,7 @@ export const AdminLayout = () => {
                   fontSize: '13.5px',
                   fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontWeight: isActive ? '700' : '500',
-                  color: isActive ? '#1E40AF' : '#334155',
+                  color: isActive ? '#334155' : '#334155',
                   backgroundColor: isActive ? '#FFFFFF' : 'transparent',
                   boxShadow: isActive ? '0 4px 14px rgba(15, 23, 42, 0.08)' : 'none',
                   border: isActive ? '1px solid rgba(255, 255, 255, 0.9)' : '1px solid transparent',
@@ -184,7 +184,7 @@ export const AdminLayout = () => {
                   transition: 'all 0.15s ease',
                 }}
               >
-                <Icon size={18} color={isActive ? '#1E40AF' : '#64748B'} style={{ flexShrink: 0 }} />
+                <Icon size={18} color={isActive ? '#334155' : '#64748B'} style={{ flexShrink: 0 }} />
                 <span style={{ flex: 1 }}>{item.name}</span>
                 {item.badge > 0 && (
                   <span style={{
@@ -216,7 +216,7 @@ export const AdminLayout = () => {
               width: '36px',
               height: '36px',
               borderRadius: '50%',
-              backgroundColor: '#1E40AF',
+              backgroundColor: '#334155',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -230,7 +230,7 @@ export const AdminLayout = () => {
               <div style={{ fontSize: '13px', fontWeight: '700', color: '#0F172A', whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>
                 {user?.fullName || 'Administrator'}
               </div>
-              <div style={{ fontSize: '10.5px', color: '#1E40AF', fontWeight: '700', letterSpacing: '0.3px' }}>
+              <div style={{ fontSize: '10.5px', color: '#334155', fontWeight: '700', letterSpacing: '0.3px' }}>
                 SYSTEM ADMIN
               </div>
             </div>

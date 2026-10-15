@@ -70,7 +70,7 @@ export const CourseDetailPage = () => {
           alignItems: 'center',
           gap: '6px',
           background: 'none',
-          color: '#2563EB',
+          color: '#64748B',
           fontSize: '13px',
           fontWeight: '700',
           marginBottom: '20px',
@@ -101,7 +101,7 @@ export const CourseDetailPage = () => {
           <span style={{
             ...body,
             backgroundColor: '#E0EAFC',
-            color: '#1E40AF',
+            color: '#334155',
             border: '1px solid #CFDEF3',
             padding: '5px 14px',
             borderRadius: '999px',
@@ -121,11 +121,11 @@ export const CourseDetailPage = () => {
 
           <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
             <div style={{ ...body, display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', color: '#334155', fontWeight: '600' }}>
-              <Clock size={16} color="#2563EB" />
+              <Clock size={16} color="#64748B" />
               <span>Exam Time: 40 Minutes</span>
             </div>
             <div style={{ ...body, display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', color: '#334155', fontWeight: '600' }}>
-              <LayoutList size={16} color="#2563EB" />
+              <LayoutList size={16} color="#64748B" />
               <span>30 Questions • Randomized Pool</span>
             </div>
             <div style={{ ...body, display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', color: '#334155', fontWeight: '600' }}>
@@ -235,7 +235,7 @@ export const CourseDetailPage = () => {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                   <span style={{
                     ...body,
-                    backgroundColor: '#2563EB',
+                    backgroundColor: '#64748B',
                     color: '#FFFFFF',
                     width: '26px',
                     height: '26px',
@@ -252,7 +252,7 @@ export const CourseDetailPage = () => {
                     {mod.title}
                   </h4>
                 </div>
-                <span style={{ ...body, fontSize: '12px', color: '#2563EB', fontWeight: '600' }}>
+                <span style={{ ...body, fontSize: '12px', color: '#64748B', fontWeight: '600' }}>
                   Tested Domain
                 </span>
               </div>

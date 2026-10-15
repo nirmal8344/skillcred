@@ -123,7 +123,7 @@ export const CourseLearningPage = () => {
               alignItems: 'center',
               gap: '6px',
               background: 'none',
-              color: '#2563EB',
+              color: '#64748B',
               fontSize: '12px',
               fontWeight: '700',
               marginBottom: '12px',
@@ -140,7 +140,7 @@ export const CourseLearningPage = () => {
 
           <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', fontWeight: '600', color: '#64748B', marginBottom: '6px' }}>
             <span>Course Progress</span>
-            <span style={{ color: isAllCompleted ? '#027A48' : '#2563EB', fontWeight: '800' }}>
+            <span style={{ color: isAllCompleted ? '#027A48' : '#64748B', fontWeight: '800' }}>
               {enrollment?.progressPercent || 0}%
             </span>
           </div>
@@ -149,7 +149,7 @@ export const CourseLearningPage = () => {
             <div style={{
               width: `${enrollment?.progressPercent || 0}%`,
               height: '100%',
-              backgroundColor: isAllCompleted ? '#12B76A' : '#2563EB',
+              backgroundColor: isAllCompleted ? '#12B76A' : '#64748B',
               borderRadius: '999px',
               transition: 'width 0.3s ease',
             }} />
@@ -204,7 +204,7 @@ export const CourseLearningPage = () => {
                         <span style={{
                           fontSize: '13px',
                           fontWeight: isCurrent ? '700' : '500',
-                          color: isCurrent ? '#1E40AF' : '#334155',
+                          color: isCurrent ? '#334155' : '#334155',
                           overflow: 'hidden',
                           textOverflow: 'ellipsis',
                           whiteSpace: 'nowrap',
@@ -235,8 +235,8 @@ export const CourseLearningPage = () => {
               gap: '8px',
               padding: '12px',
               borderRadius: '14px',
-              backgroundColor: isAllCompleted ? '#2563EB' : '#E0EAFC',
-              color: isAllCompleted ? '#FFFFFF' : '#1E40AF',
+              backgroundColor: isAllCompleted ? '#64748B' : '#E0EAFC',
+              color: isAllCompleted ? '#FFFFFF' : '#334155',
               border: isAllCompleted ? 'none' : '1px solid #CFDEF3',
               fontWeight: '700',
               fontSize: '13px',
@@ -364,7 +364,7 @@ export const CourseLearningPage = () => {
                   marginBottom: '28px',
                 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-                    <FileText size={22} color="#2563EB" />
+                    <FileText size={22} color="#64748B" />
                     <h3 style={{ fontSize: '17px', fontWeight: '700', color: '#0F172A', margin: 0 }}>
                       Study Material & Practical Reading
                     </h3>

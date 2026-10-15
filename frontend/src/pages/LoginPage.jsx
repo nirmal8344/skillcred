@@ -149,7 +149,7 @@ export const LoginPage = () => {
                 lineHeight: 1.1,
                 fontFamily: brandFont,
               }}>
-                Skill<span style={{ color: '#2563EB' }}>C</span>red
+                Skill<span style={{ color: '#64748B' }}>C</span>red
               </span>
               <span style={{
                 fontSize: '12.5px',
@@ -298,8 +298,8 @@ export const LoginPage = () => {
                   fontFamily: fontInter,
                 }}
                 onFocus={(e) => {
-                  e.target.style.borderColor = '#2563EB';
-                  e.target.style.boxShadow = '0 0 0 3px rgba(207, 222, 243, 0.45)';
+                  e.target.style.borderColor = '#64748B';
+                  e.target.style.boxShadow = '0 0 0 3px rgba(100, 116, 139, 0.25)';
                   e.target.style.backgroundColor = '#FFFFFF';
                 }}
                 onBlur={(e) => {
@@ -344,8 +344,8 @@ export const LoginPage = () => {
                     fontFamily: fontInter,
                   }}
                   onFocus={(e) => {
-                    e.target.style.borderColor = '#2563EB';
-                    e.target.style.boxShadow = '0 0 0 3px rgba(207, 222, 243, 0.45)';
+                    e.target.style.borderColor = '#64748B';
+                    e.target.style.boxShadow = '0 0 0 3px rgba(100, 116, 139, 0.25)';
                     e.target.style.backgroundColor = '#FFFFFF';
                   }}
                   onBlur={(e) => {
@@ -393,7 +393,7 @@ export const LoginPage = () => {
                   fontFamily: fontInter,
                   transition: 'color 0.2s',
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#2563EB')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#64748B')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = '#71717A')}
               >
                 Forgot Password?
@@ -408,14 +408,14 @@ export const LoginPage = () => {
                 width: '100%',
                 padding: '17px',
                 borderRadius: '14px',
-                background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)',
+                background: '#64748B',
                 color: '#FFFFFF',
                 fontSize: '16px',
                 fontWeight: '600',
                 border: 'none',
                 cursor: submitting ? 'not-allowed' : 'pointer',
                 opacity: submitting ? 0.7 : 1,
-                boxShadow: '0 4px 16px rgba(37, 99, 235, 0.3)',
+                boxShadow: '0 4px 14px rgba(100, 116, 139, 0.25)',
                 transition: 'all 0.2s ease',
                 marginTop: '6px',
                 fontFamily: fontInter,
@@ -423,16 +423,21 @@ export const LoginPage = () => {
               }}
               onMouseEnter={(e) => {
                 if (!submitting) {
-                  e.currentTarget.style.background = '#1D4ED8';
-                  e.currentTarget.style.boxShadow = '0 6px 22px rgba(37, 99, 235, 0.45)';
+                  e.currentTarget.style.background = '#475569';
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(100, 116, 139, 0.35)';
                   e.currentTarget.style.transform = 'translateY(-1px)';
                 }
               }}
               onMouseLeave={(e) => {
                 if (!submitting) {
-                  e.currentTarget.style.background = 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)';
-                  e.currentTarget.style.boxShadow = '0 4px 16px rgba(37, 99, 235, 0.3)';
+                  e.currentTarget.style.background = '#64748B';
+                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(100, 116, 139, 0.25)';
                   e.currentTarget.style.transform = 'translateY(0)';
+                }
+              }}
+              onMouseDown={(e) => {
+                if (!submitting) {
+                  e.currentTarget.style.background = '#334155';
                 }
               }}
             >
@@ -453,8 +458,8 @@ export const LoginPage = () => {
             <Link
               to="/register"
               style={{
-                color: '#2563EB',
-                fontWeight: '600',
+                color: '#0F172A',
+                fontWeight: '700',
                 textDecoration: 'none',
                 transition: 'color 0.2s',
               }}
@@ -499,7 +504,7 @@ export const LoginPage = () => {
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}>
-                  <HelpCircle size={18} color="#1E40AF" />
+                  <HelpCircle size={18} color="#334155" />
                 </div>
                 <h3 style={{ fontSize: '16px', fontWeight: '800', color: '#0F172A', margin: 0, letterSpacing: '-0.3px' }}>
                   Reset Password
@@ -537,14 +542,18 @@ export const LoginPage = () => {
                 width: '100%',
                 padding: '12px',
                 borderRadius: '12px',
-                background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)',
+                background: '#64748B',
                 color: '#FFFFFF',
                 fontSize: '13.5px',
                 fontWeight: '700',
                 border: 'none',
                 cursor: 'pointer',
                 fontFamily: fontStack,
+                transition: 'background 0.2s',
               }}
+              onMouseEnter={(e) => (e.currentTarget.style.background = '#475569')}
+              onMouseLeave={(e) => (e.currentTarget.style.background = '#64748B')}
+              onMouseDown={(e) => (e.currentTarget.style.background = '#334155')}
             >
               Close
             </button>

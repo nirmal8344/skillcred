@@ -8,13 +8,13 @@ import { TopBar } from '../components/TopBar';
 const CATEGORY_COLORS = {
   'AI & Technology': { bg: '#EDE9FE', text: '#5B21B6' },
   'Data & AI': { bg: '#FEF3C7', text: '#92400E' },
-  'Engineering & Web': { bg: '#DBEAFE', text: '#1E40AF' },
+  'Engineering & Web': { bg: '#DBEAFE', text: '#334155' },
   'Data & Analytics': { bg: '#E0E7FF', text: '#3730A3' },
   'Business & Management': { bg: '#FCE7F3', text: '#9D174D' },
   'Sales & Business': { bg: '#FFEDD5', text: '#9A3412' },
   'Healthcare & Coding': { bg: '#D1FAE5', text: '#065F46' },
 };
-const catColor = (cat) => CATEGORY_COLORS[cat] || { bg: '#E0EAFC', text: '#1E40AF' };
+const catColor = (cat) => CATEGORY_COLORS[cat] || { bg: '#E0EAFC', text: '#334155' };
 
 /* ───────── fonts ───────── */
 const heading = { fontFamily: "'Plus Jakarta Sans', sans-serif" };
@@ -64,7 +64,7 @@ export const MyLearningPage = () => {
               marginBottom: 16,
             }}
           >
-            <BookOpen size={28} color="#2563EB" />
+            <BookOpen size={28} color="#64748B" />
           </div>
           <h3
             style={{
@@ -201,7 +201,7 @@ export const MyLearningPage = () => {
                       <span
                         style={{
                           ...heading,
-                          color: isCompleted ? '#059669' : '#2563EB',
+                          color: isCompleted ? '#059669' : '#64748B',
                         }}
                       >
                         {en.progressPercent}%
@@ -221,7 +221,7 @@ export const MyLearningPage = () => {
                           height: '100%',
                           background: isCompleted
                             ? '#059669'
-                            : 'linear-gradient(90deg, #2563EB, #60A5FA)',
+                            : 'linear-gradient(90deg, #64748B, #94A3B8)',
                           borderRadius: 999,
                           transition: 'width 0.4s ease',
                         }}
@@ -253,7 +253,7 @@ export const MyLearningPage = () => {
                         onClick={() => navigate('/certificates')}
                         style={{
                           backgroundColor: '#E0EAFC',
-                          color: '#1E40AF',
+                          color: '#334155',
                           border: '1px solid #CFDEF3',
                           padding: '9px 14px',
                           borderRadius: 999,

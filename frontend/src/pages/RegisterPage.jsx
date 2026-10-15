@@ -72,7 +72,7 @@ const categories = [
     title: 'College Student',
     subtitle: 'Currently pursuing an undergraduate, postgraduate, or diploma degree',
     icon: GraduationCap,
-    color: '#2563EB',
+    color: '#64748B',
     bg: '#E0EAFC',
   },
   {
@@ -96,7 +96,7 @@ const categories = [
     title: 'Other Learner',
     subtitle: 'Freelancer, self-taught enthusiast, or career explorer',
     icon: BookOpen,
-    color: '#1E40AF',
+    color: '#334155',
     bg: '#CFDEF3',
   },
 ];
@@ -129,7 +129,7 @@ const StepIndicator = ({ step }) => (
             width: '26px',
             height: '26px',
             borderRadius: '50%',
-            backgroundColor: step > item.num ? '#10B981' : step === item.num ? '#2563EB' : '#F0F4FA',
+            backgroundColor: step > item.num ? '#10B981' : step === item.num ? '#64748B' : '#F0F4FA',
             color: step >= item.num ? '#FFFFFF' : '#64748B',
             border: step >= item.num ? 'none' : '1.5px solid #CFDEF3',
             display: 'flex',
@@ -167,7 +167,7 @@ const FormField = ({ label, hint, icon: Icon, children, required }) => (
         {label}{required && ' *'}
       </label>
       {hint && (
-        <span style={{ fontSize: '11.5px', color: '#2563EB', fontWeight: '500', fontFamily: fontInter }}>
+        <span style={{ fontSize: '11.5px', color: '#64748B', fontWeight: '500', fontFamily: fontInter }}>
           {hint}
         </span>
       )}
@@ -233,8 +233,8 @@ export const RegisterPage = () => {
   const handleInputFocus = (e) => {
     const wrapper = e.target.closest('[data-input-wrapper]');
     if (wrapper) {
-      wrapper.style.borderColor = '#2563EB';
-      wrapper.style.boxShadow = '0 0 0 3px rgba(207, 222, 243, 0.45)';
+      wrapper.style.borderColor = '#64748B';
+      wrapper.style.boxShadow = '0 0 0 3px rgba(100, 116, 139, 0.25)';
       wrapper.style.backgroundColor = '#FFFFFF';
     }
   };
@@ -443,7 +443,7 @@ export const RegisterPage = () => {
                 marginTop: '5px',
                 lineHeight: 1,
               }}>
-                By ADZ<span style={{ color: '#2563EB', fontWeight: '800' }}>4</span>NEEDZ
+                By ADZ<span style={{ color: '#64748B', fontWeight: '800' }}>4</span>NEEDZ
               </span>
             </div>
           </div>
@@ -506,7 +506,7 @@ export const RegisterPage = () => {
                 justifyContent: 'center',
                 flexShrink: 0,
               }}>
-                <BookOpen size={18} color="#2563EB" />
+                <BookOpen size={18} color="#64748B" />
               </div>
               <span style={{ fontSize: '15px', color: '#1E293B', fontWeight: '500', fontFamily: fontInter }}>
                 Learn through structured courses
@@ -526,7 +526,7 @@ export const RegisterPage = () => {
                 justifyContent: 'center',
                 flexShrink: 0,
               }}>
-                <Award size={18} color="#2563EB" />
+                <Award size={18} color="#64748B" />
               </div>
               <span style={{ fontSize: '15px', color: '#1E293B', fontWeight: '500', fontFamily: fontInter }}>
                 Test your knowledge with assessments
@@ -546,7 +546,7 @@ export const RegisterPage = () => {
                 justifyContent: 'center',
                 flexShrink: 0,
               }}>
-                <ShieldCheck size={18} color="#2563EB" />
+                <ShieldCheck size={18} color="#64748B" />
               </div>
               <span style={{ fontSize: '15px', color: '#1E293B', fontWeight: '500', fontFamily: fontInter }}>
                 Earn a certificate you can verify online
@@ -751,13 +751,13 @@ export const RegisterPage = () => {
                   width: '100%',
                   padding: '16px',
                   borderRadius: '14px',
-                  background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)',
+                  background: '#64748B',
                   color: '#FFFFFF',
                   fontSize: '15.5px',
                   fontWeight: '600',
                   border: 'none',
                   cursor: 'pointer',
-                  boxShadow: '0 4px 16px rgba(37, 99, 235, 0.3)',
+                  boxShadow: '0 4px 14px rgba(100, 116, 139, 0.25)',
                   transition: 'all 0.2s ease',
                   marginTop: '8px',
                   fontFamily: fontInter,
@@ -768,14 +768,17 @@ export const RegisterPage = () => {
                   letterSpacing: '-0.1px',
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = '#1D4ED8';
-                  e.currentTarget.style.boxShadow = '0 6px 22px rgba(37, 99, 235, 0.45)';
+                  e.currentTarget.style.background = '#475569';
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(100, 116, 139, 0.35)';
                   e.currentTarget.style.transform = 'translateY(-1px)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)';
-                  e.currentTarget.style.boxShadow = '0 4px 16px rgba(37, 99, 235, 0.3)';
+                  e.currentTarget.style.background = '#64748B';
+                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(100, 116, 139, 0.25)';
                   e.currentTarget.style.transform = 'translateY(0)';
+                }}
+                onMouseDown={(e) => {
+                  e.currentTarget.style.background = '#334155';
                 }}
               >
                 <span>Continue to Category</span>
@@ -816,7 +819,7 @@ export const RegisterPage = () => {
                         padding: '18px',
                         borderRadius: '16px',
                         border: '2px solid',
-                        borderColor: isSelected ? '#2563EB' : '#CFDEF3',
+                        borderColor: isSelected ? '#64748B' : '#CFDEF3',
                         backgroundColor: isSelected ? '#E0EAFC' : '#F8FAFD',
                         cursor: 'pointer',
                         transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
@@ -827,7 +830,7 @@ export const RegisterPage = () => {
                       }}
                       onMouseEnter={(e) => {
                         if (!isSelected) {
-                          e.currentTarget.style.borderColor = '#2563EB';
+                          e.currentTarget.style.borderColor = '#64748B';
                           e.currentTarget.style.backgroundColor = '#FFFFFF';
                         }
                       }}
@@ -863,7 +866,7 @@ export const RegisterPage = () => {
                               width: '22px',
                               height: '22px',
                               borderRadius: '50%',
-                              backgroundColor: '#2563EB',
+                              backgroundColor: '#64748B',
                               display: 'flex',
                               alignItems: 'center',
                               justifyContent: 'center',
@@ -899,7 +902,7 @@ export const RegisterPage = () => {
                         marginTop: '14px',
                         fontSize: '12px',
                         fontWeight: '600',
-                        color: isSelected ? '#1E40AF' : '#2563EB',
+                        color: isSelected ? '#334155' : '#64748B',
                         display: 'flex',
                         alignItems: 'center',
                         gap: '4px',
@@ -957,7 +960,7 @@ export const RegisterPage = () => {
               }}>
                 <div>
                   <span style={{ fontSize: '11px', color: '#475569', textTransform: 'uppercase', fontWeight: '600', letterSpacing: '0.5px', fontFamily: fontInter }}>Selected Profile</span>
-                  <div style={{ fontSize: '14.5px', fontWeight: '700', color: '#1E40AF', letterSpacing: '-0.2px', fontFamily: fontInter }}>{formData.learnerCategory}</div>
+                  <div style={{ fontSize: '14.5px', fontWeight: '700', color: '#334155', letterSpacing: '-0.2px', fontFamily: fontInter }}>{formData.learnerCategory}</div>
                 </div>
                 <button
                   type="button"
@@ -965,7 +968,7 @@ export const RegisterPage = () => {
                   style={{
                     background: 'none',
                     border: 'none',
-                    color: '#2563EB',
+                    color: '#64748B',
                     fontSize: '12.5px',
                     fontWeight: '600',
                     cursor: 'pointer',
@@ -1010,7 +1013,7 @@ export const RegisterPage = () => {
                           cursor: 'pointer',
                           transition: 'border-color 0.2s',
                         }}
-                        onFocus={(e) => { e.target.style.borderColor = '#2563EB'; }}
+                        onFocus={(e) => { e.target.style.borderColor = '#64748B'; }}
                         onBlur={(e) => { e.target.style.borderColor = '#CFDEF3'; }}
                       >
                         <option value="1st Year">1st Year</option>
@@ -1061,7 +1064,7 @@ export const RegisterPage = () => {
                           cursor: 'pointer',
                           transition: 'border-color 0.2s',
                         }}
-                        onFocus={(e) => { e.target.style.borderColor = '#2563EB'; }}
+                        onFocus={(e) => { e.target.style.borderColor = '#64748B'; }}
                         onBlur={(e) => { e.target.style.borderColor = '#CFDEF3'; }}
                       >
                         <option value="2026">2026</option>
@@ -1145,14 +1148,14 @@ export const RegisterPage = () => {
                     flex: 1,
                     padding: '15px 24px',
                     borderRadius: '14px',
-                    background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)',
+                    background: '#64748B',
                     color: '#FFFFFF',
                     fontSize: '15.5px',
                     fontWeight: '600',
                     border: 'none',
                     cursor: submitting ? 'not-allowed' : 'pointer',
                     opacity: submitting ? 0.7 : 1,
-                    boxShadow: '0 4px 16px rgba(37, 99, 235, 0.3)',
+                    boxShadow: '0 4px 14px rgba(100, 116, 139, 0.25)',
                     transition: 'all 0.2s ease',
                     fontFamily: fontInter,
                     display: 'flex',
@@ -1163,16 +1166,21 @@ export const RegisterPage = () => {
                   }}
                   onMouseEnter={(e) => {
                     if (!submitting) {
-                      e.currentTarget.style.background = '#1D4ED8';
-                      e.currentTarget.style.boxShadow = '0 6px 22px rgba(37, 99, 235, 0.45)';
+                      e.currentTarget.style.background = '#475569';
+                      e.currentTarget.style.boxShadow = '0 6px 20px rgba(100, 116, 139, 0.35)';
                       e.currentTarget.style.transform = 'translateY(-1px)';
                     }
                   }}
                   onMouseLeave={(e) => {
                     if (!submitting) {
-                      e.currentTarget.style.background = 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)';
-                      e.currentTarget.style.boxShadow = '0 4px 16px rgba(37, 99, 235, 0.3)';
+                      e.currentTarget.style.background = '#64748B';
+                      e.currentTarget.style.boxShadow = '0 4px 14px rgba(100, 116, 139, 0.25)';
                       e.currentTarget.style.transform = 'translateY(0)';
+                    }
+                  }}
+                  onMouseDown={(e) => {
+                    if (!submitting) {
+                      e.currentTarget.style.background = '#334155';
                     }
                   }}
                 >
@@ -1196,8 +1204,8 @@ export const RegisterPage = () => {
             <Link
               to="/login"
               style={{
-                color: '#2563EB',
-                fontWeight: '600',
+                color: '#0F172A',
+                fontWeight: '700',
                 textDecoration: 'none',
                 transition: 'color 0.2s',
               }}
@@ -1211,8 +1219,8 @@ export const RegisterPage = () => {
       {/* Responsive Styles matching LoginPage */}
       <style>{`
         [data-input-wrapper]:focus-within {
-          border-color: #2563EB !important;
-          box-shadow: 0 0 0 3px rgba(207, 222, 243, 0.45) !important;
+          border-color: #64748B !important;
+          box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.25) !important;
           background-color: #FFFFFF !important;
         }
         @media (max-width: 960px) {

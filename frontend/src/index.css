@@ -65,10 +65,11 @@
   --sidebar-text: #334155;
   --sidebar-hover: rgba(255, 255, 255, 0.65);
   
-  --primary: #2563EB;
-  --primary-hover: #1D4ED8;
+  --primary: #64748B;
+  --primary-hover: #475569;
+  --primary-active: #334155;
   --primary-light: #E0EAFC;
-  --primary-glow: rgba(207, 222, 243, 0.55);
+  --primary-glow: rgba(100, 116, 139, 0.25);
 
   --accent-peach: #E0EAFC;
   --accent-pink: #CFDEF3;
@@ -79,7 +80,7 @@
   --text-muted: #475569;
   --text-light: #64748B;
   --border-subtle: #CFDEF3;
-  --border-focus: #2563EB;
+  --border-focus: #64748B;
 
   --card-bg: #FFFFFF;
   --card-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(207, 222, 243, 0.2);
@@ -197,8 +198,8 @@ input, textarea, select {
   font-weight: 600;
 }
 
-.badge-purple { background: var(--primary-light); color: #1E40AF; border: 1px solid var(--border-subtle); }
-.badge-peach { background: #F8FAFD; color: #1E3A8A; border: 1px solid #CFDEF3; }
+.badge-purple { background: var(--primary-light); color: #334155; border: 1px solid var(--border-subtle); }
+.badge-peach { background: #F8FAFD; color: #334155; border: 1px solid #CFDEF3; }
 .badge-pink { background: #FEF2F2; color: #DC2626; border: 1px solid #FECACA; }
 .badge-green { background: #ECFDF5; color: #027A48; border: 1px solid #A6F4C5; }
 
@@ -213,11 +214,17 @@ input, textarea, select {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 4px 14px rgba(100, 116, 139, 0.25);
+  transition: all 0.2s ease;
 }
 .btn-primary:hover {
   background: var(--primary-hover);
   transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(100, 116, 139, 0.35);
+}
+.btn-primary:active {
+  background: var(--primary-active);
+  transform: translateY(0);
 }
 
 .btn-secondary {

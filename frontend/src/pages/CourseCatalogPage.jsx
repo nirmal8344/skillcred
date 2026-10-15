@@ -8,13 +8,13 @@ import { TopBar } from '../components/TopBar';
 const CATEGORY_COLORS = {
   'AI & Technology': { bg: '#EDE9FE', text: '#5B21B6' },
   'Data & AI': { bg: '#FEF3C7', text: '#92400E' },
-  'Engineering & Web': { bg: '#DBEAFE', text: '#1E40AF' },
+  'Engineering & Web': { bg: '#DBEAFE', text: '#334155' },
   'Data & Analytics': { bg: '#E0E7FF', text: '#3730A3' },
   'Business & Management': { bg: '#FCE7F3', text: '#9D174D' },
   'Sales & Business': { bg: '#FFEDD5', text: '#9A3412' },
   'Healthcare & Coding': { bg: '#D1FAE5', text: '#065F46' },
 };
-const catColor = (cat) => CATEGORY_COLORS[cat] || { bg: '#E0EAFC', text: '#1E40AF' };
+const catColor = (cat) => CATEGORY_COLORS[cat] || { bg: '#E0EAFC', text: '#334155' };
 
 /* ───────── fonts ───────── */
 const heading = { fontFamily: "'Plus Jakarta Sans', sans-serif" };
@@ -102,10 +102,10 @@ export const CourseCatalogPage = () => {
                   borderRadius: 999,
                   fontSize: 13,
                   fontWeight: isActive ? 600 : 500,
-                  backgroundColor: isActive ? '#2563EB' : '#FFFFFF',
+                  backgroundColor: isActive ? '#64748B' : '#FFFFFF',
                   color: isActive ? '#FFFFFF' : '#334155',
                   border: '1px solid',
-                  borderColor: isActive ? '#2563EB' : '#CFDEF3',
+                  borderColor: isActive ? '#64748B' : '#CFDEF3',
                   cursor: 'pointer',
                   whiteSpace: 'nowrap',
                   transition: 'all 0.2s',
@@ -310,7 +310,7 @@ export const CourseCatalogPage = () => {
                             color:
                               enrollment?.progressPercent === 100
                                 ? '#059669'
-                                : '#2563EB',
+                                : '#64748B',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'flex-end',
@@ -339,7 +339,7 @@ export const CourseCatalogPage = () => {
                   ) : (
                     <button
                       onClick={() => navigate(`/courses/${course.id}`)}
-                      className="btn-secondary"
+                      className="btn-primary"
                       style={{ width: '100%', padding: '10px', fontSize: 13, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}
                     >
                       <span>View Details & Start</span>

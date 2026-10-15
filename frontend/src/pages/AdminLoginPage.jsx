@@ -114,10 +114,10 @@ export const AdminLoginPage = () => {
               fontFamily: fontHeading,
               letterSpacing: '-0.4px',
             }}>
-              Skill<span style={{ color: '#2563EB' }}>C</span>red
+              Skill<span style={{ color: '#64748B' }}>C</span>red
             </h1>
             <span style={{
-              backgroundColor: '#1E40AF',
+              backgroundColor: '#334155',
               color: '#FFFFFF',
               fontSize: '11px',
               fontWeight: '800',
@@ -233,7 +233,7 @@ export const AdminLoginPage = () => {
                   fontFamily: fontBody,
                 }}
                 onFocus={(e) => {
-                  e.target.style.borderColor = '#2563EB';
+                  e.target.style.borderColor = '#64748B';
                   e.target.style.backgroundColor = '#FFFFFF';
                   e.target.style.boxShadow = '0 0 0 3px rgba(37, 99, 235, 0.15)';
                 }}
@@ -277,9 +277,9 @@ export const AdminLoginPage = () => {
                     fontFamily: fontBody,
                   }}
                   onFocus={(e) => {
-                    e.target.style.borderColor = '#2563EB';
+                    e.target.style.borderColor = '#64748B';
                     e.target.style.backgroundColor = '#FFFFFF';
-                    e.target.style.boxShadow = '0 0 0 3px rgba(37, 99, 235, 0.15)';
+                    e.target.style.boxShadow = '0 0 0 3px rgba(100, 116, 139, 0.2)';
                   }}
                   onBlur={(e) => {
                     e.target.style.borderColor = '#CFDEF3';
@@ -315,14 +315,14 @@ export const AdminLoginPage = () => {
                 width: '100%',
                 padding: '15px',
                 borderRadius: '12px',
-                backgroundColor: '#2563EB',
+                backgroundColor: '#64748B',
                 color: '#FFFFFF',
                 fontSize: '15px',
                 fontWeight: '700',
                 border: 'none',
                 cursor: submitting ? 'not-allowed' : 'pointer',
                 opacity: submitting ? 0.7 : 1,
-                boxShadow: '0 4px 14px rgba(37, 99, 235, 0.35)',
+                boxShadow: '0 4px 14px rgba(100, 116, 139, 0.25)',
                 transition: 'all 0.2s ease',
                 marginTop: '8px',
                 display: 'flex',
@@ -333,14 +333,21 @@ export const AdminLoginPage = () => {
               }}
               onMouseEnter={(e) => {
                 if (!submitting) {
-                  e.currentTarget.style.backgroundColor = '#1D4ED8';
+                  e.currentTarget.style.backgroundColor = '#475569';
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(100, 116, 139, 0.35)';
                   e.currentTarget.style.transform = 'translateY(-1px)';
                 }
               }}
               onMouseLeave={(e) => {
                 if (!submitting) {
-                  e.currentTarget.style.backgroundColor = '#2563EB';
+                  e.currentTarget.style.backgroundColor = '#64748B';
+                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(100, 116, 139, 0.25)';
                   e.currentTarget.style.transform = 'translateY(0)';
+                }
+              }}
+              onMouseDown={(e) => {
+                if (!submitting) {
+                  e.currentTarget.style.backgroundColor = '#334155';
                 }
               }}
             >
@@ -362,7 +369,7 @@ export const AdminLoginPage = () => {
             <Link
               to="/login"
               style={{
-                color: '#2563EB',
+                color: '#64748B',
                 fontWeight: '700',
                 textDecoration: 'none',
               }}

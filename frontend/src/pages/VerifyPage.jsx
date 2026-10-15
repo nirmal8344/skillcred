@@ -41,7 +41,7 @@ export const VerifyPage = () => {
             width: '40px',
             height: '40px',
             border: '4px solid #CFDEF3',
-            borderTop: '4px solid #2563EB',
+            borderTop: '4px solid #64748B',
             borderRadius: '50%',
             animation: 'spin 0.8s linear infinite',
             margin: '0 auto 16px auto',
@@ -49,7 +49,7 @@ export const VerifyPage = () => {
           <style>{`
             @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
           `}</style>
-          <span style={{ fontSize: '14px', fontWeight: '700', color: '#1E40AF' }}>
+          <span style={{ fontSize: '14px', fontWeight: '700', color: '#334155' }}>
             Querying SkillCred Public Registry...
           </span>
         </div>
@@ -100,7 +100,7 @@ export const VerifyPage = () => {
             </div>
             <div>
               <div style={{ fontSize: '18px', fontWeight: '800', color: '#0F172A', lineHeight: 1.1, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-                Skill<span style={{ color: '#1E40AF' }}>C</span>red
+                Skill<span style={{ color: '#334155' }}>C</span>red
               </div>
               <div style={{ fontSize: '9px', fontWeight: '700', color: '#64748B', letterSpacing: '0.6px' }}>
                 By ADZ4NEEDZ
@@ -112,7 +112,7 @@ export const VerifyPage = () => {
             fontSize: '11px',
             fontWeight: '700',
             backgroundColor: '#E0EAFC',
-            color: '#1E40AF',
+            color: '#334155',
             padding: '4px 10px',
             borderRadius: '999px',
             border: '1px solid #CFDEF3',
@@ -198,7 +198,7 @@ export const VerifyPage = () => {
               border: '1px solid #CFDEF3',
             }}>
               <span style={{ fontSize: '13px', color: '#64748B', fontWeight: '600' }}>Course Title</span>
-              <span style={{ fontSize: '14px', color: '#1E40AF', fontWeight: '800', textAlign: 'right', maxWidth: '280px' }}>
+              <span style={{ fontSize: '14px', color: '#334155', fontWeight: '800', textAlign: 'right', maxWidth: '280px' }}>
                 {verifyData.courseTitle}
               </span>
             </div>

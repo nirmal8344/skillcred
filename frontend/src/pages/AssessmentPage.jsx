@@ -149,7 +149,7 @@ export const AssessmentPage = () => {
           width: '40px',
           height: '40px',
           border: '3px solid #E2E8F0',
-          borderTopColor: '#2563EB',
+          borderTopColor: '#64748B',
           borderRadius: '50%',
           animation: 'spin 0.8s linear infinite',
           marginBottom: '16px'
@@ -196,7 +196,7 @@ export const AssessmentPage = () => {
             onClick={() => navigate('/courses')}
             style={{
               padding: '12px 24px',
-              backgroundColor: '#2563EB',
+              backgroundColor: '#64748B',
               color: '#FFFFFF',
               border: 'none',
               borderRadius: '8px',
@@ -254,7 +254,7 @@ export const AssessmentPage = () => {
               width: '32px',
               height: '32px',
               borderRadius: '8px',
-              background: 'linear-gradient(135deg, #1E40AF, #2563EB)',
+              background: 'linear-gradient(135deg, #334155, #64748B)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -272,7 +272,7 @@ export const AssessmentPage = () => {
           <span style={{ color: '#CBD5E1', fontSize: '18px' }}>|</span>
 
           <div>
-            <span style={{ fontSize: '11px', fontWeight: '700', color: '#2563EB', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+            <span style={{ fontSize: '11px', fontWeight: '700', color: '#64748B', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
               Official Examination
             </span>
             <h1 style={{ fontSize: '15px', fontWeight: '700', color: '#0F172A', margin: 0, lineHeight: 1.2 }}>
@@ -292,7 +292,7 @@ export const AssessmentPage = () => {
             borderRadius: '999px',
             backgroundColor: isTimeCritical ? '#FEE2E2' : '#EFF6FF',
             border: isTimeCritical ? '1px solid #FECACA' : '1px solid #DBEAFE',
-            color: isTimeCritical ? '#DC2626' : '#1E40AF',
+            color: isTimeCritical ? '#DC2626' : '#334155',
             fontWeight: '700',
             fontSize: '14px',
             fontFamily: 'monospace',
@@ -373,7 +373,7 @@ export const AssessmentPage = () => {
             <span style={{
               fontSize: '12px',
               fontWeight: '700',
-              color: isTimeCritical ? '#DC2626' : '#2563EB',
+              color: isTimeCritical ? '#DC2626' : '#64748B',
               display: 'block',
               marginBottom: '6px',
               letterSpacing: '0.04em',
@@ -414,7 +414,7 @@ export const AssessmentPage = () => {
               <span style={{
                 fontSize: '12px',
                 fontWeight: '700',
-                color: '#2563EB',
+                color: '#64748B',
                 letterSpacing: '0.04em',
                 textTransform: 'uppercase'
               }}>
@@ -445,18 +445,18 @@ export const AssessmentPage = () => {
                 let border = '1px solid #CBD5E1';
 
                 if (isAnswered) {
-                  bg = '#2563EB';
+                  bg = '#64748B';
                   color = '#FFFFFF';
-                  border = '1px solid #2563EB';
+                  border = '1px solid #64748B';
                 }
 
                 if (isCurrent) {
                   if (!isAnswered) {
                     bg = '#EFF6FF';
-                    color = '#1E40AF';
-                    border = '2px solid #2563EB';
+                    color = '#334155';
+                    border = '2px solid #64748B';
                   } else {
-                    bg = '#1D4ED8';
+                    bg = '#475569';
                     color = '#FFFFFF';
                     border = '2px solid #0F172A';
                   }
@@ -479,7 +479,7 @@ export const AssessmentPage = () => {
                       alignItems: 'center',
                       justifyContent: 'center',
                       transition: 'all 0.15s ease',
-                      boxShadow: isCurrent ? '0 0 0 2px rgba(37, 99, 235, 0.3)' : 'none',
+                      boxShadow: isCurrent ? '0 0 0 2px rgba(100, 116, 139, 0.3)' : 'none',
                     }}
                   >
                     {idx + 1}
@@ -499,7 +499,7 @@ export const AssessmentPage = () => {
               justifyContent: 'space-between',
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                <span style={{ width: '10px', height: '10px', borderRadius: '3px', backgroundColor: '#2563EB' }} />
+                <span style={{ width: '10px', height: '10px', borderRadius: '3px', backgroundColor: '#64748B' }} />
                 <span>Answered</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
@@ -507,7 +507,7 @@ export const AssessmentPage = () => {
                 <span>Unanswered</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                <span style={{ width: '10px', height: '10px', borderRadius: '3px', backgroundColor: '#EFF6FF', border: '1px solid #2563EB' }} />
+                <span style={{ width: '10px', height: '10px', borderRadius: '3px', backgroundColor: '#EFF6FF', border: '1px solid #64748B' }} />
                 <span>Current</span>
               </div>
             </div>
@@ -590,7 +590,7 @@ export const AssessmentPage = () => {
                 <span style={{
                   fontSize: '12px',
                   fontWeight: '700',
-                  color: '#2563EB',
+                  color: '#64748B',
                   textTransform: 'uppercase',
                   letterSpacing: '0.04em',
                 }}>
@@ -655,7 +655,7 @@ export const AssessmentPage = () => {
                           borderRadius: '12px',
                           cursor: 'pointer',
                           backgroundColor: isSelected ? '#EFF6FF' : '#F8FAFC',
-                          border: isSelected ? '2px solid #2563EB' : '1px solid #E2E8F0',
+                          border: isSelected ? '2px solid #64748B' : '1px solid #E2E8F0',
                           transition: 'all 0.15s ease',
                         }}
                       >
@@ -664,7 +664,7 @@ export const AssessmentPage = () => {
                           width: '20px',
                           height: '20px',
                           borderRadius: '50%',
-                          border: isSelected ? '2px solid #2563EB' : '2px solid #94A3B8',
+                          border: isSelected ? '2px solid #64748B' : '2px solid #94A3B8',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
@@ -677,7 +677,7 @@ export const AssessmentPage = () => {
                               width: '10px',
                               height: '10px',
                               borderRadius: '50%',
-                              backgroundColor: '#2563EB',
+                              backgroundColor: '#64748B',
                             }} />
                           )}
                         </div>
@@ -717,7 +717,7 @@ export const AssessmentPage = () => {
               disabled={submitting}
               className="btn-primary"
               style={{
-                backgroundColor: '#2563EB',
+                backgroundColor: '#64748B',
                 color: '#FFFFFF',
                 border: 'none',
                 borderRadius: '10px',
@@ -725,7 +725,7 @@ export const AssessmentPage = () => {
                 fontSize: '14px',
                 fontWeight: '700',
                 cursor: submitting ? 'not-allowed' : 'pointer',
-                boxShadow: '0 4px 14px rgba(37, 99, 235, 0.25)',
+                boxShadow: '0 4px 14px rgba(100, 116, 139, 0.25)',
                 transition: 'all 0.15s ease',
                 opacity: submitting ? 0.7 : 1,
               }}
@@ -818,12 +818,12 @@ export const AssessmentPage = () => {
                   padding: '11px 24px',
                   borderRadius: '10px',
                   border: 'none',
-                  backgroundColor: '#2563EB',
+                  backgroundColor: '#64748B',
                   color: '#FFFFFF',
                   fontSize: '14px',
                   fontWeight: '700',
                   cursor: 'pointer',
-                  boxShadow: '0 4px 12px rgba(37, 99, 235, 0.25)',
+                  boxShadow: '0 4px 12px rgba(100, 116, 139, 0.25)',
                 }}
               >
                 {submitting ? 'Submitting...' : 'Confirm & Submit'}

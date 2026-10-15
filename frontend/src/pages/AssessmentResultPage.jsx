@@ -139,7 +139,7 @@ export const AssessmentResultPage = () => {
         particleCount: 120,
         spread: 70,
         origin: { y: 0.6 },
-        colors: ['#2563EB', '#E0EAFC', '#CFDEF3', '#10B981'],
+        colors: ['#64748B', '#E0EAFC', '#CFDEF3', '#10B981'],
       });
     }
   }, [result]);
@@ -463,7 +463,7 @@ export const AssessmentResultPage = () => {
                             backgroundColor: '#E0EAFC',
                             border: 'none',
                             borderRadius: '6px',
-                            color: '#1E40AF',
+                            color: '#334155',
                             fontSize: '11px',
                             fontWeight: '700',
                             cursor: 'pointer',
