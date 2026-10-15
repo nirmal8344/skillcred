@@ -129,7 +129,7 @@ const StepIndicator = ({ step }) => (
             width: '26px',
             height: '26px',
             borderRadius: '50%',
-            backgroundColor: step > item.num ? '#10B981' : step === item.num ? '#64748B' : '#F0F4FA',
+            backgroundColor: step > item.num ? '#10B981' : step === item.num ? '#586B84' : '#F0F4FA',
             color: step >= item.num ? '#FFFFFF' : '#64748B',
             border: step >= item.num ? 'none' : '1.5px solid #CFDEF3',
             display: 'flex',
@@ -233,8 +233,8 @@ export const RegisterPage = () => {
   const handleInputFocus = (e) => {
     const wrapper = e.target.closest('[data-input-wrapper]');
     if (wrapper) {
-      wrapper.style.borderColor = '#64748B';
-      wrapper.style.boxShadow = '0 0 0 3px rgba(100, 116, 139, 0.25)';
+      wrapper.style.borderColor = '#586B84';
+      wrapper.style.boxShadow = '0 0 0 3px rgba(88, 107, 132, 0.25)';
       wrapper.style.backgroundColor = '#FFFFFF';
     }
   };
@@ -432,7 +432,7 @@ export const RegisterPage = () => {
                 lineHeight: 1.1,
                 fontFamily: brandFont,
               }}>
-                SkillCred
+                Skill<span style={{ color: '#2563EB' }}>C</span>red
               </span>
               <span style={{
                 fontSize: '12.5px',
@@ -751,13 +751,13 @@ export const RegisterPage = () => {
                   width: '100%',
                   padding: '16px',
                   borderRadius: '14px',
-                  background: '#64748B',
+                  background: '#586B84',
                   color: '#FFFFFF',
                   fontSize: '15.5px',
                   fontWeight: '600',
                   border: 'none',
                   cursor: 'pointer',
-                  boxShadow: '0 4px 14px rgba(100, 116, 139, 0.25)',
+                  boxShadow: '0 4px 14px rgba(88, 107, 132, 0.25)',
                   transition: 'all 0.2s ease',
                   marginTop: '8px',
                   fontFamily: fontInter,
@@ -769,12 +769,12 @@ export const RegisterPage = () => {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = '#475569';
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(100, 116, 139, 0.35)';
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(88, 107, 132, 0.35)';
                   e.currentTarget.style.transform = 'translateY(-1px)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = '#64748B';
-                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(100, 116, 139, 0.25)';
+                  e.currentTarget.style.background = '#586B84';
+                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(88, 107, 132, 0.25)';
                   e.currentTarget.style.transform = 'translateY(0)';
                 }}
                 onMouseDown={(e) => {
@@ -819,7 +819,7 @@ export const RegisterPage = () => {
                         padding: '18px',
                         borderRadius: '16px',
                         border: '2px solid',
-                        borderColor: isSelected ? '#64748B' : '#CFDEF3',
+                        borderColor: isSelected ? '#586B84' : '#CFDEF3',
                         backgroundColor: isSelected ? '#E0EAFC' : '#F8FAFD',
                         cursor: 'pointer',
                         transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
@@ -830,7 +830,7 @@ export const RegisterPage = () => {
                       }}
                       onMouseEnter={(e) => {
                         if (!isSelected) {
-                          e.currentTarget.style.borderColor = '#64748B';
+                          e.currentTarget.style.borderColor = '#586B84';
                           e.currentTarget.style.backgroundColor = '#FFFFFF';
                         }
                       }}
@@ -866,7 +866,7 @@ export const RegisterPage = () => {
                               width: '22px',
                               height: '22px',
                               borderRadius: '50%',
-                              backgroundColor: '#64748B',
+                              backgroundColor: '#586B84',
                               display: 'flex',
                               alignItems: 'center',
                               justifyContent: 'center',
@@ -1013,7 +1013,7 @@ export const RegisterPage = () => {
                           cursor: 'pointer',
                           transition: 'border-color 0.2s',
                         }}
-                        onFocus={(e) => { e.target.style.borderColor = '#64748B'; }}
+                        onFocus={(e) => { e.target.style.borderColor = '#586B84'; }}
                         onBlur={(e) => { e.target.style.borderColor = '#CFDEF3'; }}
                       >
                         <option value="1st Year">1st Year</option>
@@ -1064,7 +1064,7 @@ export const RegisterPage = () => {
                           cursor: 'pointer',
                           transition: 'border-color 0.2s',
                         }}
-                        onFocus={(e) => { e.target.style.borderColor = '#64748B'; }}
+                        onFocus={(e) => { e.target.style.borderColor = '#586B84'; }}
                         onBlur={(e) => { e.target.style.borderColor = '#CFDEF3'; }}
                       >
                         <option value="2026">2026</option>
@@ -1148,14 +1148,14 @@ export const RegisterPage = () => {
                     flex: 1,
                     padding: '15px 24px',
                     borderRadius: '14px',
-                    background: '#64748B',
+                    background: '#586B84',
                     color: '#FFFFFF',
                     fontSize: '15.5px',
                     fontWeight: '600',
                     border: 'none',
                     cursor: submitting ? 'not-allowed' : 'pointer',
                     opacity: submitting ? 0.7 : 1,
-                    boxShadow: '0 4px 14px rgba(100, 116, 139, 0.25)',
+                    boxShadow: '0 4px 14px rgba(88, 107, 132, 0.25)',
                     transition: 'all 0.2s ease',
                     fontFamily: fontInter,
                     display: 'flex',
@@ -1167,14 +1167,14 @@ export const RegisterPage = () => {
                   onMouseEnter={(e) => {
                     if (!submitting) {
                       e.currentTarget.style.background = '#475569';
-                      e.currentTarget.style.boxShadow = '0 6px 20px rgba(100, 116, 139, 0.35)';
+                      e.currentTarget.style.boxShadow = '0 6px 20px rgba(88, 107, 132, 0.35)';
                       e.currentTarget.style.transform = 'translateY(-1px)';
                     }
                   }}
                   onMouseLeave={(e) => {
                     if (!submitting) {
-                      e.currentTarget.style.background = '#64748B';
-                      e.currentTarget.style.boxShadow = '0 4px 14px rgba(100, 116, 139, 0.25)';
+                      e.currentTarget.style.background = '#586B84';
+                      e.currentTarget.style.boxShadow = '0 4px 14px rgba(88, 107, 132, 0.25)';
                       e.currentTarget.style.transform = 'translateY(0)';
                     }
                   }}
@@ -1219,8 +1219,8 @@ export const RegisterPage = () => {
       {/* Responsive Styles matching LoginPage */}
       <style>{`
         [data-input-wrapper]:focus-within {
-          border-color: #64748B !important;
-          box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.25) !important;
+          border-color: #586B84 !important;
+          box-shadow: 0 0 0 3px rgba(88, 107, 132, 0.25) !important;
           background-color: #FFFFFF !important;
         }
         @media (max-width: 960px) {

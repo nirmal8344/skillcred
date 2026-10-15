@@ -136,10 +136,10 @@ export const AdminLayout = () => {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               <h2 style={{ fontSize: '20px', fontWeight: '800', letterSpacing: '-0.3px', margin: 0, color: '#0F172A', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-                Skill<span style={{ color: '#64748B' }}>C</span>red
+                Skill<span style={{ color: '#2563EB' }}>C</span>red
               </h2>
               <span style={{
-                backgroundColor: '#64748B',
+                backgroundColor: '#586B84',
                 color: '#FFFFFF',
                 fontSize: '9.5px',
                 fontWeight: '800',

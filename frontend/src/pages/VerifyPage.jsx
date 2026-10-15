@@ -100,7 +100,7 @@ export const VerifyPage = () => {
             </div>
             <div>
               <div style={{ fontSize: '18px', fontWeight: '800', color: '#0F172A', lineHeight: 1.1, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-                Skill<span style={{ color: '#334155' }}>C</span>red
+                Skill<span style={{ color: '#2563EB' }}>C</span>red
               </div>
               <div style={{ fontSize: '9px', fontWeight: '700', color: '#64748B', letterSpacing: '0.6px' }}>
                 By ADZ4NEEDZ

@@ -55,7 +55,7 @@ export const Sidebar = () => {
         />
         <div>
           <h2 style={{ fontSize: '20px', fontWeight: '800', letterSpacing: '-0.3px', margin: 0, color: '#0F172A', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-            Skill<span style={{ color: '#64748B' }}>C</span>red
+            Skill<span style={{ color: '#2563EB' }}>C</span>red
           </h2>
           <span style={{ fontSize: '10.5px', color: '#475569', fontWeight: '600', letterSpacing: '0.8px', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             By ADZ4NEEDZ

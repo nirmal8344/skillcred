@@ -51,7 +51,10 @@ public class PaymentService {
         if (dto.getRecipientName() != null) config.setRecipientName(dto.getRecipientName());
         if (dto.getCertificateFee() > 0) config.setCertificateFee(dto.getCertificateFee());
         config.setEnabled(dto.isEnabled());
-        if (dto.getQrImageUrl() != null) config.setQrImageUrl(dto.getQrImageUrl());
+        if (dto.getQrImageUrl() != null) {
+            validateQrImage(dto.getQrImageUrl());
+            config.setQrImageUrl(dto.getQrImageUrl());
+        }
         if (dto.getInstructions() != null) config.setInstructions(dto.getInstructions());
         config.setUpdatedAt(LocalDateTime.now());
         paymentConfigRepository.save(config);
@@ -60,12 +63,29 @@ public class PaymentService {
 
     @Transactional
     public PaymentConfigDto updateQrImage(String qrImageUrl) {
+        validateQrImage(qrImageUrl);
         PaymentConfig config = paymentConfigRepository.findById(1L).orElse(new PaymentConfig());
         config.setId(1L);
         config.setQrImageUrl(qrImageUrl);
         config.setUpdatedAt(LocalDateTime.now());
         paymentConfigRepository.save(config);
         return new PaymentConfigDto(config);
+    }
+
+    private void validateQrImage(String qrImageUrl) {
+        if (qrImageUrl == null || qrImageUrl.isBlank()) {
+            return; // Can be cleared/reverted to auto-generated dynamic QR
+        }
+        if (qrImageUrl.startsWith("data:")) {
+            if (!qrImageUrl.matches("^data:image\\/(png|jpeg|jpg|webp|svg\\+xml);base64,[A-Za-z0-9+/=]+$")) {
+                throw new IllegalArgumentException("Invalid QR code image format. Allowed formats: PNG, JPG, JPEG, WEBP, or SVG.");
+            }
+            if (qrImageUrl.length() > 7_000_000) {
+                throw new IllegalArgumentException("QR code image size exceeds the maximum permitted limit of 5MB.");
+            }
+        } else if (!qrImageUrl.startsWith("http://") && !qrImageUrl.startsWith("https://") && !qrImageUrl.startsWith("/")) {
+            throw new IllegalArgumentException("Invalid QR code image source.");
+        }
     }
 
     // ─── Student Payment Submission ─────────────────────

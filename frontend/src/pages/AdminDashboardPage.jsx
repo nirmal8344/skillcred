@@ -35,7 +35,8 @@ import {
   Image,
   RefreshCw,
   ChevronRight,
-  ArrowLeft
+  ArrowLeft,
+  QrCode
 } from 'lucide-react';
 import QRCode from 'qrcode';
 import jsPDF from 'jspdf';
@@ -88,8 +89,18 @@ export const AdminDashboardPage = () => {
     instructions: '',
     qrImageUrl: '',
   });
-  const [configSaving, setConfigSaving] = useState(false);
   const [previewQr, setPreviewQr] = useState('');
+
+  // Changeable UPI QR Code Modal States
+  const [isQrModalOpen, setIsQrModalOpen] = useState(false);
+  const [qrModalData, setQrModalData] = useState({
+    qrImage: '',
+    upiId: '',
+    recipientName: '',
+    useCustom: false,
+  });
+  const [qrModalSaving, setQrModalSaving] = useState(false);
+  const [qrModalError, setQrModalError] = useState('');
 
   // Course Management States
   const [isCourseModalOpen, setIsCourseModalOpen] = useState(false);
@@ -347,9 +358,92 @@ export const AdminDashboardPage = () => {
     }
   };
 
+  const handleOpenQrModal = () => {
+    setQrModalData({
+      qrImage: configForm.qrImageUrl || '',
+      upiId: configForm.upiId || 'adz4needz@okaxis',
+      recipientName: configForm.recipientName || 'ADZ4NEEDZ (OPC) PRIVATE LIMITED',
+      useCustom: !!configForm.qrImageUrl,
+    });
+    setQrModalError('');
+    setIsQrModalOpen(true);
+  };
+
+  const handleQrModalFileUpload = (e) => {
+    setQrModalError('');
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const allowedTypes = ['image/png', 'image/jpeg', 'image/jpg', 'image/webp', 'image/svg+xml'];
+    if (!allowedTypes.includes(file.type)) {
+      setQrModalError('Invalid file format. Allowed formats: PNG, JPG, JPEG, WEBP, or SVG.');
+      return;
+    }
+
+    if (file.size > 5 * 1024 * 1024) {
+      setQrModalError('Image file size exceeds the 5MB limit. Please upload a smaller image.');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setQrModalData(prev => ({
+        ...prev,
+        qrImage: reader.result,
+        useCustom: true,
+      }));
+    };
+    reader.onerror = () => {
+      setQrModalError('Failed to read image file.');
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handleSaveQrModal = async () => {
+    if (!qrModalData.upiId.trim()) {
+      setQrModalError('Please enter a valid receiving UPI ID (VPA).');
+      return;
+    }
+    setQrModalSaving(true);
+    setQrModalError('');
+    try {
+      const payload = {
+        ...configForm,
+        qrImageUrl: qrModalData.useCustom ? qrModalData.qrImage : '',
+        upiId: qrModalData.upiId.trim(),
+        recipientName: qrModalData.recipientName.trim() || configForm.recipientName,
+      };
+
+      const updated = await api.put('/admin/payments/config', payload);
+      setPaymentConfig(updated);
+      setConfigForm(prev => ({
+        ...prev,
+        qrImageUrl: updated.qrImageUrl || '',
+        upiId: updated.upiId,
+        recipientName: updated.recipientName,
+      }));
+      updatePreviewQr(updated.upiId, updated.recipientName, updated.certificateFee, updated.qrImageUrl);
+      setIsQrModalOpen(false);
+      alert('Payment QR Code and account details updated successfully! Active for all student checkouts.');
+    } catch (err) {
+      setQrModalError(err.message || 'Failed to update payment QR code.');
+    } finally {
+      setQrModalSaving(false);
+    }
+  };
+
   const handleUploadQrFile = (e) => {
     const file = e.target.files[0];
     if (!file) return;
+    const allowedTypes = ['image/png', 'image/jpeg', 'image/jpg', 'image/webp', 'image/svg+xml'];
+    if (!allowedTypes.includes(file.type)) {
+      alert('Invalid file format. Allowed formats: PNG, JPG, JPEG, WEBP, or SVG.');
+      return;
+    }
+    if (file.size > 5 * 1024 * 1024) {
+      alert('Image file size exceeds the 5MB limit. Please upload a smaller image.');
+      return;
+    }
     const reader = new FileReader();
     reader.onloadend = () => {
       setConfigForm(prev => ({ ...prev, qrImageUrl: reader.result }));
@@ -1035,10 +1129,39 @@ export const AdminDashboardPage = () => {
       {/* ───────────────────────────────────────────────────────────── */}
       {activeTab === 'payments' && (
         <div>
-          <TopBar 
-            title="Manual UPI Payment Verification" 
-            subtitle="Review transaction references, examine uploaded bank receipts, and authorize certificate issuance" 
-          />
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+            flexWrap: 'wrap',
+            gap: '16px',
+            marginBottom: '20px',
+          }}>
+            <TopBar 
+              title="Manual UPI Payment Verification" 
+              subtitle="Review transaction references, examine uploaded bank receipts, and authorize certificate issuance" 
+            />
+            <button
+              onClick={handleOpenQrModal}
+              className="btn-primary"
+              style={{
+                ...body,
+                padding: '10px 18px',
+                fontSize: '13px',
+                fontWeight: '700',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                borderRadius: '12px',
+                backgroundColor: '#586B84',
+                color: '#FFFFFF',
+                boxShadow: '0 4px 14px rgba(88, 107, 132, 0.25)',
+              }}
+            >
+              <QrCode size={16} />
+              <span>Update Payment QR Code</span>
+            </button>
+          </div>
 
           <div style={{
             display: 'flex',
@@ -1062,10 +1185,10 @@ export const AdminDashboardPage = () => {
                     ...body,
                     padding: '8px 16px',
                     borderRadius: '20px',
-                    backgroundColor: paymentFilter === f.id ? '#64748B' : '#FFFFFF',
+                    backgroundColor: paymentFilter === f.id ? '#586B84' : '#FFFFFF',
                     color: paymentFilter === f.id ? '#FFFFFF' : '#334155',
                     border: '1px solid',
-                    borderColor: paymentFilter === f.id ? '#64748B' : '#CFDEF3',
+                    borderColor: paymentFilter === f.id ? '#586B84' : '#CFDEF3',
                     fontSize: '13px',
                     fontWeight: '600',
                     cursor: 'pointer',
@@ -1398,12 +1521,32 @@ export const AdminDashboardPage = () => {
                 </div>
 
                 <div>
-                  <label style={{ ...body, display: 'block', fontSize: '13px', fontWeight: '700', color: '#0F172A', marginBottom: '6px' }}>
-                    Custom QR Image (Optional)
-                  </label>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
+                    <label style={{ ...body, display: 'block', fontSize: '13px', fontWeight: '700', color: '#0F172A' }}>
+                      Payment QR Code Image
+                    </label>
+                    <button
+                      type="button"
+                      onClick={handleOpenQrModal}
+                      style={{
+                        background: 'none',
+                        border: 'none',
+                        color: '#586B84',
+                        fontWeight: '700',
+                        fontSize: '12px',
+                        cursor: 'pointer',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                      }}
+                    >
+                      <QrCode size={14} />
+                      <span>Update via QR Manager</span>
+                    </button>
+                  </div>
                   <input
                     type="file"
-                    accept="image/*"
+                    accept="image/png,image/jpeg,image/jpg,image/webp,image/svg+xml"
                     onChange={handleUploadQrFile}
                     style={{
                       width: '100%',
@@ -1415,7 +1558,7 @@ export const AdminDashboardPage = () => {
                     }}
                   />
                   <span style={{ fontSize: '11px', color: '#64748B', marginTop: '4px', display: 'block' }}>
-                    Leave empty to dynamically generate official UPI QR code
+                    Allowed formats: PNG, JPG, WEBP, SVG (Max 5MB). Leave empty to use auto-generated UPI QR code.
                   </span>
                 </div>
 
@@ -1827,7 +1970,7 @@ export const AdminDashboardPage = () => {
                           display: 'inline-flex',
                           alignItems: 'center',
                           gap: '6px',
-                          backgroundColor: '#64748B',
+                          backgroundColor: '#586B84',
                           color: '#FFFFFF',
                           borderRadius: '10px',
                           border: 'none',
@@ -2545,8 +2688,8 @@ export const AdminDashboardPage = () => {
                     padding: '8px 14px',
                     borderRadius: '8px',
                     border: '1px solid',
-                    borderColor: auditFilterResult === res ? '#64748B' : '#CFDEF3',
-                    backgroundColor: auditFilterResult === res ? '#64748B' : '#FFFFFF',
+                    borderColor: auditFilterResult === res ? '#586B84' : '#CFDEF3',
+                    backgroundColor: auditFilterResult === res ? '#586B84' : '#FFFFFF',
                     color: auditFilterResult === res ? '#FFFFFF' : '#334155',
                     fontSize: '12px',
                     fontWeight: '700',
@@ -3928,6 +4071,237 @@ export const AdminDashboardPage = () => {
                 style={{ padding: '8px 20px', fontSize: '13px' }}
               >
                 Close Audit
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {/* ───────────────────────────────────────────────────────────── */}
+      {/* MODAL: UPDATE PAYMENT QR CODE                                 */}
+      {/* ───────────────────────────────────────────────────────────── */}
+      {isQrModalOpen && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(15, 23, 42, 0.65)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1000,
+          padding: '20px',
+          backdropFilter: 'blur(4px)',
+        }}>
+          <div className="skill-card animate-fade-in" style={{
+            width: '100%',
+            maxWidth: '560px',
+            backgroundColor: '#FFFFFF',
+            borderRadius: '20px',
+            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+            maxHeight: '90vh',
+            overflowY: 'auto',
+            padding: '32px',
+            border: '1px solid #CFDEF3',
+          }}>
+            {/* Header */}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '20px' }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+                  <QrCode size={20} color="#586B84" />
+                  <h3 style={{ ...heading, fontSize: '19px', fontWeight: '800', color: '#0F172A', margin: 0 }}>
+                    Update Payment QR Code
+                  </h3>
+                </div>
+                <p style={{ ...body, fontSize: '13px', color: '#64748B', margin: 0 }}>
+                  Upload a new payment QR code image when your receiving bank or UPI account changes.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsQrModalOpen(false)}
+                style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#64748B', padding: '4px' }}
+              >
+                <X size={20} />
+              </button>
+            </div>
+
+            {/* Error banner if validation failed */}
+            {qrModalError && (
+              <div style={{
+                backgroundColor: '#FEF2F2',
+                border: '1px solid #FECACA',
+                color: '#DC2626',
+                borderRadius: '10px',
+                padding: '12px 14px',
+                fontSize: '13px',
+                marginBottom: '18px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+              }}>
+                <AlertTriangle size={16} style={{ flexShrink: 0 }} />
+                <span>{qrModalError}</span>
+              </div>
+            )}
+
+            {/* Current vs New QR Preview Area */}
+            <div style={{
+              backgroundColor: '#F8FAFD',
+              borderRadius: '16px',
+              border: '1px solid #CFDEF3',
+              padding: '20px',
+              marginBottom: '20px',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              textAlign: 'center',
+            }}>
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '3px 10px',
+                borderRadius: '999px',
+                fontSize: '11px',
+                fontWeight: '700',
+                backgroundColor: qrModalData.useCustom && qrModalData.qrImage ? '#ECFDF5' : '#E0EAFC',
+                color: qrModalData.useCustom && qrModalData.qrImage ? '#027A48' : '#334155',
+                border: '1px solid',
+                borderColor: qrModalData.useCustom && qrModalData.qrImage ? '#A6F4C5' : '#CFDEF3',
+                marginBottom: '12px',
+              }}>
+                {qrModalData.useCustom && qrModalData.qrImage ? 'Custom QR Code Active' : 'Dynamic Auto-Generated QR Active'}
+              </div>
+
+              <div style={{
+                backgroundColor: '#FFFFFF',
+                padding: '12px',
+                borderRadius: '12px',
+                border: '1px solid #CBD5E1',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.06)',
+                marginBottom: '14px',
+              }}>
+                {qrModalData.useCustom && qrModalData.qrImage ? (
+                  <img
+                    src={qrModalData.qrImage}
+                    alt="Payment QR Preview"
+                    style={{ width: '180px', height: '180px', objectFit: 'contain', display: 'block', borderRadius: '6px' }}
+                  />
+                ) : (
+                  <img
+                    src={previewQr}
+                    alt="Standard Dynamic QR"
+                    style={{ width: '180px', height: '180px', objectFit: 'contain', display: 'block', borderRadius: '6px' }}
+                  />
+                )}
+              </div>
+
+              {qrModalData.useCustom && qrModalData.qrImage && (
+                <button
+                  type="button"
+                  onClick={() => setQrModalData(prev => ({ ...prev, qrImage: '', useCustom: false }))}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: '#DC2626',
+                    fontSize: '12px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    textDecoration: 'underline',
+                  }}
+                >
+                  Reset to dynamic auto-generated UPI QR
+                </button>
+              )}
+            </div>
+
+            {/* Upload File Input */}
+            <div style={{ marginBottom: '18px' }}>
+              <label style={{ ...body, display: 'block', fontSize: '13px', fontWeight: '700', color: '#0F172A', marginBottom: '6px' }}>
+                Upload New QR Code Image *
+              </label>
+              <input
+                type="file"
+                accept="image/png,image/jpeg,image/jpg,image/webp,image/svg+xml"
+                onChange={handleQrModalFileUpload}
+                style={{
+                  width: '100%',
+                  padding: '10px',
+                  borderRadius: '10px',
+                  border: '1px solid #CFDEF3',
+                  fontSize: '13px',
+                  backgroundColor: '#FFFFFF',
+                  fontFamily: 'inherit',
+                }}
+              />
+              <span style={{ fontSize: '11px', color: '#64748B', marginTop: '4px', display: 'block' }}>
+                Allowed formats: PNG, JPG, JPEG, WEBP, or SVG (Max 5MB).
+              </span>
+            </div>
+
+            {/* Associated Bank / Account Details */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', marginBottom: '22px' }}>
+              <div>
+                <label style={{ ...body, display: 'block', fontSize: '12px', fontWeight: '700', color: '#0F172A', marginBottom: '6px' }}>
+                  Receiving UPI ID (VPA) *
+                </label>
+                <input
+                  type="text"
+                  value={qrModalData.upiId}
+                  onChange={(e) => setQrModalData(prev => ({ ...prev, upiId: e.target.value }))}
+                  placeholder="e.g. adz4needz@okaxis"
+                  style={{
+                    width: '100%',
+                    padding: '10px 12px',
+                    borderRadius: '10px',
+                    border: '1px solid #CFDEF3',
+                    fontSize: '13px',
+                    fontFamily: 'inherit',
+                  }}
+                />
+              </div>
+
+              <div>
+                <label style={{ ...body, display: 'block', fontSize: '12px', fontWeight: '700', color: '#0F172A', marginBottom: '6px' }}>
+                  Recipient / Account Name
+                </label>
+                <input
+                  type="text"
+                  value={qrModalData.recipientName}
+                  onChange={(e) => setQrModalData(prev => ({ ...prev, recipientName: e.target.value }))}
+                  placeholder="e.g. ADZ4NEEDZ"
+                  style={{
+                    width: '100%',
+                    padding: '10px 12px',
+                    borderRadius: '10px',
+                    border: '1px solid #CFDEF3',
+                    fontSize: '13px',
+                    fontFamily: 'inherit',
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Actions */}
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '10px' }}>
+              <button
+                type="button"
+                onClick={() => setIsQrModalOpen(false)}
+                className="btn-secondary"
+                style={{ padding: '10px 20px', fontSize: '13.5px' }}
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                onClick={handleSaveQrModal}
+                disabled={qrModalSaving}
+                className="btn-primary"
+                style={{ padding: '10px 24px', fontSize: '13.5px', backgroundColor: '#586B84' }}
+              >
+                <span>{qrModalSaving ? 'Saving QR Code...' : 'Save Payment QR Code'}</span>
               </button>
             </div>
           </div>

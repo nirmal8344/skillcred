@@ -65,11 +65,11 @@
   --sidebar-text: #334155;
   --sidebar-hover: rgba(255, 255, 255, 0.65);
   
-  --primary: #64748B;
+  --primary: #586B84;
   --primary-hover: #475569;
   --primary-active: #334155;
   --primary-light: #E0EAFC;
-  --primary-glow: rgba(100, 116, 139, 0.25);
+  --primary-glow: rgba(88, 107, 132, 0.25);
 
   --accent-peach: #E0EAFC;
   --accent-pink: #CFDEF3;
@@ -80,7 +80,7 @@
   --text-muted: #475569;
   --text-light: #64748B;
   --border-subtle: #CFDEF3;
-  --border-focus: #64748B;
+  --border-focus: #586B84;
 
   --card-bg: #FFFFFF;
   --card-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(207, 222, 243, 0.2);
@@ -214,13 +214,13 @@ input, textarea, select {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-shadow: 0 4px 14px rgba(100, 116, 139, 0.25);
+  box-shadow: 0 4px 14px rgba(88, 107, 132, 0.25);
   transition: all 0.2s ease;
 }
 .btn-primary:hover {
   background: var(--primary-hover);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(100, 116, 139, 0.35);
+  box-shadow: 0 6px 20px rgba(88, 107, 132, 0.35);
 }
 .btn-primary:active {
   background: var(--primary-active);

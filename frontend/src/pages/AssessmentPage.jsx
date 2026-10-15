@@ -196,7 +196,7 @@ export const AssessmentPage = () => {
             onClick={() => navigate('/courses')}
             style={{
               padding: '12px 24px',
-              backgroundColor: '#64748B',
+              backgroundColor: '#586B84',
               color: '#FFFFFF',
               border: 'none',
               borderRadius: '8px',
@@ -265,7 +265,7 @@ export const AssessmentPage = () => {
               S
             </div>
             <span style={{ fontWeight: '800', fontSize: '17px', color: '#0F172A', letterSpacing: '-0.3px' }}>
-              SkillCred
+              Skill<span style={{ color: '#2563EB' }}>C</span>red
             </span>
           </div>
 
@@ -445,16 +445,16 @@ export const AssessmentPage = () => {
                 let border = '1px solid #CBD5E1';
 
                 if (isAnswered) {
-                  bg = '#64748B';
+                  bg = '#586B84';
                   color = '#FFFFFF';
-                  border = '1px solid #64748B';
+                  border = '1px solid #586B84';
                 }
 
                 if (isCurrent) {
                   if (!isAnswered) {
                     bg = '#EFF6FF';
                     color = '#334155';
-                    border = '2px solid #64748B';
+                    border = '2px solid #586B84';
                   } else {
                     bg = '#475569';
                     color = '#FFFFFF';
@@ -479,7 +479,7 @@ export const AssessmentPage = () => {
                       alignItems: 'center',
                       justifyContent: 'center',
                       transition: 'all 0.15s ease',
-                      boxShadow: isCurrent ? '0 0 0 2px rgba(100, 116, 139, 0.3)' : 'none',
+                      boxShadow: isCurrent ? '0 0 0 2px rgba(88, 107, 132, 0.3)' : 'none',
                     }}
                   >
                     {idx + 1}
@@ -499,7 +499,7 @@ export const AssessmentPage = () => {
               justifyContent: 'space-between',
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                <span style={{ width: '10px', height: '10px', borderRadius: '3px', backgroundColor: '#64748B' }} />
+                <span style={{ width: '10px', height: '10px', borderRadius: '3px', backgroundColor: '#586B84' }} />
                 <span>Answered</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
@@ -507,7 +507,7 @@ export const AssessmentPage = () => {
                 <span>Unanswered</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                <span style={{ width: '10px', height: '10px', borderRadius: '3px', backgroundColor: '#EFF6FF', border: '1px solid #64748B' }} />
+                <span style={{ width: '10px', height: '10px', borderRadius: '3px', backgroundColor: '#EFF6FF', border: '1px solid #586B84' }} />
                 <span>Current</span>
               </div>
             </div>
@@ -655,7 +655,7 @@ export const AssessmentPage = () => {
                           borderRadius: '12px',
                           cursor: 'pointer',
                           backgroundColor: isSelected ? '#EFF6FF' : '#F8FAFC',
-                          border: isSelected ? '2px solid #64748B' : '1px solid #E2E8F0',
+                          border: isSelected ? '2px solid #586B84' : '1px solid #E2E8F0',
                           transition: 'all 0.15s ease',
                         }}
                       >
@@ -664,7 +664,7 @@ export const AssessmentPage = () => {
                           width: '20px',
                           height: '20px',
                           borderRadius: '50%',
-                          border: isSelected ? '2px solid #64748B' : '2px solid #94A3B8',
+                          border: isSelected ? '2px solid #586B84' : '2px solid #94A3B8',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
@@ -677,7 +677,7 @@ export const AssessmentPage = () => {
                               width: '10px',
                               height: '10px',
                               borderRadius: '50%',
-                              backgroundColor: '#64748B',
+                              backgroundColor: '#586B84',
                             }} />
                           )}
                         </div>
@@ -717,7 +717,7 @@ export const AssessmentPage = () => {
               disabled={submitting}
               className="btn-primary"
               style={{
-                backgroundColor: '#64748B',
+                backgroundColor: '#586B84',
                 color: '#FFFFFF',
                 border: 'none',
                 borderRadius: '10px',
@@ -725,7 +725,7 @@ export const AssessmentPage = () => {
                 fontSize: '14px',
                 fontWeight: '700',
                 cursor: submitting ? 'not-allowed' : 'pointer',
-                boxShadow: '0 4px 14px rgba(100, 116, 139, 0.25)',
+                boxShadow: '0 4px 14px rgba(88, 107, 132, 0.25)',
                 transition: 'all 0.15s ease',
                 opacity: submitting ? 0.7 : 1,
               }}
@@ -818,12 +818,12 @@ export const AssessmentPage = () => {
                   padding: '11px 24px',
                   borderRadius: '10px',
                   border: 'none',
-                  backgroundColor: '#64748B',
+                  backgroundColor: '#586B84',
                   color: '#FFFFFF',
                   fontSize: '14px',
                   fontWeight: '700',
                   cursor: 'pointer',
-                  boxShadow: '0 4px 12px rgba(100, 116, 139, 0.25)',
+                  boxShadow: '0 4px 12px rgba(88, 107, 132, 0.25)',
                 }}
               >
                 {submitting ? 'Submitting...' : 'Confirm & Submit'}

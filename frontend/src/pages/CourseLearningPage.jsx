@@ -235,7 +235,7 @@ export const CourseLearningPage = () => {
               gap: '8px',
               padding: '12px',
               borderRadius: '14px',
-              backgroundColor: isAllCompleted ? '#64748B' : '#E0EAFC',
+              backgroundColor: isAllCompleted ? '#586B84' : '#E0EAFC',
               color: isAllCompleted ? '#FFFFFF' : '#334155',
               border: isAllCompleted ? 'none' : '1px solid #CFDEF3',
               fontWeight: '700',

@@ -235,7 +235,7 @@ export const CourseDetailPage = () => {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                   <span style={{
                     ...body,
-                    backgroundColor: '#64748B',
+                    backgroundColor: '#586B84',
                     color: '#FFFFFF',
                     width: '26px',
                     height: '26px',

@@ -149,7 +149,7 @@ export const LoginPage = () => {
                 lineHeight: 1.1,
                 fontFamily: brandFont,
               }}>
-                Skill<span style={{ color: '#64748B' }}>C</span>red
+                Skill<span style={{ color: '#2563EB' }}>C</span>red
               </span>
               <span style={{
                 fontSize: '12.5px',
@@ -298,8 +298,8 @@ export const LoginPage = () => {
                   fontFamily: fontInter,
                 }}
                 onFocus={(e) => {
-                  e.target.style.borderColor = '#64748B';
-                  e.target.style.boxShadow = '0 0 0 3px rgba(100, 116, 139, 0.25)';
+                  e.target.style.borderColor = '#586B84';
+                  e.target.style.boxShadow = '0 0 0 3px rgba(88, 107, 132, 0.25)';
                   e.target.style.backgroundColor = '#FFFFFF';
                 }}
                 onBlur={(e) => {
@@ -344,8 +344,8 @@ export const LoginPage = () => {
                     fontFamily: fontInter,
                   }}
                   onFocus={(e) => {
-                    e.target.style.borderColor = '#64748B';
-                    e.target.style.boxShadow = '0 0 0 3px rgba(100, 116, 139, 0.25)';
+                    e.target.style.borderColor = '#586B84';
+                    e.target.style.boxShadow = '0 0 0 3px rgba(88, 107, 132, 0.25)';
                     e.target.style.backgroundColor = '#FFFFFF';
                   }}
                   onBlur={(e) => {
@@ -408,14 +408,14 @@ export const LoginPage = () => {
                 width: '100%',
                 padding: '17px',
                 borderRadius: '14px',
-                background: '#64748B',
+                background: '#586B84',
                 color: '#FFFFFF',
                 fontSize: '16px',
                 fontWeight: '600',
                 border: 'none',
                 cursor: submitting ? 'not-allowed' : 'pointer',
                 opacity: submitting ? 0.7 : 1,
-                boxShadow: '0 4px 14px rgba(100, 116, 139, 0.25)',
+                boxShadow: '0 4px 14px rgba(88, 107, 132, 0.25)',
                 transition: 'all 0.2s ease',
                 marginTop: '6px',
                 fontFamily: fontInter,
@@ -424,14 +424,14 @@ export const LoginPage = () => {
               onMouseEnter={(e) => {
                 if (!submitting) {
                   e.currentTarget.style.background = '#475569';
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(100, 116, 139, 0.35)';
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(88, 107, 132, 0.35)';
                   e.currentTarget.style.transform = 'translateY(-1px)';
                 }
               }}
               onMouseLeave={(e) => {
                 if (!submitting) {
-                  e.currentTarget.style.background = '#64748B';
-                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(100, 116, 139, 0.25)';
+                  e.currentTarget.style.background = '#586B84';
+                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(88, 107, 132, 0.25)';
                   e.currentTarget.style.transform = 'translateY(0)';
                 }
               }}
@@ -542,7 +542,7 @@ export const LoginPage = () => {
                 width: '100%',
                 padding: '12px',
                 borderRadius: '12px',
-                background: '#64748B',
+                background: '#586B84',
                 color: '#FFFFFF',
                 fontSize: '13.5px',
                 fontWeight: '700',
@@ -552,7 +552,7 @@ export const LoginPage = () => {
                 transition: 'background 0.2s',
               }}
               onMouseEnter={(e) => (e.currentTarget.style.background = '#475569')}
-              onMouseLeave={(e) => (e.currentTarget.style.background = '#64748B')}
+              onMouseLeave={(e) => (e.currentTarget.style.background = '#586B84')}
               onMouseDown={(e) => (e.currentTarget.style.background = '#334155')}
             >
               Close
