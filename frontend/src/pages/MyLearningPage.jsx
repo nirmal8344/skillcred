@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { BookOpen, Clock, Award, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { BookOpen, Clock, Award, ArrowRight, CheckCircle2, Lock } from 'lucide-react';
 import { api } from '../api/client';
 import { TopBar } from '../components/TopBar';
 
@@ -106,7 +106,7 @@ export const MyLearningPage = () => {
         >
           {enrollments.map((en) => {
             const isCompleted = en.progressPercent === 100;
-            const c = catColor(en.courseCategory);
+            const c = catColor(en.courseCategory || en.category);
 
             return (
               <div
@@ -143,7 +143,7 @@ export const MyLearningPage = () => {
                         fontWeight: 600,
                       }}
                     >
-                      {en.courseCategory}
+                      {en.courseCategory || en.category}
                     </span>
                   </div>
 
@@ -169,7 +169,7 @@ export const MyLearningPage = () => {
                       fontSize: 12,
                       color: isCompleted ? '#059669' : '#64748B',
                       fontWeight: isCompleted ? 600 : 400,
-                      marginBottom: 16,
+                      marginBottom: 14,
                     }}
                   >
                     <CheckCircle2
@@ -177,8 +177,122 @@ export const MyLearningPage = () => {
                       color={isCompleted ? '#059669' : '#9CA3AF'}
                     />
                     <span>
-                      {en.completedLessonsCount}/{en.totalLessonsCount}{' '}
+                      {en.completedLessonsCount || 0}/{en.totalLessonsCount || 0}{' '}
                       lessons{isCompleted ? ' — Completed' : ' completed'}
+                    </span>
+                  </div>
+
+                  {/* Certificate Preview Thumbnail inspired by Image 1 */}
+                  <div
+                    style={{
+                      background: 'linear-gradient(180deg, #F0F5FA 0%, #E8F0FA 100%)',
+                      border: '1px solid #CFDEF3',
+                      borderRadius: '14px',
+                      padding: '12px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      marginBottom: '16px',
+                      boxShadow: 'inset 0 1px 2px rgba(255, 255, 255, 0.6)',
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: 'relative',
+                        width: '100%',
+                        maxWidth: '220px',
+                        borderRadius: '8px',
+                        overflow: 'hidden',
+                        boxShadow: '0 4px 12px rgba(15, 23, 42, 0.08)',
+                        border: '1px solid rgba(189, 211, 240, 0.8)',
+                        backgroundColor: '#FFFFFF',
+                      }}
+                    >
+                      <img
+                        src="/assets/certificate_template.png"
+                        alt="SkillCred Certificate Preview"
+                        style={{
+                          width: '100%',
+                          height: 'auto',
+                          display: 'block',
+                          aspectRatio: '1.414 / 1',
+                          objectFit: 'cover',
+                        }}
+                      />
+                      {/* Center Overlay Lock / Award Badge */}
+                      <div
+                        style={{
+                          position: 'absolute',
+                          top: '50%',
+                          left: '50%',
+                          transform: 'translate(-50%, -50%)',
+                          width: '32px',
+                          height: '32px',
+                          borderRadius: '50%',
+                          backgroundColor: isCompleted ? '#059669' : '#2563EB',
+                          boxShadow: isCompleted
+                            ? '0 2px 8px rgba(5, 150, 105, 0.45)'
+                            : '0 2px 8px rgba(37, 99, 235, 0.45)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                        }}
+                      >
+                        {isCompleted ? (
+                          <Award size={16} color="#FFFFFF" strokeWidth={2.4} />
+                        ) : (
+                          <Lock size={15} color="#FFFFFF" strokeWidth={2.4} />
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Status Pill Badge */}
+                    <div
+                      style={{
+                        marginTop: '10px',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        padding: '4px 12px',
+                        borderRadius: '999px',
+                        fontSize: '11px',
+                        fontWeight: '700',
+                        letterSpacing: '0.2px',
+                        fontFamily: "'Plus Jakarta Sans', sans-serif",
+                        backgroundColor: isCompleted ? '#ECFDF5' : '#FFFFFF',
+                        border: isCompleted ? '1px solid #A7F3D0' : '1px solid #CFDEF3',
+                        color: isCompleted ? '#065F46' : '#586B84',
+                        boxShadow: '0 1px 3px rgba(15, 23, 42, 0.04)',
+                      }}
+                    >
+                      {isCompleted ? (
+                        <>
+                          <Award size={12} color="#059669" strokeWidth={2.2} />
+                          <span>Course Certificate Earned</span>
+                        </>
+                      ) : (
+                        <>
+                          <Lock size={12} color="#586B84" strokeWidth={2.2} />
+                          <span>Course Certificate Locked</span>
+                        </>
+                      )}
+                    </div>
+
+                    {/* Communicative Requirement Subtitle */}
+                    <span
+                      style={{
+                        fontSize: '10.5px',
+                        fontWeight: '500',
+                        color: '#586B84',
+                        marginTop: '5px',
+                        textAlign: 'center',
+                        lineHeight: '1.3',
+                        fontFamily: "'Plus Jakarta Sans', sans-serif",
+                      }}
+                    >
+                      {isCompleted
+                        ? 'Assessment passed • Certificate ready'
+                        : 'Pass assessment & complete payment to unlock'}
                     </span>
                   </div>
                 </div>
