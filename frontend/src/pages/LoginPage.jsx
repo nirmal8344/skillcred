@@ -135,6 +135,7 @@ export const LoginPage = () => {
             <img
               src="/assets/skillcred_logo.png"
               alt="SkillCred Logo"
+              className="login-brand-logo"
               style={{
                 height: '72px',
                 width: 'auto',
@@ -147,25 +148,31 @@ export const LoginPage = () => {
               flexDirection: 'column',
               justifyContent: 'center',
             }}>
-              <span style={{
-                fontSize: '42px',
-                fontWeight: '800',
-                color: '#0F172A',
-                letterSpacing: '-0.3px',
-                lineHeight: 1.1,
-                fontFamily: brandFont,
-              }}>
+              <span 
+                className="login-brand-wordmark"
+                style={{
+                  fontSize: '42px',
+                  fontWeight: '800',
+                  color: '#0F172A',
+                  letterSpacing: '-0.3px',
+                  lineHeight: 1.1,
+                  fontFamily: brandFont,
+                }}
+              >
                 Skill<span style={{ color: '#2563EB' }}>C</span>red
               </span>
-              <span style={{
-                fontSize: '12.5px',
-                fontWeight: '600',
-                color: '#334155',
-                letterSpacing: '0.8px',
-                fontFamily: fontInter,
-                marginTop: '5px',
-                lineHeight: 1,
-              }}>
+              <span 
+                className="login-brand-sub"
+                style={{
+                  fontSize: '12.5px',
+                  fontWeight: '600',
+                  color: '#334155',
+                  letterSpacing: '0.8px',
+                  fontFamily: fontInter,
+                  marginTop: '5px',
+                  lineHeight: 1,
+                }}
+              >
                 By ADZ4NEEDZ
               </span>
             </div>
@@ -579,33 +586,97 @@ export const LoginPage = () => {
       {/* Responsive Styles */}
       <style>{`
         @media (max-width: 960px) {
+          .login-page-container {
+            padding: 36px 24px !important;
+          }
           .login-split-layout {
             flex-direction: column !important;
             align-items: center !important;
-            gap: 40px !important;
+            gap: 36px !important;
           }
           .login-left-content {
             max-width: 480px !important;
             text-align: center !important;
           }
-          .login-left-content > div:first-child {
+          .login-brand-header {
             justify-content: center !important;
+            margin-bottom: 24px !important;
+            gap: 14px !important;
+          }
+          .login-brand-logo {
+            height: 56px !important;
+          }
+          .login-brand-wordmark {
+            font-size: 34px !important;
           }
           .login-left-content p {
             margin-left: auto !important;
             margin-right: auto !important;
           }
+          .login-main-heading {
+            font-size: 44px !important;
+            margin-bottom: 12px !important;
+          }
+          .login-sub-heading {
+            font-size: 19px !important;
+            margin-bottom: 12px !important;
+          }
+          .login-desc-text {
+            font-size: 14.5px !important;
+            line-height: 1.6 !important;
+          }
           .login-card {
             flex: unset !important;
-            max-width: 500px !important;
-            padding: 42px 32px !important;
-            border-radius: 30px !important;
+            width: 100% !important;
+            max-width: 480px !important;
+            padding: 40px 32px !important;
+            border-radius: 26px !important;
           }
         }
         @media (max-width: 480px) {
+          .login-page-container {
+            padding: 24px 16px !important;
+          }
+          .login-split-layout {
+            gap: 20px !important;
+          }
+          .login-brand-header {
+            margin-bottom: 16px !important;
+            gap: 12px !important;
+          }
+          .login-brand-logo {
+            height: 44px !important;
+          }
+          .login-brand-wordmark {
+            font-size: 28px !important;
+          }
+          .login-brand-sub {
+            font-size: 11px !important;
+          }
+          .login-main-heading {
+            font-size: 32px !important;
+            margin-bottom: 8px !important;
+            letter-spacing: -0.6px !important;
+          }
+          .login-sub-heading {
+            font-size: 16.5px !important;
+            margin-bottom: 8px !important;
+          }
+          .login-desc-text {
+            font-size: 13.5px !important;
+          }
           .login-card {
-            padding: 32px 24px !important;
-            border-radius: 24px !important;
+            padding: 28px 20px !important;
+            border-radius: 20px !important;
+          }
+          .login-card-header {
+            margin-bottom: 24px !important;
+          }
+          .login-card-header h2 {
+            font-size: 24px !important;
+          }
+          .login-card-header p {
+            font-size: 13.5px !important;
           }
         }
       `}</style>

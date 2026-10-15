@@ -77,7 +77,7 @@ public class PaymentService {
             return; // Can be cleared/reverted to auto-generated dynamic QR
         }
         if (qrImageUrl.startsWith("data:")) {
-            if (!qrImageUrl.matches("^data:image\\/(png|jpeg|jpg|webp|svg\\+xml);base64,[A-Za-z0-9+/=]+$")) {
+            if (!qrImageUrl.matches("^data:image\\/(png|jpeg|jpg|webp|svg\\+xml)(;charset=[\\w-]+)?;base64,[A-Za-z0-9+/=\\r\\n\\s]+$")) {
                 throw new IllegalArgumentException("Invalid QR code image format. Allowed formats: PNG, JPG, JPEG, WEBP, or SVG.");
             }
             if (qrImageUrl.length() > 7_000_000) {

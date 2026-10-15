@@ -1242,6 +1242,9 @@ export const RegisterPage = () => {
           background-color: #FFFFFF !important;
         }
         @media (max-width: 960px) {
+          .register-page-container {
+            padding: 36px 24px !important;
+          }
           .register-split-layout {
             flex-direction: column !important;
             align-items: center !important;
@@ -1266,6 +1269,9 @@ export const RegisterPage = () => {
           }
         }
         @media (max-width: 560px) {
+          .register-page-container {
+            padding: 24px 16px !important;
+          }
           .register-grid-row {
             grid-template-columns: 1fr !important;
           }
@@ -1273,8 +1279,8 @@ export const RegisterPage = () => {
             grid-template-columns: 1fr !important;
           }
           .register-card {
-            padding: 30px 20px !important;
-            border-radius: 24px !important;
+            padding: 26px 18px !important;
+            border-radius: 20px !important;
           }
         }
       `}</style>

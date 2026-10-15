@@ -129,43 +129,7 @@ export const AdminLayout = () => {
     }}>
       {/* ─── Admin Mobile Top Header (<= 1024px) ─── */}
       <header className="admin-mobile-header">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <img
-            src="/assets/adzivo_icon.png"
-            alt="SkillCred Logo"
-            style={{ width: '34px', height: '34px', objectFit: 'contain' }}
-          />
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <h2 style={{ fontSize: '19px', fontWeight: '800', letterSpacing: '-0.3px', margin: 0, color: '#0F172A', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-              Skill<span style={{ color: '#2563EB' }}>C</span>red
-            </h2>
-            <span style={{
-              backgroundColor: '#586B84',
-              color: '#FFFFFF',
-              fontSize: '9.5px',
-              fontWeight: '800',
-              padding: '2px 6px',
-              borderRadius: '4px',
-              letterSpacing: '0.4px',
-            }}>
-              ADMIN
-            </span>
-          </div>
-        </div>
-
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          {pendingPaymentsCount > 0 && (
-            <span style={{
-              backgroundColor: '#D92D20',
-              color: '#FFFFFF',
-              fontSize: '11px',
-              fontWeight: '800',
-              padding: '2px 8px',
-              borderRadius: '999px',
-            }}>
-              {pendingPaymentsCount}
-            </span>
-          )}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <button
             onClick={() => setMobileDrawerOpen(!mobileDrawerOpen)}
             className="mobile-menu-btn"
@@ -173,7 +137,44 @@ export const AdminLayout = () => {
           >
             {mobileDrawerOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <img
+              src="/assets/adzivo_icon.png"
+              alt="SkillCred Logo"
+              style={{ width: '32px', height: '32px', objectFit: 'contain' }}
+            />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <h2 style={{ fontSize: '18px', fontWeight: '800', letterSpacing: '-0.3px', margin: 0, color: '#0F172A', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                Skill<span style={{ color: '#2563EB' }}>C</span>red
+              </h2>
+              <span style={{
+                backgroundColor: '#586B84',
+                color: '#FFFFFF',
+                fontSize: '9.5px',
+                fontWeight: '800',
+                padding: '2px 6px',
+                borderRadius: '4px',
+                letterSpacing: '0.4px',
+              }}>
+                ADMIN
+              </span>
+            </div>
+          </div>
         </div>
+
+        {pendingPaymentsCount > 0 && (
+          <span style={{
+            backgroundColor: '#D92D20',
+            color: '#FFFFFF',
+            fontSize: '11px',
+            fontWeight: '800',
+            padding: '2px 8px',
+            borderRadius: '999px',
+          }}>
+            {pendingPaymentsCount}
+          </span>
+        )}
       </header>
 
       {/* ─── Mobile Drawer Backdrop Overlay ─── */}

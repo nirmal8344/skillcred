@@ -90,6 +90,7 @@ export const AdminDashboardPage = () => {
     qrImageUrl: '',
   });
   const [previewQr, setPreviewQr] = useState('');
+  const [configSaving, setConfigSaving] = useState(false);
 
   // Changeable UPI QR Code Modal States
   const [isQrModalOpen, setIsQrModalOpen] = useState(false);
@@ -173,7 +174,8 @@ export const AdminDashboardPage = () => {
     questionDeleteConfirm ||
     isTemplateUploadModalOpen ||
     isImportModalOpen ||
-    selectedStudentAudit
+    selectedStudentAudit ||
+    isQrModalOpen
   );
 
   useEffect(() => {
